@@ -119,8 +119,9 @@ export function ringClusterSVG(size, rings, shape, opts) {
           "stroke-linecap": "round",
           "stroke-linejoin": "round",
           pathLength: 100,
-          "stroke-dasharray": `${overflowPct} ${100 - overflowPct}`,
-          class: "ring-overflow",
+          "stroke-dasharray": "0 100",
+          "data-fill": `${overflowPct} ${100 - overflowPct}`,
+          class: "ring-overflow ring-animate",
         });
         tipPct = overflowPct;
       } else {
@@ -132,8 +133,9 @@ export function ringClusterSVG(size, rings, shape, opts) {
           "stroke-linecap": "round",
           "stroke-linejoin": "round",
           pathLength: 100,
-          "stroke-dasharray": `${pct} ${100 - pct}`,
-          class: "ring-progress",
+          "stroke-dasharray": "0 100",
+          "data-fill": `${pct} ${100 - pct}`,
+          class: "ring-progress ring-animate",
         });
         tipPct = pct;
       }
@@ -167,4 +169,18 @@ export function ringClusterSVG(size, rings, shape, opts) {
   });
 
   return `<svg viewBox="0 0 ${size} ${size}" class="ring-cluster" data-shape="${shape}"><defs>${defs.join("")}</defs>${body}</svg>`;
+}
+
+// A appeler juste apres avoir insere un ringClusterSVG dans le DOM : lance
+// le remplissage anime de zero jusqu'au pourcentage reel (double rAF pour
+// laisser le navigateur peindre l'etat a 0 avant de declencher la
+// transition CSS vers la valeur cible).
+export function animateRings(container) {
+  const rings = container.querySelectorAll(".ring-animate");
+  if (!rings.length) return;
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      rings.forEach((el) => el.setAttribute("stroke-dasharray", el.dataset.fill));
+    });
+  });
 }

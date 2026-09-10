@@ -1,4 +1,4 @@
-import { ringClusterSVG } from "./shapes.js";
+import { ringClusterSVG, animateRings } from "./shapes.js";
 import { icon } from "./icons.js";
 import { buildBadges, bestCurrentStreaks } from "./badges.js";
 import { ADMIN_CODE } from "./data.js";
@@ -165,6 +165,7 @@ export function renderDashboard(root, model, settings, nav) {
     </div>
   `;
   root.appendChild(hero);
+  animateRings(hero);
 
   const hasNote = currentWeek.note !== null && currentWeek.note !== undefined;
 
@@ -251,6 +252,7 @@ export function renderAdmin(root, adminModel, settings, rows, cb) {
     </div>
   `;
   root.appendChild(hero);
+  animateRings(hero);
 
   const section = document.createElement("div");
   section.innerHTML = `
@@ -388,6 +390,7 @@ export function renderMetricDetail(root, model, metricKey, settings) {
     `}
   `;
   root.appendChild(wrap);
+  animateRings(wrap);
 }
 
 // ---------------------------------------------------------------------

@@ -249,6 +249,7 @@ main#view {
   padding: 10px 0 6px;
 }
 .ring-cluster { width: 100%; height: 100%; overflow: visible; }
+.ring-animate { transition: stroke-dasharray 1.15s cubic-bezier(0.16, 1, 0.3, 1); }
 .ring-cluster--mini { width: 40px; height: 40px; }
 .ring-wrap { position: relative; width: 230px; height: 230px; }
 .ring-wrap--hero { width: 276px; height: 276px; }
