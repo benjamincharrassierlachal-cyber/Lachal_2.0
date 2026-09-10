@@ -19,6 +19,13 @@ const PATHS = {
   arrowRight: "M5 12h14M13 6l6 6-6 6",
   close: "M6 6l12 12M18 6L6 18",
   save: "M5 4h11l3 3v13H5z|M8 4v5h7V4|M8 14h8v6H8z",
+  flame: "M12 2c-1 4-5 6-5 11a5 5 0 0010 0c0-2-.8-3.5-2-5 .1 1.4-.6 2-1.3 2C14.5 7 13 4.5 12 2z",
+  calendar: "M4 5h16v15H4z|M4 9h16|M8 3v4|M16 3v4",
+  target: "circle:12,12,9|circle:12,12,5|circle:12,12,1.5",
+  rocket: "M12 2c3 2 5 6 5 10-1 1-2 2-5 2s-4-1-5-2c0-4 2-8 5-10z|circle:12,10,1.6|M9 16l-3 5 5-2|M15 16l3 5-5-2",
+  shield: "M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5z",
+  trending: "M3 17l6-6 4 4 8-9|M15 6h6v6",
+  chest: "M4 8h16v11H4z|M4 8l2-4h12l2 4|M10 13h4",
 };
 
 export function icon(name, size = 20, extraClass = "") {

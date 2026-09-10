@@ -115,7 +115,7 @@ export function renderDashboard(root, model, settings, nav) {
     .join("");
   root.appendChild(list);
 
-  const badges = buildBadges(model);
+  const badges = buildBadges(model, settings.visits);
   const unlocked = badges.filter((b) => b.unlocked);
   const preview = (unlocked.length ? unlocked.slice(-4).reverse() : badges.slice(0, 4));
 
@@ -224,8 +224,8 @@ export function renderMetricDetail(root, model, metricKey, settings) {
 
 // ---------------------------------------------------------------------
 export function renderTrophies(root, model, settings) {
-  const badges = buildBadges(model);
-  const order = ["Combo", "Series", "Records", "Paliers"];
+  const badges = buildBadges(model, settings.visits);
+  const order = ["Combo", "Semaine", "Series", "Records", "Exploits", "Seuils", "Notes", "Paliers", "Assiduite", "Collection"];
   const byCat = {};
   badges.forEach((b) => (byCat[b.category] ||= []).push(b));
 
