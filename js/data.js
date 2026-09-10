@@ -132,20 +132,28 @@ export function buildAdminModel(data) {
     .map((s) => buildStoreModel(data, s.code))
     .filter((sm) => sm.currentWeek);
 
+  // Un indicateur reste affiche des qu'au moins un magasin le suit,
+  // meme si personne n'a encore de releve cette semaine (comme "-/2" sur
+  // une fiche magasin) : on ne le fait disparaitre que si aucun magasin
+  // du groupe ne le suit du tout.
   const metricsAgg = METRICS.map((m) => {
     let sumValue = 0;
     let sumObjective = 0;
-    let any = false;
+    let tracked = false;
+    let hasData = false;
     perStore.forEach((sm) => {
       const pm = sm.currentWeek.metrics[m.key];
-      if (!pm || pm.value === null || pm.value === undefined) return;
-      any = true;
-      sumValue += pm.value;
+      if (!pm) return;
+      tracked = true;
       sumObjective += pm.objective || 0;
+      if (pm.value !== null && pm.value !== undefined) {
+        hasData = true;
+        sumValue += pm.value;
+      }
     });
-    if (!any) return null;
-    const pct = pctFor(sumValue, sumObjective);
-    return { ...m, value: sumValue, objective: sumObjective, pct, status: statusFor(pct) };
+    if (!tracked) return null;
+    const pct = hasData ? pctFor(sumValue, sumObjective) : null;
+    return { ...m, value: hasData ? sumValue : null, objective: sumObjective, pct, status: statusFor(pct) };
   }).filter(Boolean);
 
   const scored = metricsAgg.filter((x) => x.pct !== null);
