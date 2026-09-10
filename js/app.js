@@ -1,8 +1,10 @@
 import { loadData, buildStoreModel } from "./data.js";
-import { settings, setSetting, recordVisit } from "./state.js";
+import { settings, setSetting, recordVisit, claimedBadges, claimBadge } from "./state.js";
 import { icon } from "./icons.js";
+import { buildBadges } from "./badges.js";
 import {
   renderOnboarding,
+  renderRewards,
   renderDashboard,
   renderMetricDetail,
   renderTrophies,
@@ -67,17 +69,60 @@ function boot(data) {
   applyTheme();
   recordVisit();
 
-  const start = () => {
-    buildShell();
-    render(data);
-    window.addEventListener("hashchange", () => render(data));
-  };
+  const enterApp = () => checkRewards(data);
 
   if (!settings.storeCode || !data.stores.some((s) => s.code === settings.storeCode)) {
-    showOnboarding(data, start);
+    showOnboarding(data, enterApp);
   } else {
-    start();
+    enterApp();
   }
+}
+
+function enterDashboard(data) {
+  buildShell();
+  render(data);
+  window.addEventListener("hashchange", () => render(data));
+}
+
+// Trophees debloques mais jamais "recuperes" a l'ecran : on les propose
+// avant d'entrer dans l'appli, comme un ecran de recompense de jeu.
+function checkRewards(data) {
+  const model = buildStoreModel(data, settings.storeCode);
+  const badges = buildBadges(model, settings.visits);
+  const claimed = new Set(claimedBadges(settings.storeCode));
+  const fresh = badges.filter((b) => b.unlocked && !claimed.has(b.id));
+  if (fresh.length === 0) {
+    enterDashboard(data);
+    return;
+  }
+  showRewardsScreen(data, fresh);
+}
+
+function showRewardsScreen(data, freshBadges) {
+  const claimedNow = new Set();
+  const draw = () => {
+    const remaining = freshBadges.filter((b) => !claimedNow.has(b.id));
+    if (remaining.length === 0) {
+      enterDashboard(data);
+      return;
+    }
+    app.innerHTML = "";
+    renderRewards(app, remaining, {
+      claim: (id) => {
+        claimedNow.add(id);
+        claimBadge(settings.storeCode, id);
+        draw();
+      },
+      claimAll: () => {
+        remaining.forEach((b) => {
+          claimedNow.add(b.id);
+          claimBadge(settings.storeCode, b.id);
+        });
+        draw();
+      },
+    });
+  };
+  draw();
 }
 
 function render(data) {
@@ -105,7 +150,7 @@ function render(data) {
     renderSettings(view, { ...data, currentStoreName: model.store?.name }, settings, {
       setShape: (s) => { setSetting("shape", s); render(data); },
       setTheme: (t) => { setSetting("theme", t); applyTheme(); render(data); },
-      changeStore: () => showOnboarding(data, () => { buildShell(); render(data); }),
+      changeStore: () => showOnboarding(data, () => checkRewards(data)),
       save: () => nav("dashboard"),
     });
   }

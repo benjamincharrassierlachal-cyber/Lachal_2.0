@@ -137,6 +137,35 @@ main#view {
   padding: 48px 24px 24px;
 }
 .onboarding--centered { align-items: center; justify-content: center; }
+
+.rewards-screen { z-index: 60; overflow-y: auto; }
+.rewards-head { text-align: center; margin-bottom: 20px; }
+.rewards-title {
+  font-size: 26px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--gold), var(--c-avis));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 8px;
+}
+.rewards-head .sub { margin-bottom: 18px; }
+.rewards-head .ob-validate { max-width: 280px; margin: 0 auto; }
+.rewards-grid { padding-bottom: 12px; }
+.rewards-grid .badge-card { padding-bottom: 16px; }
+.claim-btn {
+  width: 100%;
+  margin-top: 4px;
+  padding: 9px 10px;
+  background: var(--c-avis);
+  color: #0a0c11;
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 12.5px;
+  font-weight: 700;
+}
+.claim-btn:active { transform: scale(0.97); }
 .ob-center {
   width: 100%;
   max-width: 340px;
@@ -340,8 +369,9 @@ table.history td.num { font-family: "Space Mono", monospace; }
 .badge-img { width: 56px; height: 56px; display: block; border-radius: 14px; }
 .badge-img.locked { filter: grayscale(1) brightness(0.55); opacity: 0.75; }
 .badge-card .b-name { font-size: 12.5px; font-weight: 700; }
-.badge-card .b-desc { font-size: 11px; color: var(--text-dim); line-height: 1.35; }
-.badge-card .b-progress { font-size: 10.5px; color: var(--text-faint); font-family: "Space Mono", monospace; }
+.badge-card .b-desc { font-size: 12.5px; color: #b7bfd2; line-height: 1.4; }
+.badge-card.locked .b-desc { color: #8791a8; }
+.badge-card .b-progress { font-size: 11.5px; font-weight: 700; font-family: "Space Mono", monospace; }
 
 /* ---------- Settings ---------- */
 .settings-top {

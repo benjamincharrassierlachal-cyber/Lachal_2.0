@@ -54,6 +54,39 @@ export function renderOnboarding(root, data, onPick) {
 }
 
 // ---------------------------------------------------------------------
+// Ecran de recompense : trophees debloques mais pas encore "recuperes",
+// presentes avant l'accueil au demarrage de l'appli.
+export function renderRewards(root, badges, cb) {
+  const wrap = document.createElement("div");
+  wrap.className = "onboarding rewards-screen";
+  wrap.innerHTML = `
+    <div class="rewards-head">
+      <div class="rewards-title">Nouveaux trophées !</div>
+      <p class="sub">${badges.length} trophée${badges.length > 1 ? "s" : ""} débloqué${badges.length > 1 ? "s" : ""} depuis votre dernière visite.</p>
+      ${badges.length > 1 ? `<button class="ob-validate" id="claim-all">Tout récupérer</button>` : ""}
+    </div>
+    <div class="badge-grid rewards-grid">
+      ${badges
+        .map(
+          (b) => `<div class="card badge-card">
+            <img class="badge-img" src="icons/badges/${b.image}" width="56" height="56" alt="" />
+            <div class="b-name">${b.name}</div>
+            <div class="b-desc">${b.descUnlocked}</div>
+            <button class="claim-btn" data-claim="${b.id}">Récupérer</button>
+          </div>`
+        )
+        .join("")}
+    </div>
+  `;
+  root.appendChild(wrap);
+
+  wrap.querySelectorAll("[data-claim]").forEach((btn) => {
+    btn.addEventListener("click", () => cb.claim(btn.dataset.claim));
+  });
+  wrap.querySelector("#claim-all")?.addEventListener("click", () => cb.claimAll());
+}
+
+// ---------------------------------------------------------------------
 export function renderDashboard(root, model, settings, nav) {
   const { store, metrics, currentWeek } = model;
   if (!currentWeek || !metrics.length) {
@@ -250,7 +283,7 @@ export function renderTrophies(root, model, settings) {
                 <img class="badge-img ${b.unlocked ? "" : "locked"}" src="icons/badges/${b.image}" width="56" height="56" alt="" />
                 <div class="b-name">${b.name}</div>
                 <div class="b-desc">${b.unlocked ? b.descUnlocked : b.descLocked}</div>
-                ${b.progress && !b.unlocked ? `<div class="b-progress">${b.progress}</div>` : ""}
+                ${b.progress && !b.unlocked ? `<div class="b-progress" style="color:${b.color}">${b.progress}</div>` : ""}
               </div>`
             )
             .join("")}

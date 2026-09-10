@@ -22,6 +22,10 @@ const DEFAULTS = {
     bestWeekStreak: 0,
     lastVisitWeek: null,
   },
+  // Trophees deja "recuperes" a l'ecran de recompense, par magasin
+  // (code -> liste d'ids de badges). Un badge debloque mais absent de
+  // cette liste declenche l'ecran de recompense a l'ouverture.
+  claimed: {},
 };
 
 function read() {
@@ -90,4 +94,14 @@ export function recordVisit() {
   }
 
   setSetting("visits", v);
+}
+
+export function claimedBadges(storeCode) {
+  return settings.claimed[storeCode] || [];
+}
+
+export function claimBadge(storeCode, badgeId) {
+  const list = claimedBadges(storeCode);
+  if (list.includes(badgeId)) return;
+  setSetting("claimed", { ...settings.claimed, [storeCode]: [...list, badgeId] });
 }
