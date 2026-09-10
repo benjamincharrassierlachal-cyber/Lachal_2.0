@@ -105,9 +105,3 @@ export function claimBadge(storeCode, badgeId) {
   if (list.includes(badgeId)) return;
   setSetting("claimed", { ...settings.claimed, [storeCode]: [...list, badgeId] });
 }
-
-export function resetClaimed(storeCode) {
-  const map = { ...settings.claimed };
-  delete map[storeCode];
-  setSetting("claimed", map);
-}

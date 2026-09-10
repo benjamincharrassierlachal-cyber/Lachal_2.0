@@ -265,24 +265,23 @@ export function renderAdmin(root, adminModel, settings, rows, cb) {
     <div class="admin-list">
       ${rows
         .map((r) => {
-          const boxes = ["avis", "examens", "impressions"]
+          const score = r.model.currentWeek?.score ?? null;
+          const scoreColor = score === null ? "var(--text-dim)" : score >= 120 ? "var(--gold)" : score >= 80 ? "var(--text)" : "var(--danger)";
+          const nums = ["avis", "examens", "impressions"]
             .map((key) => {
               const m = METRIC_BY_KEY[key];
               const pm = r.model.currentWeek?.metrics[key];
-              if (!pm) return `<span class="admin-box admin-box--off">·</span>`;
-              const bg =
-                pm.status === "gold" ? "var(--gold)" : pm.status === "met" ? `var(${m.colorVar})` : pm.status === "miss" ? "var(--danger)" : "var(--track)";
-              const txt = pm.pct === null ? "-" : `${pm.pct}%`;
-              return `<span class="admin-box" style="background:${bg}">${txt}</span>`;
+              if (!pm) return `<span class="admin-metric admin-metric--off">${icon(m.icon, 13)}<span>—</span></span>`;
+              return `<span class="admin-metric" style="color:var(${m.colorVar})">${icon(m.icon, 13)}<span>${fmtNum(pm.value)}/${fmtNum(pm.objective)}</span></span>`;
             })
             .join("");
           return `<button class="admin-row" data-store="${r.store.code}">
             <div class="admin-row-top">
               <span class="admin-row-name">${r.store.name}</span>
-              <span class="admin-row-score">${r.model.currentWeek?.score ?? "-"}%</span>
+              <span class="admin-row-score" style="color:${scoreColor}">${score ?? "-"}%</span>
             </div>
             <div class="admin-row-bottom">
-              <div class="admin-boxes">${boxes}</div>
+              <div class="admin-metrics">${nums}</div>
               <span class="admin-trophies">${icon("trophy", 13)} ${r.trophies.unlocked}/${r.trophies.total}</span>
             </div>
           </button>`;
@@ -300,7 +299,11 @@ export function renderAdmin(root, adminModel, settings, rows, cb) {
   );
 }
 
-const METRIC_BY_KEY = { avis: { colorVar: "--c-avis" }, examens: { colorVar: "--c-examens" }, impressions: { colorVar: "--c-impr" } };
+const METRIC_BY_KEY = {
+  avis: { colorVar: "--c-avis", icon: "star" },
+  examens: { colorVar: "--c-examens", icon: "eye" },
+  impressions: { colorVar: "--c-impr", icon: "cube" },
+};
 
 // ---------------------------------------------------------------------
 export function renderMetricDetail(root, model, metricKey, settings) {
@@ -465,8 +468,6 @@ export function renderSettings(root, data, settings, cb) {
         <div style="color:var(--text-dim);font-size:12.5px;margin-top:2px;">Changer de magasin</div>
       </button>
     </div>
-    <button class="danger-btn" data-reset>Reinitialiser l'affichage des recompenses</button>
-    <p class="about-text-sm">Remet a zero, sur cet appareil, les trophees deja "recuperes" a l'ecran pour ce magasin (ils reapparaitront a recuperer s'ils sont toujours merites).</p>
     ${data.isAdmin ? `
     <div class="setting-block">
       <div class="label">Date de depart des trophees (tous magasins)</div>
@@ -489,9 +490,4 @@ export function renderSettings(root, data, settings, cb) {
   );
   wrap.querySelector("[data-change-store]").addEventListener("click", cb.changeStore);
   wrap.querySelector("[data-save]").addEventListener("click", cb.save);
-  wrap.querySelector("[data-reset]").addEventListener("click", () => {
-    if (confirm(`Reinitialiser les trophees de ${data.currentStoreName || "ce magasin"} ? Les trophees deja obtenus reapparaitront comme nouveaux a recuperer.`)) {
-      cb.resetBadges();
-    }
-  });
 }

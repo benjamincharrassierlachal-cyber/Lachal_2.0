@@ -1,5 +1,5 @@
 import { loadData, buildStoreModel, buildAdminModel, ADMIN_CODE } from "./data.js";
-import { settings, setSetting, recordVisit, claimedBadges, claimBadge, resetClaimed } from "./state.js";
+import { settings, setSetting, recordVisit, claimedBadges, claimBadge } from "./state.js";
 import { icon } from "./icons.js";
 import { buildBadges } from "./badges.js";
 import {
@@ -163,7 +163,6 @@ function render(data) {
         setTheme: (t) => { setSetting("theme", t); applyTheme(); render(data); },
         changeStore: () => showOnboarding(data, () => checkRewards(data)),
         save: () => nav("dashboard"),
-        resetBadges: () => { resetClaimed(settings.storeCode); render(data); },
       });
     } else {
       const rows = adminModel.perStore.map((model) => {
@@ -205,7 +204,6 @@ function render(data) {
       setTheme: (t) => { setSetting("theme", t); applyTheme(); render(data); },
       changeStore: () => showOnboarding(data, () => checkRewards(data)),
       save: () => nav("dashboard"),
-      resetBadges: () => { resetClaimed(settings.storeCode); render(data); },
     });
   }
 }
