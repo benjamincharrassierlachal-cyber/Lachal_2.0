@@ -40,6 +40,8 @@ export const METRICS = [
   },
 ];
 
+export const ADMIN_CODE = "ADMIN";
+
 let _dataPromise = null;
 
 export function loadData() {
@@ -105,4 +107,38 @@ export function buildStoreModel(data, code) {
     history,
     currentWeek: history.length ? history[history.length - 1] : null,
   };
+}
+
+// Vue d'ensemble admin : cumule tous les magasins sur leur semaine
+// courante respective (somme des realises / somme des objectifs), plus
+// le detail par magasin pour la liste.
+export function buildAdminModel(data) {
+  const perStore = data.stores
+    .map((s) => buildStoreModel(data, s.code))
+    .filter((sm) => sm.currentWeek);
+
+  const metricsAgg = METRICS.map((m) => {
+    let sumValue = 0;
+    let sumObjective = 0;
+    let any = false;
+    perStore.forEach((sm) => {
+      const pm = sm.currentWeek.metrics[m.key];
+      if (!pm || pm.value === null || pm.value === undefined) return;
+      any = true;
+      sumValue += pm.value;
+      sumObjective += pm.objective || 0;
+    });
+    if (!any) return null;
+    const pct = pctFor(sumValue, sumObjective);
+    return { ...m, value: sumValue, objective: sumObjective, pct, status: statusFor(pct) };
+  }).filter(Boolean);
+
+  const scored = metricsAgg.filter((x) => x.pct !== null);
+  const score = scored.length
+    ? Math.round(scored.reduce((s, x) => s + Math.min(x.pct, 100), 0) / scored.length)
+    : null;
+
+  const weekLabel = perStore.length ? perStore[0].currentWeek.semaine : null;
+
+  return { metricsAgg, score, weekLabel, perStore };
 }

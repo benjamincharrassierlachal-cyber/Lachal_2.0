@@ -1,17 +1,22 @@
-import { loadData, buildStoreModel } from "./data.js";
-import { settings, setSetting, recordVisit, claimedBadges, claimBadge } from "./state.js";
+import { loadData, buildStoreModel, buildAdminModel, ADMIN_CODE } from "./data.js";
+import { settings, setSetting, recordVisit, claimedBadges, claimBadge, resetClaimed } from "./state.js";
 import { icon } from "./icons.js";
 import { buildBadges } from "./badges.js";
 import {
   renderOnboarding,
   renderRewards,
   renderDashboard,
+  renderAdmin,
   renderMetricDetail,
   renderTrophies,
   renderSettings,
 } from "./views.js";
 
 const app = document.getElementById("app");
+
+function isAdmin() {
+  return settings.storeCode === ADMIN_CODE;
+}
 
 function applyTheme() {
   document.documentElement.setAttribute("data-theme", settings.theme);
@@ -29,10 +34,9 @@ function nav(name, key) {
   location.hash = name === "metric" ? `metric-${key}` : name;
 }
 
-function weekTitle(model) {
-  if (!model.currentWeek) return "";
-  const s = model.currentWeek.semaine || "";
-  const [, num] = s.split("-S");
+function weekTitle(semaine) {
+  if (!semaine) return "";
+  const [, num] = semaine.split("-S");
   return `Semaine ${parseInt(num, 10)}`;
 }
 
@@ -48,7 +52,7 @@ function buildShell() {
     <main id="view"></main>
     <nav class="bottom-nav">
       <button class="nav-btn" data-nav="dashboard">${icon("home", 20)}<span>Accueil</span></button>
-      <button class="nav-btn" data-nav="trophies">${icon("trophy", 20)}<span>Trophees</span></button>
+      ${isAdmin() ? "" : `<button class="nav-btn" data-nav="trophies">${icon("trophy", 20)}<span>Trophees</span></button>`}
     </nav>
   `;
   app.querySelectorAll("[data-nav]").forEach((b) =>
@@ -70,8 +74,9 @@ function boot(data) {
   recordVisit();
 
   const enterApp = () => checkRewards(data);
+  const validStore = settings.storeCode === ADMIN_CODE || data.stores.some((s) => s.code === settings.storeCode);
 
-  if (!settings.storeCode || !data.stores.some((s) => s.code === settings.storeCode)) {
+  if (!settings.storeCode || !validStore) {
     showOnboarding(data, enterApp);
   } else {
     enterApp();
@@ -86,7 +91,12 @@ function enterDashboard(data) {
 
 // Trophees debloques mais jamais "recuperes" a l'ecran : on les propose
 // avant d'entrer dans l'appli, comme un ecran de recompense de jeu.
+// Ne s'applique pas a l'espace admin (pas de trophees a son nom).
 function checkRewards(data) {
+  if (isAdmin()) {
+    enterDashboard(data);
+    return;
+  }
   const model = buildStoreModel(data, settings.storeCode);
   const badges = buildBadges(model, settings.visits);
   const claimed = new Set(claimedBadges(settings.storeCode));
@@ -126,18 +136,43 @@ function showRewardsScreen(data, freshBadges) {
 }
 
 function render(data) {
-  const model = buildStoreModel(data, settings.storeCode);
   const route = parseRoute();
   const view = document.getElementById("view");
   view.innerHTML = "";
-
-  document.getElementById("hdr-store").textContent = model.store ? model.store.name : "";
-  document.getElementById("hdr-week").textContent = weekTitle(model);
 
   document.querySelectorAll(".nav-btn").forEach((b) => {
     const active = b.dataset.nav === (route.name === "metric" ? "dashboard" : route.name);
     b.classList.toggle("active", active);
   });
+
+  if (isAdmin()) {
+    const adminModel = buildAdminModel(data);
+    document.getElementById("hdr-store").textContent = "ADMIN";
+    document.getElementById("hdr-week").textContent = weekTitle(adminModel.weekLabel);
+
+    if (route.name === "settings") {
+      renderSettings(view, { ...data, currentStoreName: "Espace admin" }, settings, {
+        setShape: (s) => { setSetting("shape", s); render(data); },
+        setTheme: (t) => { setSetting("theme", t); applyTheme(); render(data); },
+        changeStore: () => showOnboarding(data, () => checkRewards(data)),
+        save: () => nav("dashboard"),
+        resetBadges: () => { resetClaimed(settings.storeCode); render(data); },
+      });
+    } else {
+      const rows = adminModel.perStore
+        .map((model) => {
+          const badges = buildBadges(model, settings.visits);
+          return { store: model.store, model, trophies: { unlocked: badges.filter((b) => b.unlocked).length, total: badges.length } };
+        })
+        .sort((a, b) => (b.model.currentWeek?.score ?? -1) - (a.model.currentWeek?.score ?? -1));
+      renderAdmin(view, adminModel, settings, rows);
+    }
+    return;
+  }
+
+  const model = buildStoreModel(data, settings.storeCode);
+  document.getElementById("hdr-store").textContent = model.store ? model.store.name : "";
+  document.getElementById("hdr-week").textContent = weekTitle(model.currentWeek?.semaine);
 
   if (route.name === "dashboard") {
     renderDashboard(view, model, settings, nav);
@@ -152,6 +187,7 @@ function render(data) {
       setTheme: (t) => { setSetting("theme", t); applyTheme(); render(data); },
       changeStore: () => showOnboarding(data, () => checkRewards(data)),
       save: () => nav("dashboard"),
+      resetBadges: () => { resetClaimed(settings.storeCode); render(data); },
     });
   }
 }

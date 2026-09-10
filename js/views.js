@@ -1,6 +1,9 @@
 import { ringClusterSVG } from "./shapes.js";
 import { icon } from "./icons.js";
 import { buildBadges, bestCurrentStreaks } from "./badges.js";
+import { ADMIN_CODE } from "./data.js";
+
+const ADMIN_PASSWORD = "BDG*24";
 
 function weekLabel(semaine) {
   if (!semaine) return "";
@@ -31,25 +34,65 @@ export function renderOnboarding(root, data, onPick) {
   wrap.className = "onboarding onboarding--centered";
   const sorted = data.stores.slice().sort((a, b) => a.name.localeCompare(b.name));
   wrap.innerHTML = `
-    <div class="ob-center">
+    <div class="ob-center" id="ob-step-select">
       <div class="ob-brand">Lachal 2.0</div>
       <p class="sub">Choisissez votre magasin : cet appareil s'en souviendra.</p>
       <select class="ob-select" id="ob-select">
         <option value="" disabled selected>Choisir un magasin</option>
         ${sorted.map((s) => `<option value="${s.code}">${s.name} — ${s.ville}</option>`).join("")}
+        <option value="${ADMIN_CODE}">🔒 Espace admin</option>
       </select>
       <button class="ob-validate" id="ob-validate" disabled>Valider</button>
+    </div>
+    <div class="ob-center" id="ob-step-password" hidden>
+      <div class="ob-brand">🔒 Espace admin</div>
+      <p class="sub">Mot de passe requis.</p>
+      <input type="password" class="ob-select" id="ob-password" placeholder="Mot de passe" autocomplete="off" />
+      <p class="ob-error" id="ob-error" hidden>Mot de passe incorrect.</p>
+      <button class="ob-validate" id="ob-password-go">Entrer</button>
+      <button class="ob-back-link" id="ob-password-cancel">← Retour</button>
     </div>
   `;
   root.appendChild(wrap);
 
+  const stepSelect = wrap.querySelector("#ob-step-select");
+  const stepPassword = wrap.querySelector("#ob-step-password");
   const select = wrap.querySelector("#ob-select");
   const validate = wrap.querySelector("#ob-validate");
+  const pwdInput = wrap.querySelector("#ob-password");
+  const pwdError = wrap.querySelector("#ob-error");
+
   select.addEventListener("change", () => {
     validate.disabled = !select.value;
   });
   validate.addEventListener("click", () => {
-    if (select.value) onPick(select.value);
+    if (!select.value) return;
+    if (select.value === ADMIN_CODE) {
+      stepSelect.hidden = true;
+      stepPassword.hidden = false;
+      pwdInput.focus();
+    } else {
+      onPick(select.value);
+    }
+  });
+
+  const tryPassword = () => {
+    if (pwdInput.value === ADMIN_PASSWORD) {
+      onPick(ADMIN_CODE);
+    } else {
+      pwdError.hidden = false;
+      pwdInput.value = "";
+      pwdInput.focus();
+    }
+  };
+  wrap.querySelector("#ob-password-go").addEventListener("click", tryPassword);
+  pwdInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") tryPassword();
+  });
+  wrap.querySelector("#ob-password-cancel").addEventListener("click", () => {
+    stepPassword.hidden = true;
+    stepSelect.hidden = false;
+    pwdError.hidden = true;
   });
 }
 
@@ -174,6 +217,76 @@ export function renderDashboard(root, model, settings, nav) {
     el.addEventListener("click", () => nav(el.dataset.nav, el.dataset.key));
   });
 }
+
+// ---------------------------------------------------------------------
+// Vue d'ensemble admin : cumul du groupe + liste de tous les magasins.
+export function renderAdmin(root, adminModel, settings, rows) {
+  const { metricsAgg, score, weekLabel } = adminModel;
+
+  if (!metricsAgg.length) {
+    root.innerHTML = `<p class="empty-hint">Aucune donnee disponible.</p>`;
+    return;
+  }
+
+  const rings = metricsAgg.map((m) => ({ pct: m.pct, color: `var(${m.colorVar})`, icon: m.icon }));
+
+  const hero = document.createElement("div");
+  hero.className = "hero";
+  hero.innerHTML = `
+    <div class="ring-wrap ring-wrap--hero">
+      ${ringClusterSVG(276, rings, settings.shape, { icons: true })}
+      <div class="score-center">
+        <div class="score-value">${score ?? "-"}%</div>
+      </div>
+    </div>
+    <div class="stat-row">
+      ${metricsAgg
+        .map(
+          (m) => `<div class="stat-pill">
+            <span class="val" style="color:var(${m.colorVar})">${fmtNum(m.value)}/${fmtNum(m.objective)}</span>
+            <span class="lbl">${m.short}</span>
+          </div>`
+        )
+        .join("")}
+    </div>
+  `;
+  root.appendChild(hero);
+
+  const section = document.createElement("div");
+  section.innerHTML = `
+    <div class="section-title">Magasins${weekLabel ? " — " + weekLabel.replace("-S", " semaine ") : ""}</div>
+    <div class="admin-list">
+      ${rows
+        .map((r) => {
+          const boxes = ["avis", "examens", "impressions"]
+            .map((key) => {
+              const m = METRIC_BY_KEY[key];
+              const pm = r.model.currentWeek?.metrics[key];
+              if (!pm) return `<span class="admin-box admin-box--off">·</span>`;
+              const bg =
+                pm.status === "gold" ? "var(--gold)" : pm.status === "met" ? `var(${m.colorVar})` : pm.status === "miss" ? "var(--danger)" : "var(--track)";
+              const txt = pm.pct === null ? "-" : `${pm.pct}%`;
+              return `<span class="admin-box" style="background:${bg}">${txt}</span>`;
+            })
+            .join("");
+          return `<div class="admin-row">
+            <div class="admin-row-top">
+              <span class="admin-row-name">${r.store.name}</span>
+              <span class="admin-row-score">${r.model.currentWeek?.score ?? "-"}%</span>
+            </div>
+            <div class="admin-row-bottom">
+              <div class="admin-boxes">${boxes}</div>
+              <span class="admin-trophies">${icon("trophy", 13)} ${r.trophies.unlocked}/${r.trophies.total}</span>
+            </div>
+          </div>`;
+        })
+        .join("")}
+    </div>
+  `;
+  root.appendChild(section);
+}
+
+const METRIC_BY_KEY = { avis: { colorVar: "--c-avis" }, examens: { colorVar: "--c-examens" }, impressions: { colorVar: "--c-impr" } };
 
 // ---------------------------------------------------------------------
 export function renderMetricDetail(root, model, metricKey, settings) {
@@ -338,6 +451,7 @@ export function renderSettings(root, data, settings, cb) {
         <div style="color:var(--text-dim);font-size:12.5px;margin-top:2px;">Changer de magasin</div>
       </button>
     </div>
+    <button class="danger-btn" data-reset>Reinitialiser les trophees de ce magasin</button>
     <p class="about-text">Les donnees viennent de la compilation hebdomadaire du groupe (avis Google, Lyleoo, OOMADE) et sont republiees chaque semaine. Reglages sauvegardes sur cet appareil uniquement.</p>
   `;
   root.appendChild(wrap);
@@ -350,4 +464,9 @@ export function renderSettings(root, data, settings, cb) {
   );
   wrap.querySelector("[data-change-store]").addEventListener("click", cb.changeStore);
   wrap.querySelector("[data-save]").addEventListener("click", cb.save);
+  wrap.querySelector("[data-reset]").addEventListener("click", () => {
+    if (confirm(`Reinitialiser les trophees de ${data.currentStoreName || "ce magasin"} ? Les trophees deja obtenus reapparaitront comme nouveaux a recuperer.`)) {
+      cb.resetBadges();
+    }
+  });
 }
