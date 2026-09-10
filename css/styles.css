@@ -245,6 +245,15 @@ main#view {
   overflow: hidden;
 }
 .bar-fill { height: 100%; border-radius: 6px; transition: width 0.4s ease; }
+.m-note {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--surface-3);
+}
 .chip {
   font-size: 10.5px;
   font-weight: 700;
@@ -286,8 +295,8 @@ main#view {
 .streak-card .n { font-size: 22px; font-weight: 800; }
 .streak-card .l { font-size: 10.5px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 2px; }
 
-.sparkline { display: flex; gap: 4px; align-items: flex-end; height: 40px; margin: 18px 0 4px; }
-.sparkline .bar { flex: 1; border-radius: 4px 4px 2px 2px; min-height: 4px; }
+.sparkline { display: flex; gap: 4px; align-items: flex-end; height: 56px; margin: 18px 0 4px; border-bottom: 1px solid var(--surface-3); padding-bottom: 2px; }
+.sparkline .bar { flex: 1; border-radius: 3px 3px 1px 1px; min-height: 3px; }
 
 table.history { width: 100%; border-collapse: collapse; margin-top: 6px; }
 table.history th {
@@ -319,6 +328,13 @@ table.history td.num { font-family: "Space Mono", monospace; }
 .badge-card.locked .badge-icon-overlay .icon { color: var(--text-faint); }
 
 /* ---------- Settings ---------- */
+.settings-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.settings-top h2 { font-size: 20px; }
 .setting-block { margin-top: 22px; }
 .setting-block .label { font-size: 13px; color: var(--text-dim); margin-bottom: 10px; }
 .shape-options, .theme-options { display: flex; gap: 10px; }

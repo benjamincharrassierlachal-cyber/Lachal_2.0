@@ -47,7 +47,6 @@ function buildShell() {
     <nav class="bottom-nav">
       <button class="nav-btn" data-nav="dashboard">${icon("home", 20)}<span>Accueil</span></button>
       <button class="nav-btn" data-nav="trophies">${icon("trophy", 20)}<span>Trophees</span></button>
-      <button class="nav-btn" data-nav="settings">${icon("gear", 20)}<span>Reglages</span></button>
     </nav>
   `;
   app.querySelectorAll("[data-nav]").forEach((b) =>
@@ -106,6 +105,7 @@ function render(data) {
       setShape: (s) => { setSetting("shape", s); render(data); },
       setTheme: (t) => { setSetting("theme", t); applyTheme(); render(data); },
       changeStore: () => showOnboarding(data, () => { buildShell(); render(data); }),
+      save: () => nav("dashboard"),
     });
   }
 }

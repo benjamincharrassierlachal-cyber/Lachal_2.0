@@ -18,6 +18,7 @@ const PATHS = {
   circle: "circle:12,12,9",
   arrowRight: "M5 12h14M13 6l6 6-6 6",
   close: "M6 6l12 12M18 6L6 18",
+  save: "M5 4h11l3 3v13H5z|M8 4v5h7V4|M8 14h8v6H8z",
 };
 
 export function icon(name, size = 20, extraClass = "") {
