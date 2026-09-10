@@ -13,7 +13,8 @@ function Log($msg) {
 # 1. Recompile la base source si on la retrouve a cote (facultatif : elle a
 #    peut-etre deja tourne via sa propre tache planifiee du lundi matin).
 $candidats = @(
-    (Join-Path (Split-Path $PSScriptRoot -Parent) "APP SANTE 2.0\Suivi Groupe\compiler_base.py"),
+    (Join-Path (Split-Path $PSScriptRoot -Parent) "Suivi Groupe\compiler_base.py"),
+    (Join-Path (Split-Path $PSScriptRoot -Parent) "Suivi groupe\compiler_base.py"),
     (Join-Path $env:USERPROFILE "Desktop\APP SANTE 2.0\Suivi Groupe\compiler_base.py")
 )
 $compilateur = $candidats | Where-Object { Test-Path $_ } | Select-Object -First 1
