@@ -1,4 +1,4 @@
-import { ringClusterSVG, miniRingSVG, badgeShapeSVG } from "./shapes.js";
+import { ringClusterSVG } from "./shapes.js";
 import { icon } from "./icons.js";
 import { buildBadges, bestCurrentStreaks } from "./badges.js";
 
@@ -126,7 +126,7 @@ export function renderDashboard(root, model, settings, nav) {
       ${preview
         .map(
           (b) => `<div class="badge-mini">
-            <div class="badge-icon-overlay">${badgeShapeSVG(settings.shape, b.color, !b.unlocked, 52)}${icon(b.icon, 18)}</div>
+            <img class="badge-img ${b.unlocked ? "" : "locked"}" src="icons/badges/${b.image}" width="52" height="52" alt="" />
             <span>${b.name}</span>
           </div>`
         )
@@ -242,7 +242,7 @@ export function renderTrophies(root, model, settings) {
           ${byCat[cat]
             .map(
               (b) => `<div class="card badge-card ${b.unlocked ? "" : "locked"}">
-                <div class="badge-icon-overlay">${badgeShapeSVG(settings.shape, b.color, !b.unlocked, 56)}${icon(b.icon, 20)}</div>
+                <img class="badge-img ${b.unlocked ? "" : "locked"}" src="icons/badges/${b.image}" width="56" height="56" alt="" />
                 <div class="b-name">${b.name}</div>
                 <div class="b-desc">${b.unlocked ? b.descUnlocked : b.descLocked}</div>
                 ${b.progress && !b.unlocked ? `<div class="b-progress">${b.progress}</div>` : ""}

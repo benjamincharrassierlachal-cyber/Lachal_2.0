@@ -336,13 +336,11 @@ table.history td.num { font-family: "Space Mono", monospace; }
   gap: 8px;
 }
 .badge-card.locked { opacity: 0.7; }
-.badge-shape { width: 56px; height: 56px; }
+.badge-img { width: 56px; height: 56px; display: block; border-radius: 14px; }
+.badge-img.locked { filter: grayscale(1) brightness(0.55); opacity: 0.75; }
 .badge-card .b-name { font-size: 12.5px; font-weight: 700; }
 .badge-card .b-desc { font-size: 11px; color: var(--text-dim); line-height: 1.35; }
 .badge-card .b-progress { font-size: 10.5px; color: var(--text-faint); font-family: "Space Mono", monospace; }
-.badge-icon-overlay { position: relative; }
-.badge-icon-overlay .icon { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #050608; }
-.badge-card.locked .badge-icon-overlay .icon { color: var(--text-faint); }
 
 /* ---------- Settings ---------- */
 .settings-top {

@@ -17,8 +17,8 @@ function streaks(seq) {
   return { best, current };
 }
 
-function badge({ id, category, color, icon, name, unlocked, descUnlocked, descLocked, progress }) {
-  return { id, category, color, icon, name, unlocked, descUnlocked, descLocked, progress: progress ?? null };
+function badge({ id, category, color, icon, name, unlocked, descUnlocked, descLocked, progress, image }) {
+  return { id, category, color, icon, name, unlocked, descUnlocked, descLocked, progress: progress ?? null, image: image || `${id}.png` };
 }
 
 const STREAK_TIERS = [
@@ -116,6 +116,7 @@ export function buildBadges(model, visits) {
         descUnlocked: `Objectif "${m.label}" tenu ${best} semaines d'affilée (record du magasin).`,
         descLocked: `Tenir l'objectif "${m.label}" pendant ${t.n} semaines consécutives.`,
         progress: `${Math.min(best, t.n)}/${t.n}`,
+        image: `badge_tier_${t.name.toLowerCase()}.png`,
       }));
     });
 
@@ -134,6 +135,7 @@ export function buildBadges(model, visits) {
         descUnlocked: `Meilleure semaine ${m.label.toLowerCase()} : ${max}% de l'objectif.`,
         descLocked: `Atteindre ${t.pct}% de l'objectif ${m.label.toLowerCase()} en une semaine.`,
         progress: `${max === null ? 0 : Math.min(max, t.pct)}%/${t.pct}%`,
+        image: `record_tier_${t.pct}.png`,
       }));
     });
 
@@ -155,48 +157,22 @@ export function buildBadges(model, visits) {
 
   // --- Notes Google --------------------------------------------------------
   const noteSeq = history.map((w) => (w.note === undefined ? null : w.note));
-  if (noteSeq.some((n) => n !== null)) {
-    const reached5 = noteSeq.some((n) => n !== null && n >= 5);
-    badges.push(badge({
-      id: "note_5",
-      category: "Notes",
-      color: "var(--c-avis)",
-      icon: "star",
-      name: "Cinq étoiles",
-      unlocked: reached5,
-      descUnlocked: "Note Google de 5,0 atteinte.",
-      descLocked: "Atteindre une note Google de 5,0.",
-    }));
-
-    const seq48 = noteSeq.map((n) => (n === null ? null : n >= 4.8));
-    const s48 = streaks(seq48);
-    [[4, "Excellence"], [12, "Excellence durable"]].forEach(([n, name]) => {
+  if (objective.note_cible && noteSeq.some((n) => n !== null)) {
+    const seqCible = noteSeq.map((n) => (n === null ? null : n >= objective.note_cible));
+    const sCible = streaks(seqCible);
+    [[4, "Étoile fidèle x4"], [8, "Étoile fidèle x8"], [12, "Étoile fidèle x12"]].forEach(([n, name]) => {
       badges.push(badge({
-        id: `note_48_${n}`,
+        id: `etoile_${n}`,
         category: "Notes",
         color: "var(--c-avis)",
         icon: "sparkle",
         name,
-        unlocked: s48.best >= n,
-        descUnlocked: `Note Google ≥ 4,8 maintenue ${s48.best} semaines d'affilée.`,
-        descLocked: `Maintenir la note Google ≥ 4,8 pendant ${n} semaines.`,
-        progress: `${Math.min(s48.best, n)}/${n}`,
+        unlocked: sCible.best >= n,
+        descUnlocked: `Note Google ≥ objectif (${objective.note_cible}) maintenue ${sCible.best} semaines d'affilée.`,
+        descLocked: `Maintenir la note Google ≥ objectif (${objective.note_cible}) pendant ${n} semaines.`,
+        progress: `${Math.min(sCible.best, n)}/${n}`,
       }));
     });
-
-    const seq5 = noteSeq.map((n) => (n === null ? null : n >= 5));
-    const s5 = streaks(seq5);
-    badges.push(badge({
-      id: "note_5_4",
-      category: "Notes",
-      color: "var(--c-avis)",
-      icon: "sparkle",
-      name: "Réputation parfaite",
-      unlocked: s5.best >= 4,
-      descUnlocked: `Note Google de 5,0 maintenue ${s5.best} semaines d'affilée.`,
-      descLocked: "Maintenir la note Google de 5,0 pendant 4 semaines.",
-      progress: `${Math.min(s5.best, 4)}/4`,
-    }));
   }
 
   // --- Exploits ponctuels, tous indicateurs confondus ---------------------
