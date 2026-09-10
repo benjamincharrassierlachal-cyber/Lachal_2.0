@@ -1,5 +1,5 @@
 import { loadData, buildStoreModel } from "./data.js";
-import { settings, setSetting } from "./state.js";
+import { settings, setSetting, recordVisit } from "./state.js";
 import { icon } from "./icons.js";
 import {
   renderOnboarding,
@@ -65,6 +65,7 @@ function showOnboarding(data, onDone) {
 
 function boot(data) {
   applyTheme();
+  recordVisit();
 
   const start = () => {
     buildShell();

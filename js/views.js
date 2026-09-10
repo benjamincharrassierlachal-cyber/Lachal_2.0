@@ -28,34 +28,29 @@ function statusChip(status) {
 // ---------------------------------------------------------------------
 export function renderOnboarding(root, data, onPick) {
   const wrap = document.createElement("div");
-  wrap.className = "onboarding";
+  wrap.className = "onboarding onboarding--centered";
+  const sorted = data.stores.slice().sort((a, b) => a.name.localeCompare(b.name));
   wrap.innerHTML = `
-    <h1>Quel magasin suivez-vous ?</h1>
-    <p class="sub">Choisissez-le une fois : cet appareil s'en souviendra.</p>
-    <div class="search-box">${icon("search", 18)}<input type="text" placeholder="Rechercher un magasin ou une ville" id="ob-search" /></div>
-    <div class="store-list" id="ob-list"></div>
+    <div class="ob-center">
+      <div class="ob-brand">Lachal 2.0</div>
+      <p class="sub">Choisissez votre magasin : cet appareil s'en souviendra.</p>
+      <select class="ob-select" id="ob-select">
+        <option value="" disabled selected>Choisir un magasin</option>
+        ${sorted.map((s) => `<option value="${s.code}">${s.name} — ${s.ville}</option>`).join("")}
+      </select>
+      <button class="ob-validate" id="ob-validate" disabled>Valider</button>
+    </div>
   `;
   root.appendChild(wrap);
 
-  const listEl = wrap.querySelector("#ob-list");
-  const renderList = (filter) => {
-    const f = (filter || "").trim().toLowerCase();
-    const rows = data.stores.filter(
-      (s) => !f || s.name.toLowerCase().includes(f) || s.ville.toLowerCase().includes(f)
-    );
-    listEl.innerHTML = rows
-      .map(
-        (s) => `<button class="store-row" data-code="${s.code}">
-          <span>${s.name}</span><span class="town">${s.ville}</span>
-        </button>`
-      )
-      .join("") || `<p class="empty-hint">Aucun magasin ne correspond.</p>`;
-    listEl.querySelectorAll(".store-row").forEach((btn) => {
-      btn.addEventListener("click", () => onPick(btn.dataset.code));
-    });
-  };
-  renderList("");
-  wrap.querySelector("#ob-search").addEventListener("input", (e) => renderList(e.target.value));
+  const select = wrap.querySelector("#ob-select");
+  const validate = wrap.querySelector("#ob-validate");
+  select.addEventListener("change", () => {
+    validate.disabled = !select.value;
+  });
+  validate.addEventListener("click", () => {
+    if (select.value) onPick(select.value);
+  });
 }
 
 // ---------------------------------------------------------------------
@@ -103,7 +98,7 @@ export function renderDashboard(root, model, settings, nav) {
       const pm = currentWeek.metrics[m.key];
       const pct = pm.pct ?? 0;
       return `<button class="card metric-card" data-nav="metric" data-key="${m.key}">
-        <div class="m-icon" style="background:color-mix(in srgb, var(${m.colorVar}) 20%, transparent); color:var(${m.colorVar})">${icon(m.icon, 22)}</div>
+        <div class="m-icon" style="background:color-mix(in srgb, var(${m.colorVar}) 30%, transparent); color:var(${m.colorVar})">${icon(m.icon, 30)}</div>
         <div class="m-body">
           <div class="m-top">
             <span class="m-label">${m.label}</span>
@@ -137,10 +132,7 @@ export function renderDashboard(root, model, settings, nav) {
         )
         .join("")}
     </div>
-    <button class="link-row" data-nav="trophies" style="width:100%;background:none;border:none;">
-      <span>${unlocked.length} trophee(s) obtenu(s) sur ${badges.length}</span>
-      ${icon("arrowRight", 16)}
-    </button>
+    <p class="trophy-count">${unlocked.length} trophee(s) obtenu(s) sur ${badges.length}</p>
   `;
   root.appendChild(trophySection);
 
