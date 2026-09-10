@@ -153,6 +153,16 @@ def exporter(dossier: Path, sortie: Path) -> int:
                                      nombre(l.get("Goodies")))
         impressions = (None if faces is None and branches is None and goodies is None
                        else (faces or 0) + (branches or 0) + (goodies or 0))
+
+        # "Demandes" issu d'un releve Lyleoo MENSUEL (historique d'avant le
+        # passage en hebdomadaire) n'est pas comparable a un objectif
+        # hebdomadaire : on l'exclut plutot que d'afficher un pourcentage
+        # trompeur (ex. un mois entier compare a l'objectif d'une semaine).
+        granularite = str(l.get("Granularite") or "")
+        demandes = nombre(l.get("Demandes Lyleoo"))
+        if demandes is not None and "mensuel" in granularite and "hebdomadaire" not in granularite:
+            demandes = None
+
         semaine = {
             "semaine": l.get("Semaine"),
             "debut": en_iso(l.get("Debut semaine")),
@@ -162,7 +172,7 @@ def exporter(dossier: Path, sortie: Path) -> int:
             "avis_cumules": nombre(l.get("Avis cumules")),
             "faces": faces, "branches": branches, "goodies": goodies,
             "impressions": impressions,
-            "demandes": nombre(l.get("Demandes Lyleoo")),
+            "demandes": demandes,
             "soumis": nombre(l.get("Dossiers soumis")),
             "valides": nombre(l.get("Dossiers valides")),
             "sources": l.get("Sources") or "",

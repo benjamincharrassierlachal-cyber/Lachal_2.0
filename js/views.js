@@ -64,13 +64,14 @@ export function renderDashboard(root, model, settings, nav) {
   const rings = metrics.map((m) => ({
     pct: currentWeek.metrics[m.key].pct,
     color: `var(${m.colorVar})`,
+    icon: m.icon,
   }));
 
   const hero = document.createElement("div");
   hero.className = "hero";
   hero.innerHTML = `
-    <div class="ring-wrap">
-      ${ringClusterSVG(230, rings, settings.shape)}
+    <div class="ring-wrap ring-wrap--hero">
+      ${ringClusterSVG(276, rings, settings.shape, { icons: true })}
       <div class="score-center">
         <div class="score-value">${currentWeek.score ?? "-"}%</div>
       </div>
@@ -180,22 +181,26 @@ export function renderMetricDetail(root, model, metricKey, settings) {
     <div class="section-title">${m.label} — dernieres semaines</div>
     ${relevant.length === 0 ? `<p class="empty-hint">Pas encore de releve pour cet indicateur.</p>` : `
     <div class="sparkline">
-      ${relevant
-        .slice(-14)
-        .map((w) => {
-          const wm = w.metrics[m.key];
-          const p = wm?.pct;
-          let h, color;
-          if (p === null || p === undefined) {
-            h = 3;
-            color = "var(--track)";
-          } else {
-            h = Math.max(6, Math.min(52, (Math.min(p, 150) / 150) * 52));
-            color = wm.status === "gold" ? "var(--gold)" : wm.status === "miss" ? "var(--danger)" : `var(${m.colorVar})`;
-          }
-          return `<div class="bar" style="height:${h}px;background:${color}" title="${weekLabel(w.semaine)}"></div>`;
-        })
-        .join("")}
+      ${(() => {
+        const slice = relevant.slice(-14);
+        const validPcts = slice.map((w) => w.metrics[m.key]?.pct).filter((p) => p !== null && p !== undefined);
+        const maxP = Math.max(100, ...validPcts, 1);
+        return slice
+          .map((w) => {
+            const wm = w.metrics[m.key];
+            const p = wm?.pct;
+            let h, color;
+            if (p === null || p === undefined) {
+              h = 3;
+              color = "var(--track)";
+            } else {
+              h = Math.max(4, (p / maxP) * 52);
+              color = wm.status === "gold" ? "var(--gold)" : wm.status === "miss" ? "var(--danger)" : `var(${m.colorVar})`;
+            }
+            return `<div class="bar" style="height:${h}px;background:${color}" title="${weekLabel(w.semaine)}"></div>`;
+          })
+          .join("");
+      })()}
     </div>
 
     <table class="history">

@@ -28,14 +28,22 @@ const PATHS = {
   chest: "M4 8h16v11H4z|M4 8l2-4h12l2 4|M10 13h4",
 };
 
-export function icon(name, size = 20, extraClass = "") {
+// Marquage interne (path/circle) d'une icone, sans le <svg> englobant :
+// permet de l'inserer dans un autre SVG (ex. sur les anneaux).
+export function iconInner(name) {
   const spec = PATHS[name] || PATHS.star;
-  const parts = spec.split("|").map((seg) => {
-    if (seg.startsWith("circle:")) {
-      const [cx, cy, r] = seg.slice(7).split(",");
-      return `<circle cx="${cx}" cy="${cy}" r="${r}" />`;
-    }
-    return `<path d="${seg}" />`;
-  });
-  return `<svg class="icon ${extraClass}" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${parts.join("")}</svg>`;
+  return spec
+    .split("|")
+    .map((seg) => {
+      if (seg.startsWith("circle:")) {
+        const [cx, cy, r] = seg.slice(7).split(",");
+        return `<circle cx="${cx}" cy="${cy}" r="${r}" />`;
+      }
+      return `<path d="${seg}" />`;
+    })
+    .join("");
+}
+
+export function icon(name, size = 20, extraClass = "") {
+  return `<svg class="icon ${extraClass}" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${iconInner(name)}</svg>`;
 }
