@@ -271,8 +271,8 @@ export function renderAdmin(root, adminModel, settings, rows, cb) {
             .map((key) => {
               const m = METRIC_BY_KEY[key];
               const pm = r.model.currentWeek?.metrics[key];
-              if (!pm) return `<span class="admin-metric admin-metric--off">${icon(m.icon, 13)}<span>—</span></span>`;
-              return `<span class="admin-metric" style="color:var(${m.colorVar})">${icon(m.icon, 13)}<span>${fmtNum(pm.value)}/${fmtNum(pm.objective)}</span></span>`;
+              if (!pm) return `<span class="admin-metric admin-metric--off">${icon(m.icon, 16)}<span>—</span></span>`;
+              return `<span class="admin-metric" style="color:var(${m.colorVar})">${icon(m.icon, 16)}<span>${fmtNum(pm.value)}/${fmtNum(pm.objective)}</span></span>`;
             })
             .join("");
           return `<button class="admin-row" data-store="${r.store.code}">
@@ -280,8 +280,8 @@ export function renderAdmin(root, adminModel, settings, rows, cb) {
               <span class="admin-row-name">${r.store.name}</span>
               <span class="admin-row-score" style="color:${scoreColor}">${score ?? "-"}%</span>
             </div>
-            <div class="admin-row-bottom">
-              <div class="admin-metrics">${nums}</div>
+            <div class="admin-metrics">${nums}</div>
+            <div class="admin-row-foot">
               <span class="admin-trophies">${icon("trophy", 13)} ${r.trophies.unlocked}/${r.trophies.total}</span>
             </div>
           </button>`;

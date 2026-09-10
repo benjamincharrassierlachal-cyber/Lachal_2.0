@@ -18,6 +18,24 @@ function isAdmin() {
   return settings.storeCode === ADMIN_CODE;
 }
 
+// Le mot de passe admin n'est redemande qu'une fois par session d'onglet :
+// une fois entre, on peut aller/venir entre l'espace admin et un magasin
+// sans le retaper (bouton "Admin" dans l'entete).
+function isAdminUnlocked() {
+  try {
+    return sessionStorage.getItem("adminUnlocked") === "1";
+  } catch {
+    return false;
+  }
+}
+function unlockAdmin() {
+  try {
+    sessionStorage.setItem("adminUnlocked", "1");
+  } catch {
+    /* navigation privee : tant pis, on redemandera le mot de passe */
+  }
+}
+
 let adminSort = "score"; // score | name | trophies
 
 function applyTheme() {
@@ -42,14 +60,18 @@ function weekTitle(semaine) {
   return `Semaine ${parseInt(num, 10)}`;
 }
 
-function buildShell() {
+function buildShell(data) {
+  const backToAdmin = !isAdmin() && isAdminUnlocked();
   app.innerHTML = `
     <header class="app-header">
       <div>
         <div class="store-name" id="hdr-store"></div>
         <div class="week-label" id="hdr-week"></div>
       </div>
-      <button class="icon-btn" id="hdr-settings">${icon("gear", 20)}</button>
+      <div class="header-actions">
+        ${backToAdmin ? `<button class="admin-back-btn" id="hdr-admin-back">${icon("chevronLeft", 16)}Admin</button>` : ""}
+        <button class="icon-btn" id="hdr-settings">${icon("gear", 20)}</button>
+      </div>
     </header>
     <main id="view"></main>
     <nav class="bottom-nav">
@@ -61,12 +83,23 @@ function buildShell() {
     b.addEventListener("click", () => nav(b.dataset.nav))
   );
   document.getElementById("hdr-settings").addEventListener("click", () => nav("settings"));
+  if (backToAdmin) {
+    document.getElementById("hdr-admin-back").addEventListener("click", () => {
+      setSetting("storeCode", ADMIN_CODE);
+      checkRewards(data);
+    });
+  }
 }
 
 function showOnboarding(data, onDone) {
   app.innerHTML = "";
   renderOnboarding(app, data, (code) => {
+    if (code === ADMIN_CODE) unlockAdmin();
     setSetting("storeCode", code);
+    // Le hash peut pointer sur "settings"/"trophies" si on arrive ici
+    // depuis les Reglages : on repart toujours sur l'accueil du nouveau
+    // magasin/espace, pas sur la page qu'on regardait avant de changer.
+    if (location.hash) location.hash = "";
     onDone();
   });
 }
@@ -88,7 +121,7 @@ function boot(data) {
 let hashListenerAttached = false;
 
 function enterDashboard(data) {
-  buildShell();
+  buildShell(data);
   render(data);
   if (!hashListenerAttached) {
     hashListenerAttached = true;
