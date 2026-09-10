@@ -47,15 +47,19 @@ GitHub dans le navigateur (Git Credential Manager s'en souvient ensuite).
 
 ## Developper / tester en local
 
+Le plus simple : double-cliquez sur `Tester_en_local.bat`, qui lance le
+serveur et ouvre le navigateur automatiquement.
+
 Un simple double-clic sur `index.html` ne fonctionne pas (le navigateur
-bloque la lecture de `data.json` en local par securite). Lancez un petit
-serveur depuis ce dossier :
+bloque la lecture de `data.json` en local par securite). A la main, depuis
+ce dossier :
 
 ```
-py -3 -m http.server 8080
+py -3 -m http.server 8934
 ```
 
-puis ouvrez `http://localhost:8080`.
+puis ouvrez `http://localhost:8934`. Evitez le port 8080 : c'est celui que
+Pentaho occupe deja sur ce poste.
 
 ## Si le dossier "Suivi Groupe" est deplace
 
