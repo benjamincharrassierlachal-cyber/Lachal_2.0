@@ -212,8 +212,10 @@ function render(data) {
         sort: adminSort,
         setSort: (s) => { adminSort = s; render(data); },
         selectStore: (code) => {
+          // Depuis l'admin, on consulte un magasin sans "jouer" a sa place :
+          // pas d'ecran de recompense, on va droit a sa fiche.
           setSetting("storeCode", code);
-          checkRewards(data);
+          enterDashboard(data);
         },
       });
     }
