@@ -91,7 +91,7 @@ const COLLECTION_TIERS = [
 ];
 
 export function buildBadges(model, visits) {
-  const { history, metrics, objective } = model;
+  const { trophyHistory: history, metrics, objective } = model;
   const badges = [];
 
   const pctSeq = (key) => history.map((w) => w.metrics[key]?.pct ?? null);
@@ -427,7 +427,7 @@ export function buildBadges(model, visits) {
 export function bestCurrentStreaks(model) {
   const out = {};
   model.metrics.forEach((m) => {
-    const seq = model.history.map((w) => {
+    const seq = model.trophyHistory.map((w) => {
       const pm = w.metrics[m.key];
       if (!pm || pm.status === "none") return null;
       return pm.status === "met" || pm.status === "gold";

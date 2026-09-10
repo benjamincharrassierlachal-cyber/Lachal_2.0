@@ -74,15 +74,8 @@ export function statusFor(pct) {
   return "miss";
 }
 
-// Renvoie l'historique enrichi : une entree par semaine, avec par metrique
-// active {value, objective, pct, status}.
-export function buildStoreModel(data, code) {
-  const store = data.stores.find((s) => s.code === code);
-  const objective = data.objectives[code] || {};
-  const rawWeeks = data.weeks[code] || [];
-  const metrics = activeMetrics(objective);
-
-  const history = rawWeeks.map((w) => {
+function computeHistory(weeks, metrics, objective) {
+  return weeks.map((w) => {
     const perMetric = {};
     let scoreSum = 0;
     let scoreCount = 0;
@@ -99,12 +92,34 @@ export function buildStoreModel(data, code) {
     const score = scoreCount ? Math.round(scoreSum / scoreCount) : null;
     return { ...w, metrics: perMetric, score };
   });
+}
+
+// Renvoie l'historique enrichi : une entree par semaine, avec par metrique
+// active {value, objective, pct, status}.
+//
+// `history` sert a l'affichage (chiffres reels, jamais tronques) ;
+// `trophyHistory` est la version utilisee par les trophees, tronquee a la
+// date de depart choisie en admin (data.trophy_start_date) s'il y en a
+// une : tout ce qui precede ne compte pour aucun trophee, mais reste
+// visible normalement dans les chiffres et l'historique affiches.
+export function buildStoreModel(data, code) {
+  const store = data.stores.find((s) => s.code === code);
+  const objective = data.objectives[code] || {};
+  const rawWeeks = data.weeks[code] || [];
+  const metrics = activeMetrics(objective);
+
+  const history = computeHistory(rawWeeks, metrics, objective);
+  const cutoff = data.trophy_start_date;
+  const trophyHistory = cutoff
+    ? computeHistory(rawWeeks.filter((w) => w.debut && w.debut >= cutoff), metrics, objective)
+    : history;
 
   return {
     store,
     objective,
     metrics,
     history,
+    trophyHistory,
     currentWeek: history.length ? history[history.length - 1] : null,
   };
 }

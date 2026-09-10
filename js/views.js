@@ -220,7 +220,7 @@ export function renderDashboard(root, model, settings, nav) {
 
 // ---------------------------------------------------------------------
 // Vue d'ensemble admin : cumul du groupe + liste de tous les magasins.
-export function renderAdmin(root, adminModel, settings, rows) {
+export function renderAdmin(root, adminModel, settings, rows, cb) {
   const { metricsAgg, score, weekLabel } = adminModel;
 
   if (!metricsAgg.length) {
@@ -254,7 +254,14 @@ export function renderAdmin(root, adminModel, settings, rows) {
 
   const section = document.createElement("div");
   section.innerHTML = `
-    <div class="section-title">Magasins${weekLabel ? " — " + weekLabel.replace("-S", " semaine ") : ""}</div>
+    <div class="admin-list-head">
+      <div class="section-title" style="margin:0;">Magasins${weekLabel ? " — " + weekLabel.replace("-S", " semaine ") : ""}</div>
+      <div class="admin-sort">
+        ${[["score", "Score"], ["name", "Nom"], ["trophies", "Trophées"]]
+          .map(([key, label]) => `<button class="admin-sort-btn ${cb.sort === key ? "active" : ""}" data-sort="${key}">${label}</button>`)
+          .join("")}
+      </div>
+    </div>
     <div class="admin-list">
       ${rows
         .map((r) => {
@@ -269,7 +276,7 @@ export function renderAdmin(root, adminModel, settings, rows) {
               return `<span class="admin-box" style="background:${bg}">${txt}</span>`;
             })
             .join("");
-          return `<div class="admin-row">
+          return `<button class="admin-row" data-store="${r.store.code}">
             <div class="admin-row-top">
               <span class="admin-row-name">${r.store.name}</span>
               <span class="admin-row-score">${r.model.currentWeek?.score ?? "-"}%</span>
@@ -278,12 +285,19 @@ export function renderAdmin(root, adminModel, settings, rows) {
               <div class="admin-boxes">${boxes}</div>
               <span class="admin-trophies">${icon("trophy", 13)} ${r.trophies.unlocked}/${r.trophies.total}</span>
             </div>
-          </div>`;
+          </button>`;
         })
         .join("")}
     </div>
   `;
   root.appendChild(section);
+
+  section.querySelectorAll("[data-sort]").forEach((b) =>
+    b.addEventListener("click", () => cb.setSort(b.dataset.sort))
+  );
+  section.querySelectorAll("[data-store]").forEach((b) =>
+    b.addEventListener("click", () => cb.selectStore(b.dataset.store))
+  );
 }
 
 const METRIC_BY_KEY = { avis: { colorVar: "--c-avis" }, examens: { colorVar: "--c-examens" }, impressions: { colorVar: "--c-impr" } };
@@ -451,7 +465,18 @@ export function renderSettings(root, data, settings, cb) {
         <div style="color:var(--text-dim);font-size:12.5px;margin-top:2px;">Changer de magasin</div>
       </button>
     </div>
-    <button class="danger-btn" data-reset>Reinitialiser les trophees de ce magasin</button>
+    <button class="danger-btn" data-reset>Reinitialiser l'affichage des recompenses</button>
+    <p class="about-text-sm">Remet a zero, sur cet appareil, les trophees deja "recuperes" a l'ecran pour ce magasin (ils reapparaitront a recuperer s'ils sont toujours merites).</p>
+    ${data.isAdmin ? `
+    <div class="setting-block">
+      <div class="label">Date de depart des trophees (tous magasins)</div>
+      <div class="card admin-cutoff-card">
+        ${data.trophy_start_date
+          ? `<strong>${data.trophy_start_date.split("-").reverse().join("/")}</strong><div class="about-text-sm">Tout ce qui precede cette date ne compte pour aucun trophee.</div>`
+          : `<strong>Aucune coupure</strong><div class="about-text-sm">Tout l'historique compte pour les trophees.</div>`}
+        <p class="about-text-sm" style="margin-top:10px;">Se change avec <code>Reinitialiser_trophees.bat</code> a la racine du projet (pas depuis cette page : l'appli est un site statique, sans acces en ecriture au serveur).</p>
+      </div>
+    </div>` : ""}
     <p class="about-text">Les donnees viennent de la compilation hebdomadaire du groupe (avis Google, Lyleoo, OOMADE) et sont republiees chaque semaine. Reglages sauvegardes sur cet appareil uniquement.</p>
   `;
   root.appendChild(wrap);

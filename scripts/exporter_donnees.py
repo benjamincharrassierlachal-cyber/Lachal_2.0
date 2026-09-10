@@ -21,6 +21,7 @@ from pathlib import Path
 
 RACINE = Path(__file__).resolve().parent.parent           # racine de l'app
 CHEMINS = RACINE / "scripts" / "chemins.json"              # override facultatif
+DEPUIS = RACINE / "scripts" / "trophees_depuis.txt"        # date de depart des trophees
 SORTIE = RACINE / "data" / "data.json"
 
 
@@ -76,6 +77,28 @@ def nombre(v):
         return None
     if isinstance(v, (int, float)):
         return v
+    return None
+
+
+def date_depart_trophees() -> str | None:
+    """Date (AAAA-MM-JJ) a partir de laquelle compter les trophees.
+
+    Lue dans scripts/trophees_depuis.txt (une ligne, format libre courant :
+    AAAA-MM-JJ ou JJ/MM/AAAA). Fichier absent ou vide -> pas de coupure,
+    tout l'historique compte. Voir Reinitialiser_trophees.bat pour la
+    modifier proprement (et republier).
+    """
+    if not DEPUIS.exists():
+        return None
+    ligne = DEPUIS.read_text(encoding="utf-8").strip()
+    if not ligne:
+        return None
+    for fmt in ("%Y-%m-%d", "%d/%m/%Y"):
+        try:
+            return dt.datetime.strptime(ligne, fmt).date().isoformat()
+        except ValueError:
+            continue
+    log(f"ATTENTION : date illisible dans {DEPUIS.name} ({ligne!r}), ignoree.")
     return None
 
 
@@ -184,6 +207,7 @@ def exporter(dossier: Path, sortie: Path) -> int:
 
     data = {
         "generated_at": dt.datetime.now().isoformat(timespec="seconds"),
+        "trophy_start_date": date_depart_trophees(),
         "stores": sorted(stores, key=lambda s: s["name"]),
         "objectives": objectives,
         "weeks": weeks,
@@ -213,6 +237,9 @@ def main(argv=None) -> int:
         log("Base suivi magasins.xlsx est ouvert dans Excel, impossible de le lire. Fermez-le et relancez.")
         return 1
     log(f"{n} lignes exportees -> {args.sortie}")
+    depuis = date_depart_trophees()
+    if depuis:
+        log(f"Trophees comptabilises a partir du {depuis}")
     return 0
 
 

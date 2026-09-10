@@ -18,6 +18,8 @@ function isAdmin() {
   return settings.storeCode === ADMIN_CODE;
 }
 
+let adminSort = "score"; // score | name | trophies
+
 function applyTheme() {
   document.documentElement.setAttribute("data-theme", settings.theme);
 }
@@ -83,10 +85,15 @@ function boot(data) {
   }
 }
 
+let hashListenerAttached = false;
+
 function enterDashboard(data) {
   buildShell();
   render(data);
-  window.addEventListener("hashchange", () => render(data));
+  if (!hashListenerAttached) {
+    hashListenerAttached = true;
+    window.addEventListener("hashchange", () => render(data));
+  }
 }
 
 // Trophees debloques mais jamais "recuperes" a l'ecran : on les propose
@@ -151,7 +158,7 @@ function render(data) {
     document.getElementById("hdr-week").textContent = weekTitle(adminModel.weekLabel);
 
     if (route.name === "settings") {
-      renderSettings(view, { ...data, currentStoreName: "Espace admin" }, settings, {
+      renderSettings(view, { ...data, currentStoreName: "Espace admin", isAdmin: true }, settings, {
         setShape: (s) => { setSetting("shape", s); render(data); },
         setTheme: (t) => { setSetting("theme", t); applyTheme(); render(data); },
         changeStore: () => showOnboarding(data, () => checkRewards(data)),
@@ -159,13 +166,24 @@ function render(data) {
         resetBadges: () => { resetClaimed(settings.storeCode); render(data); },
       });
     } else {
-      const rows = adminModel.perStore
-        .map((model) => {
-          const badges = buildBadges(model, settings.visits);
-          return { store: model.store, model, trophies: { unlocked: badges.filter((b) => b.unlocked).length, total: badges.length } };
-        })
-        .sort((a, b) => (b.model.currentWeek?.score ?? -1) - (a.model.currentWeek?.score ?? -1));
-      renderAdmin(view, adminModel, settings, rows);
+      const rows = adminModel.perStore.map((model) => {
+        const badges = buildBadges(model, settings.visits);
+        return { store: model.store, model, trophies: { unlocked: badges.filter((b) => b.unlocked).length, total: badges.length } };
+      });
+      const sorters = {
+        score: (a, b) => (b.model.currentWeek?.score ?? -1) - (a.model.currentWeek?.score ?? -1),
+        name: (a, b) => a.store.name.localeCompare(b.store.name),
+        trophies: (a, b) => b.trophies.unlocked - a.trophies.unlocked,
+      };
+      rows.sort(sorters[adminSort] || sorters.score);
+      renderAdmin(view, adminModel, settings, rows, {
+        sort: adminSort,
+        setSort: (s) => { adminSort = s; render(data); },
+        selectStore: (code) => {
+          setSetting("storeCode", code);
+          checkRewards(data);
+        },
+      });
     }
     return;
   }
