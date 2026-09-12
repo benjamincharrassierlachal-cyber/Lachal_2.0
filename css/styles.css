@@ -382,6 +382,14 @@ main#view {
 .streak-card .n { font-size: 22px; font-weight: 800; }
 .streak-card .l { font-size: 10.5px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 2px; }
 
+.avis-list { display: flex; flex-direction: column; gap: 10px; }
+.avis-item { display: flex; flex-direction: column; gap: 6px; }
+.avis-item-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.avis-item-auteur { font-weight: 700; font-size: 13.5px; color: var(--text); }
+.avis-item-note { color: var(--gold); font-size: 13px; letter-spacing: 1px; white-space: nowrap; }
+.avis-item-texte { font-size: 13.5px; line-height: 1.5; color: var(--text-dim); margin: 0; white-space: pre-line; }
+.avis-item-date { font-size: 11px; color: var(--text-dim); opacity: 0.7; align-self: flex-end; }
+
 .sparkline { display: flex; gap: 4px; align-items: flex-end; height: 56px; margin: 18px 0 4px; border-bottom: 1px solid var(--surface-3); padding-bottom: 2px; }
 .sparkline .bar { flex: 1; border-radius: 3px 3px 1px 1px; min-height: 3px; }
 

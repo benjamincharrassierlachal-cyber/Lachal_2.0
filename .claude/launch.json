@@ -4,7 +4,7 @@
     {
       "name": "suivi-trophees-magasins",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8934", "--directory", "C:\\Users\\Benjamin\\Desktop\\suivi-trophees-magasins"],
+      "runtimeArgs": ["-m", "http.server", "8934", "--directory", "C:\\Users\\Benjamin\\Desktop\\APP SANTE 2.0\\suivi-trophees-magasins"],
       "port": 8934
     }
   ]

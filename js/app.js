@@ -18,22 +18,32 @@ function isAdmin() {
   return settings.storeCode === ADMIN_CODE;
 }
 
-// Le mot de passe admin n'est redemande qu'une fois par session d'onglet :
-// une fois entre, on peut aller/venir entre l'espace admin et un magasin
-// sans le retaper (bouton "Admin" dans l'entete).
+// Le mot de passe admin n'est redemande que si l'appareil est reste inactif
+// plus de 5 minutes (pas de nav/clic) : contrairement a une session d'onglet
+// classique, ca survit a un onglet mis en veille/tue par le telephone en
+// arriere-plan (cause du bouton "Admin" qui disparaissait "au hasard").
+const ADMIN_TIMEOUT_MS = 5 * 60 * 1000;
+
 function isAdminUnlocked() {
   try {
-    return sessionStorage.getItem("adminUnlocked") === "1";
+    const depuis = Number(localStorage.getItem("adminUnlockedAt") || 0);
+    return depuis > 0 && Date.now() - depuis < ADMIN_TIMEOUT_MS;
   } catch {
     return false;
   }
 }
 function unlockAdmin() {
   try {
-    sessionStorage.setItem("adminUnlocked", "1");
+    localStorage.setItem("adminUnlockedAt", String(Date.now()));
   } catch {
     /* navigation privee : tant pis, on redemandera le mot de passe */
   }
+}
+// A appeler sur chaque activite (navigation, clic) pendant qu'on est admin :
+// prolonge la fenetre de 5 minutes tant que l'usage continue, sans jamais
+// resusciter une session deja expiree.
+function touchAdmin() {
+  if (isAdminUnlocked()) unlockAdmin();
 }
 
 let adminSort = "score"; // score | name | trophies
@@ -176,6 +186,7 @@ function showRewardsScreen(data, freshBadges) {
 }
 
 function render(data) {
+  touchAdmin();
   const route = parseRoute();
   const view = document.getElementById("view");
   view.innerHTML = "";

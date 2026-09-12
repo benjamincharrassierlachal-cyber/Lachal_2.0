@@ -66,6 +66,73 @@ def trouver_suivi_groupe() -> Path | None:
     return None
 
 
+def trouver_partoo() -> Path | None:
+    """Retrouve le dossier 'Partoo' (derniers_avis.json), meme logique."""
+    candidats = [
+        RACINE.parent / "APP SANTE 2.0" / "Partoo",
+        Path.home() / "Desktop" / "APP SANTE 2.0" / "Partoo",
+        Path.home() / "Bureau" / "APP SANTE 2.0" / "Partoo",
+    ]
+    for base in (RACINE, RACINE.parent, RACINE.parent.parent,
+                 Path.home() / "Desktop", Path.home() / "Bureau"):
+        try:
+            if not base.is_dir():
+                continue
+            for enfant in base.iterdir():
+                if enfant.is_dir() and enfant.name.lower() == "partoo":
+                    candidats.append(enfant)
+        except OSError:
+            continue
+    for c in candidats:
+        if (c / "derniers_avis.json").exists():
+            return c
+    return None
+
+
+def trouver_avis() -> Path | None:
+    """Retrouve le dossier 'AVIS' (derniers_avis.json des 5 magasins hors Partoo)."""
+    candidats = [
+        RACINE.parent / "APP SANTE 2.0" / "AVIS",
+        Path.home() / "Desktop" / "APP SANTE 2.0" / "AVIS",
+        Path.home() / "Bureau" / "APP SANTE 2.0" / "AVIS",
+    ]
+    for base in (RACINE, RACINE.parent, RACINE.parent.parent,
+                 Path.home() / "Desktop", Path.home() / "Bureau"):
+        try:
+            if not base.is_dir():
+                continue
+            for enfant in base.iterdir():
+                if enfant.is_dir() and enfant.name.upper() == "AVIS":
+                    candidats.append(enfant)
+        except OSError:
+            continue
+    for c in candidats:
+        if (c / "derniers_avis.json").exists():
+            return c
+    return None
+
+
+def _lire_avis_json(dossier: Path | None) -> dict:
+    if not dossier:
+        return {}
+    try:
+        donnees = json.loads((dossier / "derniers_avis.json").read_text(encoding="utf-8"))
+        return donnees.get("avis", {})
+    except Exception as e:
+        log(f"ATTENTION : {dossier / 'derniers_avis.json'} illisible ({e}), ignore.")
+        return {}
+
+
+def derniers_avis_par_magasin() -> dict:
+    """{nom de magasin: [avis...]}.
+
+    Partoo (32 magasins) est la source principale ; AVIS (relevé Google Maps,
+    5 magasins hors Partoo : Optic 2000, Generale d'Optique) comble le reste.
+    Les deux sources ne se recouvrent pas en pratique.
+    """
+    return {**_lire_avis_json(trouver_avis()), **_lire_avis_json(trouver_partoo())}
+
+
 def en_iso(v):
     if isinstance(v, (dt.datetime, dt.date)):
         return v.isoformat()[:10] if isinstance(v, dt.datetime) else v.isoformat()
@@ -124,6 +191,10 @@ def exporter(dossier: Path, sortie: Path) -> int:
             "enseigne": str(col.get("Enseigne") or "").strip(),
             "ville": str(col.get("Ville") or "").strip(),
         })
+
+    avis_map = derniers_avis_par_magasin()
+    for s in stores:
+        s["derniers_avis"] = avis_map.get(s["name"], [])
 
     # --- Objectifs ---
     ws_obj = wb["Objectifs"] if "Objectifs" in wb.sheetnames else None
@@ -237,6 +308,9 @@ def main(argv=None) -> int:
         log("Base suivi magasins.xlsx est ouvert dans Excel, impossible de le lire. Fermez-le et relancez.")
         return 1
     log(f"{n} lignes exportees -> {args.sortie}")
+    n_avis = sum(1 for v in derniers_avis_par_magasin().values() if v)
+    log(f"Avis clients (texte) disponibles pour {n_avis} magasin(s)"
+        + ("" if n_avis else " (dossier Partoo introuvable ou pas encore collecte)"))
     depuis = date_depart_trophees()
     if depuis:
         log(f"Trophees comptabilises a partir du {depuis}")

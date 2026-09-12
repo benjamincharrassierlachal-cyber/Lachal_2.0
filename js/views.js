@@ -21,6 +21,12 @@ function fmtNum(v) {
   return v === null || v === undefined ? "-" : v;
 }
 
+function esc(s) {
+  return String(s ?? "").replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+  }[c]));
+}
+
 function statusChip(status) {
   if (status === "gold") return `<span class="chip gold">OR</span>`;
   if (status === "met") return `<span class="chip met">${icon("check", 12)}</span>`;
@@ -342,6 +348,21 @@ export function renderMetricDetail(root, model, metricKey, settings) {
     <div class="card detail-extra">
       <span>Note Google actuelle</span>
       <span class="mono" style="color:var(${m.colorVar})">${cur.note.toFixed(1)} ★</span>
+    </div>` : ""}
+
+    ${m.key === "avis" && (model.store?.derniers_avis || []).length ? `
+    <div class="section-title">Ce que disent les clients</div>
+    <div class="avis-list">
+      ${model.store.derniers_avis.map((a) => `
+        <div class="card avis-item">
+          <div class="avis-item-head">
+            <span class="avis-item-auteur">${esc(a.auteur)}</span>
+            <span class="avis-item-note">${"★".repeat(Math.max(0, Math.min(5, Math.round(a.note || 0))))}</span>
+          </div>
+          <p class="avis-item-texte">${esc(a.texte)}</p>
+          ${a.date ? `<span class="avis-item-date">${fmtDate(a.date)}</span>` : ""}
+        </div>
+      `).join("")}
     </div>` : ""}
 
     ${m.key === "impressions" && (cur.faces !== null || cur.branches !== null || cur.goodies !== null) ? `

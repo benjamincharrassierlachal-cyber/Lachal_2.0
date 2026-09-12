@@ -14,16 +14,24 @@ l'ecran d'accueil).
 
 ```
 Suivi Groupe (compiler_base.py, deja existant)
-        -> Base suivi magasins.xlsx
-                -> scripts/exporter_donnees.py
-                        -> data/data.json   (le seul fichier que lit l'appli)
-                                -> GitHub Pages
+        -> Base suivi magasins.xlsx  --\
+                                         >-- scripts/exporter_donnees.py
+Partoo (avis Google avec texte)  ------/          -> data/data.json   (le seul fichier que lit l'appli)
+                                                            -> GitHub Pages
 ```
 
 `data/data.json` est un instantane en lecture seule : il ne contient rien de
-plus que ce que `Base suivi magasins.xlsx` et `objectifs_magasins.csv`
-contiennent deja. L'appli ne fait que le mettre en forme dans le navigateur
-(anneaux, badges, historiques) : aucun calcul metier n'est refait ailleurs.
+plus que ce que `Base suivi magasins.xlsx`, `objectifs_magasins.csv` et
+`Partoo/derniers_avis.json` contiennent deja. L'appli ne fait que le mettre
+en forme dans le navigateur (anneaux, badges, historiques) : aucun calcul
+metier n'est refait ailleurs.
+
+Le texte des avis clients (page detail "Avis Google") vient a part de la
+note/nombre d'avis : il est recupere via l'API Partoo pour les 32 magasins
+qui y sont geres (dossier `Partoo`, a cote de `Suivi Groupe`). Les 5 autres
+magasins (Optic 2000, Generale d'Optique) n'ont pour l'instant que la note
+et le nombre d'avis (source Google Maps classique, dossier `AVIS`), sans
+texte.
 
 ## Mettre a jour les donnees publiees
 
