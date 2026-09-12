@@ -338,6 +338,19 @@ export function renderMetricDetail(root, model, metricKey, settings) {
       </div>
     </div>
 
+    ${m.key === "avis" && cur.note !== null && cur.note !== undefined ? `
+    <div class="card detail-extra">
+      <span>Note Google actuelle</span>
+      <span class="mono" style="color:var(${m.colorVar})">${cur.note.toFixed(1)} ★</span>
+    </div>` : ""}
+
+    ${m.key === "impressions" && (cur.faces !== null || cur.branches !== null || cur.goodies !== null) ? `
+    <div class="card detail-extra detail-extra--split">
+      <div><span class="mono">${fmtNum(cur.faces)}</span><span>Faces</span></div>
+      <div><span class="mono">${fmtNum(cur.branches)}</span><span>Branches</span></div>
+      <div><span class="mono">${fmtNum(cur.goodies)}</span><span>Goodies</span></div>
+    </div>` : ""}
+
     <div class="streak-row">
       <div class="card streak-card"><div class="n" style="color:var(${m.colorVar})">${streaksInfo.current}</div><div class="l">Serie en cours</div></div>
       <div class="card streak-card"><div class="n">${streaksInfo.best}</div><div class="l">Meilleure serie</div></div>

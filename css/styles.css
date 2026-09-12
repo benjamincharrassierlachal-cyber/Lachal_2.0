@@ -365,6 +365,17 @@ main#view {
 .detail-hero .big-sub { color: var(--text-dim); font-size: 13px; margin-top: 2px; }
 .detail-hero .ring-wrap { width: 108px; height: 108px; flex-shrink: 0; }
 .detail-hero .ring-wrap .score-value { font-size: 20px; }
+.detail-extra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: var(--text-dim);
+  margin-top: 4px;
+}
+.detail-extra--split { justify-content: space-around; text-align: center; }
+.detail-extra--split div { display: flex; flex-direction: column; gap: 3px; }
+.detail-extra--split .mono { font-size: 18px; font-weight: 800; color: var(--text); }
 .streak-row { display: flex; gap: 10px; margin-top: 18px; }
 .streak-card { flex: 1; text-align: center; padding: 12px; }
 .streak-card .n { font-size: 22px; font-weight: 800; }
