@@ -310,6 +310,7 @@ main#view {
 .metric-card .m-top { display: flex; justify-content: space-between; align-items: baseline; }
 .metric-card .m-label { font-size: 13px; color: var(--text-dim); }
 .metric-card .m-nums { font-size: 15px; font-weight: 700; font-family: "Space Mono", monospace; }
+.m-nums-objectif { color: #b7bfd2; font-weight: 600; }
 .metric-card .m-pct { font-size: 13px; font-weight: 700; }
 .bar-track {
   height: 8px;

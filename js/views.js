@@ -182,7 +182,7 @@ export function renderDashboard(root, model, settings, nav) {
             <span class="m-label">${m.label}</span>
             <span class="m-pct" style="color:var(${m.colorVar})">${pm.pct === null ? "-" : pm.pct + "%"}</span>
           </div>
-          <div class="m-nums">${fmtNum(pm.value)} <span style="color:var(--text-dim);font-weight:500;">/ objectif ${fmtNum(pm.objective)}</span></div>
+          <div class="m-nums">${fmtNum(pm.value)} <span class="m-nums-objectif">/ objectif ${fmtNum(pm.objective)}</span></div>
           <div class="bar-track"><div class="bar-fill" style="width:${Math.min(100, pct)}%; background:var(${m.colorVar})"></div></div>
           ${m.key === "avis" && hasNote
             ? `<div class="m-note"><span>Note Google actuelle</span><span class="mono" style="color:var(${m.colorVar})">${currentWeek.note.toFixed(1)} ★</span></div>`
