@@ -1,9 +1,11 @@
 # Suivi & Trophees
 
 Appli web (statique, hebergee sur GitHub Pages) qui transforme le suivi
-hebdomadaire du groupe (avis Google, examens de vue Lyleoo, impressions 3D)
+quotidien du groupe (avis Google, examens de vue Lyleoo, impressions 3D)
 en tableau de bord ludique : anneaux de progression, score de la semaine,
-et une collection de trophees a debloquer.
+et une collection de trophees a debloquer. Les objectifs restent
+hebdomadaires (on repart a zero chaque semaine) ; seule la frequence des
+releves a change, pour voir l'avancee se mettre a jour plus souvent.
 
 Fonctionne sur PC, tablette et smartphone (simple page web, ajoutable a
 l'ecran d'accueil).
@@ -30,10 +32,12 @@ tourner : il recompile la base source lui-meme s'il la retrouve a cote).
 Il exporte `data/data.json` et le pousse sur GitHub — la page publique se
 met a jour automatiquement en quelques dizaines de secondes.
 
-Pour automatiser completement (comme la tache "Compilation base magasins"
-du lundi matin), planifiez `Publier_app.ps1` une quinzaine de minutes apres
-cette tache-la. Le tout premier `git push` demandera une authentification
-GitHub dans le navigateur (Git Credential Manager s'en souvient ensuite).
+Pour automatiser completement, double-cliquez
+**`Installer_publication_quotidienne.bat`** : il installe une tache Windows
+qui publie chaque jour a 9h00, quinze minutes apres la tache "Compilation
+base magasins" (8h45). Le tout premier `git push` demandera une
+authentification GitHub dans le navigateur (Git Credential Manager s'en
+souvient ensuite).
 
 ## Personnaliser
 
