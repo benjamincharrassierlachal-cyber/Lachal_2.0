@@ -1,228 +1,1357 @@
 {
- "generated_at": "2026-09-12T09:23:23",
+ "generated_at": "2026-09-12T14:56:17",
  "trophy_start_date": null,
  "stores": [
   {
    "code": "15",
    "name": "BELVES",
    "enseigne": "ATOL",
-   "ville": "SIORAC-EN-PERIGORD"
+   "ville": "SIORAC-EN-PERIGORD",
+   "derniers_avis": [
+    {
+     "auteur": "Kathy Verboom",
+     "note": 5,
+     "texte": "Moi et ma famille (6 pers) très contente de service de Caroline elle est très accueillant et efficace\n\n(Translated by Google)\nMy family and I (6 people) were very happy with Caroline's service; she is very welcoming and efficient.",
+     "date": "2026-09-08"
+    },
+    {
+     "auteur": "Evelyne Rongieres",
+     "note": 5,
+     "texte": "Acceuil très agréable. Professionalisme.\nDélais respectés. Satisfaite à tous points de vue.\n\n(Translated by Google)\nVery pleasant welcome. Professionalism.\nDeadlines met. Satisfied in every respect.",
+     "date": "2026-08-08"
+    },
+    {
+     "auteur": "Belvès Motoculture",
+     "note": 5,
+     "texte": "Très bon accueil, de bons conseils et un service professionnel. Merci à Caroline pour son accompagnement. Je recommande.\n\n(Translated by Google)\nExcellent welcome, helpful advice, and professional service. Thank you to Caroline for her support. I highly recommend her.",
+     "date": "2026-07-27"
+    },
+    {
+     "auteur": "Jérôme Descousset",
+     "note": 5,
+     "texte": "(Translated by Google) Excellent service.\nCompetent and welcoming staff.\nHighly recommended.\nThank you again.\n\n(Original)\nTrès bon accueil\nPersonnel compétent et accueillant\nJe conseille vivement\nMerci encore",
+     "date": "2026-07-07"
+    },
+    {
+     "auteur": "Laurent BREGE",
+     "note": 5,
+     "texte": "En vacances dans la région j'ai cassé ma monture de lunettes solaire. Atol Siorac m'a dépanné en commandant pour la même monture en sav. Le lendemain après midi je repartai avec mes lunettes réparé. Un très grand merci Madame pour le service et votre gentillesse bien que je ne sois pas client, puisque pas de la région.\n\n(Translated by Google)\nWhile on holiday in the area, I broke my sunglasses frame. Atol Siorac helped me out by ordering the same frame for repair. The following afternoon, I left with my repaired glasses. A huge thank you, Madam, for your service and kindness, even though I'm not a customer, as I'm not from the area.",
+     "date": "2026-06-18"
+    }
+   ]
   },
   {
    "code": "25",
    "name": "BERGERAC",
    "enseigne": "ATOL",
-   "ville": "BERGERAC"
+   "ville": "BERGERAC",
+   "derniers_avis": [
+    {
+     "auteur": "Lahlou Fatima",
+     "note": 5,
+     "texte": "Tres satisfaisant accueillant compétent\n\n(Translated by Google)\nVery satisfactory, welcoming, and competent",
+     "date": "2026-09-12"
+    },
+    {
+     "auteur": "sabine gravier",
+     "note": 5,
+     "texte": "Un grand merci a vous pour votre gentillesse et votre accueil ! Un de mes patins de lunettes etait cassé et alors meme que je ne suis pas une cliente habituelle, j'ai été dépannée avec une grande amabilité et rapidité.\n\n(Translated by Google)\nA huge thank you for your kindness and welcome! One of my glasses pads was broken and even though I am not a regular customer, I was helped with great kindness and speed.",
+     "date": "2026-09-10"
+    },
+    {
+     "auteur": "Agenda Marin",
+     "note": 5,
+     "texte": "Belle boutique.\nAccueil sympathique, merci à Émilie qui nous a fait découvrir la gamme enfant, dont le choix était au rendez-vous, et qui avec patience et bienveillance a su nous guider dans notre choix.\nMon petit garçon est ravi de sa monture.\nNous reviendrons sans hésitation.\nMerci\n\n(Translated by Google)\nLovely shop. A warm welcome, thank you to Émilie who introduced us to the children's range, which had a great selection, and who patiently and kindly guided us in our choices.\nMy little boy is thrilled with his new glasses.\nWe will definitely be back.\nThank you.",
+     "date": "2026-09-09"
+    },
+    {
+     "auteur": "Valentin Roussel",
+     "note": 5,
+     "texte": "Super expérience chez Atol au magasin de Bergerac.\nEmilie est très professionnel et d’une gentillesse absolue.\nNous venons refaire nos lunettes quand il y a le besoin et Emilie sait nous conseiller parfaitement.\nJe recommande.\n\n(Translated by Google)\nExcellent experience at the Atol store in Bergerac.\nEmilie is very professional and incredibly kind.\nWe come in to get our glasses repaired whenever needed, and Emilie gives us excellent advice.\nI highly recommend her.",
+     "date": "2026-09-09"
+    },
+    {
+     "auteur": "Laurent Bodelle",
+     "note": 5,
+     "texte": "Très bonne équipe ,  très sympathique merci à Emilie et à Jean Paul pour leurs conseils.\n\n(Translated by Google)\nExcellent team, very friendly, thank you to Emilie and Jean Paul for their advice.",
+     "date": "2026-09-08"
+    }
+   ]
   },
   {
    "code": "16",
    "name": "BOULAZAC",
    "enseigne": "ATOL",
-   "ville": "BOULAZAC"
+   "ville": "BOULAZAC",
+   "derniers_avis": [
+    {
+     "auteur": "Lynne Saraiva",
+     "note": 5,
+     "texte": "Très bon conseil et avis , très bien accueilli et nous avons pu essayer les lunettes Ray ban\nMeta très satisfaite du son et de la qualité de la photo ainsi que le design\n\n(Translated by Google)\nExcellent advice and recommendations, a very warm welcome, and we were able to try on Ray-Ban sunglasses.\nMeta was very satisfied with the sound, photo quality, and design.",
+     "date": "2026-09-11"
+    },
+    {
+     "auteur": "denis choin",
+     "note": 5,
+     "texte": "Super merci pour votre professionnalisme\n\n(Translated by Google)\nThank you so much for your professionalism.",
+     "date": "2026-09-11"
+    },
+    {
+     "auteur": "Micky Paillard",
+     "note": 5,
+     "texte": "Equipe à notre écoute et sympatique\n\n(Translated by Google)\nThe team was attentive and friendly.",
+     "date": "2026-09-10"
+    },
+    {
+     "auteur": "Gitou Petit",
+     "note": 5,
+     "texte": "De passage dans la région, j'avais décalé ma monture. Je me suis arrêté dans ce magasin, sans être cliente bien sûr.\nLa personne qui m'a reçue a été tres sympathique,  m'a redressé ma monture  et ne m'a rien fait payer. Merci.\n\n(Translated by Google)\nWhile passing through the area, I had misaligned my glasses. I stopped by this shop, though I wasn't a customer, of course.\nThe person who helped me was very friendly, straightened my glasses, and didn't charge me anything. Thank you.",
+     "date": "2026-09-07"
+    },
+    {
+     "auteur": "Audrey Lafon",
+     "note": 5,
+     "texte": "Vaste choix de montures.\nTrès bon accueil et conseils.\nA l'écoute tout en guidant la personne vers le meilleur choix possible.\n\n(Translated by Google)\nWide selection of frames.\nExcellent service and advice.\nAttentive and helpful, guiding you towards the best possible choice.",
+     "date": "2026-09-06"
+    }
+   ]
   },
   {
    "code": "14",
    "name": "BRANTOME",
    "enseigne": "ATOL",
-   "ville": "BRANTOME"
+   "ville": "BRANTOME",
+   "derniers_avis": [
+    {
+     "auteur": "Michele Mazeau",
+     "note": 5,
+     "texte": "(Translated by Google) Fantastic: immediate repair of my accidentally broken mount --> new 3D-printed mount. Well done and thank you!\n\n(Original)\nGénial : réparation immédiate de ma monture malencontreusement cassée --> nouvelle monture imprimée en 3D. Bravo et merci",
+     "date": "2026-08-14"
+    },
+    {
+     "auteur": "Géraldine Loty",
+     "note": 5,
+     "texte": "(Translated by Google) 3D printing repair: super practical, fast and efficient!\n\n(Original)\nRéparation par impression 3D : super pratique, rapide et efficace !",
+     "date": "2026-08-14"
+    },
+    {
+     "auteur": "Serge Ducaruge",
+     "note": 5,
+     "texte": "(Translated by Google) My 3D printer was fixed!\nSuper convenient!\nThank you so much\n\n(Original)\nJ'ai étais dépanné avec l'imprimante 3D\nSuper pratique !\nMerci beaucoup",
+     "date": "2026-08-12"
+    },
+    {
+     "auteur": "Vincent Chatelier",
+     "note": 5,
+     "texte": "Accueil sympathique et bon conseils\n\n(Translated by Google)\nFriendly welcome and good advice",
+     "date": "2026-08-05"
+    },
+    {
+     "auteur": "Maya Larbi",
+     "note": 5,
+     "texte": "Je recommande totalement cet endroit mes lunettes ont été cassé pendant mon séjour alors je me suis rendu ici chez atol et en seulement 15 minutes mes lunettes ont été reproduite à l’identique en 3D pour que je puisse voir et profiter des paysages tout  au long de mon séjour !! Un grand merci à toute l’équipe qui as été aimable serviable sans manquer de professionnalisme 👌👌\n\n(Translated by Google)\nI highly recommend this place! My glasses broke during my stay, so I went to Atol and in just 15 minutes my glasses were reproduced exactly in 3D so I could see and enjoy the scenery throughout my trip!! A huge thank you to the whole team who were kind, helpful, and highly professional 👌👌",
+     "date": "2026-07-21"
+    }
+   ]
   },
   {
    "code": "35",
    "name": "CASTILLONNES",
    "enseigne": "LACHAL OPTICIEN",
-   "ville": "CASTILLONNES"
+   "ville": "CASTILLONNES",
+   "derniers_avis": [
+    {
+     "auteur": "Angèle Martinaud",
+     "note": 5,
+     "texte": "(Translated by Google) Friendly and welcoming service, always good advice, I highly recommend this shop!\n\n(Original)\nAccueil sympathique et souriant, toujours de bons conseils, je recommande vivement cette boutique !",
+     "date": "2026-08-11"
+    },
+    {
+     "auteur": "Sarah Vilair",
+     "note": 5,
+     "texte": "(Translated by Google) A fantastic visit to the boutique where Elsa answered my questions and met my expectations with tact and professionalism. Her invaluable advice helped me find THE perfect pair. I highly recommend it!\n\n(Original)\nUn super passage dans la boutique où Elsa a su répondre à mes questions et mes attentes avec délicatesse et professionnalisme. Ses précieux conseils m’ont permis de trouver LA paire. Je recommande vivement!",
+     "date": "2026-08-11"
+    },
+    {
+     "auteur": "Léona ROQUES",
+     "note": 5,
+     "texte": "(Translated by Google) A wide selection of frames, quality lenses, and excellent advice from Elsa, the manager, who is always ready to help. A very convenient local shop.\n\n(Original)\nLarge choix de montures, verres de qualité et de très bons conseils de la part d’Elsa, la responsable, toujours à l’écoute. Un magasin de proximité très pratique.",
+     "date": "2026-08-11"
+    },
+    {
+     "auteur": "gerard goupil",
+     "note": 5,
+     "texte": "très bon opticien le prix, le délais ,l'accueil je recommande\n\n(Translated by Google)\nExcellent optician – the price, the wait time, the service – I highly recommend them.",
+     "date": "2026-07-18"
+    },
+    {
+     "auteur": "Renée Luchet",
+     "note": 5,
+     "texte": "Juste pour remettre une vis à des lunettes on est reçu avec le sourire, quel plaisir un tel accueil.\n\n(Translated by Google)\nJust to put a screw back on some glasses, we were greeted with a smile, what a pleasure such a welcome.",
+     "date": "2024-07-30"
+    }
+   ]
   },
   {
    "code": "9",
    "name": "CREATEUR PX",
    "enseigne": "LES LUNETTES DE FRANCOIS",
-   "ville": "PERIGUEUX"
+   "ville": "PERIGUEUX",
+   "derniers_avis": [
+    {
+     "auteur": "Mylène Lefort",
+     "note": 5,
+     "texte": "C'est LE magasin de Périgueux qui propose un véritable choix de montures de très belle facture et originales !\nMarie et Jean-René, professionnels, savent parfaitement accompagner vos choix grâce à leurs conseils judicieux et avisés en fonction de votre personnalité.\nIls ont l'oeil ! 😉\nToujours très satisfaite de mes achats aux Lunettes de François, il m'est impossible de m'adresser ailleurs.\nJe ne peux que recommander !\n\n(Translated by Google)\nThis is THE shop in Périgueux that offers a truly exceptional selection of beautifully crafted and original frames! Marie and Jean-René, true professionals, are experts at guiding you through your choices with their insightful and judicious advice, tailored to your individual style.\nThey have a real eye for detail! 😉 I'm always very satisfied with my purchases at Lunettes de François; I simply can't imagine going anywhere else.\nI highly recommend them!",
+     "date": "2026-08-19"
+    },
+    {
+     "auteur": "Sophie Guyot",
+     "note": 5,
+     "texte": "(Translated by Google) Very welcoming.\n\n(Original)\nTrès bon accueil.",
+     "date": "2026-07-08"
+    },
+    {
+     "auteur": "Café Louise",
+     "note": 5,
+     "texte": "(Translated by Google) Stylish designer glasses. We each have a pair. A professional duo. Very happy!\n\n(Original)\nDes lunettes sympas, de créateurs. Nous en avons une paire chacun. Un binôme professionnel. Très heureux !",
+     "date": "2026-05-22"
+    },
+    {
+     "auteur": "Claire et Manu Deb Prem",
+     "note": 5,
+     "texte": "(Translated by Google) Reliable, well-advised, and well-guided.\nProfessional.\n\n(Original)\nSérieux, bien conseillé, bien guidé.\nProfessionnel.",
+     "date": "2026-05-20"
+    },
+    {
+     "auteur": "Sébastien Cochet",
+     "note": 5,
+     "texte": "(Translated by Google) Perfect!\nAs always!\n\n(Original)\nParfait !\nComme toujours !",
+     "date": "2026-05-19"
+    }
+   ]
   },
   {
    "code": "12",
    "name": "EXCIDEUIL",
    "enseigne": "ATOL",
-   "ville": "EXCIDEUIL"
+   "ville": "EXCIDEUIL",
+   "derniers_avis": [
+    {
+     "auteur": "marie-helene Lelong",
+     "note": 5,
+     "texte": "Réactivité, efficacité : prise en compte de l'urgence de ma situation. Respect des délais.\n\n(Translated by Google)\nResponsiveness, efficiency: they took into account the urgency of my situation and respected the deadlines.",
+     "date": "2026-09-06"
+    },
+    {
+     "auteur": "Thomas BOULARAND",
+     "note": 5,
+     "texte": "(Translated by Google) Passing through the area and having had a problem with my glasses, the kind saleswoman repaired them without any trouble and with kindness.\n\n(Original)\nDe passage dans la région et ayant eu un souci avec mes lunettes, la gentille vendeuse me les a réparé sans souci et avec gentillesse.",
+     "date": "2026-08-13"
+    },
+    {
+     "auteur": "Emy Schwiz",
+     "note": 5,
+     "texte": "(Translated by Google) A huge thank you for your consistently excellent service! Fast, efficient, and friendly. You got our daughter's glasses sorted in record time. We highly recommend them!\n\n(Original)\nUn grand merci pour votre accueil toujours au top ! Service rapide, efficace et bienveillant. Vous nous avez dépannés en un temps record pour les lunettes de notre fille. Nous recommandons les yeux fermés !",
+     "date": "2026-07-05"
+    },
+    {
+     "auteur": "Landry Hyvoz",
+     "note": 5,
+     "texte": "Très bon accueil et très bon service!\n\n(Translated by Google)\nExcellent welcome and excellent service!",
+     "date": "2026-06-24"
+    },
+    {
+     "auteur": "Serge Bossu",
+     "note": 5,
+     "texte": "Accueil très agréable et réparation parfaite des montures de lunettes !\nMerci beaucoup\n\n(Translated by Google)\nA very pleasant welcome and perfect repair of the eyeglass frames!\nThank you very much",
+     "date": "2026-05-28"
+    }
+   ]
   },
   {
    "code": "11",
    "name": "GLANDON",
    "enseigne": "ATOL",
-   "ville": "GLANDON"
+   "ville": "GLANDON",
+   "derniers_avis": [
+    {
+     "auteur": "ELODIE",
+     "note": 5,
+     "texte": "Très bon accueil par un monsieur expérimenté, a compris mon urgence (lunettes cassées en 2), j'ai pu obtenir les nouvelles en 3 jours. A pris également le temps pour l'examen des yeux qui n'est pas forcément évident selon nos propres difficultés de vision.\n\n(Translated by Google)\nI received a very warm welcome from an experienced gentleman who understood my urgent situation (my glasses were broken in two), and I was able to get replacements within three days. He also took the time to examine my eyes, which isn't always straightforward depending on my individual vision problems.",
+     "date": "2026-09-09"
+    },
+    {
+     "auteur": "Alain Ponthier",
+     "note": 5,
+     "texte": "(Translated by Google) Highly competent staff, store recommended\n\n(Original)\nPersonnel très compétent magasin a conseillé",
+     "date": "2026-08-13"
+    },
+    {
+     "auteur": "Patricia De Amezaga",
+     "note": 5,
+     "texte": "Un grand merci à Pablo dans le magasin Atol à Glandon, qui nous a reçu avec beaucoup de gentillesse et qui a changé les verres abîmés de mes lunettes de soleil. La sélection de lunettes est top!\n\n(Translated by Google)\nA huge thank you to Pablo at the Atol store in Glandon, who gave us a very warm welcome and replaced the damaged lenses in my sunglasses. Their selection of glasses is fantastic!",
+     "date": "2026-08-06"
+    },
+    {
+     "auteur": "Rémy Martin",
+     "note": 5,
+     "texte": "Très bon accueil. Merci !\n\n(Translated by Google)\nVery warm welcome. Thank you!",
+     "date": "2026-08-05"
+    },
+    {
+     "auteur": "Catherine Favre",
+     "note": 5,
+     "texte": "Bonjour, accueil et efficacité rien à redire !\n\n(Translated by Google)\nHello, the welcome and efficiency were impeccable!",
+     "date": "2026-07-07"
+    }
+   ]
   },
   {
    "code": "703",
    "name": "GO BERGERAC",
    "enseigne": "GENERALE D'OPTIQUE",
-   "ville": "BERGERAC"
+   "ville": "BERGERAC",
+   "derniers_avis": [
+    {
+     "auteur": "Johanna Palumbo",
+     "note": 5,
+     "texte": "Un immense merci à Carole pour son accueil et ses précieux conseils. Elle est patiente, attentionnée et connaît parfaitement son métier. On sent qu’elle cherche vraiment ce qui nous convient le mieux, pas juste à vendre. Une opticienne au top !"
+    },
+    {
+     "auteur": "Valérie ANDRÉ",
+     "note": 5,
+     "texte": "Magasin très agréable. Personnel très accueillant, sympathique et de très bon conseil. A l'écoute et très réactif. Merci Je recommande vivement ++++😊👍 …"
+    },
+    {
+     "auteur": "Pierrette Ganter",
+     "note": 5,
+     "texte": "Super accueil par Marine ! Elle est très agréable et de bon conseil ! Grand choix de montures ! Il y en a pour tous les goûts et tous les budgets !  Délais respectés ! Magasin au top ! Vraiment rien à redire ! Je vous le conseille vivement !"
+    },
+    {
+     "auteur": "CLEMENTINE SAGNETTE",
+     "note": 5,
+     "texte": "Je suis extrêmement ravi de mon expérience dans ce magasin ! Carole a été tout simplement parfaite du début à la fin. J’ai été très bien conseillé, avec des explications claires, honnêtes et adaptées à mes besoins. …"
+    },
+    {
+     "auteur": "Solène Le Goas",
+     "note": 5,
+     "texte": "Je suis ravie de ce magasin d’optique ! L’accueil est toujours chaleureux et les conseils très professionnels. Un immense merci à Carole, Marine et Marion pour leur gentillesse, leur patience et leur accompagnement personnalisé. On se sent vraiment écoutée et en confiance. Je recommande vivement!"
+    }
+   ]
   },
   {
    "code": "570",
    "name": "GO BRETENOUX",
    "enseigne": "GENERALE D'OPTIQUE",
-   "ville": "BRETENOUX"
+   "ville": "BRETENOUX",
+   "derniers_avis": [
+    {
+     "auteur": "Audrey Vaurs",
+     "note": 5,
+     "texte": "Très bon accueil avec un bon accompagnement pour l'achat de premières lunettes de vue pour moi.  Nous venons tous les ans chez général d'optique pour ma fille depuis ses 2 ans 1/2 et ils ont toujours fait preuve de professionnalisme (et de patience !) pour l'aider. Je recommande."
+    },
+    {
+     "auteur": "Karine MARIE",
+     "note": 5,
+     "texte": "Bonjour, ça fait des années que nous achetons nos lunettes chez générale d'optique. Quand on a vue qu'une boutique s'installe à Bretenoux on était très content. …"
+    },
+    {
+     "auteur": "garnier cedric",
+     "note": 5,
+     "texte": "Je suis allé chez Générale d'Optique à Bretenoux et je suis très satisfait.\nL’accueil était chaleureux, les conseils impeccables et professionnels. Il y a un grand choix de montures, et le magasin est très bien situé.\nJe recommande sans hésiter !"
+    },
+    {
+     "auteur": "Marie José Cayre",
+     "note": 5,
+     "texte": "Très chaleureux. Je suis passée chercher mes lunettes un peu avant la fermeture et j'ai été très bien reçu. La personne à  pris le temps de bien s'occuper de moi."
+    },
+    {
+     "auteur": "SEBE DEL",
+     "note": 5,
+     "texte": "Accueil agréable fait par un jeune homme, bonne prise en main, il nous a permis d essayer et surtout de prendre un modèle que nous n'aurions jamais imaginé.\nSi vous voulez une personne attentionnée et bienvaillante, ce magasin est fait …"
+    }
+   ]
   },
   {
    "code": "780",
    "name": "GO TULLE",
    "enseigne": "GENERALE D'OPTIQUE",
-   "ville": "TULLE"
+   "ville": "TULLE",
+   "derniers_avis": [
+    {
+     "auteur": "Jess Noguera",
+     "note": 5,
+     "texte": "Merci pour votre aide , vos conseils et votre patience . Le personnel a était très agréable et à l écoute.  L acceuil est chaleureux . Un grand merci à  Mr W . Sébastien qui a prit pas mal de son temps pour me  conseiller et m apprendre à utiliser mon nouveau dispositif ."
+    },
+    {
+     "auteur": "Claire B",
+     "note": 5,
+     "texte": "Très belle expérience. L’accueil est chaleureux, les conseils que Sébastien m’a donné sont personnalisés avec un vrai souci du détail. On ne se sent pas pressé, tout est bien expliqué (verres, montures). Ravie de mes nouvelles lunettes. Merci pour son professionnalisme !"
+    },
+    {
+     "auteur": "Manuel Philippeaux",
+     "note": 5,
+     "texte": "Grand Merci à Camille et Sébastien pour leur qualité professionnelle et leur accueil. Je suis ressorti très satisfait de notre achat. A bientôt pour les lunettes de mon épouse. Aujourd'hui Jeudi 21 Mai, avec les supers conseils de Sébastien …"
+    },
+    {
+     "auteur": "Tiphanie Bossoutrot",
+     "note": 5,
+     "texte": "Je recommande ! A l'écoute. Très bon conseils. Du choix et de la qualité. Disponible en cas de besoin. Merci beaucoup"
+    },
+    {
+     "auteur": "Jean-François FAGEOL",
+     "note": 5,
+     "texte": "Excellente expérience. Accueil et gestion des besoins et souhaits du client, très professionnels et aimables. Je suis très satisfait de mes lunettes. Un grand merci à l'équipe Générale d'Optique à Tulle."
+    }
+   ]
   },
   {
    "code": "33",
    "name": "HAUTEFORT",
    "enseigne": "LACHAL OPTICIEN",
-   "ville": "HAUTEFORT"
+   "ville": "HAUTEFORT",
+   "derniers_avis": [
+    {
+     "auteur": "benoit fraisse",
+     "note": 5,
+     "texte": "Accueil très sympathique et de très bon conseille j’y reviendrais\n\n(Translated by Google)\nA very friendly welcome and excellent advice, I will definitely return.",
+     "date": "2026-07-28"
+    },
+    {
+     "auteur": "IC solution pro",
+     "note": 5,
+     "texte": "Je recommande fortement cet établissement. Personnel très pro et SAV +++\n\n(Translated by Google)\nI highly recommend this establishment. Very professional staff and excellent customer service.",
+     "date": "2026-03-06"
+    },
+    {
+     "auteur": "Lonnie Amazon",
+     "note": 5,
+     "texte": "Virgil est génial je recommande vivement\n\n(Translated by Google)\nVirgil is great, I highly recommend him",
+     "date": "2025-11-09"
+    },
+    {
+     "auteur": "Vilminot Océane",
+     "note": 5,
+     "texte": "Super opticien, Virgil est aux petits soins, je recommande !!\n\n(Translated by Google)\nExcellent optician, Virgil takes great care of his clients, I highly recommend him!!",
+     "date": "2025-11-09"
+    },
+    {
+     "auteur": "Speno Laura",
+     "note": 5,
+     "texte": "Je prends rarement le temps de déposer des avis sur Google mais je fais une entorse à la règle pour ce jeune opticien admirable; sa bonhomie, son sens  pointu de l'écoute et du conseil ainsi que son professionnalisme se font rare.\nMerci à vous Virgil, on se sent comme à la maison, on ne voit pas le temps passé.\nEt en plus le magasin est magnifique.\n\nA très bientôt !\n\n(Translated by Google)\nI rarely take the time to leave Google reviews, but I'm making an exception for this wonderful young optician; his affability, his keen listening skills and helpful advice, as well as his professionalism, are truly rare.\n\nThank you, Virgil, you feel right at home, and time flies.\n\nAnd the shop is beautiful too.\n\nSee you soon!",
+     "date": "2025-11-09"
+    }
+   ]
   },
   {
    "code": "20",
    "name": "LA ROCHE",
    "enseigne": "ATOL",
-   "ville": "LA ROCHEFOUCAULD"
+   "ville": "LA ROCHEFOUCAULD",
+   "derniers_avis": [
+    {
+     "auteur": "L'organiste Orphique",
+     "note": 5,
+     "texte": "Personnel compétent et aimable, avec un grand choix de lunettes.\n\n(Translated by Google)\nCompetent and friendly staff, with a wide selection of glasses.",
+     "date": "2026-08-20"
+    },
+    {
+     "auteur": "Biais Martine",
+     "note": 5,
+     "texte": "Acueil aimable, prestation rapide et efficace, même sans avoir eu un rendez-vous !\n\n(Translated by Google)\nFriendly welcome, quick and efficient service, even without an appointment!",
+     "date": "2026-08-01"
+    },
+    {
+     "auteur": "Loïc Guédon",
+     "note": 5,
+     "texte": "Super service, merci beaucoup pour ma petite réparation de lunettes rapide et très très abordable !\nJe recommande à 100%\n\n(Translated by Google)\nExcellent service, thank you so much for the quick and very affordable glasses repair!\n\nI highly recommend them!",
+     "date": "2026-07-21"
+    },
+    {
+     "auteur": "Severine Noble",
+     "note": 5,
+     "texte": "Super accueil, toujours disponible ! Bravo.\n\n(Translated by Google)\nExcellent service, always available! Well done.",
+     "date": "2026-07-11"
+    },
+    {
+     "auteur": "Marie Gauducheau",
+     "note": 5,
+     "texte": "Je vais chez cet opticien depuis plusieurs années et je n' ai jamais été déçue, je l' ai conseillé à plusieurs personnes qui ont toutes été ravies de l accueil et du professionnalisme de cette équipe, toujours à l' écoute et de bonne humeur, toute ma famille est chez Atol la Rochefoucauld\n\n(Translated by Google)\nI've been going to this optician for several years and I've never been disappointed. I've recommended them to several people who have all been delighted with the welcome and professionalism of the team, always attentive and cheerful. My whole family goes to Atol La Rochefoucauld.",
+     "date": "2026-05-28"
+    }
+   ]
   },
   {
    "code": "8",
    "name": "LE BUGUE",
    "enseigne": "ATOL",
-   "ville": "LE BUGUE"
+   "ville": "LE BUGUE",
+   "derniers_avis": [
+    {
+     "auteur": "Laura LOURENÇO",
+     "note": 5,
+     "texte": "(Translated by Google) A shop I highly recommend! ⭐⭐⭐⭐⭐\n\nThe owner is a lovely person, extremely kind, helpful, and above all, very accommodating. She goes above and beyond to find a solution and be of service, with great care and consideration.\n\nIt's exactly the kind of small business you want to support and that you'll enjoy returning to. A wonderful discovery and the kind of shopkeeper we wish we could find more often!\n\nYou can go there without hesitation 😊\n\n(Original)\nUne boutique que je recommande vraiment ! ⭐⭐⭐⭐⭐\n\nLa patronne est une personne adorable, extrêmement gentille, disponible et surtout vraiment arrangeante. Elle fait son maximum pour trouver une solution et rendre service, avec beaucoup de bienveillance.\n\nC’est exactement le genre de petit commerce qu’on a envie de soutenir et dans lequel on a plaisir à revenir. Une très belle découverte et une commerçante comme on aimerait en rencontrer plus souvent !\n\nVous pouvez y aller les yeux fermés 😊",
+     "date": "2026-08-11"
+    },
+    {
+     "auteur": "Samia Dti",
+     "note": 5,
+     "texte": "Excellents accueil et qualité de service\nNous avons pu trouver un vaste choix de montures et de solaires\nJe vous les conseille ++\n\n(Translated by Google)\nExcellent welcome and quality of service.\nWe were able to find a wide selection of frames and sunglasses.\nI highly recommend them!",
+     "date": "2026-08-08"
+    },
+    {
+     "auteur": "Selma Moelker",
+     "note": 5,
+     "texte": "Le meilleur service!\n\n(Translated by Google)\nThe best service!",
+     "date": "2026-08-08"
+    },
+    {
+     "auteur": "Belvès Motoculture",
+     "note": 5,
+     "texte": "Une équipe accueillante, à l’écoute et de bon conseil. Le service est sérieux et professionnel. Merci à toute l’équipe pour votre disponibilité. Je recommande sans hésiter.\n\n(Translated by Google)\nA welcoming, attentive, and helpful team. The service is serious and professional. Thank you to the whole team for your availability. I highly recommend them.",
+     "date": "2026-07-27"
+    },
+    {
+     "auteur": "Françoise",
+     "note": 5,
+     "texte": "(Translated by Google) We received excellent advice from Devrim, who was very professional and friendly.\n\nWe highly recommend this optician.\n\n(Original)\nTrès bien conseillés par Devrim qui a été très professionnelle et sympathique.\nNous recommandons cet opticien",
+     "date": "2026-06-30"
+    }
+   ]
   },
   {
    "code": "37",
    "name": "MARSAC",
    "enseigne": "OPTIC 2000",
-   "ville": "MARSAC-SUR-L'ISLE"
+   "ville": "MARSAC-SUR-L'ISLE",
+   "derniers_avis": [
+    {
+     "auteur": "Laurent INNOCENT",
+     "note": 5,
+     "texte": "Bonjour a tous je vous conseil fortement de vous avancez vers cette magnifique équipe. Ils sont éléments exceptionnels. Ils sont non pas que pour l’as lunettes et ils sont aussi a l’écoute. Je reste fidèle a eux. Depuis mon besoin j’ai …"
+    },
+    {
+     "auteur": "marie-géraldine DASI",
+     "note": 5,
+     "texte": "Nous avons été très bien accueillis. Madame Chazotte a pris tout le temps nécessaire pour réaliser un examen de vue complet et approfondi. Elle a su nous conseiller avec beaucoup de professionnalisme dans le choix des montures, en tenant …"
+    },
+    {
+     "auteur": "Romain Delpit",
+     "note": 5,
+     "texte": "Un immense merci à Lola d’Optic 2000 pour son accueil, son professionnalisme et sa gentillesse. J’ai été parfaitement conseillé du début à la fin, avec beaucoup d’écoute et de patience. Le choix de montures est varié et de qualité, elle …"
+    },
+    {
+     "auteur": "Nicolas PEUCH",
+     "note": 5,
+     "texte": "Accueil chaleureux et écoute attentive de nos demandes et souhaits.  Choisir une paire de lunettes n’est pas toujours évident, mais Marie-Charlotte nous a prodigué d’excellents conseils."
+    },
+    {
+     "auteur": "sophie",
+     "note": 5,
+     "texte": "Très bons conseils dans le choix de mes lunettes de vue et solaires. Accueil sympathique et professionnalisme de la part du personnel. Je suis cliente depuis plusieurs années et toujours satisfaite ! 😊 …"
+    }
+   ]
   },
   {
    "code": "24",
    "name": "MONTAUBAN 2",
    "enseigne": "ATOL",
-   "ville": "MONTAUBAN-DE-BRETAGNE"
+   "ville": "MONTAUBAN-DE-BRETAGNE",
+   "derniers_avis": [
+    {
+     "auteur": "Patrice. Figarol",
+     "note": 5,
+     "texte": "Du Personnel, très efficace avec de très bons conseils, une commande dans l’urgence et deux jours. Après j’avais mes nouvelles lunettes.\n\nMerci beaucoup aux personnes qui ont tout mise à l’œuvre pour Satisfaire m’a demandé dans l’urgence.\n\n(Translated by Google)\nThe staff were very efficient and provided excellent advice. They processed my urgent order and delivered my new glasses in just two days.\n\nThank you so much to everyone who went above and beyond to fulfill my urgent request.",
+     "date": "2026-09-01"
+    },
+    {
+     "auteur": "Jacky Paroli",
+     "note": 5,
+     "texte": "ATOL Montauban -très  a l'écoute de ses clients et très sympathique...\n\n(Translated by Google)\nATOL Montauban - very attentive to its customers and very friendly...",
+     "date": "2026-07-31"
+    },
+    {
+     "auteur": "Fabien Capitaine Flam 777",
+     "note": 5,
+     "texte": "Opticien compétent.  De bons conseils et qui répond à nos attentes.\n\n(Translated by Google)\nCompetent optician. Good advice and meets our expectations.",
+     "date": "2025-05-13"
+    },
+    {
+     "auteur": "Pauline Capdevielle",
+     "note": 5,
+     "texte": "Merci à Chrystelle et son equipe, ici on vous accorde du temps, il y a toujours des bons conseils, un service irréprochable et le sourire, je trouve personnellement qu'il n'y a pas tout ça à la fois chez vos concurrents, ne changez rien !\n\n(Translated by Google)\nThanks to Chrystelle and her team, here we give you time, there is always good advice, impeccable service and a smile, I personally find that your competitors don't have all of that at the same time, don't change a thing!",
+     "date": "2025-04-18"
+    },
+    {
+     "auteur": "Marie Rodrigues",
+     "note": 5,
+     "texte": "Très satisfaite, accueil et conseil de qualité, c est avec plaisir que je retournerai chez eux pour mes prochaines lunettes\n\n(Translated by Google)\nVery satisfied, welcome and quality advice, it is with pleasure that I will return to them for my next glasses",
+     "date": "2025-04-13"
+    }
+   ]
   },
   {
    "code": "28",
    "name": "MONTBRON",
    "enseigne": "ATOL",
-   "ville": "MONTBRON"
+   "ville": "MONTBRON",
+   "derniers_avis": [
+    {
+     "auteur": "Andy F",
+     "note": 5,
+     "texte": "Great service. We were seen quickly and the lovely lady in the shop made the whole process very simple. We’re really satisfied with our new glasses.",
+     "date": "2026-07-21"
+    },
+    {
+     "auteur": "BERNARD SANDRINE",
+     "note": 5,
+     "texte": "Bonjour très satisfaite de tout l'accueil la prise en charge et la réception de mes lunettes\nJe recommande\n\n(Translated by Google)\nHello, very satisfied with all the welcome, the support and receipt of my glasses\nI recommend",
+     "date": "2024-04-27"
+    },
+    {
+     "auteur": "Jérôme Verlaine",
+     "note": 5,
+     "texte": "Opticienne vraiment très professionnelle magasin très sympa. Merci.\n\n(Translated by Google)\nReally very professional optician, very nice store. THANKS.",
+     "date": "2023-08-10"
+    }
+   ]
   },
   {
    "code": "31",
    "name": "MONTIGNAC",
    "enseigne": "ATOL",
-   "ville": "MONTIGNAC"
+   "ville": "MONTIGNAC",
+   "derniers_avis": [
+    {
+     "auteur": "Sandrine Croiset",
+     "note": 5,
+     "texte": "Une professionnelle à l'ecoute et très agréable\n\n(Translated by Google)\nA professional who listens and is very pleasant",
+     "date": "2026-08-19"
+    },
+    {
+     "auteur": "Luc Rivier",
+     "note": 5,
+     "texte": "(Translated by Google) Very professional and a very good advisor\n\n(Original)\nTrès professionnelle et très bonne conseillère",
+     "date": "2026-08-12"
+    },
+    {
+     "auteur": "Charly Charly",
+     "note": 5,
+     "texte": "Passé ce jour pour redresser mes lunettes et resserrer une vis de branche.\nTrès bonne accueil, souriant.\nMerci à eux.\n\n(Translated by Google)\nI went in today to have my glasses straightened and a screw on the arm tightened. Very welcoming and friendly service.\nThank you.",
+     "date": "2026-08-06"
+    },
+    {
+     "auteur": "Regine Michaux",
+     "note": 5,
+     "texte": "Service professionnel, qualité d écoute et de bons conseils. Disponibilité SAV\n\n(Translated by Google)\nProfessional service, attentive listening, and sound advice. After-sales service availability.",
+     "date": "2026-06-25"
+    },
+    {
+     "auteur": "lascaud sophie",
+     "note": 5,
+     "texte": "(Translated by Google) I came in for a check-up and was referred to an orthoptist as a precaution.\n\nKindness, thoroughness, and professionalism.\n\n(Original)\nJe suis venue pour un bilan, j’ai été dirigé vers un orthoptiste par précaution.\nBienveillance, sérieux et professionnalisme.",
+     "date": "2026-06-14"
+    }
+   ]
   },
   {
    "code": "6",
    "name": "MONTPON",
    "enseigne": "ATOL",
-   "ville": "MONTPON-MENESTEROL"
+   "ville": "MONTPON-MENESTEROL",
+   "derniers_avis": [
+    {
+     "auteur": "sabrina touati",
+     "note": 5,
+     "texte": "Je recommande cet opticien. Magasin très propre, bien rangé et agréable\nLe vendeur en optique été de très bon conseils et je suis très satisfaite de ma paire de lunettes\n\n(Translated by Google)\nI recommend this optician. The shop is very clean, well-organized, and pleasant.\nThe optician gave excellent advice, and I am very happy with my new glasses.",
+     "date": "2026-08-31"
+    },
+    {
+     "auteur": "Diana LOBO SA",
+     "note": 5,
+     "texte": "Toujours bien accueilli, depuis des années. Des professionnels qui conseillent et qui aiment leur métier. 100% satisfaite\n\n(Translated by Google)\nAlways a warm welcome, for years. Professionals who give good advice and love their work. 100% satisfied",
+     "date": "2026-08-22"
+    },
+    {
+     "auteur": "Camilia Ben el fahsi",
+     "note": 5,
+     "texte": "Accueil très chaleureux, Offre très intéressantes, Je recommande fortement cette agence!\n\n(Translated by Google)\nVery warm welcome, very interesting offers, I highly recommend this agency!",
+     "date": "2026-07-17"
+    },
+    {
+     "auteur": "Pauline Berry",
+     "note": 5,
+     "texte": "Très bon accueil et d’excellents conseils. J’étais venue faire mes lunettes ici l’année dernière et j’avais été très satisfaite. Aujourd’hui, j’ai cassé mes lunettes. L’équipe m’a très rapidement trouvé une solution et j’ai pu repartir avec une nouvelle paire.\n\nJe recommande !\n\n(Translated by Google)\nA very warm welcome and excellent advice. I had my glasses made here last year and was very satisfied. Today, I broke my glasses. The team quickly found a solution and I was able to leave with a new pair.\n\nI highly recommend them!",
+     "date": "2026-07-15"
+    },
+    {
+     "auteur": "ysmhail grimaldosalarcon",
+     "note": 5,
+     "texte": "Accueil simple , efficace...a l écoute... professionnel....et la climatisation un vrai bonheur avec la canicule....\n\n(Translated by Google)\nA simple, efficient, and attentive welcome...professional...and the air conditioning was a real blessing during this heatwave.",
+     "date": "2026-07-11"
+    }
+   ]
   },
   {
    "code": "5",
    "name": "NONTRON",
    "enseigne": "ATOL",
-   "ville": "NONTRON"
+   "ville": "NONTRON",
+   "derniers_avis": [
+    {
+     "auteur": "christophe metzger",
+     "note": 5,
+     "texte": "Sympathique, avenant et aide\n\n(Translated by Google)\nFriendly, approachable and helpful",
+     "date": "2026-08-31"
+    },
+    {
+     "auteur": "thierry deysse",
+     "note": 5,
+     "texte": "Tres tres bien et personnel sympathique merci\n\n(Translated by Google)\nVery, very good and friendly staff, thank you",
+     "date": "2026-08-26"
+    },
+    {
+     "auteur": "brussia marton",
+     "note": 5,
+     "texte": "Un accueil chaleureux et bienveillant et un service exemplaire et efficace suite à une casse de lunettes pendant des vacances . Je recommande\n\n(Translated by Google)\nA warm and welcoming reception and exemplary, efficient service after my glasses broke during my vacation. I highly recommend them.",
+     "date": "2026-08-06"
+    },
+    {
+     "auteur": "Monique Jansen",
+     "note": 5,
+     "texte": "Un accueil délicat et gentil. Merci\n\n(Translated by Google)\nA warm and friendly welcome. Thank you.",
+     "date": "2026-08-06"
+    },
+    {
+     "auteur": "Pascale Alexandre",
+     "note": 5,
+     "texte": "Accueil chaleureux et professionnel.\nEn vacances et non cliente de cette boutique, on a trouvé une solution à mon problème rapidement et très efficacement.\nMerci à l'équipe\n\n(Translated by Google)\nA warm and professional welcome. Although I was on vacation and not a regular customer of this shop, they found a solution to my problem quickly and very efficiently.\nThank you to the team.",
+     "date": "2026-08-05"
+    }
+   ]
   },
   {
    "code": "38",
    "name": "O2000 PERIGUEUX",
    "enseigne": "OPTIC 2000",
-   "ville": "PERIGUEUX"
+   "ville": "PERIGUEUX",
+   "derniers_avis": [
+    {
+     "auteur": "Elodie Elle",
+     "note": 5,
+     "texte": "Je souhaite partager mon excellente expérience chez Optic 2000.\nLe personnel est particulièrement accueillant, toujours souriant et très à l’écoute. J’ai été très bien conseillé, avec beaucoup de professionnalisme, que ce …"
+    },
+    {
+     "auteur": "Kevin Nsa",
+     "note": 5,
+     "texte": "Je recommande grandement Optic2000 Périgueux avec lesquels j’ai pu prendre 2 paires de lunettes de correction via Cédric et Tiphany qui m’ont extrêmement bien conseillé du début à la fin. Même si tout le reste du personnel était extrêmement …"
+    },
+    {
+     "auteur": "Margaux Barus",
+     "note": 5,
+     "texte": "Très satisfaite de mon passage chez Optic 2000. Un grand merci à toute l’équipe et plus particulièrement à Cédric et Tifany pour leur accueil chaleureux, leur bienveillance et leurs précieux conseils ! À bientôt 😎🤓 …"
+    },
+    {
+     "auteur": "Didier Hanriot",
+     "note": 5,
+     "texte": "De passage dans cette magnifique ville de Périgueux. Petit soucis de monture réglé avec gentillesse et sourire. Magasin que je recommande. Parfait et encore merci."
+    },
+    {
+     "auteur": "gilbert LENFANT",
+     "note": 5,
+     "texte": "A la recherche depuis très longtemps, pour une paire de lunette de soleil de forme et avec des verres très techniques, chez beaucoup d'opticiens c'était impossible. …"
+    }
+   ]
   },
   {
    "code": "1",
    "name": "PERIGUEUX",
    "enseigne": "LACHAL OPTICIEN",
-   "ville": "PERIGUEUX"
+   "ville": "PERIGUEUX",
+   "derniers_avis": [
+    {
+     "auteur": "Mathieu PERCOT",
+     "note": 5,
+     "texte": "Magasin magnifique en plein centre-ville avec beaucoup de choix à tous les prix. Antoine est très professionnel et il a su trouver la paire de lunettes qu'il me fallait.\n\n(Translated by Google)\nA wonderful shop right in the city center with a wide selection at all price points. Antoine is very professional and he was able to find the perfect pair of glasses for me.",
+     "date": "2026-08-18"
+    },
+    {
+     "auteur": "Melyna Kanoun",
+     "note": 5,
+     "texte": "Une très belle expérience, avec beaucoup de gentillesse et de bonne humeur ! 😊\nUn énorme merci à Christel, qui a été adorable du début à la fin. Souriante, douce, à l’écoute, de très bons conseils et surtout, elle prend vraiment le temps. On se sent tout de suite bien accompagné et en confiance.\n\nEt alors… petite mention spéciale pour son collègue et sa petite attention finale : un étui à paillettes girly ✨ ! J’ai adoré, clairement, il a visé juste !\n\nMerci à toute l’équipe pour cet accueil chaleureux et ce joli moment. Je recommande les yeux fermés ! (Enfin… avec mes nouvelles lunettes, c’est quand même mieux ) 👓\n\n(Translated by Google)\nA truly wonderful experience, filled with kindness and good humor! 😊 A huge thank you to Christel, who was absolutely lovely from beginning to end. Smiling, gentle, attentive, offering excellent advice, and above all, she really took her time. You immediately feel supported and confident.\n\nAnd then… a special mention for her colleague and his final touch: a girly glittery case ✨! I loved it, he definitely hit the nail on the head!\n\nThank you to the whole team for the warm welcome and this lovely moment. I highly recommend it! (Well… with my new glasses, it's definitely better!) 👓",
+     "date": "2026-08-14"
+    },
+    {
+     "auteur": "Adrien DESCHAMPS",
+     "note": 5,
+     "texte": "Super expérience ! Une équipe vraiment sympa, de bons conseils et un large choix de lunettes. On est bien accueilli, bien conseillé, sans pression. François est un top conseiller qui a su rendre mon visage encore plus beau auprès de ma femme 😅 Une adresse que je recommande sans hésiter ! 🤓😎\n\n(Translated by Google)\nFantastic experience! A really friendly team, great advice, and a wide selection of glasses. We were warmly welcomed, well-advised, and there was no pressure. François is a top-notch advisor who even managed to make my face look better in front of my wife 😅 I highly recommend this place! 🤓😎",
+     "date": "2026-07-22"
+    },
+    {
+     "auteur": "sandy mespoulede",
+     "note": 5,
+     "texte": "Très bon accueil et un service après vente au top. Une équipe toujours à l’écoute.\n\n(Translated by Google)\nExcellent welcome and top-notch after-sales service. A team that is always attentive.",
+     "date": "2026-07-04"
+    },
+    {
+     "auteur": "Abdel H",
+     "note": 5,
+     "texte": "J’ai acheté des lentilles rigides et j’avais peur. C’est là que Jeremy m’a offert un accueil très professionnel et rassurant. Franchement, ce n’était pas facile à cause de ma cornée déformée, mais j’ai eu un suivi précis. Maintenant, tout est dans l’ordre. Je remercie la boutique Lachal et Jeremy d’avoir été à la hauteur. Je recommande vivement.\n\nAnouar.H\n\n(Translated by Google)\nI bought rigid contact lenses and was apprehensive. That's when Jeremy gave me a very professional and reassuring welcome. Frankly, it wasn't easy because of my deformed cornea, but I received thorough follow-up care. Now, everything is fine. I thank the Lachal store and Jeremy for their excellent service. I highly recommend them.\n\nAnouar H.",
+     "date": "2026-07-01"
+    }
+   ]
   },
   {
    "code": "34",
    "name": "PRIGONRIEUX",
    "enseigne": "ATOL",
-   "ville": "PRIGONRIEUX"
+   "ville": "PRIGONRIEUX",
+   "derniers_avis": [
+    {
+     "auteur": "Christophe Blanchon",
+     "note": 5,
+     "texte": "Très satisfait\n\n(Translated by Google)\nVery satisfied",
+     "date": "2026-07-20"
+    },
+    {
+     "auteur": "boinon michel",
+     "note": 5,
+     "texte": "Super accueil et très bons services.\n\n(Translated by Google)\nExcellent welcome and very good service.",
+     "date": "2026-07-17"
+    },
+    {
+     "auteur": "anonymous",
+     "note": 4,
+     "texte": "Hyper bon opticien avec de bon conseil rien à redire sur cette aspect là mais les horaires à un peu revoir, se qu'il faut changer : du mardi au vendredi de 9h à 12h30 et de 14h à 19h ou de 14h30 à 19h\n\n(Translated by Google)\nExcellent optician with great advice, no complaints there. However, the opening hours need some improvement. They should be changed to Tuesday to Friday, either 9am to 12:30pm and 2pm to 7pm, or 2:30pm to 7pm.",
+     "date": "2026-06-11"
+    },
+    {
+     "auteur": "charlotte noah",
+     "note": 5,
+     "texte": "Très bon accueil, à l'écoute, professionnel et de bon conseil.\n\n(Translated by Google)\nVery welcoming, attentive, professional and offered good advice.",
+     "date": "2025-08-01"
+    },
+    {
+     "auteur": "Katy Vasseur",
+     "note": 5,
+     "texte": "Très bon accueil, à l'écoute des besoins et de bons conseils. Je recommande a 100%\n\n(Translated by Google)\nVery welcoming, attentive to needs and good advice. I recommend 100%.",
+     "date": "2024-03-31"
+    }
+   ]
   },
   {
    "code": "4",
    "name": "RIB1",
    "enseigne": "ATOL",
-   "ville": "RIBERAC"
+   "ville": "RIBERAC",
+   "derniers_avis": [
+    {
+     "auteur": "Gil DANVIN",
+     "note": 5,
+     "texte": "Très bon accueil et compétences des opticiennes.\n\n(Translated by Google)\nVery welcoming and competent opticians.",
+     "date": "2026-09-01"
+    },
+    {
+     "auteur": "pierrette",
+     "note": 5,
+     "texte": "(Translated by Google) Advice, welcome, choice, friendly,\n\n(Original)\nConseil,acceuil,choix,sympathique,",
+     "date": "2026-08-29"
+    },
+    {
+     "auteur": "Natou Val",
+     "note": 5,
+     "texte": "Accueil et conseil , au top comme d'habitude.\n\n(Translated by Google)\nThe welcome and advice were top-notch, as usual.",
+     "date": "2026-08-25"
+    },
+    {
+     "auteur": "Christiane Heurfin Bach Sac",
+     "note": 5,
+     "texte": "(Translated by Google) Quality advice and kindness\n\n(Original)\nqualité conseil et gentillesse",
+     "date": "2026-08-11"
+    },
+    {
+     "auteur": "Frédérique",
+     "note": 1,
+     "texte": "Déçu , mauvais accueil\narrivés à 16h15 un samedi avec 2 ordonnances, une pour des lunettes l'autre pour les verres seulement .\nLe monsieur présent nous a dit qu'il n'avait pas le temp qu'il était trop tard et qu'en plus ,nous n'étions pas client donc qu'il fallait revenir. Tant pis nous allons aller à la concurrence .\n\n(Translated by Google)\nDisappointed, poor service.\nWe arrived at 4:15 pm on a Saturday with two prescriptions, one for glasses and the other for lenses only.\nThe man there told us he didn't have time, that it was too late, and that we weren't regular customers, so we had to come back. Oh well, we'll go to a competitor.",
+     "date": "2026-07-25"
+    }
+   ]
   },
   {
    "code": "21",
    "name": "RIB2",
    "enseigne": "ATOL",
-   "ville": "RIBERAC"
+   "ville": "RIBERAC",
+   "derniers_avis": [
+    {
+     "auteur": "Amélie Varin",
+     "note": 5,
+     "texte": "Un grand merci pour votre accueil et votre professionnalisme ! Nous sommes venus pour réparer rapidement une paire de lunette enfant . La dame qui nous a accueilli à réparer les lunettes sur le coup  ,les a nettoyées et les a rendues quasiment comme neuves . Merci beaucoup pour ce dépannage Express et pour votre accueil.\n\n(Translated by Google)\nA huge thank you for your warm welcome and professionalism! We came in to have a pair of children's glasses repaired quickly. The woman who helped us repaired the glasses on the spot, cleaned them, and returned them practically like new. Thank you so much for this express service and for your kind welcome.",
+     "date": "2026-07-30"
+    },
+    {
+     "auteur": "anonymous",
+     "note": 5,
+     "texte": "Personnel accueillant et très compétent.  Je recommande cet endroit\n\n(Translated by Google)\nThe staff were welcoming and very competent. I recommend this place.",
+     "date": "2026-07-11"
+    },
+    {
+     "auteur": "Francine Françaix",
+     "note": 5,
+     "texte": "(Translated by Google) Very satisfied with this optician: sufficient choice, loan of several frames, vision checks, very pleasant and conscientious staff.\n\n(Original)\nTrès satisfaite de cet opticien : choix  suffisant, prêt de plusieurs montures , contrôles de la vision ,  personnel très agréable et consciencieux .",
+     "date": "2026-07-02"
+    },
+    {
+     "auteur": "nick lowrey",
+     "note": 5,
+     "texte": "Tres gentil et très accueillant\n\n(Translated by Google)\nVery kind and very welcoming",
+     "date": "2026-06-20"
+    },
+    {
+     "auteur": "christophe balan",
+     "note": 5,
+     "texte": "(Translated by Google) After multiple competing services, which failed to meet my specific needs, I thank Atol at the Riberac shopping center, who are exceptionally competent, quick, and attentive. Thank you for your professionalism.\n\nChristophe Balan\n\n(Original)\nApres multiples prestations concurantes\nN'ayant  aucunement repondu a ma demande adapteee\nAtol centre commercial riberac,qui sont exeptionnelement competent ,rapide et a l'ecoute\nMerci de leur professionalisme\nChristophe Balan",
+     "date": "2026-06-15"
+    }
+   ]
   },
   {
    "code": "18",
    "name": "RIB3",
    "enseigne": "LACHAL OPTICIEN",
-   "ville": "RIBERAC"
+   "ville": "RIBERAC",
+   "derniers_avis": [
+    {
+     "auteur": "Jean-Pascal Guignard",
+     "note": 5,
+     "texte": "Bon accueil, service professionnel et rapide, service de proximité....a recommander\n\n(Translated by Google)\nA warm welcome, professional and fast service, local service... highly recommended",
+     "date": "2026-09-11"
+    },
+    {
+     "auteur": "Louis Marc",
+     "note": 5,
+     "texte": "Équipe très à l’écoute des besoins. Un grand choix de montures.  Très bonne expérience\n\n(Translated by Google)\nThe team was very attentive to our needs. A wide selection of frames. A very good experience.",
+     "date": "2026-06-18"
+    },
+    {
+     "auteur": "Philippe",
+     "note": 5,
+     "texte": "Suite à une très mauvaise expérience chez Lachal Périgueux, l'équipe de Ribérac a parfaitement bien fait son travail.\nÉcoute, conseils et courtoisie sont ici au rendez-vous. Merci pour votre travail Katarina ainsi qu'au reste de l'équipe.\n\n(Translated by Google)\nFollowing a very bad experience at Lachal Périgueux, the Ribérac team did an excellent job.\nAttentiveness, advice, and courtesy were all present. Thank you for your work, Katarina, and to the rest of the team.",
+     "date": "2026-02-08"
+    },
+    {
+     "auteur": "jeanne Puy",
+     "note": 5,
+     "texte": "Super accueil et très bon conseil\n\n(Translated by Google)\nExcellent welcome and very good advice",
+     "date": "2021-12-18"
+    },
+    {
+     "auteur": "Françoise Malaty",
+     "note": 5,
+     "texte": "Merci d'avoir réparé ma branche de lunettes sans frais, une vacanciers agréablement surprise...\n\n(Translated by Google)\nThank you for repairing my glasses arm free of charge, a pleasantly surprised holidaymaker...",
+     "date": "2023-08-20"
+    }
+   ]
   },
   {
    "code": "30",
    "name": "SOUILLAC",
    "enseigne": "REGARDS D'ICI",
-   "ville": "SOUILLAC"
+   "ville": "SOUILLAC",
+   "derniers_avis": [
+    {
+     "auteur": "Ilse Van Dyck",
+     "note": 5,
+     "texte": "Un accueil très chaleureux. Nous sommes venus ici pour la première fois en tant qu'étrangers et avons bénéficié d'une excellente assistance. À recommander vivement !\n\n(Translated by Google)\nA very warm welcome. We were here for the first time as foreigners and received excellent assistance. Highly recommended!",
+     "date": "2026-09-08"
+    },
+    {
+     "auteur": "Laetitia Baynat",
+     "note": 5,
+     "texte": "Un grand merci à regard d ici merci pour l accueil  elle a pris le temp pour les lunette de mon fils avec beaucoup de professionnalisme et de bienveillance. Merci de votre aide je vous le recommande vivement\n\n(Translated by Google)\nA huge thank you to Regard d'Ici! Thank you for the warm welcome. They took the time to fit my son's glasses with great professionalism and kindness. Thank you for your help; I highly recommend them.",
+     "date": "2026-09-05"
+    },
+    {
+     "auteur": "Laure Foltzer",
+     "note": 5,
+     "texte": "Très professionnel même sur un \"simple\"réglage de lunette. Accueil impeccable et disponible\n\n(Translated by Google)\nHighly professional, even for a \"simple\" glasses adjustment. Impeccable and helpful service.",
+     "date": "2026-09-03"
+    },
+    {
+     "auteur": "Christine BIZOUARN",
+     "note": 5,
+     "texte": "En vacances à Souillac, Virginie Dupont m’a réparé mes lunettes dont une petite vis était partie. Accueillante et souriante elle m’a dépannée gratuitement. Encore merci\n\n(Translated by Google)\nWhile on holiday in Souillac, Virginie Dupont repaired my glasses; a small screw had come loose. Friendly and smiling, she helped me out free of charge. Thanks again!",
+     "date": "2026-08-12"
+    },
+    {
+     "auteur": "Stephane Ferrer",
+     "note": 5,
+     "texte": "Venu pour faire redresser un paire de lunettes.\nFait dans les 5 minutes.\nPersonnel souriant, accueillant et efficace.\nJe recommande\n\n(Translated by Google)\nI came in to have my glasses straightened.\nDone in 5 minutes.\nFriendly, welcoming, and efficient staff.\nI recommend them.",
+     "date": "2026-08-08"
+    }
+   ]
   },
   {
    "code": "32",
    "name": "SOUILLAC2",
    "enseigne": "ATOL",
-   "ville": "SOUILLAC"
+   "ville": "SOUILLAC",
+   "derniers_avis": [
+    {
+     "auteur": "Cecile Juju",
+     "note": 5,
+     "texte": "L'accueil  agréable, le choix des montures et des verres conseillés par des jeunes opticiens compétents\n.service rapide.\nLes garanties sont intéressantes.\nLe magasin est tres bien agencé\nJe recommande\n\n(Translated by Google)\nThe welcome was pleasant, and the selection of frames and lenses was recommended by knowledgeable young opticians.\n\nFast service.\n\nThe warranties are attractive.\n\nThe store is very well laid out.\nI recommend it.",
+     "date": "2026-08-03"
+    },
+    {
+     "auteur": "Vincent",
+     "note": 5,
+     "texte": "Accueil, service, réparation, tout est fait pour vous arranger et vous satisfaire.\n\n(Translated by Google)\nReception, service, repairs, everything is done to accommodate you and satisfy you.",
+     "date": "2026-08-01"
+    },
+    {
+     "auteur": "Nath GEL",
+     "note": 5,
+     "texte": "Un grand merci pour votre acceuil et pour le service rendu gracieusement. Je vous recommande l'équipe d'Atol Souillac !\n\n(Translated by Google)\nThank you so much for your warm welcome and for the excellent service. I highly recommend the Atol Souillac team!",
+     "date": "2026-08-01"
+    },
+    {
+     "auteur": "Mallaury L",
+     "note": 5,
+     "texte": "Super conseil, très beau magasin et vendeur au top, je recommande\n\n(Translated by Google)\nExcellent advice, beautiful shop and top-notch salesperson, I highly recommend it.",
+     "date": "2026-07-30"
+    },
+    {
+     "auteur": "annie vergne",
+     "note": 5,
+     "texte": "Très bons conseils !\nLunettes très bien adaptées et de très bonne qualité.\nRien à redire … tout est parfait !\nEt, la cerise sur le gâteau : magasin refait à neuf, où on se sent bien !\n\n(Translated by Google)\nExcellent advice! The glasses fit perfectly and are of very good quality.\nNothing to complain about… everything is perfect!\n\nAnd, the icing on the cake: the store has been completely renovated and has a great atmosphere!",
+     "date": "2026-07-30"
+    }
+   ]
   },
   {
    "code": "29",
    "name": "ST AIGULIN",
    "enseigne": "ATOL",
-   "ville": "SAINT-AIGULIN"
+   "ville": "SAINT-AIGULIN",
+   "derniers_avis": [
+    {
+     "auteur": "Pascale BRUNET",
+     "note": 5,
+     "texte": "Très bon accueil et prise en charge immédiate. Guillaume a su répondre à nos demandes (nouveaux verres et montures pour mon mari et moi) De plus, il est agréable d'avoir une agence à proximité sans avoir à faire des kilomètres !!\n\n(Translated by Google)\nExcellent service and immediate attention. Guillaume was able to meet our needs (new lenses and frames for my husband and me). It's also great to have an agency nearby without having to travel miles!",
+     "date": "2026-09-05"
+    },
+    {
+     "auteur": "Sylvie Duchene",
+     "note": 5,
+     "texte": "Très bien accueilli, opticien compétent.\n\n(Translated by Google)\nVery well received, competent optician.",
+     "date": "2026-07-31"
+    },
+    {
+     "auteur": "Dame Guenièvre",
+     "note": 5,
+     "texte": "Ils m'ont super gentiment et gratuitement dépannée: j'avais cassé une des branches de mes lunettes de vue et tordu l'autre. C'etait arrangé en moins de 10 minutes ! Merci encore !\n\n(Translated by Google)\nThey were incredibly kind and helped me out for free: I had broken one of the arms of my glasses and bent the other. It was fixed in less than 10 minutes! Thanks again!",
+     "date": "2026-07-21"
+    },
+    {
+     "auteur": "France Perrut",
+     "note": 5,
+     "texte": "Très bon accueil\n\n(Translated by Google)\nVery warm welcome",
+     "date": "2024-11-05"
+    },
+    {
+     "auteur": "CHANTAL & CHRISTOPHE CONESA",
+     "note": 5,
+     "texte": "Très bon accueil , excellent conseil , personne très dynamique et sympathique , super pro. Merci\n\n(Translated by Google)\nVery warm welcome, excellent advice, very dynamic and friendly person, super professional. THANKS",
+     "date": "2024-08-06"
+    }
+   ]
   },
   {
    "code": "26",
    "name": "ST CYPRIEN",
    "enseigne": "ATOL",
-   "ville": "SAINT-CYPRIEN"
+   "ville": "SAINT-CYPRIEN",
+   "derniers_avis": [
+    {
+     "auteur": "Lucie",
+     "note": 5,
+     "texte": "(Translated by Google) A perfect pair of glasses for me.\n\nBut above all, a warm welcome from Lisa, the shop manager. I highly recommend this shop, which, in addition to her kindness, is beautifully decorated and spotless!\n\nThank you for your help and kindness.\nLucie\n\n(Original)\nUne paire de lunette parfaite pour moi.\nMais surtout un accueil chaleureux de la part de Lisa la responsable de la boutique. Je recommande cette boutique qui en plus de sa gentillesse est parfaitement bien décorer et propre !!\nMerci de votre aide et de votre bienveillance\nLucie",
+     "date": "2026-08-22"
+    },
+    {
+     "auteur": "Mathilde Macouin",
+     "note": 5,
+     "texte": "(Translated by Google) Excellent optician's shop! Lisa, smiling and welcoming, gave me great advice. I highly recommend her!\n\n(Original)\nTrès bon magasin d’optique ! Lisa, souriante et chaleureuse, a été de très bon conseil. Je vous la recommande !",
+     "date": "2026-08-11"
+    },
+    {
+     "auteur": "Allison Vasseur",
+     "note": 5,
+     "texte": "(Translated by Google) I came because my daughter lost her sunglasses.\n\nThe optician was patient and gave good advice. A kind person.\n\n(Original)\nJe suis venue , car ma fille a perdu à ses lunettes de soleil .\nL’opticien a étais patient , de bons conseils\nPersonne gentil",
+     "date": "2026-08-11"
+    },
+    {
+     "auteur": "Châtellier Dorian",
+     "note": 5,
+     "texte": "Très bon magasin d'optique, espace agréable. Lisa m'a vraiment aiguillé dans le choix de mes lunettes. C'est une très bonne conseillère et souriante en plus ! Je recommande !\n\n(Translated by Google)\nExcellent optician's shop, pleasant atmosphere. Lisa was a great help in choosing my glasses. She's a very good advisor and always smiling! I highly recommend it!",
+     "date": "2026-08-02"
+    },
+    {
+     "auteur": "Sae Sanchez",
+     "note": 5,
+     "texte": "Souriantes et très sympathiques je recommande!\n\n(Translated by Google)\nSmiling and very friendly, I recommend them!",
+     "date": "2026-07-09"
+    }
+   ]
   },
   {
    "code": "19",
    "name": "ST SEURIN",
    "enseigne": "ATOL",
-   "ville": "SAINT-SEURIN-SUR-L'ISLE"
+   "ville": "SAINT-SEURIN-SUR-L'ISLE",
+   "derniers_avis": [
+    {
+     "auteur": "Rodolphe Gallinad",
+     "note": 5,
+     "texte": "Je recommande la boutique de St seurin sur l'isle.\n\n(Translated by Google)\nI recommend the shop in St Seurin sur l'Isle.",
+     "date": "2026-09-08"
+    },
+    {
+     "auteur": "Patrick Mierlot",
+     "note": 5,
+     "texte": "(Translated by Google) perfect welcome and advice\n\n(Original)\naccueil et conseil parfait",
+     "date": "2026-08-29"
+    },
+    {
+     "auteur": "Mity Cendrees",
+     "note": 5,
+     "texte": "(Translated by Google) Adorable and pleasant, with good advice\n\n(Original)\nAdorable et agréable, avec de bons conseils",
+     "date": "2026-08-29"
+    },
+    {
+     "auteur": "Zenaida Dos Santos",
+     "note": 5,
+     "texte": "J'ai beaucoup apprécié l'attention, le service et la gentillesse du personnel du magasin Atol Saint Seurin L’ilse et plus particulièrement de M. Daniel, qui était très attentionné et toujours souriant, ce qui a permis aux clients de se sentir à l'aise. Un grand merci et beaucoup de succès à tous🤩😎\n\n(Translated by Google)\nI greatly appreciated the attentiveness, service, and kindness of the staff at the Atol Saint Seurin L’île store, and especially Mr. Daniel, who was very caring and always smiling, which made customers feel comfortable. A big thank you and best of luck to everyone! 🤩😎",
+     "date": "2026-08-22"
+    },
+    {
+     "auteur": "Vincent Guillon",
+     "note": 5,
+     "texte": "Super équipe, merci\n\n(Translated by Google)\nGreat team, thank you",
+     "date": "2026-08-10"
+    }
+   ]
   },
   {
    "code": "2",
    "name": "ST YRIEIX",
    "enseigne": "LACHAL OPTICIEN",
-   "ville": "SAINT-YRIEIX-LA-PERCHE"
+   "ville": "SAINT-YRIEIX-LA-PERCHE",
+   "derniers_avis": [
+    {
+     "auteur": "Jeanne",
+     "note": 5,
+     "texte": "Je recommande vivement cette enseigne. Suite à un besoin de changer mes montures, j'ai été accueillie avec beaucoup de professionnalisme. L'équipe a été très réactive, à l'écoute et d'une grande patience pour m'aider à trouver les montures qui me convenaient le mieux. Les conseils étaient personnalisés et de qualité. C'est un vrai plaisir d'avoir affaire à de vrais professionnels qui prennent le temps de bien accompagner leurs clients. Merci encore pour votre accueil, votre disponibilité et votre efficacité !\n\n(Translated by Google)\nI highly recommend this store. When I needed to change my frames, I was greeted with great professionalism. The team was very responsive, attentive, and patient in helping me find the frames that best suited me. The advice was personalized and of high quality. It's a real pleasure to deal with true professionals who take the time to properly assist their clients. Thank you again for your welcome, your availability, and your efficiency!",
+     "date": "2026-07-12"
+    },
+    {
+     "auteur": "Christian Bezeau",
+     "note": 5,
+     "texte": "Très bel accueil et très belles lunettes oomade !\nDeux paires de couleurs différentes pour mon mari et moi. Enchantés du résultat. Très bonne idée pour se faire plaisir à un prix très convenable.\nNadine et Christian\n\n(Translated by Google)\nA very warm welcome and beautiful Oomade glasses!\nTwo pairs in different colors for my husband and me. We're delighted with the result. A great idea to treat yourself at a very reasonable price.\nNadine and Christian",
+     "date": "2026-05-23"
+    },
+    {
+     "auteur": "Leolily B.",
+     "note": 5,
+     "texte": "Merci à toute l'équipe qui a été formidable de A a Z.\nUn petit supplément XXL pour Jeanne qui a été très professionnelle et toujours avec le sourire.\nPassez de bonnes fêtes à toute l'équipe d'Atol STY\n\n(Translated by Google)\nThank you to the entire team who were fantastic from start to finish. A special shout-out to Jeanne who was incredibly professional and always had a smile on her face.\nHappy holidays to the whole Atol STY team!",
+     "date": "2025-12-06"
+    },
+    {
+     "auteur": "Laurine Britsch",
+     "note": 5,
+     "texte": "Une équipe en or!\nToujours un accueil avec le sourire.\nToujours à l'écoute, de très bon conseil.\nTrès professionnel, rapide et efficace.\nIls sont parfaits.\n\n(Translated by Google)\nA fantastic team!\nAlways greeted with a smile.\nAlways attentive and offering excellent advice.\nVery professional, fast, and efficient.\nThey're perfect.",
+     "date": "2025-10-23"
+    },
+    {
+     "auteur": "Maroussia Mejecazes",
+     "note": 5,
+     "texte": "Super accueil et très réactif si il y a un souci avec les lunettes. Je recommande vivement\n\n(Translated by Google)\nGreat welcome and very responsive if there is a problem with the glasses. I highly recommend",
+     "date": "2025-10-10"
+    }
+   ]
   },
   {
    "code": "3",
    "name": "STASTIER",
    "enseigne": "ATOL",
-   "ville": "SAINT-ASTIER"
+   "ville": "SAINT-ASTIER",
+   "derniers_avis": [
+    {
+     "auteur": "maryse simon",
+     "note": 5,
+     "texte": "accueil excellent  par une vraie professionelle\nconseils adaptés à mes besoins\npleinement satisfaite\n\n(Translated by Google)\nExcellent service from a true professional. Advice tailored to my needs. Completely satisfied.",
+     "date": "2026-09-05"
+    },
+    {
+     "auteur": "Alexia JANSON",
+     "note": 5,
+     "texte": "Pour ma 1ere paire de lunettes j’ai eu des super bons conseils…. La conseillère a pris le temps…. J’ai pu essayer plusieurs modèles et styles!!! Ça fait du bien de se sentir écouté et d’être compris. Mes amis m’ont fait que des compliments sur mon choix !!! Je suis ravie!!!\n\n(Translated by Google)\nFor my first pair of glasses, I received excellent advice. The sales assistant took her time. I was able to try on several models and styles! It felt so good to be listened to and understood. My friends complimented me on my choice! I'm thrilled!",
+     "date": "2026-09-02"
+    },
+    {
+     "auteur": "Solange JOLLY",
+     "note": 5,
+     "texte": "Très satisfaite de l'excellent accueil, personnel compétent et de bon conseil, produits de très bonne qualité. Je recommande Atol mon Opticien à  Saint-astier, à tous.\n\n(Translated by Google)\nVery satisfied with the excellent welcome, competent and helpful staff, and very high-quality products. I recommend Atol mon Opticien in Saint-Astier to everyone.",
+     "date": "2026-08-24"
+    },
+    {
+     "auteur": "karine jolly",
+     "note": 5,
+     "texte": "Opticiennes trés à l'écoute, de bons conseils, disponibles pour réglage de monture après, toujours bien accueilli avec sourire, peu d'attente. Verres de qualité, choix dans les montures. Je recommande.\n\n(Translated by Google)\nThe opticians are very attentive, offer excellent advice, and are available to adjust frames afterwards. They are always greeted warmly with a smile, and there's hardly any waiting time. The lenses are high quality, and there's a good selection of frames. I highly recommend them.",
+     "date": "2026-08-22"
+    },
+    {
+     "auteur": "salima benchalal",
+     "note": 5,
+     "texte": "Très bonne boutique, très bon accueil, large choix de monture et les explications données sont très claires. Je recommande\n\n(Translated by Google)\nExcellent shop, very welcoming staff, wide selection of frames, and the explanations given are very clear. I highly recommend it.",
+     "date": "2026-08-10"
+    }
+   ]
   },
   {
    "code": "27",
    "name": "THIVIERS",
    "enseigne": "ATOL",
-   "ville": "THIVIERS"
+   "ville": "THIVIERS",
+   "derniers_avis": [
+    {
+     "auteur": "Dominique Rousseau",
+     "note": 5,
+     "texte": "Bonjour nouveau sur Thiviers nous avons été trés bien reçu par le\npersonel qui nous à proposé de fabriquer une monture 3D en\nattendant un rendez vous chez un ophtalmo merci\n\n(Translated by Google)\nHello, we're new to Thiviers and we were very well received by the staff who offered to make a 3D-printed frame for us while we wait for an appointment with an ophthalmologist. Thank you!",
+     "date": "2026-09-10"
+    },
+    {
+     "auteur": "Marie",
+     "note": 5,
+     "texte": "Je découvre Atoll Thiviers pour la réparation d'une branche de lunettes achetées a atol , région parisienne..j'aime beaucoup ces lunettes.\nMerci atol,et son équipe a Thiviers,pour la réparation gratuite 3 D.\n\n(Translated by Google)\nI discovered Atoll Thiviers while getting a temple of my glasses repaired. I bought them at Atoll in the Paris region... I really love these glasses.\n\nThank you Atoll and the team in Thiviers for the free 3D repair.",
+     "date": "2026-09-03"
+    },
+    {
+     "auteur": "Chantal Cherbeix",
+     "note": 5,
+     "texte": "Très bon accueil, très rapide.\nOpticiens très sympathiques.\n\n(Translated by Google)\nExcellent service, very quick.\nVery friendly opticians.",
+     "date": "2026-08-19"
+    },
+    {
+     "auteur": "Em “Alias” Alias",
+     "note": 5,
+     "texte": "Un optitien tres sympatique qui m a bien aidee, en effet j avais casse ma monture et il m a cree une monture de secours avec une imprimante 3d en 30 minutes.\nElles sont bien robustes et confortables.\nComme je suis de belgique cela me depanne beaucoup jusqu a mon retour.\nUn tout grand merci et je vous souhaite une fort belle continuation,\nEm.votion\n\n(Translated by Google)\nA very friendly optician who helped me a lot. I had broken my frames, and he created a replacement for me with a 3D printer in 30 minutes.\n\nThey are very sturdy and comfortable.\nSince I'm from Belgium, this is a huge help until I get back.\n\nA huge thank you, and I wish you all the best,\nEm.votion",
+     "date": "2026-08-18"
+    },
+    {
+     "auteur": "Adrien Texier",
+     "note": 5,
+     "texte": "Agence au poil !\nQue ce soit pour des verres de qualité et leurs différents services.\nNotement le service lunettes 3d qui m'a permis de trouver une solution simple et rapide pour réparer mes montures en attendant de pouvoir prétendre à de nouvelles lunettes remboursée.\nEt l'équipe est top aussi.\n\n(Translated by Google)\nTop-notch agency!\n\nWhether it's for quality lenses or their various services.\n\nIn particular, the 3D glasses service allowed me to find a quick and easy solution to repair my frames while waiting to be eligible for reimbursed new glasses.\n\nAnd the team is fantastic too.",
+     "date": "2026-08-18"
+    }
+   ]
   },
   {
    "code": "22",
    "name": "TRELISSAC",
    "enseigne": "ATOL",
-   "ville": "TRELISSAC"
+   "ville": "TRELISSAC",
+   "derniers_avis": [
+    {
+     "auteur": "Naim",
+     "note": 5,
+     "texte": "Jai du refaire les lunette de mon fils qui voulais des lunettes crystal . Et jen ai profiter pour refaire les miennes. Jai eu affaire a 2 homme et une dame. Les 3 personne que jai vu se sont montré arrangeant , tres agreable et tres professionnel. Rien a redire . Nous sommes tpus les 2 tres satisfait ! Merci a l equipe de Trelissac !\n\n(Translated by Google)\nI had to get my son's glasses remade; he wanted crystal lenses. I took the opportunity to get mine remade as well. I dealt with two men and a woman. All three people I saw were accommodating, very pleasant, and very professional. No complaints whatsoever. We are both very satisfied! Thank you to the Trelissac team!",
+     "date": "2026-09-08"
+    },
+    {
+     "auteur": "Kyosuke Kano",
+     "note": 5,
+     "texte": "Une équipe toujours souriante et au top merci Ewen pour le test de vue et les lunettes et aux habituels Mathilde Fabien et Guillaume\n\n(Translated by Google)\nA team that's always smiling and fantastic, thank you Ewen for the eye test and glasses, and to the usual suspects Mathilde, Fabien, and Guillaume.",
+     "date": "2026-08-21"
+    },
+    {
+     "auteur": "Jade",
+     "note": 5,
+     "texte": "Très bon accueil, un choix très varié de monture. Je recommande 👍🏻\n\n(Translated by Google)\nExcellent service, a wide variety of frames to choose from. I highly recommend them 👍🏻",
+     "date": "2026-08-21"
+    },
+    {
+     "auteur": "Remi Beauvieux",
+     "note": 5,
+     "texte": "(Translated by Google) Good team. Very serious, attentive, and professional. I recommend them.\n\n(Original)\nBonne équipe. très sérieux a l écoute  très professionnel je recommande",
+     "date": "2026-08-21"
+    },
+    {
+     "auteur": "Florence Motte",
+     "note": 5,
+     "texte": "(Translated by Google) The welcome and advice were always top-notch, and the service was very satisfactory!\n\n(Original)\nAccueil, conseil toujours au top et prestation très satisfaisante !",
+     "date": "2026-08-11"
+    }
+   ]
   },
   {
    "code": "36",
    "name": "VERGT",
    "enseigne": "LACHAL OPTICIEN",
-   "ville": "VERGT"
+   "ville": "VERGT",
+   "derniers_avis": [
+    {
+     "auteur": "Patricia Bisson",
+     "note": 5,
+     "texte": "Opticien Indispensable qui manquait à Vergt, la Responsable est une excellente Professionnelle qui sait nous conseiller\nBravo 👏 grâce à elle, on n'y voit bcp plus clair 😎\n\n(Translated by Google)\nAn essential optician that Vergt was missing! The manager is an excellent professional who knows how to advise us.\nWell done! 👏 Thanks to her, we can see much more clearly! 😎",
+     "date": "2026-03-28"
+    },
+    {
+     "auteur": "PHILIPPE MASSÉ",
+     "note": 5,
+     "texte": "PETITE SUCCURSALE DU GRAND LACHAL DE PÉRIGUEUX. MAIS EXTRÊMEMENT UTILE ET INDISPENSABLE POUR VERGT. TRÈS BIEN TENU ET TRÈS ACCUEILLANTE PAR UNE PERSONNE BIEN SYMPA ET COMPÉTENTE. RECOMMANDE\n\n(Translated by Google)\nA small branch of the larger Lachal supermarket in Périgueux, but extremely useful and indispensable for Vergt. Very well run and staffed by a very friendly and competent person. Highly recommended.",
+     "date": "2018-09-30"
+    }
+   ]
   },
   {
    "code": "13",
    "name": "VILLEREAL",
    "enseigne": "ATOL",
-   "ville": "VILLEREAL"
+   "ville": "VILLEREAL",
+   "derniers_avis": [
+    {
+     "auteur": "M WINTERINK",
+     "note": 5,
+     "texte": "(Translated by Google) A personnel who are amiable and competent, with a good reputation; don't wait until you arrive at fair comprendre en français…\nOur rapid service for your orders, instructions, recommended without hesiter\n\nVery friendly and knowledgeable staff, who also speak English, so if you are unable to speak French...\nFast service for the ordered glasses, in short, highly recommended\n\n(Original)\nUn personnel très aimable et compétent, qui parle également anglais ; donc si vous n'arrivez pas à vous faire comprendre en français…\nUn service rapide pour les lunettes commandées, bref, à recommander sans hésiter\n\nZeer vriendelijk en bekwaam personeel, die tevens Engels spreken, dus mocht het niet lukken in het frans...\nSnelle service voor de bestelde brillen, kortom een aanrader",
+     "date": "2026-08-20"
+    },
+    {
+     "auteur": "Olivier Brassine",
+     "note": 5,
+     "texte": "Excellent service et très bons conseils. Excellent prix.\nJe recommande.\n\n(Translated by Google)\nExcellent service and very good advice. Excellent price.\n\nI recommend them.",
+     "date": "2026-07-07"
+    },
+    {
+     "auteur": "Phil Connolly",
+     "note": 5,
+     "texte": "Excellent service. Very friendly and helpful staff.",
+     "date": "2026-07-04"
+    },
+    {
+     "auteur": "Sylvia Van Eijnatten",
+     "note": 4,
+     "texte": "(Translated by Google) Good advice, they listened carefully to my wishes, and immediately tried on the right frames. I was very satisfied and was outside within 15 minutes with a perfectly fitting pair of sunglasses.\n\nThank you for the attentive saleswoman. She was incredibly nice.\n\n(Original)\nGoed advies, goed naar mijn wensen geluisterd en gelijk de juiste monturen gepast. Was heel tevreden en stond binnen 15 minuten buiten met een perfect passende zonnebril.\nDankjewel voor de atente verkoopster.  Ze was ontzettend aardig",
+     "date": "2026-06-13"
+    },
+    {
+     "auteur": "anonymous",
+     "note": 5,
+     "texte": "Après être allé chez K..s, Villen...e Optique et Opti. 2..., pour des devis pour des lunettes à verres progressifs, j'ai enfin trouvé ce que je cherchais.\nSuper accueil de Anne et Elsa qui connaissent leur sujet et les produits qu'elles vendent 👏👍👏 Explications claires et precises. Pas de grimace lorsque vous limitez le tarif maximum du choix de vos montures. Un grand choix de qualité à tous les prix, de plusieurs formes et couleurs différentes. Vous ne trouvez pas votre bonheur, on vous présente des modèles sur écran qu'on vous propose de faire venir.\nJ'ai trouvé mon opticien.\nMesdames, continuez comme ca 👍\n\n(Translated by Google)\nAfter going to K..s, Villen...e Optique, and Opti. 2... for quotes on progressive lenses, I finally found what I was looking for. Anne and Elsa gave me a fantastic welcome; they really know their stuff and the products they sell 👏👍👏 Their explanations were clear and precise. They didn't make any faces when I limited my maximum budget for frames. They have a wide selection of quality frames at all price points, in many different shapes and colors. If you don't find what you're looking for, they show you models on a screen and offer to bring them in.\n\nI've found my optician. Ladies, keep up the good work! 👍",
+     "date": "2026-06-12"
+    }
+   ]
   }
  ],
  "objectives": {
@@ -1015,9 +2144,9 @@
     "semaine": "2026-S37",
     "debut": "2026-09-07",
     "fin": "2026-09-13",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 2,
     "note": 4.6,
-    "avis_cumules": 19,
+    "avis_cumules": 21,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -2065,9 +3194,9 @@
     "semaine": "2026-S37",
     "debut": "2026-09-07",
     "fin": "2026-09-13",
-    "avis_nouveaux": 2,
+    "avis_nouveaux": 5,
     "note": 4.9,
-    "avis_cumules": 191,
+    "avis_cumules": 194,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -2275,9 +3404,9 @@
     "semaine": "2026-S37",
     "debut": "2026-09-07",
     "fin": "2026-09-13",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 10,
+    "avis_cumules": 11,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -3325,9 +4454,9 @@
     "semaine": "2026-S37",
     "debut": "2026-09-07",
     "fin": "2026-09-13",
-    "avis_nouveaux": 2,
-    "note": 4.9,
-    "avis_cumules": 54,
+    "avis_nouveaux": 151,
+    "note": 4.6,
+    "avis_cumules": 203,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -3955,9 +5084,9 @@
     "semaine": "2026-S37",
     "debut": "2026-09-07",
     "fin": "2026-09-13",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 5,
-    "avis_cumules": 119,
+    "avis_cumules": 120,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -6265,9 +7394,9 @@
     "semaine": "2026-S37",
     "debut": "2026-09-07",
     "fin": "2026-09-13",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 3,
     "note": 4.9,
-    "avis_cumules": 146,
+    "avis_cumules": 148,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -7315,9 +8444,9 @@
     "semaine": "2026-S37",
     "debut": "2026-09-07",
     "fin": "2026-09-13",
-    "avis_nouveaux": 8,
+    "avis_nouveaux": 12,
     "note": 4.9,
-    "avis_cumules": 189,
+    "avis_cumules": 193,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -7525,9 +8654,9 @@
     "semaine": "2026-S37",
     "debut": "2026-09-07",
     "fin": "2026-09-13",
-    "avis_nouveaux": 3,
+    "avis_nouveaux": 10,
     "note": 4.8,
-    "avis_cumules": 127,
+    "avis_cumules": 134,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -7769,9 +8898,9 @@
     "semaine": "2026-S37",
     "debut": "2026-09-07",
     "fin": "2026-09-13",
-    "avis_nouveaux": 3,
+    "avis_nouveaux": 7,
     "note": 4.9,
-    "avis_cumules": 98,
+    "avis_cumules": 102,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -7803,9 +8932,9 @@
     "semaine": "2026-S37",
     "debut": "2026-09-07",
     "fin": "2026-09-13",
-    "avis_nouveaux": 5,
+    "avis_nouveaux": 14,
     "note": 4.9,
-    "avis_cumules": 139,
+    "avis_cumules": 148,
     "faces": null,
     "branches": null,
     "goodies": null,
