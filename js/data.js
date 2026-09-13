@@ -74,22 +74,26 @@ export function statusFor(pct) {
   return "miss";
 }
 
+// Le score global n'atteint 100% que si CHAQUE objectif actif est
+// entierement rempli : un depassement fait monter le score au-dela de 100%
+// (aucun plafond par indicateur), et un objectif suivi sans releve cette
+// semaine compte comme 0% plutot que d'etre simplement ignore -- sinon un
+// seul indicateur en forme suffirait a afficher 100% malgre un autre
+// manquant. Le "0" affiche pour ce cas est colore differemment (voir
+// fmtValeur, views.js) pour rester lisible comme "pas de donnee", pas
+// comme "vraiment zero".
 function computeHistory(weeks, metrics, objective) {
   return weeks.map((w) => {
     const perMetric = {};
     let scoreSum = 0;
-    let scoreCount = 0;
     metrics.forEach((m) => {
       const value = w[m.valueField];
       const obj = objective[m.objectiveField];
       const pct = pctFor(value, obj);
       perMetric[m.key] = { value, objective: obj, pct, status: statusFor(pct) };
-      if (pct !== null) {
-        scoreSum += Math.min(pct, 100);
-        scoreCount += 1;
-      }
+      scoreSum += pct === null ? 0 : pct;
     });
-    const score = scoreCount ? Math.round(scoreSum / scoreCount) : null;
+    const score = metrics.length ? Math.round(scoreSum / metrics.length) : null;
     return { ...w, metrics: perMetric, score };
   });
 }
@@ -158,7 +162,7 @@ export function buildAdminModel(data) {
 
   const scored = metricsAgg.filter((x) => x.pct !== null);
   const score = scored.length
-    ? Math.round(scored.reduce((s, x) => s + Math.min(x.pct, 100), 0) / scored.length)
+    ? Math.round(scored.reduce((s, x) => s + x.pct, 0) / scored.length)
     : null;
 
   const weekLabel = perStore.length ? perStore[0].currentWeek.semaine : null;

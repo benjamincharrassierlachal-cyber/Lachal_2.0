@@ -13,6 +13,7 @@
   --locked-stroke: #3a3f4d;
   --gold: #ffd166;
   --danger: #ff5c72;
+  --warn: #f4c430;
   --radius: 18px;
   --radius-sm: 12px;
   --shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.55);
@@ -46,7 +47,7 @@ body {
 }
 h1, h2, h3 { margin: 0; font-weight: 700; letter-spacing: -0.01em; }
 p { margin: 0; }
-button { font-family: inherit; cursor: pointer; }
+button { font-family: inherit; cursor: pointer; color: inherit; }
 .mono { font-family: "Space Mono", monospace; }
 
 .icon { display: block; flex-shrink: 0; }
@@ -309,7 +310,7 @@ main#view {
 .metric-card .m-body { flex: 1; min-width: 0; }
 .metric-card .m-top { display: flex; justify-content: space-between; align-items: baseline; }
 .metric-card .m-label { font-size: 13px; color: var(--text-dim); }
-.metric-card .m-nums { font-size: 15px; font-weight: 700; font-family: "Space Mono", monospace; }
+.metric-card .m-nums { font-size: 15px; font-weight: 700; font-family: "Space Mono", monospace; color: var(--text); }
 .m-nums-objectif { color: #b7bfd2; font-weight: 600; }
 .metric-card .m-pct { font-size: 13px; font-weight: 700; }
 .bar-track {

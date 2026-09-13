@@ -18,32 +18,43 @@ function isAdmin() {
   return settings.storeCode === ADMIN_CODE;
 }
 
-// Le mot de passe admin n'est redemande que si l'appareil est reste inactif
-// plus de 5 minutes (pas de nav/clic) : contrairement a une session d'onglet
-// classique, ca survit a un onglet mis en veille/tue par le telephone en
-// arriere-plan (cause du bouton "Admin" qui disparaissait "au hasard").
-const ADMIN_TIMEOUT_MS = 5 * 60 * 1000;
-
+// Le mot de passe admin, une fois entre, reste valide indefiniment sur cet
+// appareil (survit a l'onglet mis en veille/tue par le telephone en
+// arriere-plan, contrairement a une session d'onglet classique) : seule une
+// deconnexion explicite (bouton "Deconnexion" des Reglages) le redemande.
 function isAdminUnlocked() {
   try {
-    const depuis = Number(localStorage.getItem("adminUnlockedAt") || 0);
-    return depuis > 0 && Date.now() - depuis < ADMIN_TIMEOUT_MS;
+    return localStorage.getItem("adminUnlocked") === "1";
   } catch {
     return false;
   }
 }
 function unlockAdmin() {
   try {
-    localStorage.setItem("adminUnlockedAt", String(Date.now()));
+    localStorage.setItem("adminUnlocked", "1");
   } catch {
     /* navigation privee : tant pis, on redemandera le mot de passe */
   }
 }
-// A appeler sur chaque activite (navigation, clic) pendant qu'on est admin :
-// prolonge la fenetre de 5 minutes tant que l'usage continue, sans jamais
-// resusciter une session deja expiree.
-function touchAdmin() {
-  if (isAdminUnlocked()) unlockAdmin();
+function lockAdmin() {
+  try {
+    localStorage.removeItem("adminUnlocked");
+  } catch {
+    /* rien a nettoyer */
+  }
+}
+
+// Deconnexion explicite (bouton "Deconnexion" des Reglages) : si on etait
+// sur la vue admin elle-meme, plus rien a y montrer sans mot de passe -> on
+// repart sur le choix du magasin. Depuis un magasin (juste le raccourci
+// "Admin" affiche), on reste sur place, le raccourci disparait simplement.
+function logoutAdmin(data) {
+  lockAdmin();
+  if (isAdmin()) {
+    showOnboarding(data, () => checkRewards(data));
+  } else {
+    enterDashboard(data);
+  }
 }
 
 let adminSort = "score"; // score | name | trophies
@@ -186,7 +197,6 @@ function showRewardsScreen(data, freshBadges) {
 }
 
 function render(data) {
-  touchAdmin();
   const route = parseRoute();
   const view = document.getElementById("view");
   view.innerHTML = "";
@@ -202,11 +212,12 @@ function render(data) {
     document.getElementById("hdr-week").textContent = weekTitle(adminModel.weekLabel);
 
     if (route.name === "settings") {
-      renderSettings(view, { ...data, currentStoreName: "Espace admin", isAdmin: true }, settings, {
+      renderSettings(view, { ...data, currentStoreName: "Espace admin", isAdmin: true, adminUnlocked: isAdminUnlocked() }, settings, {
         setShape: (s) => { setSetting("shape", s); render(data); },
         setTheme: (t) => { setSetting("theme", t); applyTheme(); render(data); },
         changeStore: () => showOnboarding(data, () => checkRewards(data)),
         save: () => nav("dashboard"),
+        logout: () => logoutAdmin(data),
       });
     } else {
       const rows = adminModel.perStore.map((model) => {
@@ -245,11 +256,12 @@ function render(data) {
   } else if (route.name === "trophies") {
     renderTrophies(view, model, settings);
   } else if (route.name === "settings") {
-    renderSettings(view, { ...data, currentStoreName: model.store?.name }, settings, {
+    renderSettings(view, { ...data, currentStoreName: model.store?.name, adminUnlocked: isAdminUnlocked() }, settings, {
       setShape: (s) => { setSetting("shape", s); render(data); },
       setTheme: (t) => { setSetting("theme", t); applyTheme(); render(data); },
       changeStore: () => showOnboarding(data, () => checkRewards(data)),
       save: () => nav("dashboard"),
+      logout: () => logoutAdmin(data),
     });
   }
 }

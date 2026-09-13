@@ -21,6 +21,17 @@ function fmtNum(v) {
   return v === null || v === undefined ? "-" : v;
 }
 
+// Valeur realisee d'un indicateur suivi : "0" en jaune quand aucun releve
+// n'est arrive cette semaine (pct null malgre un objectif actif), pour le
+// distinguer d'un vrai zero mesure sans pour autant laisser un simple "-"
+// se faire oublier dans le score global (qui compte desormais ce cas comme
+// non atteint, voir computeHistory).
+function fmtValeur(pm) {
+  return pm.pct === null
+    ? `<span style="color:var(--warn)">0</span>`
+    : fmtNum(pm.value);
+}
+
 function esc(s) {
   return String(s ?? "").replace(/[&<>"']/g, (c) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
@@ -163,7 +174,7 @@ export function renderDashboard(root, model, settings, nav) {
         .map((m) => {
           const pm = currentWeek.metrics[m.key];
           return `<div class="stat-pill">
-            <span class="val" style="color:var(${m.colorVar})">${fmtNum(pm.value)}/${fmtNum(pm.objective)}</span>
+            <span class="val" style="color:var(${m.colorVar})">${fmtValeur(pm)}/${fmtNum(pm.objective)}</span>
             <span class="lbl">${m.short}</span>
           </div>`;
         })
@@ -188,7 +199,7 @@ export function renderDashboard(root, model, settings, nav) {
             <span class="m-label">${m.label}</span>
             <span class="m-pct" style="color:var(${m.colorVar})">${pm.pct === null ? "-" : pm.pct + "%"}</span>
           </div>
-          <div class="m-nums">${fmtNum(pm.value)} <span class="m-nums-objectif">/ objectif ${fmtNum(pm.objective)}</span></div>
+          <div class="m-nums">${fmtValeur(pm)} <span class="m-nums-objectif">/ objectif ${fmtNum(pm.objective)}</span></div>
           <div class="bar-track"><div class="bar-fill" style="width:${Math.min(100, pct)}%; background:var(${m.colorVar})"></div></div>
           ${m.key === "avis" && hasNote
             ? `<div class="m-note"><span>Note Google actuelle</span><span class="mono" style="color:var(${m.colorVar})">${currentWeek.note.toFixed(1)} ★</span></div>`
@@ -280,7 +291,7 @@ export function renderAdmin(root, adminModel, settings, rows, cb) {
               const m = METRIC_BY_KEY[key];
               const pm = r.model.currentWeek?.metrics[key];
               if (!pm) return `<span class="admin-metric admin-metric--off">${icon(m.icon, 16)}<span>—</span></span>`;
-              return `<span class="admin-metric" style="color:var(${m.colorVar})">${icon(m.icon, 16)}<span>${fmtNum(pm.value)}/${fmtNum(pm.objective)}</span></span>`;
+              return `<span class="admin-metric" style="color:var(${m.colorVar})">${icon(m.icon, 16)}<span>${fmtValeur(pm)}/${fmtNum(pm.objective)}</span></span>`;
             })
             .join("");
           return `<button class="admin-row" data-store="${r.store.code}">
@@ -339,7 +350,7 @@ export function renderMetricDetail(root, model, metricKey, settings) {
         <div class="score-center"><div class="score-value">${pm.pct === null ? "-" : pm.pct + "%"}</div></div>
       </div>
       <div>
-        <div class="big-num" style="color:var(${m.colorVar})">${fmtNum(pm.value)}</div>
+        <div class="big-num" style="color:var(${m.colorVar})">${fmtValeur(pm)}</div>
         <div class="big-sub">${m.verbe}, objectif ${fmtNum(pm.objective)}</div>
       </div>
     </div>
@@ -413,7 +424,7 @@ export function renderMetricDetail(root, model, metricKey, settings) {
             const wm = w.metrics[m.key];
             return `<tr>
               <td>${weekLabel(w.semaine)}</td>
-              <td class="num">${fmtNum(wm.value)}/${fmtNum(wm.objective)} ${wm.pct !== null ? `<span style="color:var(--text-dim)">${wm.pct}%</span>` : ""}</td>
+              <td class="num">${fmtValeur(wm)}/${fmtNum(wm.objective)} ${wm.pct !== null ? `<span style="color:var(--text-dim)">${wm.pct}%</span>` : ""}</td>
               <td>${statusChip(wm.status)}</td>
             </tr>`;
           })
@@ -515,6 +526,12 @@ export function renderSettings(root, data, settings, cb) {
         <p class="about-text-sm" style="margin-top:10px;">Se change avec <code>Reinitialiser_trophees.bat</code> a la racine du projet (pas depuis cette page : l'appli est un site statique, sans acces en ecriture au serveur).</p>
       </div>
     </div>` : ""}
+    ${data.adminUnlocked ? `
+    <div class="setting-block">
+      <div class="label">Espace admin</div>
+      <button class="danger-btn" data-logout-admin>Deconnexion</button>
+      <p class="about-text-sm" style="margin-top:6px;">Le mot de passe admin restera memorise sur cet appareil tant que vous ne vous deconnectez pas ici.</p>
+    </div>` : ""}
     <p class="about-text">Les donnees viennent de la compilation hebdomadaire du groupe (avis Google, Lyleoo, OOMADE) et sont republiees chaque semaine. Reglages sauvegardes sur cet appareil uniquement.</p>
   `;
   root.appendChild(wrap);
@@ -527,4 +544,5 @@ export function renderSettings(root, data, settings, cb) {
   );
   wrap.querySelector("[data-change-store]").addEventListener("click", cb.changeStore);
   wrap.querySelector("[data-save]").addEventListener("click", cb.save);
+  wrap.querySelector("[data-logout-admin]")?.addEventListener("click", cb.logout);
 }
