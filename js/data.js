@@ -75,25 +75,32 @@ export function statusFor(pct) {
 }
 
 // Le score global n'atteint 100% que si CHAQUE objectif actif est
-// entierement rempli : un depassement fait monter le score au-dela de 100%
-// (aucun plafond par indicateur), et un objectif suivi sans releve cette
-// semaine compte comme 0% plutot que d'etre simplement ignore -- sinon un
-// seul indicateur en forme suffirait a afficher 100% malgre un autre
-// manquant. Le "0" affiche pour ce cas est colore differemment (voir
-// fmtValeur, views.js) pour rester lisible comme "pas de donnee", pas
-// comme "vraiment zero".
+// entierement rempli (un objectif suivi sans releve cette semaine compte
+// comme 0%, pas comme ignore -- le "0" affiche est colore differemment,
+// voir fmtValeur dans views.js, pour rester lisible comme "pas de donnee").
+//
+// Tant qu'un seul objectif manque, un gros depassement ailleurs NE DOIT PAS
+// masquer ce manque : chaque indicateur reste plafonne a 100% dans la
+// moyenne (comme avant). C'est seulement quand TOUS les objectifs actifs
+// sont au moins atteints que le plafond saute, pour laisser un depassement
+// general se refleter au-dela de 100%.
 function computeHistory(weeks, metrics, objective) {
   return weeks.map((w) => {
     const perMetric = {};
-    let scoreSum = 0;
+    const pcts = [];
     metrics.forEach((m) => {
       const value = w[m.valueField];
       const obj = objective[m.objectiveField];
       const pct = pctFor(value, obj);
       perMetric[m.key] = { value, objective: obj, pct, status: statusFor(pct) };
-      scoreSum += pct === null ? 0 : pct;
+      pcts.push(pct === null ? 0 : pct);
     });
-    const score = metrics.length ? Math.round(scoreSum / metrics.length) : null;
+    let score = null;
+    if (pcts.length) {
+      const tousAtteints = pcts.every((p) => p >= 100);
+      const somme = pcts.reduce((s, p) => s + (tousAtteints ? p : Math.min(p, 100)), 0);
+      score = Math.round(somme / pcts.length);
+    }
     return { ...w, metrics: perMetric, score };
   });
 }
@@ -161,8 +168,9 @@ export function buildAdminModel(data) {
   }).filter(Boolean);
 
   const scored = metricsAgg.filter((x) => x.pct !== null);
+  const tousAtteints = scored.length && scored.every((x) => x.pct >= 100);
   const score = scored.length
-    ? Math.round(scored.reduce((s, x) => s + x.pct, 0) / scored.length)
+    ? Math.round(scored.reduce((s, x) => s + (tousAtteints ? x.pct : Math.min(x.pct, 100)), 0) / scored.length)
     : null;
 
   const weekLabel = perStore.length ? perStore[0].currentWeek.semaine : null;
