@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-13T09:48:11",
+ "generated_at": "2026-09-13T10:04:38",
  "trophy_start_date": null,
  "stores": [
   {
@@ -524,33 +524,7 @@
    "name": "MARSAC",
    "enseigne": "OPTIC 2000",
    "ville": "MARSAC-SUR-L'ISLE",
-   "derniers_avis": [
-    {
-     "auteur": "Laurent INNOCENT",
-     "note": 5,
-     "texte": "Bonjour a tous je vous conseil fortement de vous avancez vers cette magnifique équipe. Ils sont éléments exceptionnels. Ils sont non pas que pour l’as lunettes et ils sont aussi a l’écoute. Je reste fidèle a eux. Depuis mon besoin j’ai …"
-    },
-    {
-     "auteur": "marie-géraldine DASI",
-     "note": 5,
-     "texte": "Nous avons été très bien accueillis. Madame Chazotte a pris tout le temps nécessaire pour réaliser un examen de vue complet et approfondi. Elle a su nous conseiller avec beaucoup de professionnalisme dans le choix des montures, en tenant …"
-    },
-    {
-     "auteur": "Romain Delpit",
-     "note": 5,
-     "texte": "Un immense merci à Lola d’Optic 2000 pour son accueil, son professionnalisme et sa gentillesse. J’ai été parfaitement conseillé du début à la fin, avec beaucoup d’écoute et de patience. Le choix de montures est varié et de qualité, elle …"
-    },
-    {
-     "auteur": "Nicolas PEUCH",
-     "note": 5,
-     "texte": "Accueil chaleureux et écoute attentive de nos demandes et souhaits.  Choisir une paire de lunettes n’est pas toujours évident, mais Marie-Charlotte nous a prodigué d’excellents conseils."
-    },
-    {
-     "auteur": "sophie",
-     "note": 5,
-     "texte": "Très bons conseils dans le choix de mes lunettes de vue et solaires. Accueil sympathique et professionnalisme de la part du personnel. Je suis cliente depuis plusieurs années et toujours satisfaite ! 😊 …"
-    }
-   ]
+   "derniers_avis": []
   },
   {
    "code": "24",
@@ -2144,9 +2118,9 @@
     "semaine": "2026-S37",
     "debut": "2026-09-07",
     "fin": "2026-09-13",
-    "avis_nouveaux": 3,
+    "avis_nouveaux": 2,
     "note": 4.6,
-    "avis_cumules": 22,
+    "avis_cumules": 21,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -3194,9 +3168,9 @@
     "semaine": "2026-S37",
     "debut": "2026-09-07",
     "fin": "2026-09-13",
-    "avis_nouveaux": 6,
+    "avis_nouveaux": 5,
     "note": 4.9,
-    "avis_cumules": 195,
+    "avis_cumules": 194,
     "faces": 3,
     "branches": 0,
     "goodies": 0,
@@ -3614,9 +3588,9 @@
     "semaine": "2026-S37",
     "debut": "2026-09-07",
     "fin": "2026-09-13",
-    "avis_nouveaux": 3,
+    "avis_nouveaux": 2,
     "note": 4.9,
-    "avis_cumules": 49,
+    "avis_cumules": 48,
     "faces": 3,
     "branches": 0,
     "goodies": 0,
@@ -4454,9 +4428,9 @@
     "semaine": "2026-S37",
     "debut": "2026-09-07",
     "fin": "2026-09-13",
-    "avis_nouveaux": 1,
-    "note": 4.8,
-    "avis_cumules": 53,
+    "avis_nouveaux": 2,
+    "note": 4.9,
+    "avis_cumules": 54,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -5714,9 +5688,9 @@
     "semaine": "2026-S37",
     "debut": "2026-09-07",
     "fin": "2026-09-13",
-    "avis_nouveaux": 2,
+    "avis_nouveaux": 1,
     "note": 4.6,
-    "avis_cumules": 41,
+    "avis_cumules": 40,
     "faces": 1,
     "branches": 0,
     "goodies": 0,
@@ -8898,9 +8872,9 @@
     "semaine": "2026-S37",
     "debut": "2026-09-07",
     "fin": "2026-09-13",
-    "avis_nouveaux": 9,
+    "avis_nouveaux": 7,
     "note": 4.9,
-    "avis_cumules": 104,
+    "avis_cumules": 102,
     "faces": 4,
     "branches": 0,
     "goodies": 3,
