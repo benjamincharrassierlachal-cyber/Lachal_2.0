@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-13T09:21:17",
+ "generated_at": "2026-09-13T09:48:11",
  "trophy_start_date": null,
  "stores": [
   {
@@ -4454,9 +4454,9 @@
     "semaine": "2026-S37",
     "debut": "2026-09-07",
     "fin": "2026-09-13",
-    "avis_nouveaux": null,
-    "note": null,
-    "avis_cumules": null,
+    "avis_nouveaux": 1,
+    "note": 4.8,
+    "avis_cumules": 53,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -4464,7 +4464,7 @@
     "demandes": 4,
     "soumis": 4,
     "valides": 3,
-    "sources": "lyleoo"
+    "sources": "avis + lyleoo"
    }
   ],
   "24": [
@@ -7798,9 +7798,9 @@
     "semaine": "2026-S36",
     "debut": "2026-08-31",
     "fin": "2026-09-06",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.7,
-    "avis_cumules": 25,
+    "avis_cumules": 26,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -7814,9 +7814,9 @@
     "semaine": "2026-S37",
     "debut": "2026-09-07",
     "fin": "2026-09-13",
-    "avis_nouveaux": null,
-    "note": null,
-    "avis_cumules": null,
+    "avis_nouveaux": 0,
+    "note": 4.7,
+    "avis_cumules": 26,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -7824,7 +7824,7 @@
     "demandes": 5,
     "soumis": 5,
     "valides": 5,
-    "sources": "lyleoo"
+    "sources": "avis + lyleoo"
    }
   ],
   "5": [
