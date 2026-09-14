@@ -373,12 +373,12 @@ export function renderAdmin(root, adminModel, settings, rows, trend, cb) {
     <div class="admin-list">
       ${rows
         .map((r) => {
-          const score = r.model.currentWeek?.score ?? null;
+          const score = r.model.viewWeek?.score ?? null;
           const scoreColor = score === null ? "var(--text-dim)" : score >= 120 ? "var(--gold)" : score >= 80 ? "var(--text)" : "var(--danger)";
           const nums = ["avis", "examens", "impressions"]
             .map((key) => {
               const m = METRIC_BY_KEY[key];
-              const pm = r.model.currentWeek?.metrics[key];
+              const pm = r.model.viewWeek?.metrics[key];
               if (!pm) return `<span class="admin-metric admin-metric--off">${icon(m.icon, 16)}<span>—</span></span>`;
               return `<span class="admin-metric" style="color:var(${m.colorVar})">${icon(m.icon, 16)}<span>${fmtValeur(pm)}/${fmtNum(pm.objective)}</span></span>`;
             })

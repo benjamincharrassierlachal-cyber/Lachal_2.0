@@ -135,13 +135,22 @@ export function buildStoreModel(data, code) {
   };
 }
 
-// Vue d'ensemble admin : cumule tous les magasins sur leur semaine
-// courante respective (somme des realises / somme des objectifs), plus
-// le detail par magasin pour la liste.
-export function buildAdminModel(data) {
+// Vue d'ensemble admin : cumule tous les magasins sur une semaine donnee
+// (somme des realises / somme des objectifs), plus le detail par magasin
+// pour la liste. targetWeek (optionnel) fixe la semaine consultee pour TOUS
+// les magasins a la fois (contrairement a la fiche d'un magasin, l'admin
+// n'a pas de "semaine courante" propre a chacun) ; par defaut, chaque
+// magasin est vu sur sa derniere semaine connue.
+export function buildAdminModel(data, targetWeek) {
   const perStore = data.stores
     .map((s) => buildStoreModel(data, s.code))
-    .filter((sm) => sm.currentWeek);
+    .map((sm) => ({
+      ...sm,
+      viewWeek: targetWeek
+        ? sm.history.find((w) => w.semaine === targetWeek) || null
+        : sm.currentWeek,
+    }))
+    .filter((sm) => sm.viewWeek);
 
   // Un indicateur reste affiche des qu'au moins un magasin le suit,
   // meme si personne n'a encore de releve cette semaine (comme "-/2" sur
@@ -153,7 +162,7 @@ export function buildAdminModel(data) {
     let tracked = false;
     let hasData = false;
     perStore.forEach((sm) => {
-      const pm = sm.currentWeek.metrics[m.key];
+      const pm = sm.viewWeek.metrics[m.key];
       if (!pm) return;
       tracked = true;
       sumObjective += pm.objective || 0;
@@ -173,9 +182,18 @@ export function buildAdminModel(data) {
     ? Math.round(scored.reduce((s, x) => s + (tousAtteints ? x.pct : Math.min(x.pct, 100)), 0) / scored.length)
     : null;
 
-  const weekLabel = perStore.length ? perStore[0].currentWeek.semaine : null;
+  const weekLabel = targetWeek || (perStore.length ? perStore[0].viewWeek.semaine : null);
 
   return { metricsAgg, score, weekLabel, perStore };
+}
+
+// Toutes les semaines connues, tous magasins confondus (pour le selecteur
+// de semaine de l'admin, qui n'a pas d'historique propre a un seul
+// magasin) : la plus recente en premier.
+export function allWeeks(data) {
+  const semaines = new Set();
+  Object.values(data.weeks || {}).forEach((weeks) => weeks.forEach((w) => semaines.add(w.semaine)));
+  return [...semaines].sort().reverse();
 }
 
 // Tendance du groupe entier, semaine par semaine (pour l'onglet Stats de

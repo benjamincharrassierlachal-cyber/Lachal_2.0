@@ -1,4 +1,4 @@
-import { loadData, buildStoreModel, buildAdminModel, buildAdminTrend, ADMIN_CODE } from "./data.js";
+import { loadData, buildStoreModel, buildAdminModel, buildAdminTrend, allWeeks, ADMIN_CODE } from "./data.js";
 import { settings, setSetting, recordVisit, claimedBadges, claimBadge } from "./state.js";
 import { icon } from "./icons.js";
 import { buildBadges } from "./badges.js";
@@ -64,6 +64,9 @@ let adminTab = "overview"; // overview | stats
 // Remise a null en entrant dans un nouveau contexte (changement de magasin,
 // espace admin) : voir enterDashboard.
 let dashboardWeek = null;
+// Meme principe cote admin, mais une seule semaine pour tous les magasins
+// a la fois (l'admin n'a pas de "semaine courante" propre a un magasin).
+let adminWeek = null;
 
 function applyTheme() {
   document.documentElement.setAttribute("data-theme", settings.theme);
@@ -97,7 +100,7 @@ function buildShell(data) {
         <div class="week-label" id="hdr-week"></div>
       </div>
       <div class="header-actions">
-        ${!isAdmin() ? `<button class="icon-btn" id="hdr-calendar" title="Choisir la semaine">${icon("calendar", 20)}</button>` : ""}
+        <button class="icon-btn" id="hdr-calendar" title="Choisir la semaine">${icon("calendar", 20)}</button>
         ${backToAdmin ? `<button class="admin-back-btn" id="hdr-admin-back">${icon("chevronLeft", 16)}Admin</button>` : ""}
         <button class="icon-btn" id="hdr-settings">${icon("gear", 20)}</button>
       </div>
@@ -112,7 +115,7 @@ function buildShell(data) {
   `;
   app.querySelectorAll("[data-nav]").forEach((b) =>
     b.addEventListener("click", () => {
-      if (b.dataset.nav === "dashboard") dashboardWeek = null;
+      if (b.dataset.nav === "dashboard") { dashboardWeek = null; adminWeek = null; }
       nav(b.dataset.nav);
       render(data);
     })
@@ -127,13 +130,25 @@ function buildShell(data) {
   }
 }
 
-// Petite feuille modale listant les semaines disponibles pour le magasin
-// consulte, du plus recent au plus ancien. Ajoutee a <body> (pas a #view)
-// pour survivre a un re-rendu du contenu pendant qu'elle est ouverte.
+// Petite feuille modale listant les semaines disponibles, du plus recent au
+// plus ancien : celles d'un magasin, ou (en admin) toutes les semaines
+// connues du groupe. Ajoutee a <body> (pas a #view) pour survivre a un
+// re-rendu du contenu pendant qu'elle est ouverte.
 function showWeekPicker(data) {
   document.getElementById("week-picker")?.remove();
-  const model = buildStoreModel(data, settings.storeCode);
-  const semaines = model.history.slice().reverse();
+
+  // liste des semaines a proposer, et comment savoir laquelle est active
+  let semaines, isActive, scoreOf;
+  if (isAdmin()) {
+    semaines = allWeeks(data);
+    isActive = (semaine) => (adminWeek ? semaine === adminWeek : semaine === semaines[0]);
+    scoreOf = (semaine) => buildAdminModel(data, semaine).score;
+  } else {
+    const model = buildStoreModel(data, settings.storeCode);
+    semaines = model.history.slice().reverse().map((w) => w.semaine);
+    isActive = (semaine) => (dashboardWeek ? semaine === dashboardWeek : semaine === model.currentWeek?.semaine);
+    scoreOf = (semaine) => model.history.find((w) => w.semaine === semaine)?.score ?? null;
+  }
   if (!semaines.length) return;
 
   const overlay = document.createElement("div");
@@ -147,11 +162,11 @@ function showWeekPicker(data) {
       </div>
       <div class="week-picker-list">
         ${semaines
-          .map((w) => {
-            const active = dashboardWeek ? w.semaine === dashboardWeek : w === model.currentWeek;
-            return `<button class="week-picker-row ${active ? "active" : ""}" data-semaine="${w.semaine}">
-              <span>${weekTitle(w.semaine)}</span>
-              <span class="week-picker-score" style="color:${w.score === null ? "var(--text-dim)" : w.score >= 100 ? "var(--gold)" : "var(--text-dim)"}">${w.score ?? "-"}%</span>
+          .map((semaine) => {
+            const sc = scoreOf(semaine);
+            return `<button class="week-picker-row ${isActive(semaine) ? "active" : ""}" data-semaine="${semaine}">
+              <span>${weekTitle(semaine)}</span>
+              <span class="week-picker-score" style="color:${sc === null ? "var(--text-dim)" : sc >= 100 ? "var(--gold)" : "var(--text-dim)"}">${sc ?? "-"}%</span>
             </button>`;
           })
           .join("")}
@@ -164,9 +179,14 @@ function showWeekPicker(data) {
   overlay.querySelector("[data-close]").addEventListener("click", close);
   overlay.querySelectorAll("[data-semaine]").forEach((b) => {
     b.addEventListener("click", () => {
-      dashboardWeek = b.dataset.semaine;
+      if (isAdmin()) {
+        adminWeek = b.dataset.semaine;
+        adminTab = "overview";
+      } else {
+        dashboardWeek = b.dataset.semaine;
+        if (parseRoute().name !== "dashboard") nav("dashboard");
+      }
       close();
-      if (parseRoute().name !== "dashboard") nav("dashboard");
       render(data);
     });
   });
@@ -203,6 +223,7 @@ let hashListenerAttached = false;
 
 function enterDashboard(data) {
   dashboardWeek = null;
+  adminWeek = null;
   buildShell(data);
   render(data);
   if (!hashListenerAttached) {
@@ -268,9 +289,10 @@ function render(data) {
   });
 
   if (isAdmin()) {
-    const adminModel = buildAdminModel(data);
+    const adminModel = buildAdminModel(data, adminWeek);
     document.getElementById("hdr-store").textContent = "ADMIN";
-    document.getElementById("hdr-week").textContent = weekTitle(adminModel.weekLabel);
+    document.getElementById("hdr-week").textContent = weekTitle(adminModel.weekLabel)
+      + (adminWeek ? " (consultee)" : "");
 
     if (route.name === "settings") {
       renderSettings(view, { ...data, currentStoreName: "Espace admin", isAdmin: true, adminUnlocked: isAdminUnlocked() }, settings, {
@@ -286,7 +308,7 @@ function render(data) {
         return { store: model.store, model, trophies: { unlocked: badges.filter((b) => b.unlocked).length, total: badges.length } };
       });
       const sorters = {
-        score: (a, b) => (b.model.currentWeek?.score ?? -1) - (a.model.currentWeek?.score ?? -1),
+        score: (a, b) => (b.model.viewWeek?.score ?? -1) - (a.model.viewWeek?.score ?? -1),
         name: (a, b) => a.store.name.localeCompare(b.store.name),
         trophies: (a, b) => b.trophies.unlocked - a.trophies.unlocked,
       };
