@@ -1,4 +1,4 @@
-import { loadData, buildStoreModel, buildAdminModel, ADMIN_CODE } from "./data.js";
+import { loadData, buildStoreModel, buildAdminModel, buildAdminTrend, ADMIN_CODE } from "./data.js";
 import { settings, setSetting, recordVisit, claimedBadges, claimBadge } from "./state.js";
 import { icon } from "./icons.js";
 import { buildBadges } from "./badges.js";
@@ -10,6 +10,7 @@ import {
   renderMetricDetail,
   renderTrophies,
   renderSettings,
+  renderStats,
 } from "./views.js";
 
 const app = document.getElementById("app");
@@ -58,6 +59,11 @@ function logoutAdmin(data) {
 }
 
 let adminSort = "score"; // score | name | trophies
+let adminTab = "overview"; // overview | stats
+// Semaine consultee sur le tableau de bord d'un magasin (null = la derniere).
+// Remise a null en entrant dans un nouveau contexte (changement de magasin,
+// espace admin) : voir enterDashboard.
+let dashboardWeek = null;
 
 function applyTheme() {
   document.documentElement.setAttribute("data-theme", settings.theme);
@@ -68,6 +74,7 @@ function parseRoute() {
   if (hash.startsWith("metric-")) return { name: "metric", key: hash.slice(7) };
   if (hash === "trophies") return { name: "trophies" };
   if (hash === "settings") return { name: "settings" };
+  if (hash === "stats") return { name: "stats" };
   return { name: "dashboard" };
 }
 
@@ -90,6 +97,7 @@ function buildShell(data) {
         <div class="week-label" id="hdr-week"></div>
       </div>
       <div class="header-actions">
+        ${!isAdmin() ? `<button class="icon-btn" id="hdr-calendar" title="Choisir la semaine">${icon("calendar", 20)}</button>` : ""}
         ${backToAdmin ? `<button class="admin-back-btn" id="hdr-admin-back">${icon("chevronLeft", 16)}Admin</button>` : ""}
         <button class="icon-btn" id="hdr-settings">${icon("gear", 20)}</button>
       </div>
@@ -97,19 +105,71 @@ function buildShell(data) {
     <main id="view"></main>
     <nav class="bottom-nav">
       <button class="nav-btn" data-nav="dashboard">${icon("home", 20)}<span>Accueil</span></button>
-      ${isAdmin() ? "" : `<button class="nav-btn" data-nav="trophies">${icon("trophy", 20)}<span>Trophees</span></button>`}
+      ${isAdmin() ? "" : `
+      <button class="nav-btn" data-nav="stats">${icon("trending", 20)}<span>Stats</span></button>
+      <button class="nav-btn" data-nav="trophies">${icon("trophy", 20)}<span>Trophees</span></button>`}
     </nav>
   `;
   app.querySelectorAll("[data-nav]").forEach((b) =>
-    b.addEventListener("click", () => nav(b.dataset.nav))
+    b.addEventListener("click", () => {
+      if (b.dataset.nav === "dashboard") dashboardWeek = null;
+      nav(b.dataset.nav);
+      render(data);
+    })
   );
   document.getElementById("hdr-settings").addEventListener("click", () => nav("settings"));
+  document.getElementById("hdr-calendar")?.addEventListener("click", () => showWeekPicker(data));
   if (backToAdmin) {
     document.getElementById("hdr-admin-back").addEventListener("click", () => {
       setSetting("storeCode", ADMIN_CODE);
       checkRewards(data);
     });
   }
+}
+
+// Petite feuille modale listant les semaines disponibles pour le magasin
+// consulte, du plus recent au plus ancien. Ajoutee a <body> (pas a #view)
+// pour survivre a un re-rendu du contenu pendant qu'elle est ouverte.
+function showWeekPicker(data) {
+  document.getElementById("week-picker")?.remove();
+  const model = buildStoreModel(data, settings.storeCode);
+  const semaines = model.history.slice().reverse();
+  if (!semaines.length) return;
+
+  const overlay = document.createElement("div");
+  overlay.id = "week-picker";
+  overlay.className = "week-picker-overlay";
+  overlay.innerHTML = `
+    <div class="week-picker-sheet">
+      <div class="week-picker-head">
+        <span>Choisir une semaine</span>
+        <button class="icon-btn" data-close>${icon("close", 18)}</button>
+      </div>
+      <div class="week-picker-list">
+        ${semaines
+          .map((w) => {
+            const active = dashboardWeek ? w.semaine === dashboardWeek : w === model.currentWeek;
+            return `<button class="week-picker-row ${active ? "active" : ""}" data-semaine="${w.semaine}">
+              <span>${weekTitle(w.semaine)}</span>
+              <span class="week-picker-score" style="color:${w.score === null ? "var(--text-dim)" : w.score >= 100 ? "var(--gold)" : "var(--text-dim)"}">${w.score ?? "-"}%</span>
+            </button>`;
+          })
+          .join("")}
+      </div>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+  const close = () => overlay.remove();
+  overlay.addEventListener("click", (e) => { if (e.target === overlay) close(); });
+  overlay.querySelector("[data-close]").addEventListener("click", close);
+  overlay.querySelectorAll("[data-semaine]").forEach((b) => {
+    b.addEventListener("click", () => {
+      dashboardWeek = b.dataset.semaine;
+      close();
+      if (parseRoute().name !== "dashboard") nav("dashboard");
+      render(data);
+    });
+  });
 }
 
 function showOnboarding(data, onDone) {
@@ -142,6 +202,7 @@ function boot(data) {
 let hashListenerAttached = false;
 
 function enterDashboard(data) {
+  dashboardWeek = null;
   buildShell(data);
   render(data);
   if (!hashListenerAttached) {
@@ -230,9 +291,12 @@ function render(data) {
         trophies: (a, b) => b.trophies.unlocked - a.trophies.unlocked,
       };
       rows.sort(sorters[adminSort] || sorters.score);
-      renderAdmin(view, adminModel, settings, rows, {
+      const trend = adminTab === "stats" ? buildAdminTrend(data) : null;
+      renderAdmin(view, adminModel, settings, rows, trend, {
         sort: adminSort,
         setSort: (s) => { adminSort = s; render(data); },
+        tab: adminTab,
+        setTab: (t) => { adminTab = t; render(data); },
         selectStore: (code) => {
           // Depuis l'admin, on consulte un magasin sans "jouer" a sa place :
           // pas d'ecran de recompense, on va droit a sa fiche.
@@ -245,14 +309,20 @@ function render(data) {
   }
 
   const model = buildStoreModel(data, settings.storeCode);
+  const viewedWeek = dashboardWeek
+    ? model.history.find((w) => w.semaine === dashboardWeek) || model.currentWeek
+    : model.currentWeek;
   document.getElementById("hdr-store").textContent = model.store ? model.store.name : "";
-  document.getElementById("hdr-week").textContent = weekTitle(model.currentWeek?.semaine);
+  document.getElementById("hdr-week").textContent = weekTitle(viewedWeek?.semaine)
+    + (route.name === "dashboard" && dashboardWeek ? " (consultee)" : "");
 
   if (route.name === "dashboard") {
-    renderDashboard(view, model, settings, nav);
+    renderDashboard(view, model, settings, nav, viewedWeek);
   } else if (route.name === "metric") {
     renderMetricDetail(view, model, route.key, settings);
     view.querySelector("[data-back]")?.addEventListener("click", () => nav("dashboard"));
+  } else if (route.name === "stats") {
+    renderStats(view, model.metrics, model.history);
   } else if (route.name === "trophies") {
     renderTrophies(view, model, settings);
   } else if (route.name === "settings") {

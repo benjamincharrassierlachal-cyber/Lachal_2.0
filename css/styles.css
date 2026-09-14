@@ -519,3 +519,67 @@ table.history td.num { font-family: "Space Mono", monospace; }
   white-space: nowrap;
 }
 .admin-trophies .icon { color: var(--gold); }
+
+/* ---------- Selecteur de semaine ---------- */
+.week-picker-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 70;
+  display: flex;
+  align-items: flex-end;
+}
+.week-picker-sheet {
+  width: 100%;
+  max-height: 70vh;
+  background: var(--surface);
+  border: 1px solid var(--surface-3);
+  border-radius: 20px 20px 0 0;
+  padding: 18px 18px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.week-picker-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 15px;
+}
+.week-picker-list { overflow-y: auto; display: flex; flex-direction: column; gap: 6px; }
+.week-picker-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--surface-2);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.week-picker-row.active { border-color: var(--c-avis); color: var(--c-avis); }
+.week-picker-score { font-family: "Space Mono", monospace; font-weight: 800; }
+
+/* ---------- Onglets admin ---------- */
+.admin-tabs { display: flex; gap: 8px; margin: 18px 0 14px; }
+.admin-tabs .admin-sort-btn { flex: 1; text-align: center; }
+
+/* ---------- Page Stats ---------- */
+.stats-card { margin-bottom: 14px; }
+.stats-card-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.chart-range {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-dim);
+  font-size: 11px;
+  margin-top: 4px;
+}

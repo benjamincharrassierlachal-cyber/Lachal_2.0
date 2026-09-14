@@ -177,3 +177,39 @@ export function buildAdminModel(data) {
 
   return { metricsAgg, score, weekLabel, perStore };
 }
+
+// Tendance du groupe entier, semaine par semaine (pour l'onglet Stats de
+// l'admin) : pct agrege (somme des realises / somme des objectifs, tous
+// magasins qui suivent la metrique cette semaine-la), une courbe par
+// indicateur sur tout l'historique disponible.
+export function buildAdminTrend(data) {
+  const parSemaine = {};
+  data.stores.forEach((s) => {
+    const objective = data.objectives[s.code] || {};
+    const actifs = activeMetrics(objective);
+    if (!actifs.length) return;
+    (data.weeks[s.code] || []).forEach((w) => {
+      const bucket = parSemaine[w.semaine] || (parSemaine[w.semaine] = {});
+      actifs.forEach((m) => {
+        const value = w[m.valueField];
+        if (value === null || value === undefined) return;
+        const acc = bucket[m.key] || (bucket[m.key] = { sumValue: 0, sumObjective: 0 });
+        acc.sumValue += value;
+        acc.sumObjective += objective[m.objectiveField] || 0;
+      });
+    });
+  });
+
+  const semaines = Object.keys(parSemaine).sort();
+  const metrics = METRICS.map((m) => {
+    const weeks = semaines
+      .map((semaine) => {
+        const acc = parSemaine[semaine][m.key];
+        return acc ? { semaine, pct: pctFor(acc.sumValue, acc.sumObjective) } : null;
+      })
+      .filter(Boolean);
+    return weeks.length ? { ...m, weeks } : null;
+  }).filter(Boolean);
+
+  return { metrics };
+}

@@ -146,9 +146,82 @@ export function renderRewards(root, badges, cb) {
   wrap.querySelector("#claim-all")?.addEventListener("click", () => cb.claimAll());
 }
 
+// Petit graphique en courbe (pct par semaine), pour la page Stats.
+// Sans dependance externe : un simple SVG responsive (viewBox + largeur 100%).
+function lineChartSVG(points, color) {
+  if (points.length < 2) {
+    return `<p class="empty-hint">Pas encore assez de semaines pour une courbe.</p>`;
+  }
+  const w = 320, h = 110, pad = 8;
+  const vals = points.map((p) => p.pct);
+  const maxV = Math.max(100, ...vals);
+  const minV = Math.min(0, ...vals);
+  const range = maxV - minV || 1;
+  const stepX = (w - pad * 2) / (points.length - 1);
+  const coords = points.map((p, i) => [
+    pad + i * stepX,
+    h - pad - ((p.pct - minV) / range) * (h - pad * 2),
+  ]);
+  const path = coords.map(([x, y], i) => `${i === 0 ? "M" : "L"}${x.toFixed(1)},${y.toFixed(1)}`).join(" ");
+  const aire = `${path} L${coords[coords.length - 1][0].toFixed(1)},${h - pad} L${coords[0][0].toFixed(1)},${h - pad} Z`;
+  const y100 = h - pad - ((100 - minV) / range) * (h - pad * 2);
+  const dots = coords
+    .map(([x, y], i) => `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3" fill="${color}"><title>${weekLabel(points[i].semaine)} : ${points[i].pct}%</title></circle>`)
+    .join("");
+  return `
+    <svg viewBox="0 0 ${w} ${h}" width="100%" height="${h}" preserveAspectRatio="none">
+      <line x1="${pad}" y1="${y100.toFixed(1)}" x2="${w - pad}" y2="${y100.toFixed(1)}" stroke="var(--surface-3)" stroke-width="1" stroke-dasharray="3,3" />
+      <path d="${aire}" fill="${color}" opacity="0.14" />
+      <path d="${path}" fill="none" stroke="${color}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+      ${dots}
+    </svg>
+    <div class="chart-range"><span>${weekLabel(points[0].semaine)}</span><span>${weekLabel(points[points.length - 1].semaine)}</span></div>`;
+}
+
 // ---------------------------------------------------------------------
-export function renderDashboard(root, model, settings, nav) {
-  const { store, metrics, currentWeek } = model;
+// Page Stats : une courbe par indicateur suivi, sur tout l'historique.
+export function renderStats(root, metrics, history, title) {
+  const wrap = document.createElement("div");
+  wrap.innerHTML = `
+    <div class="section-title">${title || "Evolution par indicateur"}</div>
+    ${metrics.length === 0 ? `<p class="empty-hint">Aucun indicateur suivi.</p>` : metrics
+      .map((m) => {
+        const points = history
+          .map((w) => ({ semaine: w.semaine, pct: w.metrics[m.key]?.pct }))
+          .filter((p) => p.pct !== null && p.pct !== undefined);
+        return `<div class="card stats-card">
+          <div class="stats-card-head" style="color:var(${m.colorVar})">${icon(m.icon, 18)}<span>${m.label}</span></div>
+          ${lineChartSVG(points, `var(${m.colorVar})`)}
+        </div>`;
+      })
+      .join("")}
+  `;
+  root.appendChild(wrap);
+}
+
+// Meme page, mais pour la tendance du groupe entier (admin) : les points
+// sont deja calcules par magasin (buildAdminTrend), pas a recalculer depuis
+// un historique par magasin.
+export function renderAdminStats(root, trend) {
+  const wrap = document.createElement("div");
+  wrap.innerHTML = `
+    <div class="section-title">Evolution du groupe, par indicateur</div>
+    ${trend.metrics.length === 0 ? `<p class="empty-hint">Pas encore assez de donnees.</p>` : trend.metrics
+      .map(
+        (m) => `<div class="card stats-card">
+          <div class="stats-card-head" style="color:var(${m.colorVar})">${icon(m.icon, 18)}<span>${m.label}</span></div>
+          ${lineChartSVG(m.weeks, `var(${m.colorVar})`)}
+        </div>`
+      )
+      .join("")}
+  `;
+  root.appendChild(wrap);
+}
+
+// ---------------------------------------------------------------------
+export function renderDashboard(root, model, settings, nav, viewedWeek) {
+  const { store, metrics } = model;
+  const currentWeek = viewedWeek || model.currentWeek;
   if (!currentWeek || !metrics.length) {
     root.innerHTML = `<p class="empty-hint">Pas encore de releve cette semaine pour ${store.name}.</p>`;
     return;
@@ -238,7 +311,7 @@ export function renderDashboard(root, model, settings, nav) {
 
 // ---------------------------------------------------------------------
 // Vue d'ensemble admin : cumul du groupe + liste de tous les magasins.
-export function renderAdmin(root, adminModel, settings, rows, cb) {
+export function renderAdmin(root, adminModel, settings, rows, trend, cb) {
   const { metricsAgg, score, weekLabel } = adminModel;
 
   if (!metricsAgg.length) {
@@ -270,6 +343,22 @@ export function renderAdmin(root, adminModel, settings, rows, cb) {
   `;
   root.appendChild(hero);
   animateRings(hero);
+
+  const tabs = document.createElement("div");
+  tabs.className = "admin-tabs";
+  tabs.innerHTML = `
+    <button class="admin-sort-btn ${cb.tab !== "stats" ? "active" : ""}" data-tab="overview">Vue d'ensemble</button>
+    <button class="admin-sort-btn ${cb.tab === "stats" ? "active" : ""}" data-tab="stats">Stats</button>
+  `;
+  root.appendChild(tabs);
+  tabs.querySelectorAll("[data-tab]").forEach((b) =>
+    b.addEventListener("click", () => cb.setTab(b.dataset.tab))
+  );
+
+  if (cb.tab === "stats") {
+    renderAdminStats(root, trend);
+    return;
+  }
 
   const section = document.createElement("div");
   section.innerHTML = `
