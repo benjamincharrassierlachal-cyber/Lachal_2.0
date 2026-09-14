@@ -1,7 +1,7 @@
 # Cree (ou remplace) la tache Windows qui publie l'app chaque jour.
 #
 # Deux declencheurs, comme les autres taches du groupe :
-#   - chaque jour a 9h00 (15 min apres la compilation de la base a 8h45) ;
+#   - chaque jour a 9h00 (10 min apres la compilation de la base a 8h50) ;
 #   - a chaque ouverture de session, 20 minutes apres.
 # Publier_app.ps1 est deja idempotent : s'il n'y a rien de nouveau a publier,
 # il ne fait ni commit ni push. Aucun risque a le relancer plusieurs fois par
@@ -39,7 +39,7 @@ Register-ScheduledTask -TaskName $nomTache -Action $action -Trigger @($quotidien
 $infos = Get-ScheduledTaskInfo -TaskName $nomTache
 Write-Host ""
 Write-Host "Tache installee : $nomTache" -ForegroundColor Green
-Write-Host "  - chaque jour a 9h00, apres la compilation de la base (8h45)"
+Write-Host "  - chaque jour a 9h00, apres la compilation de la base (8h50)"
 Write-Host "  - et 20 min apres chaque ouverture de session"
 Write-Host "Prochaine execution planifiee : $($infos.NextRunTime)"
 Write-Host ""
