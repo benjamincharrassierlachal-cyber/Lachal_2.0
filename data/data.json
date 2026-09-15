@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-15T09:00:03",
+ "generated_at": "2026-09-15T09:35:37",
  "trophy_start_date": null,
  "stores": [
   {
@@ -313,6 +313,11 @@
    "ville": "BERGERAC",
    "derniers_avis": [
     {
+     "auteur": "Angelique Dessuge",
+     "note": 5,
+     "texte": "J’ai accompagné mon compagnon chez Général d’Optique à Bergerac et nous avons été très bien accueillis. L’équipe est agréable, souriante et professionnelle. Les conseils étaient vraiment pertinents et ils ont pris le temps de bien …"
+    },
+    {
      "auteur": "Johanna Palumbo",
      "note": 5,
      "texte": "Un immense merci à Carole pour son accueil et ses précieux conseils. Elle est patiente, attentionnée et connaît parfaitement son métier. On sent qu’elle cherche vraiment ce qui nous convient le mieux, pas juste à vendre. Une opticienne au top !"
@@ -331,11 +336,6 @@
      "auteur": "Pierrette Ganter",
      "note": 5,
      "texte": "Super accueil par Marine ! Elle est très agréable et de bon conseil ! Grand choix de montures ! Il y en a pour tous les goûts et tous les budgets !  Délais respectés ! Magasin au top ! Vraiment rien à redire ! Je vous le conseille vivement !"
-    },
-    {
-     "auteur": "CLEMENTINE SAGNETTE",
-     "note": 5,
-     "texte": "Je suis extrêmement ravi de mon expérience dans ce magasin ! Carole a été tout simplement parfaite du début à la fin. J’ai été très bien conseillé, avec des explications claires, honnêtes et adaptées à mes besoins. …"
     }
    ]
   },
@@ -384,11 +384,6 @@
      "texte": "Merci pour votre aide , vos conseils et votre patience . Le personnel a était très agréable et à l écoute.  L acceuil est chaleureux . Un grand merci à  Mr W . Sébastien qui a prit pas mal de son temps pour me  conseiller et m apprendre à utiliser mon nouveau dispositif ."
     },
     {
-     "auteur": "Claire B",
-     "note": 5,
-     "texte": "Très belle expérience. L’accueil est chaleureux, les conseils que Sébastien m’a donné sont personnalisés avec un vrai souci du détail. On ne se sent pas pressé, tout est bien expliqué (verres, montures). Ravie de mes nouvelles lunettes. Merci pour son professionnalisme !"
-    },
-    {
      "auteur": "Manuel Philippeaux",
      "note": 5,
      "texte": "Grand Merci à Camille et Sébastien pour leur qualité professionnelle et leur accueil. Je suis ressorti très satisfait de notre achat. A bientôt pour les lunettes de mon épouse. Aujourd'hui Jeudi 21 Mai, avec les supers conseils de Sébastien …"
@@ -402,6 +397,11 @@
      "auteur": "Jean-François FAGEOL",
      "note": 5,
      "texte": "Excellente expérience. Accueil et gestion des besoins et souhaits du client, très professionnels et aimables. Je suis très satisfait de mes lunettes. Un grand merci à l'équipe Générale d'Optique à Tulle."
+    },
+    {
+     "auteur": "Claire B",
+     "note": 5,
+     "texte": "Très belle expérience. L’accueil est chaleureux, les conseils que Sébastien m’a donné sont personnalisés avec un vrai souci du détail. On ne se sent pas pressé, tout est bien expliqué (verres, montures). Ravie de mes nouvelles lunettes. Merci pour son professionnalisme !"
     }
    ]
   },
@@ -731,9 +731,9 @@
      "texte": "De passage dans cette magnifique ville de Périgueux. Petit soucis de monture réglé avec gentillesse et sourire. Magasin que je recommande. Parfait et encore merci."
     },
     {
-     "auteur": "gilbert LENFANT",
+     "auteur": "Anna Michaud",
      "note": 5,
-     "texte": "A la recherche depuis très longtemps, pour une paire de lunette de soleil de forme et avec des verres très techniques, chez beaucoup d'opticiens c'était impossible. …"
+     "texte": "Accueil chaleureux et employés à l'écoute des demandes. Les conseils donnés m'ont bien renseigné sur les démarches. Ainsi, je suis contente d'avoir pris mes lunettes dans cette boutique."
     }
    ]
   },
@@ -1931,10 +1931,10 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis + oomade"
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "11": [
@@ -2157,10 +2157,10 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "12": [
@@ -2383,10 +2383,10 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
+    "sources": "avis + lyleoo"
    }
   ],
   "13": [
@@ -2609,10 +2609,10 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "14": [
@@ -2835,10 +2835,10 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis + oomade"
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 2,
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "15": [
@@ -3061,10 +3061,10 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
+    "sources": "avis + lyleoo"
    }
   ],
   "16": [
@@ -3287,10 +3287,10 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis + oomade"
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 1,
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "18": [
@@ -3513,10 +3513,10 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "19": [
@@ -3739,10 +3739,10 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis + oomade"
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "2": [
@@ -3965,10 +3965,10 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis + oomade"
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "20": [
@@ -4191,10 +4191,10 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis + oomade"
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "21": [
@@ -4417,10 +4417,10 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis + oomade"
+    "demandes": 2,
+    "soumis": 1,
+    "valides": 1,
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "22": [
@@ -4643,10 +4643,10 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "24": [
@@ -4869,10 +4869,10 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "26": [
@@ -5095,10 +5095,10 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
+    "sources": "avis + lyleoo"
    }
   ],
   "27": [
@@ -5321,10 +5321,10 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis + oomade"
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 1,
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "28": [
@@ -5547,10 +5547,10 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "29": [
@@ -5773,10 +5773,10 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
+    "sources": "avis + lyleoo"
    }
   ],
   "3": [
@@ -5999,10 +5999,10 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis + oomade"
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "30": [
@@ -6225,10 +6225,10 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis + oomade"
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 2,
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "31": [
@@ -6451,10 +6451,10 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "32": [
@@ -6677,10 +6677,10 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 2,
+    "sources": "avis + lyleoo"
    }
   ],
   "33": [
@@ -6903,10 +6903,10 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 2,
+    "sources": "avis + lyleoo"
    }
   ],
   "34": [
@@ -7129,10 +7129,10 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
+    "sources": "avis + lyleoo"
    }
   ],
   "35": [
@@ -7355,10 +7355,10 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "36": [
@@ -7581,10 +7581,10 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 5,
+    "soumis": 5,
+    "valides": 6,
+    "sources": "avis + lyleoo"
    }
   ],
   "37": [
@@ -7807,10 +7807,10 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "oomade"
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "lyleoo + oomade"
    }
   ],
   "38": [
@@ -8033,10 +8033,10 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "4": [
@@ -8259,10 +8259,10 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "5": [
@@ -8485,10 +8485,10 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis + oomade"
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 1,
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "6": [
@@ -8711,10 +8711,10 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis + oomade"
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "703": [
@@ -8930,17 +8930,17 @@
     "semaine": "2026-S38",
     "debut": "2026-09-14",
     "fin": "2026-09-20",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 193,
+    "avis_cumules": 194,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis + oomade"
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 2,
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "780": [
@@ -9156,17 +9156,17 @@
     "semaine": "2026-S38",
     "debut": "2026-09-14",
     "fin": "2026-09-20",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.8,
-    "avis_cumules": 135,
+    "avis_cumules": 136,
     "faces": null,
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 0,
+    "soumis": 1,
+    "valides": 1,
+    "sources": "avis + lyleoo"
    }
   ],
   "8": [
@@ -9389,10 +9389,10 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": null,
-    "soumis": null,
-    "valides": null,
-    "sources": "avis"
+    "demandes": 4,
+    "soumis": 5,
+    "valides": 3,
+    "sources": "avis + lyleoo"
    }
   ],
   "25": [
