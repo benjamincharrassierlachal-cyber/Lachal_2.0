@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-15T09:35:37",
+ "generated_at": "2026-09-15T10:47:47",
  "trophy_start_date": null,
  "stores": [
   {
@@ -524,7 +524,33 @@
    "name": "MARSAC",
    "enseigne": "OPTIC 2000",
    "ville": "MARSAC-SUR-L'ISLE",
-   "derniers_avis": []
+   "derniers_avis": [
+    {
+     "auteur": "Laurent INNOCENT",
+     "note": 5,
+     "texte": "Bonjour a tous je vous conseil fortement de vous avancez vers cette magnifique équipe. Ils sont éléments exceptionnels. Ils sont non pas que pour l’as lunettes et ils sont aussi a l’écoute. Je reste fidèle a eux. Depuis mon besoin j’ai …"
+    },
+    {
+     "auteur": "marie-géraldine DASI",
+     "note": 5,
+     "texte": "Nous avons été très bien accueillis. Madame Chazotte a pris tout le temps nécessaire pour réaliser un examen de vue complet et approfondi. Elle a su nous conseiller avec beaucoup de professionnalisme dans le choix des montures, en tenant …"
+    },
+    {
+     "auteur": "Romain Delpit",
+     "note": 5,
+     "texte": "Un immense merci à Lola d’Optic 2000 pour son accueil, son professionnalisme et sa gentillesse. J’ai été parfaitement conseillé du début à la fin, avec beaucoup d’écoute et de patience. Le choix de montures est varié et de qualité, elle …"
+    },
+    {
+     "auteur": "Nicolas PEUCH",
+     "note": 5,
+     "texte": "Accueil chaleureux et écoute attentive de nos demandes et souhaits.  Choisir une paire de lunettes n’est pas toujours évident, mais Marie-Charlotte nous a prodigué d’excellents conseils."
+    },
+    {
+     "auteur": "Cecile Jouanneau",
+     "note": 5,
+     "texte": "Juste prise en charge parfaite ! Et tellement contente du résultat!  Merci à Marie Charlotte pour son écoute et tout les bons conseils.\nMerci d'avoir pu trouver des lunettes de piscine à ma vue à prix très abordable."
+    }
+   ]
   },
   {
    "code": "24",
@@ -7800,9 +7826,9 @@
     "semaine": "2026-S38",
     "debut": "2026-09-14",
     "fin": "2026-09-20",
-    "avis_nouveaux": null,
-    "note": null,
-    "avis_cumules": null,
+    "avis_nouveaux": 0,
+    "note": 4.9,
+    "avis_cumules": 148,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -7810,7 +7836,7 @@
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "lyleoo + oomade"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "38": [
