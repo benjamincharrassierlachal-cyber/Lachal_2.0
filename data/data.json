@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-14T16:39:11",
+ "generated_at": "2026-09-15T09:00:03",
  "trophy_start_date": null,
  "stores": [
   {
@@ -1927,14 +1927,14 @@
     "avis_nouveaux": 0,
     "note": 4.7,
     "avis_cumules": 61,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": null,
     "soumis": null,
     "valides": null,
-    "sources": "avis"
+    "sources": "avis + oomade"
    }
   ],
   "11": [
@@ -2831,14 +2831,14 @@
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 43,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": null,
     "soumis": null,
     "valides": null,
-    "sources": "avis"
+    "sources": "avis + oomade"
    }
   ],
   "15": [
@@ -3283,14 +3283,14 @@
     "avis_nouveaux": 0,
     "note": 4.9,
     "avis_cumules": 195,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": null,
     "soumis": null,
     "valides": null,
-    "sources": "avis"
+    "sources": "avis + oomade"
    }
   ],
   "18": [
@@ -3735,14 +3735,14 @@
     "avis_nouveaux": 0,
     "note": 4.9,
     "avis_cumules": 49,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": null,
     "soumis": null,
     "valides": null,
-    "sources": "avis"
+    "sources": "avis + oomade"
    }
   ],
   "2": [
@@ -3961,14 +3961,14 @@
     "avis_nouveaux": 0,
     "note": 4.9,
     "avis_cumules": 42,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": null,
     "soumis": null,
     "valides": null,
-    "sources": "avis"
+    "sources": "avis + oomade"
    }
   ],
   "20": [
@@ -4187,14 +4187,14 @@
     "avis_nouveaux": 0,
     "note": 4.8,
     "avis_cumules": 24,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": null,
     "soumis": null,
     "valides": null,
-    "sources": "avis"
+    "sources": "avis + oomade"
    }
   ],
   "21": [
@@ -4413,14 +4413,14 @@
     "avis_nouveaux": 0,
     "note": 4.6,
     "avis_cumules": 54,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": null,
     "soumis": null,
     "valides": null,
-    "sources": "avis"
+    "sources": "avis + oomade"
    }
   ],
   "22": [
@@ -5317,14 +5317,14 @@
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 120,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": null,
     "soumis": null,
     "valides": null,
-    "sources": "avis"
+    "sources": "avis + oomade"
    }
   ],
   "28": [
@@ -5995,14 +5995,14 @@
     "avis_nouveaux": 0,
     "note": 4.6,
     "avis_cumules": 41,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": null,
     "soumis": null,
     "valides": null,
-    "sources": "avis"
+    "sources": "avis + oomade"
    }
   ],
   "30": [
@@ -6221,14 +6221,14 @@
     "avis_nouveaux": 0,
     "note": 4.9,
     "avis_cumules": 37,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": null,
     "soumis": null,
     "valides": null,
-    "sources": "avis"
+    "sources": "avis + oomade"
    }
   ],
   "31": [
@@ -7795,6 +7795,22 @@
     "soumis": 1,
     "valides": 1,
     "sources": "avis + lyleoo + oomade"
+   },
+   {
+    "semaine": "2026-S38",
+    "debut": "2026-09-14",
+    "fin": "2026-09-20",
+    "avis_nouveaux": null,
+    "note": null,
+    "avis_cumules": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
+    "demandes": null,
+    "soumis": null,
+    "valides": null,
+    "sources": "oomade"
    }
   ],
   "38": [
@@ -8236,9 +8252,9 @@
     "semaine": "2026-S38",
     "debut": "2026-09-14",
     "fin": "2026-09-20",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.7,
-    "avis_cumules": 26,
+    "avis_cumules": 27,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -8465,14 +8481,14 @@
     "avis_nouveaux": 0,
     "note": 4.7,
     "avis_cumules": 39,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": null,
     "soumis": null,
     "valides": null,
-    "sources": "avis"
+    "sources": "avis + oomade"
    }
   ],
   "6": [
@@ -8691,14 +8707,14 @@
     "avis_nouveaux": 0,
     "note": 4.7,
     "avis_cumules": 67,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": null,
     "soumis": null,
     "valides": null,
-    "sources": "avis"
+    "sources": "avis + oomade"
    }
   ],
   "703": [
@@ -8917,14 +8933,14 @@
     "avis_nouveaux": 0,
     "note": 4.9,
     "avis_cumules": 193,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": null,
     "soumis": null,
     "valides": null,
-    "sources": "avis"
+    "sources": "avis + oomade"
    }
   ],
   "780": [
@@ -9419,14 +9435,14 @@
     "avis_nouveaux": 0,
     "note": 4.9,
     "avis_cumules": 104,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": null,
     "soumis": null,
     "valides": null,
-    "sources": "avis"
+    "sources": "avis + oomade"
    }
   ],
   "570": [
