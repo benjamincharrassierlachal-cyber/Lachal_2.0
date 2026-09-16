@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-15T13:43:02",
+ "generated_at": "2026-09-16T09:00:04",
  "trophy_start_date": null,
  "stores": [
   {
@@ -47,6 +47,12 @@
    "ville": "BERGERAC",
    "derniers_avis": [
     {
+     "auteur": "Isabelle SIEGFRIEDT",
+     "note": 5,
+     "texte": "Très bon accueil,très professionnel,très gentil\n\n(Translated by Google)\nVery welcoming, very professional, very kind",
+     "date": "2026-09-15"
+    },
+    {
      "auteur": "michel bonnefille",
      "note": 5,
      "texte": "Personnel accueillant, souriant et de très bon conseil\nEtablissement à recommander\n\n(Translated by Google)\nWelcoming, friendly staff who offered excellent advice.\nHighly recommended establishment.",
@@ -69,12 +75,6 @@
      "note": 5,
      "texte": "Un grand merci a vous pour votre gentillesse et votre accueil ! Un de mes patins de lunettes etait cassé et alors meme que je ne suis pas une cliente habituelle, j'ai été dépannée avec une grande amabilité et rapidité.\n\n(Translated by Google)\nA huge thank you for your kindness and welcome! One of my glasses pads was broken and even though I am not a regular customer, I was helped with great kindness and speed.",
      "date": "2026-09-10"
-    },
-    {
-     "auteur": "Agenda Marin",
-     "note": 5,
-     "texte": "Belle boutique.\nAccueil sympathique, merci à Émilie qui nous a fait découvrir la gamme enfant, dont le choix était au rendez-vous, et qui avec patience et bienveillance a su nous guider dans notre choix.\nMon petit garçon est ravi de sa monture.\nNous reviendrons sans hésitation.\nMerci\n\n(Translated by Google)\nLovely shop. A warm welcome, thank you to Émilie who introduced us to the children's range, which had a great selection, and who patiently and kindly guided us in our choices.\nMy little boy is thrilled with his new glasses.\nWe will definitely be back.\nThank you.",
-     "date": "2026-09-09"
     }
    ]
   },
@@ -84,6 +84,12 @@
    "enseigne": "ATOL",
    "ville": "BOULAZAC",
    "derniers_avis": [
+    {
+     "auteur": "Laurence Boyer",
+     "note": 5,
+     "texte": "Service après vente au top ! Monture 3 D offerte en attendant le retour de monture sous garantie 🤩 Accueil et professionnalisme sont au RV, mes lunettes et moi sommes ravis ! Je recommande ce magasin d’optique 👍\n\n(Translated by Google)\nExcellent after-sales service! They offered a free 3D frame while I waited for my warranty replacement 🤩 The welcome and professionalism were top-notch; my glasses and I are delighted! I highly recommend this optician's shop 👍",
+     "date": "2026-09-15"
+    },
     {
      "auteur": "David Caillaux",
      "note": 5,
@@ -107,12 +113,6 @@
      "note": 5,
      "texte": "Equipe à notre écoute et sympatique\n\n(Translated by Google)\nThe team was attentive and friendly.",
      "date": "2026-09-10"
-    },
-    {
-     "auteur": "Gitou Petit",
-     "note": 5,
-     "texte": "De passage dans la région, j'avais décalé ma monture. Je me suis arrêté dans ce magasin, sans être cliente bien sûr.\nLa personne qui m'a reçue a été tres sympathique,  m'a redressé ma monture  et ne m'a rien fait payer. Merci.\n\n(Translated by Google)\nWhile passing through the area, I had misaligned my glasses. I stopped by this shop, though I wasn't a customer, of course.\nThe person who helped me was very friendly, straightened my glasses, and didn't charge me anything. Thank you.",
-     "date": "2026-09-07"
     }
    ]
   },
@@ -1226,6 +1226,12 @@
    "ville": "THIVIERS",
    "derniers_avis": [
     {
+     "auteur": "Raymond Vignal",
+     "note": 5,
+     "texte": "Bon accueil et très professionnel\n\n(Translated by Google)\nFriendly and very professional welcome",
+     "date": "2026-09-15"
+    },
+    {
      "auteur": "Dominique Rousseau",
      "note": 5,
      "texte": "Bonjour nouveau sur Thiviers nous avons été trés bien reçu par le\npersonel qui nous à proposé de fabriquer une monture 3D en\nattendant un rendez vous chez un ophtalmo merci\n\n(Translated by Google)\nHello, we're new to Thiviers and we were very well received by the staff who offered to make a 3D-printed frame for us while we wait for an appointment with an ophthalmologist. Thank you!",
@@ -1247,12 +1253,6 @@
      "auteur": "Em “Alias” Alias",
      "note": 5,
      "texte": "Un optitien tres sympatique qui m a bien aidee, en effet j avais casse ma monture et il m a cree une monture de secours avec une imprimante 3d en 30 minutes.\nElles sont bien robustes et confortables.\nComme je suis de belgique cela me depanne beaucoup jusqu a mon retour.\nUn tout grand merci et je vous souhaite une fort belle continuation,\nEm.votion\n\n(Translated by Google)\nA very friendly optician who helped me a lot. I had broken my frames, and he created a replacement for me with a 3D printer in 30 minutes.\n\nThey are very sturdy and comfortable.\nSince I'm from Belgium, this is a huge help until I get back.\n\nA huge thank you, and I wish you all the best,\nEm.votion",
-     "date": "2026-08-18"
-    },
-    {
-     "auteur": "Adrien Texier",
-     "note": 5,
-     "texte": "Agence au poil !\nQue ce soit pour des verres de qualité et leurs différents services.\nNotement le service lunettes 3d qui m'a permis de trouver une solution simple et rapide pour réparer mes montures en attendant de pouvoir prétendre à de nouvelles lunettes remboursée.\nEt l'équipe est top aussi.\n\n(Translated by Google)\nTop-notch agency!\n\nWhether it's for quality lenses or their various services.\n\nIn particular, the 3D glasses service allowed me to find a quick and easy solution to repair my frames while waiting to be eligible for reimbursed new glasses.\n\nAnd the team is fantastic too.",
      "date": "2026-08-18"
     }
    ]
@@ -3087,9 +3087,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 1,
-    "soumis": 1,
-    "valides": 1,
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 2,
     "sources": "avis + lyleoo"
    }
   ],
@@ -3306,15 +3306,15 @@
     "semaine": "2026-S38",
     "debut": "2026-09-14",
     "fin": "2026-09-20",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 195,
-    "faces": 0,
+    "avis_cumules": 196,
+    "faces": 4,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
+    "impressions": 4,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
@@ -3991,8 +3991,8 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 0,
     "sources": "avis + lyleoo + oomade"
    }
@@ -4897,7 +4897,7 @@
     "impressions": null,
     "demandes": 1,
     "soumis": 1,
-    "valides": 0,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -5340,13 +5340,13 @@
     "semaine": "2026-S38",
     "debut": "2026-09-14",
     "fin": "2026-09-20",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 5,
-    "avis_cumules": 120,
-    "faces": 0,
+    "avis_cumules": 121,
+    "faces": 3,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 3,
     "demandes": 0,
     "soumis": 0,
     "valides": 1,
@@ -6929,9 +6929,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 2,
-    "soumis": 2,
-    "valides": 2,
+    "demandes": 3,
+    "soumis": 3,
+    "valides": 3,
     "sources": "avis + lyleoo"
    }
   ],
@@ -8285,8 +8285,8 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 0,
     "sources": "avis + lyleoo"
    }
@@ -8737,9 +8737,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -9417,7 +9417,7 @@
     "impressions": null,
     "demandes": 4,
     "soumis": 5,
-    "valides": 3,
+    "valides": 4,
     "sources": "avis + lyleoo"
    }
   ],
@@ -9458,13 +9458,13 @@
     "semaine": "2026-S38",
     "debut": "2026-09-14",
     "fin": "2026-09-20",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 104,
-    "faces": 0,
+    "avis_cumules": 105,
+    "faces": 2,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 2,
     "demandes": null,
     "soumis": null,
     "valides": null,
