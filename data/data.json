@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-16T09:00:04",
+ "generated_at": "2026-09-17T09:00:03",
  "trophy_start_date": null,
  "stores": [
   {
@@ -47,6 +47,12 @@
    "ville": "BERGERAC",
    "derniers_avis": [
     {
+     "auteur": "Eva Berland",
+     "note": 5,
+     "texte": "Très bonne accueil\n\n(Translated by Google)\nVery warm welcome",
+     "date": "2026-09-16"
+    },
+    {
      "auteur": "Isabelle SIEGFRIEDT",
      "note": 5,
      "texte": "Très bon accueil,très professionnel,très gentil\n\n(Translated by Google)\nVery welcoming, very professional, very kind",
@@ -69,12 +75,6 @@
      "note": 5,
      "texte": "Tres satisfaisant accueillant compétent\n\n(Translated by Google)\nVery satisfactory, welcoming, and competent",
      "date": "2026-09-12"
-    },
-    {
-     "auteur": "sabine gravier",
-     "note": 5,
-     "texte": "Un grand merci a vous pour votre gentillesse et votre accueil ! Un de mes patins de lunettes etait cassé et alors meme que je ne suis pas une cliente habituelle, j'ai été dépannée avec une grande amabilité et rapidité.\n\n(Translated by Google)\nA huge thank you for your kindness and welcome! One of my glasses pads was broken and even though I am not a regular customer, I was helped with great kindness and speed.",
-     "date": "2026-09-10"
     }
    ]
   },
@@ -85,34 +85,34 @@
    "ville": "BOULAZAC",
    "derniers_avis": [
     {
+     "auteur": "Christelle PRIVAT",
+     "note": 5,
+     "texte": "J’avais cassé mes lunettes , j’ai du en refaire . Personne à l’écoute et les a refait en urgence . Super merci beaucoup..\n\n(Translated by Google)\nI broke my glasses and had to get new ones made. No one was very helpful and they replaced them urgently. Thank you so much!",
+     "date": "2026-09-16"
+    },
+    {
+     "auteur": "Frederic Autef",
+     "note": 5,
+     "texte": "Très gentil et professionnel\n\n(Translated by Google)\nVery kind and professional",
+     "date": "2026-09-16"
+    },
+    {
+     "auteur": "Nicolas Chiarla",
+     "note": 5,
+     "texte": "Des personnes très compétente..👍\n\n(Translated by Google)\nHighly competent people...👍",
+     "date": "2026-09-16"
+    },
+    {
+     "auteur": "Louis",
+     "note": 5,
+     "texte": "Bonne communication , bonne analyse , équipe très  réactive et magasin très fourni aussi bien au niveau des montures que des  prix il y en a pour tous le monde.\n\n(Translated by Google)\nGood communication, good analysis, very responsive team and a very well-stocked store in terms of both frames and prices – there is something for everyone.",
+     "date": "2026-09-16"
+    },
+    {
      "auteur": "Laurence Boyer",
      "note": 5,
      "texte": "Service après vente au top ! Monture 3 D offerte en attendant le retour de monture sous garantie 🤩 Accueil et professionnalisme sont au RV, mes lunettes et moi sommes ravis ! Je recommande ce magasin d’optique 👍\n\n(Translated by Google)\nExcellent after-sales service! They offered a free 3D frame while I waited for my warranty replacement 🤩 The welcome and professionalism were top-notch; my glasses and I are delighted! I highly recommend this optician's shop 👍",
      "date": "2026-09-15"
-    },
-    {
-     "auteur": "David Caillaux",
-     "note": 5,
-     "texte": "Un personnel vraiment très agréable et professionnel ! Je sais où aller dès que j’ai besoin de changer de lunettes avec un choix très large de en boutique. De plus, un service après vente au top !\n\n(Translated by Google)\nThe staff are truly lovely and professional! I know exactly where to go whenever I need new glasses, with a very wide selection in store. Plus, their after-sales service is excellent!",
-     "date": "2026-09-12"
-    },
-    {
-     "auteur": "Lynne Saraiva",
-     "note": 5,
-     "texte": "Très bon conseil et avis , très bien accueilli et nous avons pu essayer les lunettes Ray ban\nMeta très satisfaite du son et de la qualité de la photo ainsi que le design\n\n(Translated by Google)\nExcellent advice and recommendations, a very warm welcome, and we were able to try on Ray-Ban sunglasses.\nMeta was very satisfied with the sound, photo quality, and design.",
-     "date": "2026-09-11"
-    },
-    {
-     "auteur": "denis choin",
-     "note": 5,
-     "texte": "Super merci pour votre professionnalisme\n\n(Translated by Google)\nThank you so much for your professionalism.",
-     "date": "2026-09-11"
-    },
-    {
-     "auteur": "Micky Paillard",
-     "note": 5,
-     "texte": "Equipe à notre écoute et sympatique\n\n(Translated by Google)\nThe team was attentive and friendly.",
-     "date": "2026-09-10"
     }
    ]
   },
@@ -922,6 +922,12 @@
    "ville": "RIBERAC",
    "derniers_avis": [
     {
+     "auteur": "Léo Dubourg",
+     "note": 5,
+     "texte": "Toujours très bien pas de soucis\n\n(Translated by Google)\nAlways great, no problems",
+     "date": "2026-09-16"
+    },
+    {
      "auteur": "Jean-Pascal Guignard",
      "note": 5,
      "texte": "Bon accueil, service professionnel et rapide, service de proximité....a recommander\n\n(Translated by Google)\nA warm welcome, professional and fast service, local service... highly recommended",
@@ -944,12 +950,6 @@
      "note": 5,
      "texte": "Super accueil et très bon conseil\n\n(Translated by Google)\nExcellent welcome and very good advice",
      "date": "2021-12-18"
-    },
-    {
-     "auteur": "Françoise Malaty",
-     "note": 5,
-     "texte": "Merci d'avoir réparé ma branche de lunettes sans frais, une vacanciers agréablement surprise...\n\n(Translated by Google)\nThank you for repairing my glasses arm free of charge, a pleasantly surprised holidaymaker...",
-     "date": "2023-08-20"
     }
    ]
   },
@@ -1953,10 +1953,10 @@
     "avis_nouveaux": 0,
     "note": 4.7,
     "avis_cumules": 61,
-    "faces": 0,
+    "faces": 1,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 1,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -2857,10 +2857,10 @@
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 43,
-    "faces": 0,
+    "faces": 2,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 2,
     "demandes": 2,
     "soumis": 2,
     "valides": 2,
@@ -3306,16 +3306,16 @@
     "semaine": "2026-S38",
     "debut": "2026-09-14",
     "fin": "2026-09-20",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 5,
     "note": 4.9,
-    "avis_cumules": 196,
+    "avis_cumules": 200,
     "faces": 4,
     "branches": 0,
     "goodies": 0,
     "impressions": 4,
-    "demandes": 1,
+    "demandes": 2,
     "soumis": 1,
-    "valides": 1,
+    "valides": 2,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -3532,9 +3532,9 @@
     "semaine": "2026-S38",
     "debut": "2026-09-14",
     "fin": "2026-09-20",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 11,
+    "avis_cumules": 12,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -4671,7 +4671,7 @@
     "impressions": null,
     "demandes": 1,
     "soumis": 1,
-    "valides": 0,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -5121,8 +5121,8 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 1,
-    "soumis": 1,
+    "demandes": 2,
+    "soumis": 2,
     "valides": 1,
     "sources": "avis + lyleoo"
    }
@@ -6251,9 +6251,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 2,
-    "soumis": 2,
-    "valides": 2,
+    "demandes": 3,
+    "soumis": 3,
+    "valides": 3,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -6929,9 +6929,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 3,
-    "soumis": 3,
-    "valides": 3,
+    "demandes": 4,
+    "soumis": 4,
+    "valides": 4,
     "sources": "avis + lyleoo"
    }
   ],
@@ -7607,9 +7607,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 5,
-    "soumis": 5,
-    "valides": 6,
+    "demandes": 6,
+    "soumis": 6,
+    "valides": 7,
     "sources": "avis + lyleoo"
    }
   ],
@@ -9458,9 +9458,9 @@
     "semaine": "2026-S38",
     "debut": "2026-09-14",
     "fin": "2026-09-20",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 2,
     "note": 4.9,
-    "avis_cumules": 105,
+    "avis_cumules": 106,
     "faces": 2,
     "branches": 0,
     "goodies": 0,
