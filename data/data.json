@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-17T09:00:03",
+ "generated_at": "2026-09-18T09:00:02",
  "trophy_start_date": null,
  "stores": [
   {
@@ -47,6 +47,18 @@
    "ville": "BERGERAC",
    "derniers_avis": [
     {
+     "auteur": "Stephanie Mason",
+     "note": 5,
+     "texte": "Very good service from all the staff who are exceptionally kind and helpful thank you",
+     "date": "2026-09-17"
+    },
+    {
+     "auteur": "Pauline Riviere",
+     "note": 5,
+     "texte": "Je recommande Atol le personnel toujours a l'écoute et réactif. Nous sommes bien conseillés. Et reactif pour le SAV.\n\n(Translated by Google)\nI recommend Atol; the staff are always attentive and responsive. We received excellent advice, and their after-sales service was very responsive.",
+     "date": "2026-09-17"
+    },
+    {
      "auteur": "Eva Berland",
      "note": 5,
      "texte": "Très bonne accueil\n\n(Translated by Google)\nVery warm welcome",
@@ -63,18 +75,6 @@
      "note": 5,
      "texte": "Personnel accueillant, souriant et de très bon conseil\nEtablissement à recommander\n\n(Translated by Google)\nWelcoming, friendly staff who offered excellent advice.\nHighly recommended establishment.",
      "date": "2026-09-12"
-    },
-    {
-     "auteur": "Stéphanie Nicouleau",
-     "note": 5,
-     "texte": "Je recommande\n\n(Translated by Google)\nI recommend",
-     "date": "2026-09-12"
-    },
-    {
-     "auteur": "Lahlou Fatima",
-     "note": 5,
-     "texte": "Tres satisfaisant accueillant compétent\n\n(Translated by Google)\nVery satisfactory, welcoming, and competent",
-     "date": "2026-09-12"
     }
    ]
   },
@@ -84,6 +84,12 @@
    "enseigne": "ATOL",
    "ville": "BOULAZAC",
    "derniers_avis": [
+    {
+     "auteur": "Christophe Malet",
+     "note": 4,
+     "texte": "Rien  a signaler  merci  a vous\n\n(Translated by Google)\nNothing to report, thank you.",
+     "date": "2026-09-17"
+    },
     {
      "auteur": "Christelle PRIVAT",
      "note": 5,
@@ -107,12 +113,6 @@
      "note": 5,
      "texte": "Bonne communication , bonne analyse , équipe très  réactive et magasin très fourni aussi bien au niveau des montures que des  prix il y en a pour tous le monde.\n\n(Translated by Google)\nGood communication, good analysis, very responsive team and a very well-stocked store in terms of both frames and prices – there is something for everyone.",
      "date": "2026-09-16"
-    },
-    {
-     "auteur": "Laurence Boyer",
-     "note": 5,
-     "texte": "Service après vente au top ! Monture 3 D offerte en attendant le retour de monture sous garantie 🤩 Accueil et professionnalisme sont au RV, mes lunettes et moi sommes ravis ! Je recommande ce magasin d’optique 👍\n\n(Translated by Google)\nExcellent after-sales service! They offered a free 3D frame while I waited for my warranty replacement 🤩 The welcome and professionalism were top-notch; my glasses and I are delighted! I highly recommend this optician's shop 👍",
-     "date": "2026-09-15"
     }
    ]
   },
@@ -884,6 +884,12 @@
    "ville": "RIBERAC",
    "derniers_avis": [
     {
+     "auteur": "chonis nadine",
+     "note": 4,
+     "texte": "Bon accueil , horaires d’ouverture entre 14het 14h .Professionnel de qualité\n\n(Translated by Google)\nFriendly welcome, opening hours between 2pm and 2pm. High-quality professional",
+     "date": "2026-09-17"
+    },
+    {
      "auteur": "Amélie Varin",
      "note": 5,
      "texte": "Un grand merci pour votre accueil et votre professionnalisme ! Nous sommes venus pour réparer rapidement une paire de lunette enfant . La dame qui nous a accueilli à réparer les lunettes sur le coup  ,les a nettoyées et les a rendues quasiment comme neuves . Merci beaucoup pour ce dépannage Express et pour votre accueil.\n\n(Translated by Google)\nA huge thank you for your warm welcome and professionalism! We came in to have a pair of children's glasses repaired quickly. The woman who helped us repaired the glasses on the spot, cleaned them, and returned them practically like new. Thank you so much for this express service and for your kind welcome.",
@@ -906,12 +912,6 @@
      "note": 5,
      "texte": "Tres gentil et très accueillant\n\n(Translated by Google)\nVery kind and very welcoming",
      "date": "2026-06-20"
-    },
-    {
-     "auteur": "christophe balan",
-     "note": 5,
-     "texte": "(Translated by Google) After multiple competing services, which failed to meet my specific needs, I thank Atol at the Riberac shopping center, who are exceptionally competent, quick, and attentive. Thank you for your professionalism.\n\nChristophe Balan\n\n(Original)\nApres multiples prestations concurantes\nN'ayant  aucunement repondu a ma demande adapteee\nAtol centre commercial riberac,qui sont exeptionnelement competent ,rapide et a l'ecoute\nMerci de leur professionalisme\nChristophe Balan",
-     "date": "2026-06-15"
     }
    ]
   },
@@ -1953,10 +1953,10 @@
     "avis_nouveaux": 0,
     "note": 4.7,
     "avis_cumules": 61,
-    "faces": 1,
+    "faces": 2,
     "branches": 0,
     "goodies": 0,
-    "impressions": 1,
+    "impressions": 2,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -2861,8 +2861,8 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 2,
-    "demandes": 2,
-    "soumis": 2,
+    "demandes": 3,
+    "soumis": 3,
     "valides": 2,
     "sources": "avis + lyleoo + oomade"
    }
@@ -3087,9 +3087,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 2,
-    "soumis": 2,
-    "valides": 2,
+    "demandes": 3,
+    "soumis": 3,
+    "valides": 3,
     "sources": "avis + lyleoo"
    }
   ],
@@ -3306,16 +3306,16 @@
     "semaine": "2026-S38",
     "debut": "2026-09-14",
     "fin": "2026-09-20",
-    "avis_nouveaux": 5,
+    "avis_nouveaux": 6,
     "note": 4.9,
-    "avis_cumules": 200,
-    "faces": 4,
+    "avis_cumules": 201,
+    "faces": 7,
     "branches": 0,
     "goodies": 0,
-    "impressions": 4,
-    "demandes": 2,
-    "soumis": 1,
-    "valides": 2,
+    "impressions": 7,
+    "demandes": 3,
+    "soumis": 2,
+    "valides": 3,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -3539,7 +3539,7 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
+    "demandes": 1,
     "soumis": 0,
     "valides": 0,
     "sources": "avis + lyleoo"
@@ -3993,7 +3993,7 @@
     "impressions": 0,
     "demandes": 1,
     "soumis": 1,
-    "valides": 0,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -4436,9 +4436,9 @@
     "semaine": "2026-S38",
     "debut": "2026-09-14",
     "fin": "2026-09-20",
-    "avis_nouveaux": 0,
-    "note": 4.6,
-    "avis_cumules": 54,
+    "avis_nouveaux": 1,
+    "note": 4.5,
+    "avis_cumules": 55,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -5121,9 +5121,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 2,
-    "soumis": 2,
-    "valides": 1,
+    "demandes": 3,
+    "soumis": 3,
+    "valides": 2,
     "sources": "avis + lyleoo"
    }
   ],
@@ -7607,9 +7607,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 6,
-    "soumis": 6,
-    "valides": 7,
+    "demandes": 7,
+    "soumis": 7,
+    "valides": 8,
     "sources": "avis + lyleoo"
    }
   ],
@@ -8287,7 +8287,7 @@
     "impressions": null,
     "demandes": 1,
     "soumis": 1,
-    "valides": 0,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -8963,9 +8963,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 1,
-    "soumis": 1,
-    "valides": 2,
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 3,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -9189,9 +9189,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 1,
-    "valides": 1,
+    "demandes": 1,
+    "soumis": 2,
+    "valides": 2,
     "sources": "avis + lyleoo"
    }
   ],
@@ -9458,9 +9458,9 @@
     "semaine": "2026-S38",
     "debut": "2026-09-14",
     "fin": "2026-09-20",
-    "avis_nouveaux": 2,
+    "avis_nouveaux": 4,
     "note": 4.9,
-    "avis_cumules": 106,
+    "avis_cumules": 108,
     "faces": 2,
     "branches": 0,
     "goodies": 0,
