@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-19T09:00:03",
+ "generated_at": "2026-09-20T09:00:04",
  "trophy_start_date": null,
  "stores": [
   {
@@ -661,6 +661,12 @@
    "ville": "MONTPON-MENESTEROL",
    "derniers_avis": [
     {
+     "auteur": "Sylv'1 Marchand",
+     "note": 5,
+     "texte": "Merci du service rendu, rapide et très cordialement...merci beaucoup\n\n(Translated by Google)\nThank you for the service, it was quick and very cordial...thank you very much",
+     "date": "2026-09-19"
+    },
+    {
      "auteur": "sabrina touati",
      "note": 5,
      "texte": "Je recommande cet opticien. Magasin très propre, bien rangé et agréable\nLe vendeur en optique été de très bon conseils et je suis très satisfaite de ma paire de lunettes\n\n(Translated by Google)\nI recommend this optician. The shop is very clean, well-organized, and pleasant.\nThe optician gave excellent advice, and I am very happy with my new glasses.",
@@ -683,12 +689,6 @@
      "note": 5,
      "texte": "Très bon accueil et d’excellents conseils. J’étais venue faire mes lunettes ici l’année dernière et j’avais été très satisfaite. Aujourd’hui, j’ai cassé mes lunettes. L’équipe m’a très rapidement trouvé une solution et j’ai pu repartir avec une nouvelle paire.\n\nJe recommande !\n\n(Translated by Google)\nA very warm welcome and excellent advice. I had my glasses made here last year and was very satisfied. Today, I broke my glasses. The team quickly found a solution and I was able to leave with a new pair.\n\nI highly recommend them!",
      "date": "2026-07-15"
-    },
-    {
-     "auteur": "ysmhail grimaldosalarcon",
-     "note": 5,
-     "texte": "Accueil simple , efficace...a l écoute... professionnel....et la climatisation un vrai bonheur avec la canicule....\n\n(Translated by Google)\nA simple, efficient, and attentive welcome...professional...and the air conditioning was a real blessing during this heatwave.",
-     "date": "2026-07-11"
     }
    ]
   },
@@ -960,6 +960,12 @@
    "ville": "SOUILLAC",
    "derniers_avis": [
     {
+     "auteur": "Kilian",
+     "note": 5,
+     "texte": "Merci pour l’accueil et le professionnalisme ! J’ai réalisé un test de vue avec des explications très claires et vraiment faciles à comprendre. Tout a été fait avec sérieux, patience et attention. Je recommande sans hésiter ! Merci à Rachelle et Lucie !\n\n(Translated by Google)\nThank you for the warm welcome and professionalism! I had an eye test with very clear and easy-to-understand explanations. Everything was done with seriousness, patience, and care. I highly recommend them! Thank you, Rachelle and Lucie!",
+     "date": "2026-09-19"
+    },
+    {
      "auteur": "Ilse Van Dyck",
      "note": 5,
      "texte": "Un accueil très chaleureux. Nous sommes venus ici pour la première fois en tant qu'étrangers et avons bénéficié d'une excellente assistance. À recommander vivement !\n\n(Translated by Google)\nA very warm welcome. We were here for the first time as foreigners and received excellent assistance. Highly recommended!",
@@ -982,12 +988,6 @@
      "note": 5,
      "texte": "En vacances à Souillac, Virginie Dupont m’a réparé mes lunettes dont une petite vis était partie. Accueillante et souriante elle m’a dépannée gratuitement. Encore merci\n\n(Translated by Google)\nWhile on holiday in Souillac, Virginie Dupont repaired my glasses; a small screw had come loose. Friendly and smiling, she helped me out free of charge. Thanks again!",
      "date": "2026-08-12"
-    },
-    {
-     "auteur": "Stephane Ferrer",
-     "note": 5,
-     "texte": "Venu pour faire redresser un paire de lunettes.\nFait dans les 5 minutes.\nPersonnel souriant, accueillant et efficace.\nJe recommande\n\n(Translated by Google)\nI came in to have my glasses straightened.\nDone in 5 minutes.\nFriendly, welcoming, and efficient staff.\nI recommend them.",
-     "date": "2026-08-08"
     }
    ]
   },
@@ -1953,13 +1953,13 @@
     "avis_nouveaux": 0,
     "note": 4.7,
     "avis_cumules": 61,
-    "faces": 2,
+    "faces": 4,
     "branches": 0,
     "goodies": 0,
-    "impressions": 2,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "impressions": 4,
+    "demandes": 3,
+    "soumis": 3,
+    "valides": 2,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -3539,8 +3539,8 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 2,
+    "soumis": 2,
     "valides": 0,
     "sources": "avis + lyleoo"
    }
@@ -4895,8 +4895,8 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 1,
-    "soumis": 1,
+    "demandes": 2,
+    "soumis": 2,
     "valides": 1,
     "sources": "avis + lyleoo"
    }
@@ -6025,8 +6025,8 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 2,
-    "soumis": 2,
+    "demandes": 3,
+    "soumis": 3,
     "valides": 2,
     "sources": "avis + lyleoo + oomade"
    }
@@ -6244,9 +6244,9 @@
     "semaine": "2026-S38",
     "debut": "2026-09-14",
     "fin": "2026-09-20",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 37,
+    "avis_cumules": 38,
     "faces": 1,
     "branches": 0,
     "goodies": 0,
@@ -6703,9 +6703,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 1,
-    "soumis": 1,
-    "valides": 2,
+    "demandes": 3,
+    "soumis": 3,
+    "valides": 4,
     "sources": "avis + lyleoo"
    }
   ],
@@ -6929,9 +6929,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 5,
-    "soumis": 5,
-    "valides": 5,
+    "demandes": 6,
+    "soumis": 6,
+    "valides": 6,
     "sources": "avis + lyleoo"
    }
   ],
@@ -8730,16 +8730,16 @@
     "semaine": "2026-S38",
     "debut": "2026-09-14",
     "fin": "2026-09-20",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 2,
     "note": 4.7,
-    "avis_cumules": 68,
+    "avis_cumules": 69,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 1,
-    "soumis": 1,
-    "valides": 1,
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 2,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -8963,9 +8963,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 2,
-    "soumis": 2,
-    "valides": 3,
+    "demandes": 5,
+    "soumis": 5,
+    "valides": 5,
     "sources": "avis + lyleoo + oomade"
    }
   ],
