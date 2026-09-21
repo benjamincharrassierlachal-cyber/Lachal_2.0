@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-21T09:00:03",
+ "generated_at": "2026-09-21T10:44:48",
  "trophy_start_date": null,
  "stores": [
   {
@@ -318,11 +318,6 @@
      "texte": "J’ai accompagné mon compagnon chez Général d’Optique à Bergerac et nous avons été très bien accueillis. L’équipe est agréable, souriante et professionnelle. Les conseils étaient vraiment pertinents et ils ont pris le temps de bien …"
     },
     {
-     "auteur": "Johanna Palumbo",
-     "note": 5,
-     "texte": "Un immense merci à Carole pour son accueil et ses précieux conseils. Elle est patiente, attentionnée et connaît parfaitement son métier. On sent qu’elle cherche vraiment ce qui nous convient le mieux, pas juste à vendre. Une opticienne au top !"
-    },
-    {
      "auteur": "Valérie ANDRÉ",
      "note": 5,
      "texte": "Magasin très agréable. Personnel très accueillant, sympathique et de très bon conseil. A l'écoute et très réactif. Merci Je recommande vivement ++++😊👍 …"
@@ -336,6 +331,11 @@
      "auteur": "Pierrette Ganter",
      "note": 5,
      "texte": "Super accueil par Marine ! Elle est très agréable et de bon conseil ! Grand choix de montures ! Il y en a pour tous les goûts et tous les budgets !  Délais respectés ! Magasin au top ! Vraiment rien à redire ! Je vous le conseille vivement !"
+    },
+    {
+     "auteur": "CLEMENTINE SAGNETTE",
+     "note": 5,
+     "texte": "Je suis extrêmement ravi de mon expérience dans ce magasin ! Carole a été tout simplement parfaite du début à la fin. J’ai été très bien conseillé, avec des explications claires, honnêtes et adaptées à mes besoins. …"
     }
    ]
   },
@@ -356,11 +356,6 @@
      "texte": "Très bon accueil avec un bon accompagnement pour l'achat de premières lunettes de vue pour moi.  Nous venons tous les ans chez général d'optique pour ma fille depuis ses 2 ans 1/2 et ils ont toujours fait preuve de professionnalisme (et de patience !) pour l'aider. Je recommande."
     },
     {
-     "auteur": "Karine MARIE",
-     "note": 5,
-     "texte": "Bonjour, ça fait des années que nous achetons nos lunettes chez générale d'optique. Quand on a vue qu'une boutique s'installe à Bretenoux on était très content. …"
-    },
-    {
      "auteur": "garnier cedric",
      "note": 5,
      "texte": "Je suis allé chez Générale d'Optique à Bretenoux et je suis très satisfait.\nL’accueil était chaleureux, les conseils impeccables et professionnels. Il y a un grand choix de montures, et le magasin est très bien situé.\nJe recommande sans hésiter !"
@@ -369,6 +364,11 @@
      "auteur": "Marie José Cayre",
      "note": 5,
      "texte": "Très chaleureux. Je suis passée chercher mes lunettes un peu avant la fermeture et j'ai été très bien reçu. La personne à  pris le temps de bien s'occuper de moi."
+    },
+    {
+     "auteur": "SEBE DEL",
+     "note": 5,
+     "texte": "Accueil agréable fait par un jeune homme, bonne prise en main, il nous a permis d essayer et surtout de prendre un modèle que nous n'aurions jamais imaginé.\nSi vous voulez une personne attentionnée et bienvaillante, ce magasin est fait …"
     }
    ]
   },
@@ -399,9 +399,9 @@
      "texte": "Excellente expérience. Accueil et gestion des besoins et souhaits du client, très professionnels et aimables. Je suis très satisfait de mes lunettes. Un grand merci à l'équipe Générale d'Optique à Tulle."
     },
     {
-     "auteur": "Claire B",
+     "auteur": "Juvenal Corelia",
      "note": 5,
-     "texte": "Très belle expérience. L’accueil est chaleureux, les conseils que Sébastien m’a donné sont personnalisés avec un vrai souci du détail. On ne se sent pas pressé, tout est bien expliqué (verres, montures). Ravie de mes nouvelles lunettes. Merci pour son professionnalisme !"
+     "texte": "Très bonne expérience, personnel à l’écoute et de très bon conseil, je recommande !"
     }
    ]
   },
@@ -526,11 +526,6 @@
    "ville": "MARSAC-SUR-L'ISLE",
    "derniers_avis": [
     {
-     "auteur": "Laurent INNOCENT",
-     "note": 5,
-     "texte": "Bonjour a tous je vous conseil fortement de vous avancez vers cette magnifique équipe. Ils sont éléments exceptionnels. Ils sont non pas que pour l’as lunettes et ils sont aussi a l’écoute. Je reste fidèle a eux. Depuis mon besoin j’ai …"
-    },
-    {
      "auteur": "marie-géraldine DASI",
      "note": 5,
      "texte": "Nous avons été très bien accueillis. Madame Chazotte a pris tout le temps nécessaire pour réaliser un examen de vue complet et approfondi. Elle a su nous conseiller avec beaucoup de professionnalisme dans le choix des montures, en tenant …"
@@ -549,6 +544,11 @@
      "auteur": "Cecile Jouanneau",
      "note": 5,
      "texte": "Juste prise en charge parfaite ! Et tellement contente du résultat!  Merci à Marie Charlotte pour son écoute et tout les bons conseils.\nMerci d'avoir pu trouver des lunettes de piscine à ma vue à prix très abordable."
+    },
+    {
+     "auteur": "Laurent INNOCENT",
+     "note": 5,
+     "texte": "Bonjour a tous je vous conseil fortement de vous avancez vers cette magnifique équipe. Ils sont éléments exceptionnels. Ils sont non pas que pour l’as lunettes et ils sont aussi a l’écoute. Je reste fidèle a eux. Depuis mon besoin j’ai …"
     }
    ]
   },
@@ -737,11 +737,6 @@
    "ville": "PERIGUEUX",
    "derniers_avis": [
     {
-     "auteur": "Elodie Elle",
-     "note": 5,
-     "texte": "Je souhaite partager mon excellente expérience chez Optic 2000.\nLe personnel est particulièrement accueillant, toujours souriant et très à l’écoute. J’ai été très bien conseillé, avec beaucoup de professionnalisme, que ce …"
-    },
-    {
      "auteur": "Kevin Nsa",
      "note": 5,
      "texte": "Je recommande grandement Optic2000 Périgueux avec lesquels j’ai pu prendre 2 paires de lunettes de correction via Cédric et Tiphany qui m’ont extrêmement bien conseillé du début à la fin. Même si tout le reste du personnel était extrêmement …"
@@ -760,6 +755,11 @@
      "auteur": "Anna Michaud",
      "note": 5,
      "texte": "Accueil chaleureux et employés à l'écoute des demandes. Les conseils donnés m'ont bien renseigné sur les démarches. Ainsi, je suis contente d'avoir pris mes lunettes dans cette boutique."
+    },
+    {
+     "auteur": "Elodie Elle",
+     "note": 5,
+     "texte": "Je souhaite partager mon excellente expérience chez Optic 2000.\nLe personnel est particulièrement accueillant, toujours souriant et très à l’écoute. J’ai été très bien conseillé, avec beaucoup de professionnalisme, que ce …"
     }
    ]
   },
@@ -8258,9 +8258,9 @@
     "semaine": "2026-S39",
     "debut": "2026-09-21",
     "fin": "2026-09-27",
-    "avis_nouveaux": null,
-    "note": null,
-    "avis_cumules": null,
+    "avis_nouveaux": 0,
+    "note": 4.9,
+    "avis_cumules": 148,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -8268,7 +8268,7 @@
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "lyleoo"
+    "sources": "avis + lyleoo"
    }
   ],
   "38": [
@@ -8500,9 +8500,9 @@
     "semaine": "2026-S39",
     "debut": "2026-09-21",
     "fin": "2026-09-27",
-    "avis_nouveaux": null,
-    "note": null,
-    "avis_cumules": null,
+    "avis_nouveaux": 0,
+    "note": 5,
+    "avis_cumules": 126,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -8510,7 +8510,7 @@
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "lyleoo"
+    "sources": "avis + lyleoo"
    }
   ],
   "4": [
@@ -9468,9 +9468,9 @@
     "semaine": "2026-S39",
     "debut": "2026-09-21",
     "fin": "2026-09-27",
-    "avis_nouveaux": null,
-    "note": null,
-    "avis_cumules": null,
+    "avis_nouveaux": 10,
+    "note": 4.9,
+    "avis_cumules": 204,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -9478,7 +9478,7 @@
     "demandes": 0,
     "soumis": 0,
     "valides": 1,
-    "sources": "lyleoo"
+    "sources": "avis + lyleoo"
    }
   ],
   "780": [
@@ -9710,9 +9710,9 @@
     "semaine": "2026-S39",
     "debut": "2026-09-21",
     "fin": "2026-09-27",
-    "avis_nouveaux": null,
-    "note": null,
-    "avis_cumules": null,
+    "avis_nouveaux": 6,
+    "note": 4.8,
+    "avis_cumules": 142,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -9720,7 +9720,7 @@
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "lyleoo"
+    "sources": "avis + lyleoo"
    }
   ],
   "8": [
@@ -10071,6 +10071,22 @@
     "avis_nouveaux": 0,
     "note": 4.9,
     "avis_cumules": 149,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": null,
+    "soumis": null,
+    "valides": null,
+    "sources": "avis"
+   },
+   {
+    "semaine": "2026-S39",
+    "debut": "2026-09-21",
+    "fin": "2026-09-27",
+    "avis_nouveaux": 8,
+    "note": 4.9,
+    "avis_cumules": 157,
     "faces": null,
     "branches": null,
     "goodies": null,
