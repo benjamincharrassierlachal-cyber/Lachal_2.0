@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-25T09:00:03",
+ "generated_at": "2026-09-25T23:03:55",
  "trophy_start_date": null,
  "stores": [
   {
@@ -1973,7 +1973,7 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 2,
-    "demandes": 0,
+    "demandes": 1,
     "soumis": 0,
     "valides": 1,
     "sources": "avis + lyleoo + oomade"
@@ -2941,9 +2941,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 3,
+    "soumis": 3,
+    "valides": 3,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -3425,9 +3425,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 4,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 3,
+    "soumis": 3,
+    "valides": 3,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -3667,9 +3667,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 2,
+    "demandes": -1,
+    "soumis": 1,
+    "valides": 3,
     "sources": "avis + lyleoo"
    }
   ],
@@ -4393,9 +4393,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -4877,9 +4877,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 3,
+    "soumis": 3,
+    "valides": 3,
     "sources": "avis + lyleoo"
    }
   ],
@@ -5119,9 +5119,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 2,
     "sources": "avis + lyleoo"
    }
   ],
@@ -6571,9 +6571,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 1,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -7055,9 +7055,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -7297,9 +7297,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 3,
+    "soumis": 3,
+    "valides": 3,
     "sources": "avis + lyleoo"
    }
   ],
@@ -7781,9 +7781,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -8023,9 +8023,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -8265,9 +8265,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -8991,9 +8991,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 2,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 2,
     "sources": "avis + lyleoo + oomade"
    }
   ],
