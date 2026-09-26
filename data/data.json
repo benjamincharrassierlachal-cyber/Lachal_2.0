@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-25T23:03:55",
+ "generated_at": "2026-09-26T09:00:03",
  "trophy_start_date": null,
  "stores": [
   {
@@ -8,6 +8,12 @@
    "enseigne": "ATOL",
    "ville": "SIORAC-EN-PERIGORD",
    "derniers_avis": [
+    {
+     "auteur": "Alexandra Gervaux",
+     "note": 5,
+     "texte": "Satisfaite et ravie de mon opticien chez ATOL à Siorac… Personnel chaleureux et compétent, rapide et efficace, prix très abordable.. je recommande fortement et sans hésitation ATOL Siorac  à toute les personnes de mon entourage .\n\n(Translated by Google)\nSatisfied and delighted with my optician at ATOL in Siorac… Warm and competent staff, quick and efficient, very affordable prices… I highly and without hesitation recommend ATOL Siorac to everyone I know.",
+     "date": "2026-09-25"
+    },
     {
      "auteur": "Kathy Verboom",
      "note": 5,
@@ -31,12 +37,6 @@
      "note": 5,
      "texte": "(Translated by Google) Excellent service.\nCompetent and welcoming staff.\nHighly recommended.\nThank you again.\n\n(Original)\nTrès bon accueil\nPersonnel compétent et accueillant\nJe conseille vivement\nMerci encore",
      "date": "2026-07-07"
-    },
-    {
-     "auteur": "Laurent BREGE",
-     "note": 5,
-     "texte": "En vacances dans la région j'ai cassé ma monture de lunettes solaire. Atol Siorac m'a dépanné en commandant pour la même monture en sav. Le lendemain après midi je repartai avec mes lunettes réparé. Un très grand merci Madame pour le service et votre gentillesse bien que je ne sois pas client, puisque pas de la région.\n\n(Translated by Google)\nWhile on holiday in the area, I broke my sunglasses frame. Atol Siorac helped me out by ordering the same frame for repair. The following afternoon, I left with my repaired glasses. A huge thank you, Madam, for your service and kindness, even though I'm not a customer, as I'm not from the area.",
-     "date": "2026-06-18"
     }
    ]
   },
@@ -85,6 +85,12 @@
    "ville": "BOULAZAC",
    "derniers_avis": [
     {
+     "auteur": "Chloé Navarro",
+     "note": 5,
+     "texte": "Je suis tjrs bien accueilli, il cherche vraiment des solutions pour vous aidez je vais toujours la bas\n\n(Translated by Google)\nI'm always well received; they really look for solutions to help you. I always go there.",
+     "date": "2026-09-25"
+    },
+    {
      "auteur": "Jessica Graffeuil",
      "note": 5,
      "texte": "Merci beaucoup pour la réparation super efficace de mes lunettes avec la super imprimante 3D.\nBonne journée\n\n(Translated by Google)\nThank you so much for the super efficient repair of my glasses with the amazing 3D printer.\n\nHave a great day!",
@@ -107,12 +113,6 @@
      "note": 4,
      "texte": "Rien  a signaler  merci  a vous\n\n(Translated by Google)\nNothing to report, thank you.",
      "date": "2026-09-17"
-    },
-    {
-     "auteur": "Christelle PRIVAT",
-     "note": 5,
-     "texte": "J’avais cassé mes lunettes , j’ai du en refaire . Personne à l’écoute et les a refait en urgence . Super merci beaucoup..\n\n(Translated by Google)\nI broke my glasses and had to get new ones made. No one was very helpful and they replaced them urgently. Thank you so much!",
-     "date": "2026-09-16"
     }
    ]
   },
@@ -237,6 +237,12 @@
    "ville": "EXCIDEUIL",
    "derniers_avis": [
     {
+     "auteur": "Mélanie Duprat",
+     "note": 5,
+     "texte": "Acceuil très sympathique avec une large gamme de choix tendances\n\n(Translated by Google)\nVery friendly welcome with a wide range of trendy choices",
+     "date": "2026-09-17"
+    },
+    {
      "auteur": "marie-helene Lelong",
      "note": 5,
      "texte": "Réactivité, efficacité : prise en compte de l'urgence de ma situation. Respect des délais.\n\n(Translated by Google)\nResponsiveness, efficiency: they took into account the urgency of my situation and respected the deadlines.",
@@ -259,12 +265,6 @@
      "note": 5,
      "texte": "Très bon accueil et très bon service!\n\n(Translated by Google)\nExcellent welcome and excellent service!",
      "date": "2026-06-24"
-    },
-    {
-     "auteur": "Serge Bossu",
-     "note": 5,
-     "texte": "Accueil très agréable et réparation parfaite des montures de lunettes !\nMerci beaucoup\n\n(Translated by Google)\nA very pleasant welcome and perfect repair of the eyeglass frames!\nThank you very much",
-     "date": "2026-05-28"
     }
    ]
   },
@@ -524,33 +524,7 @@
    "name": "MARSAC",
    "enseigne": "OPTIC 2000",
    "ville": "MARSAC-SUR-L'ISLE",
-   "derniers_avis": [
-    {
-     "auteur": "marie-géraldine DASI",
-     "note": 5,
-     "texte": "Nous avons été très bien accueillis. Madame Chazotte a pris tout le temps nécessaire pour réaliser un examen de vue complet et approfondi. Elle a su nous conseiller avec beaucoup de professionnalisme dans le choix des montures, en tenant …"
-    },
-    {
-     "auteur": "Romain Delpit",
-     "note": 5,
-     "texte": "Un immense merci à Lola d’Optic 2000 pour son accueil, son professionnalisme et sa gentillesse. J’ai été parfaitement conseillé du début à la fin, avec beaucoup d’écoute et de patience. Le choix de montures est varié et de qualité, elle …"
-    },
-    {
-     "auteur": "Nicolas PEUCH",
-     "note": 5,
-     "texte": "Accueil chaleureux et écoute attentive de nos demandes et souhaits.  Choisir une paire de lunettes n’est pas toujours évident, mais Marie-Charlotte nous a prodigué d’excellents conseils."
-    },
-    {
-     "auteur": "Cecile Jouanneau",
-     "note": 5,
-     "texte": "Juste prise en charge parfaite ! Et tellement contente du résultat!  Merci à Marie Charlotte pour son écoute et tout les bons conseils.\nMerci d'avoir pu trouver des lunettes de piscine à ma vue à prix très abordable."
-    },
-    {
-     "auteur": "Laurent INNOCENT",
-     "note": 5,
-     "texte": "Bonjour a tous je vous conseil fortement de vous avancez vers cette magnifique équipe. Ils sont éléments exceptionnels. Ils sont non pas que pour l’as lunettes et ils sont aussi a l’écoute. Je reste fidèle a eux. Depuis mon besoin j’ai …"
-    }
-   ]
+   "derniers_avis": []
   },
   {
    "code": "24",
@@ -661,6 +635,12 @@
    "ville": "MONTPON-MENESTEROL",
    "derniers_avis": [
     {
+     "auteur": "Jolan Martel",
+     "note": 5,
+     "texte": "Un accueille super mon problème régler en 15-20 min rapide et efficace merci encore.\n\n(Translated by Google)\nExcellent service, my problem solved in 15-20 minutes, quick and efficient, thank you again.",
+     "date": "2026-09-25"
+    },
+    {
      "auteur": "Sylv'1 Marchand",
      "note": 5,
      "texte": "Merci du service rendu, rapide et très cordialement...merci beaucoup\n\n(Translated by Google)\nThank you for the service, it was quick and very cordial...thank you very much",
@@ -683,12 +663,6 @@
      "note": 5,
      "texte": "Accueil très chaleureux, Offre très intéressantes, Je recommande fortement cette agence!\n\n(Translated by Google)\nVery warm welcome, very interesting offers, I highly recommend this agency!",
      "date": "2026-07-17"
-    },
-    {
-     "auteur": "Pauline Berry",
-     "note": 5,
-     "texte": "Très bon accueil et d’excellents conseils. J’étais venue faire mes lunettes ici l’année dernière et j’avais été très satisfaite. Aujourd’hui, j’ai cassé mes lunettes. L’équipe m’a très rapidement trouvé une solution et j’ai pu repartir avec une nouvelle paire.\n\nJe recommande !\n\n(Translated by Google)\nA very warm welcome and excellent advice. I had my glasses made here last year and was very satisfied. Today, I broke my glasses. The team quickly found a solution and I was able to leave with a new pair.\n\nI highly recommend them!",
-     "date": "2026-07-15"
     }
    ]
   },
@@ -1150,6 +1124,12 @@
    "ville": "SAINT-YRIEIX-LA-PERCHE",
    "derniers_avis": [
     {
+     "auteur": "ARLETTE JUQUEL",
+     "note": 5,
+     "texte": "Bonjour très bien très aimable ils font tous pour vous aider merci.\n\n(Translated by Google)\nHello, they are very good and very friendly, they do everything to help you, thank you.",
+     "date": "2026-09-25"
+    },
+    {
      "auteur": "olivia Jeannot",
      "note": 5,
      "texte": "Très bons conseils, échanges fluides et sympathiques. J’ai reçu mes nouvelles lunettes en très peu de temps !\n\n(Translated by Google)\nExcellent advice, smooth and friendly communication. I received my new glasses in no time!",
@@ -1172,12 +1152,6 @@
      "note": 5,
      "texte": "Merci à toute l'équipe qui a été formidable de A a Z.\nUn petit supplément XXL pour Jeanne qui a été très professionnelle et toujours avec le sourire.\nPassez de bonnes fêtes à toute l'équipe d'Atol STY\n\n(Translated by Google)\nThank you to the entire team who were fantastic from start to finish. A special shout-out to Jeanne who was incredibly professional and always had a smile on her face.\nHappy holidays to the whole Atol STY team!",
      "date": "2025-12-06"
-    },
-    {
-     "auteur": "Laurine Britsch",
-     "note": 5,
-     "texte": "Une équipe en or!\nToujours un accueil avec le sourire.\nToujours à l'écoute, de très bon conseil.\nTrès professionnel, rapide et efficace.\nIls sont parfaits.\n\n(Translated by Google)\nA fantastic team!\nAlways greeted with a smile.\nAlways attentive and offering excellent advice.\nVery professional, fast, and efficient.\nThey're perfect.",
-     "date": "2025-10-23"
     }
    ]
   },
@@ -1194,28 +1168,28 @@
      "date": "2026-09-23"
     },
     {
+     "auteur": "Didier Sabatier",
+     "note": 5,
+     "texte": "Boutique bien agencée, choix des produits, accueil, explications. Tout est fait pour satisfaire le \"client\". Je recommande vivement cette boutique.\n\n(Translated by Google)\nThe shop is well laid out, with a good selection of products, a friendly welcome, and helpful explanations. Everything is done to satisfy the customer. I highly recommend this shop.",
+     "date": "2026-09-21"
+    },
+    {
+     "auteur": "Jean-Philippe PALUS",
+     "note": 5,
+     "texte": "Opticien sérieux qui donne d’excellents renseignements toujours à l’écoute. Plusieurs paires achetées ici jamais un souci je recommande !\n\n(Translated by Google)\nA reliable optician who provides excellent information and is always attentive. I've bought several pairs of glasses here and have never had a problem; I highly recommend them!",
+     "date": "2026-09-21"
+    },
+    {
+     "auteur": "josiane averous",
+     "note": 5,
+     "texte": "Accueil très chaleureux. Personnel compétent et à l'écoute !!\n\n(Translated by Google)\nA very warm welcome. Competent and attentive staff!",
+     "date": "2026-09-19"
+    },
+    {
      "auteur": "maryse simon",
      "note": 5,
      "texte": "accueil excellent  par une vraie professionelle\nconseils adaptés à mes besoins\npleinement satisfaite\n\n(Translated by Google)\nExcellent service from a true professional. Advice tailored to my needs. Completely satisfied.",
      "date": "2026-09-05"
-    },
-    {
-     "auteur": "Alexia JANSON",
-     "note": 5,
-     "texte": "Pour ma 1ere paire de lunettes j’ai eu des super bons conseils…. La conseillère a pris le temps…. J’ai pu essayer plusieurs modèles et styles!!! Ça fait du bien de se sentir écouté et d’être compris. Mes amis m’ont fait que des compliments sur mon choix !!! Je suis ravie!!!\n\n(Translated by Google)\nFor my first pair of glasses, I received excellent advice. The sales assistant took her time. I was able to try on several models and styles! It felt so good to be listened to and understood. My friends complimented me on my choice! I'm thrilled!",
-     "date": "2026-09-02"
-    },
-    {
-     "auteur": "Solange JOLLY",
-     "note": 5,
-     "texte": "Très satisfaite de l'excellent accueil, personnel compétent et de bon conseil, produits de très bonne qualité. Je recommande Atol mon Opticien à  Saint-astier, à tous.\n\n(Translated by Google)\nVery satisfied with the excellent welcome, competent and helpful staff, and very high-quality products. I recommend Atol mon Opticien in Saint-Astier to everyone.",
-     "date": "2026-08-24"
-    },
-    {
-     "auteur": "karine jolly",
-     "note": 5,
-     "texte": "Opticiennes trés à l'écoute, de bons conseils, disponibles pour réglage de monture après, toujours bien accueilli avec sourire, peu d'attente. Verres de qualité, choix dans les montures. Je recommande.\n\n(Translated by Google)\nThe opticians are very attentive, offer excellent advice, and are available to adjust frames afterwards. They are always greeted warmly with a smile, and there's hardly any waiting time. The lenses are high quality, and there's a good selection of frames. I highly recommend them.",
-     "date": "2026-08-22"
     }
    ]
   },
@@ -1225,6 +1199,18 @@
    "enseigne": "ATOL",
    "ville": "THIVIERS",
    "derniers_avis": [
+    {
+     "auteur": "Marie",
+     "note": 5,
+     "texte": "Je découvre Atoll Thiviers pour la réparation d'une branche de lunettes achetées a atol , région parisienne..j'aime beaucoup ces lunettes.\nMerci atol,et son équipe a Thiviers,pour la réparation gratuite 3 D.\n\n(Translated by Google)\nI discovered Atoll Thiviers while getting a temple of my glasses repaired. I bought them at Atoll in the Paris region... I really love these glasses.\n\nThank you Atoll and the team in Thiviers for the free 3D repair.",
+     "date": "2026-09-03"
+    },
+    {
+     "auteur": "Inès P",
+     "note": 5,
+     "texte": "Un service au top, une ambiance agréable et un large choix de montures. Sans compter les bons conseils de Christophe, qui a su m'aiguiller avec patience et bon goût. Je recommande !\n\n(Translated by Google)\nExcellent service, a pleasant atmosphere, and a wide selection of frames. Not to mention Christophe's excellent advice; he guided me with patience and good taste. I highly recommend it!",
+     "date": "2026-09-25"
+    },
     {
      "auteur": "mohamed ly",
      "note": 5,
@@ -1242,18 +1228,6 @@
      "note": 5,
      "texte": "Merci à Elia et Christophe pour leurs supers conseils !!\n\n(Translated by Google)\nThanks to Elia and Christophe for their great advice!!",
      "date": "2026-09-23"
-    },
-    {
-     "auteur": "lucy golder",
-     "note": 5,
-     "texte": "Elia, une opticienne,est une Magicienne! Christophe, le chef, m'a donné beaucoup de conseils que je ne savais pas même que je porte les lunettes depuis au moins 40 ans.L'acceuil, l'attention,l'attitude vers moi étaient si agréable.Allez-y sans hésitation !\n\n(Translated by Google)\nElia, the optician, is a magician! Christophe, the manager, gave me so much advice I didn't even know, even though I've been wearing glasses for at least 40 years. The welcome, the attention, the way he treated me were so pleasant. Go without hesitation!",
-     "date": "2026-09-18"
-    },
-    {
-     "auteur": "Raymond Vignal",
-     "note": 5,
-     "texte": "Bon accueil et très professionnel\n\n(Translated by Google)\nFriendly and very professional welcome",
-     "date": "2026-09-15"
     }
    ]
   },
@@ -1969,10 +1943,10 @@
     "avis_nouveaux": 0,
     "note": 4.7,
     "avis_cumules": 61,
-    "faces": 2,
+    "faces": 3,
     "branches": 0,
     "goodies": 0,
-    "impressions": 2,
+    "impressions": 3,
     "demandes": 1,
     "soumis": 0,
     "valides": 1,
@@ -2208,9 +2182,9 @@
     "semaine": "2026-S39",
     "debut": "2026-09-21",
     "fin": "2026-09-27",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.7,
-    "avis_cumules": 23,
+    "avis_cumules": 24,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -2450,9 +2424,9 @@
     "semaine": "2026-S39",
     "debut": "2026-09-21",
     "fin": "2026-09-27",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.8,
-    "avis_cumules": 31,
+    "avis_cumules": 32,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -3176,9 +3150,9 @@
     "semaine": "2026-S39",
     "debut": "2026-09-21",
     "fin": "2026-09-27",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 28,
+    "avis_cumules": 29,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -3421,10 +3395,10 @@
     "avis_nouveaux": 8,
     "note": 4.9,
     "avis_cumules": 209,
-    "faces": 4,
+    "faces": 5,
     "branches": 0,
     "goodies": 0,
-    "impressions": 4,
+    "impressions": 5,
     "demandes": 3,
     "soumis": 3,
     "valides": 3,
@@ -4144,9 +4118,9 @@
     "semaine": "2026-S39",
     "debut": "2026-09-21",
     "fin": "2026-09-27",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 2,
     "note": 4.9,
-    "avis_cumules": 43,
+    "avis_cumules": 44,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -5596,9 +5570,9 @@
     "semaine": "2026-S39",
     "debut": "2026-09-21",
     "fin": "2026-09-27",
-    "avis_nouveaux": 5,
+    "avis_nouveaux": 6,
     "note": 5,
-    "avis_cumules": 127,
+    "avis_cumules": 128,
     "faces": 1,
     "branches": 0,
     "goodies": 0,
@@ -6322,9 +6296,9 @@
     "semaine": "2026-S39",
     "debut": "2026-09-21",
     "fin": "2026-09-27",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 4,
     "note": 4.6,
-    "avis_cumules": 42,
+    "avis_cumules": 45,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -6569,8 +6543,8 @@
     "avis_cumules": 38,
     "faces": 1,
     "branches": 0,
-    "goodies": 0,
-    "impressions": 1,
+    "goodies": 2,
+    "impressions": 3,
     "demandes": 1,
     "soumis": 1,
     "valides": 1,
@@ -9226,13 +9200,13 @@
     "semaine": "2026-S39",
     "debut": "2026-09-21",
     "fin": "2026-09-27",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.7,
-    "avis_cumules": 69,
-    "faces": 0,
+    "avis_cumules": 70,
+    "faces": 1,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 1,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -9468,13 +9442,13 @@
     "semaine": "2026-S39",
     "debut": "2026-09-21",
     "fin": "2026-09-27",
-    "avis_nouveaux": 15,
+    "avis_nouveaux": 21,
     "note": 4.9,
-    "avis_cumules": 209,
-    "faces": 0,
+    "avis_cumules": 215,
+    "faces": 1,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 1,
     "demandes": 0,
     "soumis": 0,
     "valides": 1,
@@ -9710,9 +9684,9 @@
     "semaine": "2026-S39",
     "debut": "2026-09-21",
     "fin": "2026-09-27",
-    "avis_nouveaux": 9,
+    "avis_nouveaux": 11,
     "note": 4.8,
-    "avis_cumules": 145,
+    "avis_cumules": 147,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -10018,9 +9992,9 @@
     "semaine": "2026-S39",
     "debut": "2026-09-21",
     "fin": "2026-09-27",
-    "avis_nouveaux": 8,
+    "avis_nouveaux": 10,
     "note": 4.9,
-    "avis_cumules": 119,
+    "avis_cumules": 121,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -10084,9 +10058,9 @@
     "semaine": "2026-S39",
     "debut": "2026-09-21",
     "fin": "2026-09-27",
-    "avis_nouveaux": 10,
+    "avis_nouveaux": 14,
     "note": 4.9,
-    "avis_cumules": 159,
+    "avis_cumules": 163,
     "faces": null,
     "branches": null,
     "goodies": null,
