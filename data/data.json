@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-29T09:00:03",
+ "generated_at": "2026-09-30T09:00:03",
  "trophy_start_date": null,
  "stores": [
   {
@@ -47,6 +47,12 @@
    "ville": "BERGERAC",
    "derniers_avis": [
     {
+     "auteur": "Marine Laborie",
+     "note": 5,
+     "texte": "Des personnes très à l'écoute de ce qu'on leur demande ! Je suis très contente d'être passée par chez vous pour ma petite fille de 15 mois !\nMerci\n\n(Translated by Google)\nThe staff were very attentive to our needs! I'm so glad I chose you for my 15-month-old daughter!\n\nThank you",
+     "date": "2026-09-29"
+    },
+    {
      "auteur": "Eric JOLIEY",
      "note": 5,
      "texte": "Très bon accueil. Et ça fait plaisir!\n\n(Translated by Google)\nA very warm welcome. And that's a pleasure!",
@@ -68,12 +74,6 @@
      "auteur": "STEPHANIE SEGUIN",
      "note": 5,
      "texte": "Toujours de bons conseils, je recommande.\n\n(Translated by Google)\nAlways good advice, I recommend them.",
-     "date": "2026-09-26"
-    },
-    {
-     "auteur": "Gérald Boutin",
-     "note": 5,
-     "texte": "Sav parfait, mon petit garçon est un peu brutal avec ses lunettes et nous sommes accueillis à chaque fois avec le sourire et nous repartons avec des lunettes réparées. Je recommande.\n\n(Translated by Google)\nExcellent service. My little boy is a bit rough with his glasses, and we're always greeted with a smile and leave with repaired glasses. I highly recommend them.",
      "date": "2026-09-26"
     }
    ]
@@ -4801,9 +4801,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": -1,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 0,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -7381,9 +7381,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -7639,9 +7639,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -8673,7 +8673,7 @@
     "impressions": 0,
     "demandes": 0,
     "soumis": 0,
-    "valides": 0,
+    "valides": 1,
     "sources": "lyleoo + oomade"
    }
   ],
@@ -9187,8 +9187,8 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 0,
     "sources": "avis + lyleoo"
    }
@@ -9954,9 +9954,9 @@
     "semaine": "2026-S40",
     "debut": "2026-09-28",
     "fin": "2026-10-04",
-    "avis_nouveaux": 3,
+    "avis_nouveaux": 5,
     "note": 4.9,
-    "avis_cumules": 219,
+    "avis_cumules": 221,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -10552,9 +10552,9 @@
     "semaine": "2026-S40",
     "debut": "2026-09-28",
     "fin": "2026-10-04",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 2,
     "note": 4.9,
-    "avis_cumules": 127,
+    "avis_cumules": 128,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
