@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-03T09:00:03",
+ "generated_at": "2026-10-04T09:00:03",
  "trophy_start_date": null,
  "stores": [
   {
@@ -47,6 +47,18 @@
    "ville": "BERGERAC",
    "derniers_avis": [
     {
+     "auteur": "Christophe Badie",
+     "note": 5,
+     "texte": "Je passe par hasard, pour un réglage de ma paire de lunettes, super accueillant JP et nettoyage et réglage impec merci\n\n(Translated by Google)\nI stopped by by chance to get my glasses adjusted. JP was incredibly welcoming, and the cleaning and adjustment were impeccable. Thank you!",
+     "date": "2026-10-03"
+    },
+    {
+     "auteur": "Guillaume Le corre",
+     "note": 5,
+     "texte": "Super accueil, personnel de l’établissement très agréable et sympathique. Je recommande fortement cet enseigne.\n\n(Translated by Google)\nExcellent welcome, the staff at the establishment were very pleasant and friendly. I highly recommend this establishment.",
+     "date": "2026-10-03"
+    },
+    {
      "auteur": "Marine Laborie",
      "note": 5,
      "texte": "Des personnes très à l'écoute de ce qu'on leur demande ! Je suis très contente d'être passée par chez vous pour ma petite fille de 15 mois !\nMerci\n\n(Translated by Google)\nThe staff were very attentive to our needs! I'm so glad I chose you for my 15-month-old daughter!\n\nThank you",
@@ -63,18 +75,6 @@
      "note": 5,
      "texte": "Personnel très aimable, qui m'a gentiment aidée à redresser mes lunettes alors que j'étais tombée avec. Je les remercie chaleureusement pour leur amabilité.\n\n(Translated by Google)\nThe staff were very friendly and kindly helped me straighten my glasses after I fell with them. I sincerely thank them for their kindness.",
      "date": "2026-09-26"
-    },
-    {
-     "auteur": "Christina Ferreira",
-     "note": 5,
-     "texte": "Merci Thomas a tout ses conseils et sa patience et merci de m'avoir aidé pendant ma consultation\nJe vous invite à y allez l'équipe est bien et vous renseigne bien et sont de bon conseil\nEncore merci\n\n(Translated by Google)\nThank you, Thomas, for all your advice and patience, and thank you for helping me during my consultation.\nI encourage you to go there; the team is great, provides good information, and offers sound advice.\nThanks again.",
-     "date": "2026-09-26"
-    },
-    {
-     "auteur": "STEPHANIE SEGUIN",
-     "note": 5,
-     "texte": "Toujours de bons conseils, je recommande.\n\n(Translated by Google)\nAlways good advice, I recommend them.",
-     "date": "2026-09-26"
     }
    ]
   },
@@ -84,6 +84,12 @@
    "enseigne": "ATOL",
    "ville": "BOULAZAC",
    "derniers_avis": [
+    {
+     "auteur": "Davy Bernard",
+     "note": 5,
+     "texte": "Très bon accueil et service de qualité\n\n(Translated by Google)\nVery warm welcome and excellent service",
+     "date": "2026-10-03"
+    },
     {
      "auteur": "philippe Calderon",
      "note": 5,
@@ -107,12 +113,6 @@
      "note": 5,
      "texte": "Les + Acceuil, écoute,conseil,choix et disponibilité\n\n(Translated by Google)\nThe pros: Reception, attentiveness, advice, choice, and availability",
      "date": "2026-09-27"
-    },
-    {
-     "auteur": "Chloé Navarro",
-     "note": 5,
-     "texte": "Je suis tjrs bien accueilli, il cherche vraiment des solutions pour vous aidez je vais toujours la bas\n\n(Translated by Google)\nI'm always well received; they really look for solutions to help you. I always go there.",
-     "date": "2026-09-25"
     }
    ]
   },
@@ -808,6 +808,12 @@
    "ville": "PRIGONRIEUX",
    "derniers_avis": [
     {
+     "auteur": "David Maccotta",
+     "note": 5,
+     "texte": "opticien très professionnel et accueillant ,\nChoix de monture large , boutique des plus agréable , je recommande vivement\n\n(Translated by Google)\nA very professional and welcoming optician.\nWide selection of frames, a very pleasant shop. I highly recommend them.",
+     "date": "2026-10-03"
+    },
+    {
      "auteur": "Christophe Blanchon",
      "note": 5,
      "texte": "Très satisfait\n\n(Translated by Google)\nVery satisfied",
@@ -830,12 +836,6 @@
      "note": 5,
      "texte": "Très bon accueil, à l'écoute, professionnel et de bon conseil.\n\n(Translated by Google)\nVery welcoming, attentive, professional and offered good advice.",
      "date": "2025-08-01"
-    },
-    {
-     "auteur": "Katy Vasseur",
-     "note": 5,
-     "texte": "Très bon accueil, à l'écoute des besoins et de bons conseils. Je recommande a 100%\n\n(Translated by Google)\nVery welcoming, attentive to needs and good advice. I recommend 100%.",
-     "date": "2024-03-31"
     }
    ]
   },
@@ -845,6 +845,12 @@
    "enseigne": "ATOL",
    "ville": "RIBERAC",
    "derniers_avis": [
+    {
+     "auteur": "marina lavignac",
+     "note": 5,
+     "texte": "Depuis toujours je fais confiance a cette boutique je n'ai rien a dire de négatif.\n\n(Translated by Google)\nI have always trusted this shop and I have nothing negative to say.",
+     "date": "2026-10-03"
+    },
     {
      "auteur": "didier hardouin",
      "note": 5,
@@ -868,12 +874,6 @@
      "note": 5,
      "texte": "Accueil et conseil , au top comme d'habitude.\n\n(Translated by Google)\nThe welcome and advice were top-notch, as usual.",
      "date": "2026-08-25"
-    },
-    {
-     "auteur": "Christiane Heurfin Bach Sac",
-     "note": 5,
-     "texte": "(Translated by Google) Quality advice and kindness\n\n(Original)\nqualité conseil et gentillesse",
-     "date": "2026-08-11"
     }
    ]
   },
@@ -960,6 +960,18 @@
    "ville": "SOUILLAC",
    "derniers_avis": [
     {
+     "auteur": "anonymous",
+     "note": 5,
+     "texte": "Accueil très chaleureux avec une tres grande patience, a l'écoute de ses clients. Magasin très agréable. Je recommence a 100%.\n\n(Translated by Google)\nA very warm welcome with great patience and attentiveness to customers. A very pleasant shop. I would recommend it 100%.",
+     "date": "2026-10-03"
+    },
+    {
+     "auteur": "Julie Delpy",
+     "note": 5,
+     "texte": "Superbe accueil,  les filles se sont occupées de moi de À à Z. J’ai fait un test avec elles pour refaire mon ordonnance. Et j’ai pu avoir une nouvelle paire de lunettes très rapidement! Leur équipement est iTech c’est un petit plus que je n’avais jamais vu encore. Je recommande +++\n\n(Translated by Google)\nFantastic service! The staff took care of me from start to finish. I had a test done with them to renew my prescription, and I got a new pair of glasses very quickly! Their equipment is iTech, which is a nice touch I'd never seen before. I highly recommend them!",
+     "date": "2026-10-03"
+    },
+    {
      "auteur": "Christine MARJARIE",
      "note": 5,
      "texte": "J'ai eu besoin de faire redresser mes lunettes. Prise en charge rapide et efficace. Je recommande vivement\n\n(Translated by Google)\nI needed to have my glasses adjusted. The service was quick and efficient. I highly recommend them.",
@@ -976,18 +988,6 @@
      "note": 5,
      "texte": "Un accueil très chaleureux. Nous sommes venus ici pour la première fois en tant qu'étrangers et avons bénéficié d'une excellente assistance. À recommander vivement !\n\n(Translated by Google)\nA very warm welcome. We were here for the first time as foreigners and received excellent assistance. Highly recommended!",
      "date": "2026-09-08"
-    },
-    {
-     "auteur": "Laetitia Baynat",
-     "note": 5,
-     "texte": "Un grand merci à regard d ici merci pour l accueil  elle a pris le temp pour les lunette de mon fils avec beaucoup de professionnalisme et de bienveillance. Merci de votre aide je vous le recommande vivement\n\n(Translated by Google)\nA huge thank you to Regard d'Ici! Thank you for the warm welcome. They took the time to fit my son's glasses with great professionalism and kindness. Thank you for your help; I highly recommend them.",
-     "date": "2026-09-05"
-    },
-    {
-     "auteur": "Laure Foltzer",
-     "note": 5,
-     "texte": "Très professionnel même sur un \"simple\"réglage de lunette. Accueil impeccable et disponible\n\n(Translated by Google)\nHighly professional, even for a \"simple\" glasses adjustment. Impeccable and helpful service.",
-     "date": "2026-09-03"
     }
    ]
   },
@@ -1991,10 +1991,10 @@
     "avis_nouveaux": 0,
     "note": 4.7,
     "avis_cumules": 61,
-    "faces": 0,
+    "faces": 2,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 2,
     "demandes": 1,
     "soumis": 1,
     "valides": 1,
@@ -3023,10 +3023,10 @@
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 43,
-    "faces": 0,
+    "faces": 4,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 4,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -3536,9 +3536,9 @@
     "semaine": "2026-S40",
     "debut": "2026-09-28",
     "fin": "2026-10-04",
-    "avis_nouveaux": 3,
+    "avis_nouveaux": 4,
     "note": 4.9,
-    "avis_cumules": 213,
+    "avis_cumules": 214,
     "faces": 2,
     "branches": 0,
     "goodies": 0,
@@ -4057,8 +4057,8 @@
     "avis_cumules": 50,
     "faces": 1,
     "branches": 0,
-    "goodies": 0,
-    "impressions": 1,
+    "goodies": 3,
+    "impressions": 4,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -4575,8 +4575,8 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 1,
-    "soumis": 1,
+    "demandes": 2,
+    "soumis": 2,
     "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
@@ -4829,10 +4829,10 @@
     "avis_nouveaux": 0,
     "note": 4.5,
     "avis_cumules": 55,
-    "faces": 0,
+    "faces": 1,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 1,
     "demandes": 0,
     "soumis": 1,
     "valides": 1,
@@ -5861,10 +5861,10 @@
     "avis_nouveaux": 2,
     "note": 5,
     "avis_cumules": 130,
-    "faces": 4,
+    "faces": 6,
     "branches": 0,
     "goodies": 0,
-    "impressions": 4,
+    "impressions": 6,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -6890,15 +6890,15 @@
     "semaine": "2026-S40",
     "debut": "2026-09-28",
     "fin": "2026-10-04",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 39,
+    "avis_cumules": 40,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 7,
-    "soumis": 7,
+    "demandes": 8,
+    "soumis": 8,
     "valides": 4,
     "sources": "avis + lyleoo + oomade"
    }
@@ -7155,8 +7155,8 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 0,
     "sources": "avis + lyleoo"
    }
@@ -7922,9 +7922,9 @@
     "semaine": "2026-S40",
     "debut": "2026-09-28",
     "fin": "2026-10-04",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.8,
-    "avis_cumules": 14,
+    "avis_cumules": 15,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -9212,9 +9212,9 @@
     "semaine": "2026-S40",
     "debut": "2026-09-28",
     "fin": "2026-10-04",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.7,
-    "avis_cumules": 27,
+    "avis_cumules": 28,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -9986,16 +9986,16 @@
     "semaine": "2026-S40",
     "debut": "2026-09-28",
     "fin": "2026-10-04",
-    "avis_nouveaux": 11,
+    "avis_nouveaux": 12,
     "note": 4.9,
-    "avis_cumules": 227,
+    "avis_cumules": 228,
     "faces": 4,
     "branches": 0,
     "goodies": 0,
     "impressions": 4,
-    "demandes": 1,
-    "soumis": 1,
-    "valides": 1,
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 2,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -10244,9 +10244,9 @@
     "semaine": "2026-S40",
     "debut": "2026-09-28",
     "fin": "2026-10-04",
-    "avis_nouveaux": 13,
+    "avis_nouveaux": 15,
     "note": 4.8,
-    "avis_cumules": 163,
+    "avis_cumules": 165,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -10584,9 +10584,9 @@
     "semaine": "2026-S40",
     "debut": "2026-09-28",
     "fin": "2026-10-04",
-    "avis_nouveaux": 3,
+    "avis_nouveaux": 5,
     "note": 4.9,
-    "avis_cumules": 129,
+    "avis_cumules": 131,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
