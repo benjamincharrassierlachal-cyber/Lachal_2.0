@@ -1,7 +1,7 @@
 import { ringClusterSVG, animateRings } from "./shapes.js";
 import { icon } from "./icons.js";
 import { buildBadges, bestCurrentStreaks } from "./badges.js";
-import { ADMIN_CODE } from "./data.js";
+import { ADMIN_CODE, buildTotals } from "./data.js";
 
 const ADMIN_PASSWORD = "BDG*24";
 
@@ -36,6 +36,41 @@ function esc(s) {
   return String(s ?? "").replace(/[&<>"']/g, (c) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
   }[c]));
+}
+
+// 1 234 / 12,3 : separateur de milliers et virgule a la francaise.
+function fmtNb(v) {
+  if (v === null || v === undefined) return "-";
+  return Number(v).toLocaleString("fr-FR", { maximumFractionDigits: 1 });
+}
+
+// Total depuis le debut + moyenne par semaine, en tete d'une carte Stats.
+function statsFigures(summary, colorVar, note) {
+  return `<div class="stats-figures">
+      <div><span class="n" style="color:var(${colorVar})">${fmtNb(summary.total)}</span><span class="l">Total depuis le début</span></div>
+      <div><span class="n">${fmtNb(summary.avg)}</span><span class="l">Moyenne / semaine</span></div>
+    </div>
+    <p class="stats-figures-note">${note}</p>`;
+}
+
+function plural(n, mot) {
+  return `${n} ${mot}${n > 1 ? "s" : ""}`;
+}
+
+// Bandeau affiche quand on consulte une periode (plusieurs semaines cumulees)
+// plutot qu'une semaine : rappelle ce qui est cumule et permet de revenir.
+function periodBanner(range, onReset, extra) {
+  const el = document.createElement("div");
+  el.className = "period-banner";
+  el.innerHTML = `
+    <div>
+      <strong>${range.label}</strong>
+      <span>${extra || `cumul sur ${plural(range.dataWeeks || range.rows, "semaine")} relevée${(range.dataWeeks || range.rows) > 1 ? "s" : ""}`}</span>
+    </div>
+    ${onReset ? `<button class="period-banner-reset" data-period-reset>Dernière semaine</button>` : ""}
+  `;
+  el.querySelector("[data-period-reset]")?.addEventListener("click", onReset);
+  return el;
 }
 
 function statusChip(status) {
@@ -180,7 +215,8 @@ function lineChartSVG(points, color) {
 
 // ---------------------------------------------------------------------
 // Page Stats : une courbe par indicateur suivi, sur tout l'historique.
-export function renderStats(root, metrics, history, title) {
+export function renderStats(root, metrics, history, title, asOf) {
+  const totals = Object.fromEntries(buildTotals(history, metrics, asOf).map((t) => [t.key, t]));
   const wrap = document.createElement("div");
   wrap.innerHTML = `
     <div class="section-title">${title || "Evolution par indicateur"}</div>
@@ -189,8 +225,16 @@ export function renderStats(root, metrics, history, title) {
         const points = history
           .map((w) => ({ semaine: w.semaine, pct: w.metrics[m.key]?.pct }))
           .filter((p) => p.pct !== null && p.pct !== undefined);
+        const t = totals[m.key];
+        const obj = history.length ? history[history.length - 1].metrics[m.key]?.objective : null;
+        const note = t.weeks
+          ? `Total sur ${plural(t.weeks, "semaine")} relevée${t.weeks > 1 ? "s" : ""}`
+            + (t.avgWeeks < t.weeks ? ` · moyenne sur ${t.avgWeeks} (semaine en cours exclue)` : "")
+            + (obj ? ` · objectif ${fmtNb(obj)} / semaine` : "")
+          : "Pas encore de relevé pour cet indicateur.";
         return `<div class="card stats-card">
           <div class="stats-card-head" style="color:var(${m.colorVar})">${icon(m.icon, 18)}<span>${m.label}</span></div>
+          ${t.weeks ? statsFigures(t, m.colorVar, note) : `<p class="stats-figures-note">${note}</p>`}
           ${lineChartSVG(points, `var(${m.colorVar})`)}
         </div>`;
       })
@@ -210,6 +254,7 @@ export function renderAdminStats(root, trend) {
       .map(
         (m) => `<div class="card stats-card">
           <div class="stats-card-head" style="color:var(${m.colorVar})">${icon(m.icon, 18)}<span>${m.label}</span></div>
+          ${statsFigures(m.summary, m.colorVar, `Tous magasins confondus · total sur ${plural(m.summary.weeks, "semaine")} relevée${m.summary.weeks > 1 ? "s" : ""}${m.summary.avgWeeks < m.summary.weeks ? ` · moyenne sur ${m.summary.avgWeeks} (semaine en cours exclue)` : ""}`)}
           ${lineChartSVG(m.weeks, `var(${m.colorVar})`)}
         </div>`
       )
@@ -219,13 +264,14 @@ export function renderAdminStats(root, trend) {
 }
 
 // ---------------------------------------------------------------------
-export function renderDashboard(root, model, settings, nav, viewedWeek) {
+export function renderDashboard(root, model, settings, nav, viewedWeek, onResetPeriod) {
   const { store, metrics } = model;
   const currentWeek = viewedWeek || model.currentWeek;
   if (!currentWeek || !metrics.length) {
     root.innerHTML = `<p class="empty-hint">Pas encore de releve cette semaine pour ${store.name}.</p>`;
     return;
   }
+  if (currentWeek.range) root.appendChild(periodBanner(currentWeek.range, onResetPeriod));
 
   const rings = metrics.map((m) => ({
     pct: currentWeek.metrics[m.key].pct,
@@ -320,6 +366,14 @@ export function renderAdmin(root, adminModel, settings, rows, trend, cb) {
   }
 
   const rings = metricsAgg.map((m) => ({ pct: m.pct, color: `var(${m.colorVar})`, icon: m.icon }));
+
+  if (adminModel.isRange) {
+    root.appendChild(periodBanner(
+      { label: weekLabel, rows: 0 },
+      cb.resetPeriod,
+      `cumul de ${plural(rows.length, "magasin")}, objectifs multipliés par les semaines relevées`
+    ));
+  }
 
   const hero = document.createElement("div");
   hero.className = "hero";

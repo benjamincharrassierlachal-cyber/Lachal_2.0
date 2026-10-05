@@ -84,6 +84,13 @@ export function statusFor(pct) {
 // moyenne (comme avant). C'est seulement quand TOUS les objectifs actifs
 // sont au moins atteints que le plafond saute, pour laisser un depassement
 // general se refleter au-dela de 100%.
+function scoreFromPcts(pcts) {
+  if (!pcts.length) return null;
+  const tousAtteints = pcts.every((p) => p >= 100);
+  const somme = pcts.reduce((s, p) => s + (tousAtteints ? p : Math.min(p, 100)), 0);
+  return Math.round(somme / pcts.length);
+}
+
 function computeHistory(weeks, metrics, objective) {
   return weeks.map((w) => {
     const perMetric = {};
@@ -95,14 +102,74 @@ function computeHistory(weeks, metrics, objective) {
       perMetric[m.key] = { value, objective: obj, pct, status: statusFor(pct) };
       pcts.push(pct === null ? 0 : pct);
     });
-    let score = null;
-    if (pcts.length) {
-      const tousAtteints = pcts.every((p) => p >= 100);
-      const somme = pcts.reduce((s, p) => s + (tousAtteints ? p : Math.min(p, 100)), 0);
-      score = Math.round(somme / pcts.length);
-    }
-    return { ...w, metrics: perMetric, score };
+    return { ...w, metrics: perMetric, score: scoreFromPcts(pcts) };
   });
+}
+
+// Une semaine "a des donnees" si au moins un indicateur actif y a un releve
+// (les anciennes lignes mensuelles d'avant septembre n'en ont pas).
+export function weekHasData(w, metrics) {
+  return metrics.some((m) => {
+    const v = w.metrics[m.key]?.value;
+    return v !== null && v !== undefined;
+  });
+}
+
+// "Semaines 37 a 39" (ou "Semaine 37" si une seule). L'annee n'apparait que
+// si la periode enjambe deux annees.
+export function rangeLabel(from, to) {
+  const [yf, nf] = from.split("-S");
+  const [yt, nt] = to.split("-S");
+  const a = parseInt(nf, 10);
+  const b = parseInt(nt, 10);
+  if (from === to) return `Semaine ${a}`;
+  if (yf === yt) return `Semaines ${a} à ${b}`;
+  return `Semaines ${a}/${yf} à ${b}/${yt}`;
+}
+
+// Cumule les semaines de [from, to] (bornes incluses, format "AAAA-Sxx") en
+// une "semaine" synthetique, utilisable partout a la place d'une semaine
+// normale : realise = somme des releves, objectif = objectif hebdo x nombre
+// de semaines reellement relevees pour cet indicateur (une semaine sans
+// releve ne gonfle pas l'objectif). Renvoie null si aucune ligne dans la
+// periode.
+export function aggregateRange(history, metrics, objective, from, to) {
+  const rows = history.filter((w) => w.semaine >= from && w.semaine <= to);
+  if (!rows.length) return null;
+
+  const perMetric = {};
+  const pcts = [];
+  let dataWeeks = 0;
+  metrics.forEach((m) => {
+    let sum = 0;
+    let n = 0;
+    rows.forEach((w) => {
+      const v = w.metrics[m.key]?.value;
+      if (v !== null && v !== undefined) {
+        sum += v;
+        n += 1;
+      }
+    });
+    dataWeeks = Math.max(dataWeeks, n);
+    const value = n ? sum : null;
+    const obj = (objective[m.objectiveField] || 0) * (n || rows.length);
+    const pct = pctFor(value, obj);
+    perMetric[m.key] = { value, objective: obj, pct, status: statusFor(pct), weeks: n };
+    pcts.push(pct === null ? 0 : pct);
+  });
+
+  const lastNote = [...rows].reverse().find((w) => w.note !== null && w.note !== undefined);
+  const first = rows[0].semaine;
+  const last = rows[rows.length - 1].semaine;
+  return {
+    semaine: first === last ? first : `${first}..${last}`,
+    debut: rows[0].debut,
+    fin: rows[rows.length - 1].fin,
+    note: lastNote ? lastNote.note : null,
+    metrics: perMetric,
+    score: scoreFromPcts(pcts),
+    range: { from: first, to: last, rows: rows.length, dataWeeks, label: rangeLabel(first, last) },
+  };
 }
 
 // Renvoie l'historique enrichi : une entree par semaine, avec par metrique
@@ -141,14 +208,21 @@ export function buildStoreModel(data, code) {
 // les magasins a la fois (contrairement a la fiche d'un magasin, l'admin
 // n'a pas de "semaine courante" propre a chacun) ; par defaut, chaque
 // magasin est vu sur sa derniere semaine connue.
-export function buildAdminModel(data, targetWeek) {
+//
+// `target` peut etre une semaine ("AAAA-Sxx"), une periode {from, to}
+// (cumul de toutes les semaines comprises, voir aggregateRange) ou null.
+export function buildAdminModel(data, target) {
+  const range = target && typeof target === "object" ? target : null;
+  const targetWeek = range ? null : target;
   const perStore = data.stores
     .map((s) => buildStoreModel(data, s.code))
     .map((sm) => ({
       ...sm,
-      viewWeek: targetWeek
-        ? sm.history.find((w) => w.semaine === targetWeek) || null
-        : sm.currentWeek,
+      viewWeek: range
+        ? aggregateRange(sm.history, sm.metrics, sm.objective, range.from, range.to)
+        : targetWeek
+          ? sm.history.find((w) => w.semaine === targetWeek) || null
+          : sm.currentWeek,
     }))
     .filter((sm) => sm.viewWeek);
 
@@ -182,9 +256,11 @@ export function buildAdminModel(data, targetWeek) {
     ? Math.round(scored.reduce((s, x) => s + (tousAtteints ? x.pct : Math.min(x.pct, 100)), 0) / scored.length)
     : null;
 
-  const weekLabel = targetWeek || (perStore.length ? perStore[0].viewWeek.semaine : null);
+  const weekLabel = range
+    ? rangeLabel(range.from, range.to)
+    : targetWeek || (perStore.length ? perStore[0].viewWeek.semaine : null);
 
-  return { metricsAgg, score, weekLabel, perStore };
+  return { metricsAgg, score, weekLabel, perStore, isRange: !!range };
 }
 
 // Toutes les semaines connues, tous magasins confondus (pour le selecteur
@@ -196,17 +272,61 @@ export function allWeeks(data) {
   return [...semaines].sort().reverse();
 }
 
+// Semaines ou au moins un magasin a un releve sur un indicateur suivi, de la
+// plus ancienne a la plus recente : celles qu'on propose pour une periode.
+export function weeksWithDataAdmin(data) {
+  const semaines = new Set();
+  data.stores.forEach((s) => {
+    const sm = buildStoreModel(data, s.code);
+    sm.history.forEach((w) => {
+      if (weekHasData(w, sm.metrics)) semaines.add(w.semaine);
+    });
+  });
+  return [...semaines].sort();
+}
+
+// Total realise depuis le debut et moyenne par semaine, par indicateur
+// suivi d'un magasin. La moyenne se fait sur les semaines relevees ET
+// terminees (fin < asOf, "AAAA-MM-JJ") : ni une ancienne ligne mensuelle
+// sans releve, ni la semaine en cours (encore partielle, souvent a 0 en
+// debut de semaine) ne tirent la moyenne vers le bas. S'il n'existe aucune
+// semaine terminee, on retombe sur toutes les semaines relevees.
+export function buildTotals(history, metrics, asOf) {
+  return metrics.map((m) => {
+    let total = 0;
+    let weeks = 0;
+    let sumDone = 0;
+    let weeksDone = 0;
+    history.forEach((w) => {
+      const v = w.metrics[m.key]?.value;
+      if (v === null || v === undefined) return;
+      total += v;
+      weeks += 1;
+      if (!asOf || !w.fin || w.fin < asOf) {
+        sumDone += v;
+        weeksDone += 1;
+      }
+    });
+    return weeksDone
+      ? { key: m.key, total, weeks, avg: sumDone / weeksDone, avgWeeks: weeksDone }
+      : { key: m.key, total, weeks, avg: weeks ? total / weeks : null, avgWeeks: weeks };
+  });
+}
+
 // Tendance du groupe entier, semaine par semaine (pour l'onglet Stats de
 // l'admin) : pct agrege (somme des realises / somme des objectifs, tous
 // magasins qui suivent la metrique cette semaine-la), une courbe par
 // indicateur sur tout l'historique disponible.
 export function buildAdminTrend(data) {
+  const asOf = (data.generated_at || "").slice(0, 10);
+  const finSemaine = {};
   const parSemaine = {};
   data.stores.forEach((s) => {
     const objective = data.objectives[s.code] || {};
     const actifs = activeMetrics(objective);
     if (!actifs.length) return;
     (data.weeks[s.code] || []).forEach((w) => {
+      if (w.fin && (!finSemaine[w.semaine] || w.fin > finSemaine[w.semaine])) finSemaine[w.semaine] = w.fin;
       const bucket = parSemaine[w.semaine] || (parSemaine[w.semaine] = {});
       actifs.forEach((m) => {
         const value = w[m.valueField];
@@ -226,7 +346,26 @@ export function buildAdminTrend(data) {
         return acc ? { semaine, pct: pctFor(acc.sumValue, acc.sumObjective) } : null;
       })
       .filter(Boolean);
-    return weeks.length ? { ...m, weeks } : null;
+    if (!weeks.length) return null;
+    // total du groupe depuis le debut, et moyenne par semaine (somme de tous
+    // les magasins sur une semaine, moyennee sur les semaines relevees)
+    let total = 0;
+    let weeksCount = 0;
+    let sumDone = 0;
+    let weeksDone = 0;
+    semaines.forEach((semaine) => {
+      const acc = parSemaine[semaine][m.key];
+      if (!acc) return;
+      total += acc.sumValue;
+      weeksCount += 1;
+      if (!asOf || !finSemaine[semaine] || finSemaine[semaine] < asOf) {
+        sumDone += acc.sumValue;
+        weeksDone += 1;
+      }
+    });
+    const avgWeeks = weeksDone || weeksCount;
+    const avg = weeksDone ? sumDone / weeksDone : weeksCount ? total / weeksCount : null;
+    return { ...m, weeks, summary: { total, weeks: weeksCount, avg, avgWeeks } };
   }).filter(Boolean);
 
   return { metrics };

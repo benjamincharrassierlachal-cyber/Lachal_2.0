@@ -1,4 +1,15 @@
-import { loadData, buildStoreModel, buildAdminModel, buildAdminTrend, allWeeks, ADMIN_CODE } from "./data.js";
+import {
+  loadData,
+  buildStoreModel,
+  buildAdminModel,
+  buildAdminTrend,
+  allWeeks,
+  weeksWithDataAdmin,
+  weekHasData,
+  aggregateRange,
+  rangeLabel,
+  ADMIN_CODE,
+} from "./data.js";
 import { settings, setSetting, recordVisit, claimedBadges, claimBadge } from "./state.js";
 import { icon } from "./icons.js";
 import { buildBadges } from "./badges.js";
@@ -67,6 +78,17 @@ let dashboardWeek = null;
 // Meme principe cote admin, mais une seule semaine pour tous les magasins
 // a la fois (l'admin n'a pas de "semaine courante" propre a un magasin).
 let adminWeek = null;
+// Periode consultee ({from, to}, semaines "AAAA-Sxx") : cumul de plusieurs
+// semaines a la place d'une seule. Exclusive de dashboardWeek/adminWeek.
+let dashboardPeriod = null;
+let adminPeriod = null;
+
+function resetView() {
+  dashboardWeek = null;
+  adminWeek = null;
+  dashboardPeriod = null;
+  adminPeriod = null;
+}
 
 function applyTheme() {
   document.documentElement.setAttribute("data-theme", settings.theme);
@@ -115,7 +137,7 @@ function buildShell(data) {
   `;
   app.querySelectorAll("[data-nav]").forEach((b) =>
     b.addEventListener("click", () => {
-      if (b.dataset.nav === "dashboard") { dashboardWeek = null; adminWeek = null; }
+      if (b.dataset.nav === "dashboard") resetView();
       nav(b.dataset.nav);
       render(data);
     })
@@ -138,18 +160,41 @@ function showWeekPicker(data) {
   document.getElementById("week-picker")?.remove();
 
   // liste des semaines a proposer, et comment savoir laquelle est active
-  let semaines, isActive, scoreOf;
+  // periodWeeks : semaines proposables pour une periode (celles qui ont un
+  // releve), de la plus ancienne a la plus recente.
+  let semaines, isActive, scoreOf, periodWeeks;
+  const activePeriod = isAdmin() ? adminPeriod : dashboardPeriod;
   if (isAdmin()) {
     semaines = allWeeks(data);
-    isActive = (semaine) => (adminWeek ? semaine === adminWeek : semaine === semaines[0]);
+    isActive = (semaine) => !adminPeriod && (adminWeek ? semaine === adminWeek : semaine === semaines[0]);
     scoreOf = (semaine) => buildAdminModel(data, semaine).score;
+    periodWeeks = weeksWithDataAdmin(data);
   } else {
     const model = buildStoreModel(data, settings.storeCode);
     semaines = model.history.slice().reverse().map((w) => w.semaine);
-    isActive = (semaine) => (dashboardWeek ? semaine === dashboardWeek : semaine === model.currentWeek?.semaine);
+    isActive = (semaine) => !dashboardPeriod && (dashboardWeek ? semaine === dashboardWeek : semaine === model.currentWeek?.semaine);
     scoreOf = (semaine) => model.history.find((w) => w.semaine === semaine)?.score ?? null;
+    periodWeeks = model.history.filter((w) => weekHasData(w, model.metrics)).map((w) => w.semaine);
   }
   if (!semaines.length) return;
+
+  // L'annee n'est precisee dans les listes que si les donnees en couvrent plusieurs.
+  const multiYear = new Set(periodWeeks.map((s) => s.split("-S")[0])).size > 1;
+  const optionLabel = (semaine) => weekTitle(semaine) + (multiYear ? ` (${semaine.split("-S")[0]})` : "");
+  const defaultTo = activePeriod?.to || periodWeeks[periodWeeks.length - 1];
+  const defaultFrom = activePeriod?.from || periodWeeks[Math.max(0, periodWeeks.length - 3)];
+  const periodOptions = (selected) => periodWeeks
+    .map((s) => `<option value="${s}" ${s === selected ? "selected" : ""}>${optionLabel(s)}</option>`)
+    .join("");
+  const periodBlock = periodWeeks.length < 2 ? "" : `
+      <div class="week-period">
+        <div class="week-period-title">Voir une période${activePeriod ? ` <span class="week-period-current">(${rangeLabel(activePeriod.from, activePeriod.to)})</span>` : ""}</div>
+        <div class="week-period-row">
+          <label>De<select id="wp-from">${periodOptions(defaultFrom)}</select></label>
+          <label>à<select id="wp-to">${periodOptions(defaultTo)}</select></label>
+          <button class="week-period-go" data-period-go>Voir</button>
+        </div>
+      </div>`;
 
   const overlay = document.createElement("div");
   overlay.id = "week-picker";
@@ -160,6 +205,7 @@ function showWeekPicker(data) {
         <span>Choisir une semaine</span>
         <button class="icon-btn" data-close>${icon("close", 18)}</button>
       </div>
+      ${periodBlock}
       <div class="week-picker-list">
         ${semaines
           .map((semaine) => {
@@ -181,14 +227,32 @@ function showWeekPicker(data) {
     b.addEventListener("click", () => {
       if (isAdmin()) {
         adminWeek = b.dataset.semaine;
+        adminPeriod = null;
         adminTab = "overview";
       } else {
         dashboardWeek = b.dataset.semaine;
+        dashboardPeriod = null;
         if (parseRoute().name !== "dashboard") nav("dashboard");
       }
       close();
       render(data);
     });
+  });
+  overlay.querySelector("[data-period-go]")?.addEventListener("click", () => {
+    let from = overlay.querySelector("#wp-from").value;
+    let to = overlay.querySelector("#wp-to").value;
+    if (from > to) [from, to] = [to, from];
+    if (isAdmin()) {
+      adminPeriod = { from, to };
+      adminWeek = null;
+      adminTab = "overview";
+    } else {
+      dashboardPeriod = { from, to };
+      dashboardWeek = null;
+      if (parseRoute().name !== "dashboard") nav("dashboard");
+    }
+    close();
+    render(data);
   });
 }
 
@@ -222,8 +286,7 @@ function boot(data) {
 let hashListenerAttached = false;
 
 function enterDashboard(data) {
-  dashboardWeek = null;
-  adminWeek = null;
+  resetView();
   buildShell(data);
   render(data);
   if (!hashListenerAttached) {
@@ -289,10 +352,11 @@ function render(data) {
   });
 
   if (isAdmin()) {
-    const adminModel = buildAdminModel(data, adminWeek);
+    const adminModel = buildAdminModel(data, adminPeriod || adminWeek);
     document.getElementById("hdr-store").textContent = "ADMIN";
-    document.getElementById("hdr-week").textContent = weekTitle(adminModel.weekLabel)
-      + (adminWeek ? " (consultee)" : "");
+    document.getElementById("hdr-week").textContent = adminPeriod
+      ? adminModel.weekLabel + " (période)"
+      : weekTitle(adminModel.weekLabel) + (adminWeek ? " (consultee)" : "");
 
     if (route.name === "settings") {
       renderSettings(view, { ...data, currentStoreName: "Espace admin", isAdmin: true, adminUnlocked: isAdminUnlocked() }, settings, {
@@ -319,6 +383,7 @@ function render(data) {
         setSort: (s) => { adminSort = s; render(data); },
         tab: adminTab,
         setTab: (t) => { adminTab = t; render(data); },
+        resetPeriod: () => { adminPeriod = null; render(data); },
         selectStore: (code) => {
           // Depuis l'admin, on consulte un magasin sans "jouer" a sa place :
           // pas d'ecran de recompense, on va droit a sa fiche.
@@ -331,20 +396,29 @@ function render(data) {
   }
 
   const model = buildStoreModel(data, settings.storeCode);
-  const viewedWeek = dashboardWeek
-    ? model.history.find((w) => w.semaine === dashboardWeek) || model.currentWeek
-    : model.currentWeek;
+  const periodWeek = dashboardPeriod
+    ? aggregateRange(model.history, model.metrics, model.objective, dashboardPeriod.from, dashboardPeriod.to)
+    : null;
+  const onPeriod = route.name === "dashboard" && dashboardPeriod;
+  const viewedWeek = onPeriod
+    ? periodWeek
+    : dashboardWeek
+      ? model.history.find((w) => w.semaine === dashboardWeek) || model.currentWeek
+      : model.currentWeek;
   document.getElementById("hdr-store").textContent = model.store ? model.store.name : "";
-  document.getElementById("hdr-week").textContent = weekTitle(viewedWeek?.semaine)
-    + (route.name === "dashboard" && dashboardWeek ? " (consultee)" : "");
+  document.getElementById("hdr-week").textContent = onPeriod
+    ? rangeLabel(dashboardPeriod.from, dashboardPeriod.to) + " (période)"
+    : weekTitle(viewedWeek?.semaine) + (route.name === "dashboard" && dashboardWeek ? " (consultee)" : "");
 
-  if (route.name === "dashboard") {
-    renderDashboard(view, model, settings, nav, viewedWeek);
+  if (route.name === "dashboard" && onPeriod && !periodWeek) {
+    view.innerHTML = `<p class="empty-hint">Aucun relevé pour ${model.store?.name || "ce magasin"} sur cette période.<br>Choisissez-en une autre avec le calendrier.</p>`;
+  } else if (route.name === "dashboard") {
+    renderDashboard(view, model, settings, nav, viewedWeek, () => { dashboardPeriod = null; render(data); });
   } else if (route.name === "metric") {
     renderMetricDetail(view, model, route.key, settings);
     view.querySelector("[data-back]")?.addEventListener("click", () => nav("dashboard"));
   } else if (route.name === "stats") {
-    renderStats(view, model.metrics, model.history);
+    renderStats(view, model.metrics, model.history, undefined, (data.generated_at || "").slice(0, 10));
   } else if (route.name === "trophies") {
     renderTrophies(view, model, settings);
   } else if (route.name === "settings") {
