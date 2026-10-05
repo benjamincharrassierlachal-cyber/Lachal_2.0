@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-04T09:00:03",
+ "generated_at": "2026-10-05T09:00:03",
  "trophy_start_date": null,
  "stores": [
   {
@@ -623,6 +623,12 @@
    "ville": "MONTIGNAC",
    "derniers_avis": [
     {
+     "auteur": "Cris Rocha",
+     "note": 5,
+     "texte": "Grand choix de montures et facilité de paiement\n\n(Translated by Google)\nWide selection of frames and easy payment options",
+     "date": "2026-10-04"
+    },
+    {
      "auteur": "Sandrine Croiset",
      "note": 5,
      "texte": "Une professionnelle à l'ecoute et très agréable\n\n(Translated by Google)\nA professional who listens and is very pleasant",
@@ -645,12 +651,6 @@
      "note": 5,
      "texte": "Service professionnel, qualité d écoute et de bons conseils. Disponibilité SAV\n\n(Translated by Google)\nProfessional service, attentive listening, and sound advice. After-sales service availability.",
      "date": "2026-06-25"
-    },
-    {
-     "auteur": "lascaud sophie",
-     "note": 5,
-     "texte": "(Translated by Google) I came in for a check-up and was referred to an orthoptist as a precaution.\n\nKindness, thoroughness, and professionalism.\n\n(Original)\nJe suis venue pour un bilan, j’ai été dirigé vers un orthoptiste par précaution.\nBienveillance, sérieux et professionnalisme.",
-     "date": "2026-06-14"
     }
    ]
   },
@@ -960,7 +960,7 @@
    "ville": "SOUILLAC",
    "derniers_avis": [
     {
-     "auteur": "anonymous",
+     "auteur": "Sabrina Vialette",
      "note": 5,
      "texte": "Accueil très chaleureux avec une tres grande patience, a l'écoute de ses clients. Magasin très agréable. Je recommence a 100%.\n\n(Translated by Google)\nA very warm welcome with great patience and attentiveness to customers. A very pleasant shop. I would recommend it 100%.",
      "date": "2026-10-03"
@@ -1999,6 +1999,22 @@
     "soumis": 1,
     "valides": 1,
     "sources": "avis + lyleoo + oomade"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.7,
+    "avis_cumules": 61,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "11": [
@@ -2255,6 +2271,22 @@
     "impressions": null,
     "demandes": 2,
     "soumis": 2,
+    "valides": 1,
+    "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.7,
+    "avis_cumules": 26,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
     "valides": 1,
     "sources": "avis + lyleoo"
    }
@@ -2515,6 +2547,22 @@
     "soumis": 1,
     "valides": 0,
     "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.8,
+    "avis_cumules": 32,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 1,
+    "sources": "avis + lyleoo"
    }
   ],
   "13": [
@@ -2772,6 +2820,22 @@
     "demandes": 1,
     "soumis": 1,
     "valides": 0,
+    "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.8,
+    "avis_cumules": 28,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -3031,6 +3095,22 @@
     "soumis": 0,
     "valides": 0,
     "sources": "avis + lyleoo + oomade"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 5,
+    "avis_cumules": 43,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "15": [
@@ -3288,6 +3368,22 @@
     "demandes": 1,
     "soumis": 1,
     "valides": 0,
+    "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.9,
+    "avis_cumules": 29,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -3547,6 +3643,22 @@
     "soumis": 2,
     "valides": 2,
     "sources": "avis + lyleoo + oomade"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.9,
+    "avis_cumules": 214,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "18": [
@@ -3803,6 +3915,22 @@
     "impressions": null,
     "demandes": 2,
     "soumis": 3,
+    "valides": 1,
+    "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.9,
+    "avis_cumules": 13,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
     "valides": 1,
     "sources": "avis + lyleoo"
    }
@@ -4063,6 +4191,22 @@
     "soumis": 0,
     "valides": 0,
     "sources": "avis + lyleoo + oomade"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.9,
+    "avis_cumules": 50,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "2": [
@@ -4321,6 +4465,22 @@
     "soumis": 0,
     "valides": 0,
     "sources": "avis + lyleoo + oomade"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.9,
+    "avis_cumules": 44,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "20": [
@@ -4579,6 +4739,22 @@
     "soumis": 2,
     "valides": 1,
     "sources": "avis + lyleoo + oomade"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.8,
+    "avis_cumules": 24,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 1,
+    "sources": "avis + lyleoo"
    }
   ],
   "21": [
@@ -4837,6 +5013,22 @@
     "soumis": 1,
     "valides": 1,
     "sources": "avis + lyleoo + oomade"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.5,
+    "avis_cumules": 55,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "22": [
@@ -5095,6 +5287,22 @@
     "soumis": 1,
     "valides": 0,
     "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.8,
+    "avis_cumules": 54,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 1,
+    "sources": "avis + lyleoo"
    }
   ],
   "24": [
@@ -5342,6 +5550,22 @@
     "semaine": "2026-S40",
     "debut": "2026-09-28",
     "fin": "2026-10-04",
+    "avis_nouveaux": 0,
+    "note": 4.6,
+    "avis_cumules": 25,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
     "avis_nouveaux": 0,
     "note": 4.6,
     "avis_cumules": 25,
@@ -5611,6 +5835,22 @@
     "soumis": 3,
     "valides": 1,
     "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.9,
+    "avis_cumules": 18,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "27": [
@@ -5869,6 +6109,22 @@
     "soumis": 0,
     "valides": 0,
     "sources": "avis + lyleoo + oomade"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 5,
+    "avis_cumules": 130,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "28": [
@@ -6116,6 +6372,22 @@
     "semaine": "2026-S40",
     "debut": "2026-09-28",
     "fin": "2026-10-04",
+    "avis_nouveaux": 0,
+    "note": 5,
+    "avis_cumules": 6,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 6,
@@ -6385,6 +6657,22 @@
     "soumis": 0,
     "valides": 0,
     "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.9,
+    "avis_cumules": 23,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "3": [
@@ -6643,6 +6931,22 @@
     "soumis": 1,
     "valides": 1,
     "sources": "avis + lyleoo + oomade"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.6,
+    "avis_cumules": 46,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "30": [
@@ -6901,6 +7205,22 @@
     "soumis": 8,
     "valides": 4,
     "sources": "avis + lyleoo + oomade"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 1,
+    "note": 4.9,
+    "avis_cumules": 41,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 4,
+    "sources": "avis + lyleoo"
    }
   ],
   "31": [
@@ -7158,6 +7478,22 @@
     "demandes": 1,
     "soumis": 1,
     "valides": 0,
+    "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 1,
+    "note": 4.5,
+    "avis_cumules": 38,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -7417,6 +7753,22 @@
     "soumis": 1,
     "valides": 1,
     "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 5,
+    "avis_cumules": 33,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "33": [
@@ -7674,6 +8026,22 @@
     "demandes": 4,
     "soumis": 4,
     "valides": 3,
+    "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.6,
+    "avis_cumules": 11,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -7933,6 +8301,22 @@
     "soumis": 0,
     "valides": 0,
     "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.8,
+    "avis_cumules": 15,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "35": [
@@ -8180,6 +8564,22 @@
     "semaine": "2026-S40",
     "debut": "2026-09-28",
     "fin": "2026-10-04",
+    "avis_nouveaux": 0,
+    "note": 5,
+    "avis_cumules": 5,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 5,
@@ -8449,6 +8849,22 @@
     "soumis": 3,
     "valides": 3,
     "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 5,
+    "avis_cumules": 3,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "37": [
@@ -8707,6 +9123,22 @@
     "soumis": 0,
     "valides": 1,
     "sources": "avis + lyleoo + oomade"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.9,
+    "avis_cumules": 150,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "38": [
@@ -8954,6 +9386,22 @@
     "semaine": "2026-S40",
     "debut": "2026-09-28",
     "fin": "2026-10-04",
+    "avis_nouveaux": 0,
+    "note": 5,
+    "avis_cumules": 126,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 126,
@@ -9223,6 +9671,22 @@
     "soumis": 1,
     "valides": 1,
     "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.7,
+    "avis_cumules": 28,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "5": [
@@ -9481,6 +9945,22 @@
     "soumis": 0,
     "valides": 0,
     "sources": "avis + lyleoo + oomade"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.8,
+    "avis_cumules": 41,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "6": [
@@ -9739,6 +10219,22 @@
     "soumis": 1,
     "valides": 1,
     "sources": "avis + lyleoo + oomade"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.7,
+    "avis_cumules": 70,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "703": [
@@ -9997,6 +10493,22 @@
     "soumis": 2,
     "valides": 2,
     "sources": "avis + lyleoo + oomade"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.9,
+    "avis_cumules": 228,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "780": [
@@ -10245,6 +10757,22 @@
     "debut": "2026-09-28",
     "fin": "2026-10-04",
     "avis_nouveaux": 15,
+    "note": 4.8,
+    "avis_cumules": 165,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
     "note": 4.8,
     "avis_cumules": 165,
     "faces": null,
@@ -10513,6 +11041,22 @@
     "soumis": 0,
     "valides": 0,
     "sources": "avis + lyleoo"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 5,
+    "avis_cumules": 36,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": 0,
+    "soumis": 0,
+    "valides": 0,
+    "sources": "avis + lyleoo"
    }
   ],
   "25": [
@@ -10595,6 +11139,22 @@
     "soumis": null,
     "valides": null,
     "sources": "avis + oomade"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.9,
+    "avis_cumules": 131,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": null,
+    "soumis": null,
+    "valides": null,
+    "sources": "avis"
    }
   ],
   "570": [
@@ -10677,6 +11237,22 @@
     "soumis": null,
     "valides": null,
     "sources": "avis"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
+    "avis_nouveaux": 0,
+    "note": 4.9,
+    "avis_cumules": 170,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": null,
+    "soumis": null,
+    "valides": null,
+    "sources": "avis"
    }
   ],
   "9": [
@@ -10748,6 +11324,22 @@
     "semaine": "2026-S40",
     "debut": "2026-09-28",
     "fin": "2026-10-04",
+    "avis_nouveaux": 0,
+    "note": 5,
+    "avis_cumules": 55,
+    "faces": null,
+    "branches": null,
+    "goodies": null,
+    "impressions": null,
+    "demandes": null,
+    "soumis": null,
+    "valides": null,
+    "sources": "avis"
+   },
+   {
+    "semaine": "2026-S41",
+    "debut": "2026-10-05",
+    "fin": "2026-10-11",
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 55,
