@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-05T09:00:03",
+ "generated_at": "2026-10-05T11:44:15",
  "trophy_start_date": null,
  "stores": [
   {
@@ -1362,7 +1362,7 @@
  ],
  "objectives": {
   "1": {
-   "avis_semaine": 30,
+   "avis_semaine": 12,
    "note_cible": 5,
    "examens_semaine": 2,
    "impressions_semaine": 2,
@@ -1372,7 +1372,7 @@
    "commentaire": ""
   },
   "2": {
-   "avis_semaine": 15,
+   "avis_semaine": 6,
    "note_cible": 5,
    "examens_semaine": 2,
    "impressions_semaine": 1,
@@ -1382,7 +1382,7 @@
    "commentaire": ""
   },
   "3": {
-   "avis_semaine": 10,
+   "avis_semaine": 4,
    "note_cible": 5,
    "examens_semaine": 1,
    "impressions_semaine": 1,
@@ -1392,7 +1392,7 @@
    "commentaire": ""
   },
   "4": {
-   "avis_semaine": 7,
+   "avis_semaine": 3,
    "note_cible": 5,
    "examens_semaine": 2,
    "impressions_semaine": 0,
@@ -1402,7 +1402,7 @@
    "commentaire": ""
   },
   "5": {
-   "avis_semaine": 10,
+   "avis_semaine": 4,
    "note_cible": 5,
    "examens_semaine": 1,
    "impressions_semaine": 1,
@@ -1412,7 +1412,7 @@
    "commentaire": ""
   },
   "6": {
-   "avis_semaine": 12,
+   "avis_semaine": 6,
    "note_cible": 5,
    "examens_semaine": 1,
    "impressions_semaine": 1,
@@ -1422,7 +1422,7 @@
    "commentaire": ""
   },
   "8": {
-   "avis_semaine": 12,
+   "avis_semaine": 5,
    "note_cible": 5,
    "examens_semaine": 2,
    "impressions_semaine": 0,
@@ -1442,7 +1442,7 @@
    "commentaire": ""
   },
   "11": {
-   "avis_semaine": 12,
+   "avis_semaine": 5,
    "note_cible": 5,
    "examens_semaine": 1,
    "impressions_semaine": 0,
@@ -1452,216 +1452,6 @@
    "commentaire": ""
   },
   "12": {
-   "avis_semaine": 6,
-   "note_cible": 5,
-   "examens_semaine": 1,
-   "impressions_semaine": 0,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": false,
-   "commentaire": ""
-  },
-  "13": {
-   "avis_semaine": 7,
-   "note_cible": 5,
-   "examens_semaine": 1,
-   "impressions_semaine": 0,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": false,
-   "commentaire": ""
-  },
-  "14": {
-   "avis_semaine": 7,
-   "note_cible": 5,
-   "examens_semaine": 1,
-   "impressions_semaine": 1,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": true,
-   "commentaire": ""
-  },
-  "15": {
-   "avis_semaine": 5,
-   "note_cible": 5,
-   "examens_semaine": 2,
-   "impressions_semaine": 0,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": false,
-   "commentaire": ""
-  },
-  "16": {
-   "avis_semaine": 20,
-   "note_cible": 5,
-   "examens_semaine": 2,
-   "impressions_semaine": 2,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": true,
-   "commentaire": ""
-  },
-  "18": {
-   "avis_semaine": 15,
-   "note_cible": 5,
-   "examens_semaine": 2,
-   "impressions_semaine": 0,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": false,
-   "commentaire": ""
-  },
-  "19": {
-   "avis_semaine": 15,
-   "note_cible": 5,
-   "examens_semaine": 1,
-   "impressions_semaine": 1,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": true,
-   "commentaire": ""
-  },
-  "20": {
-   "avis_semaine": 10,
-   "note_cible": 5,
-   "examens_semaine": 1,
-   "impressions_semaine": 1,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": true,
-   "commentaire": ""
-  },
-  "21": {
-   "avis_semaine": 15,
-   "note_cible": 5,
-   "examens_semaine": 1,
-   "impressions_semaine": 1,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": true,
-   "commentaire": ""
-  },
-  "22": {
-   "avis_semaine": 15,
-   "note_cible": 5,
-   "examens_semaine": 2,
-   "impressions_semaine": 0,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": false,
-   "commentaire": ""
-  },
-  "24": {
-   "avis_semaine": 8,
-   "note_cible": 5,
-   "examens_semaine": 1,
-   "impressions_semaine": 0,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": false,
-   "commentaire": ""
-  },
-  "25": {
-   "avis_semaine": 20,
-   "note_cible": 5,
-   "examens_semaine": 0,
-   "impressions_semaine": 2,
-   "show_avis": true,
-   "show_examens": false,
-   "show_impressions": true,
-   "commentaire": ""
-  },
-  "26": {
-   "avis_semaine": 5,
-   "note_cible": 5,
-   "examens_semaine": 2,
-   "impressions_semaine": 0,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": false,
-   "commentaire": ""
-  },
-  "27": {
-   "avis_semaine": 10,
-   "note_cible": 5,
-   "examens_semaine": 1,
-   "impressions_semaine": 1,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": true,
-   "commentaire": ""
-  },
-  "28": {
-   "avis_semaine": 5,
-   "note_cible": 5,
-   "examens_semaine": 1,
-   "impressions_semaine": 0,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": false,
-   "commentaire": ""
-  },
-  "29": {
-   "avis_semaine": 7,
-   "note_cible": 5,
-   "examens_semaine": 1,
-   "impressions_semaine": 0,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": false,
-   "commentaire": ""
-  },
-  "30": {
-   "avis_semaine": 10,
-   "note_cible": 5,
-   "examens_semaine": 1,
-   "impressions_semaine": 1,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": true,
-   "commentaire": ""
-  },
-  "31": {
-   "avis_semaine": 7,
-   "note_cible": 5,
-   "examens_semaine": 1,
-   "impressions_semaine": 0,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": false,
-   "commentaire": ""
-  },
-  "32": {
-   "avis_semaine": 10,
-   "note_cible": 5,
-   "examens_semaine": 2,
-   "impressions_semaine": 0,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": false,
-   "commentaire": ""
-  },
-  "33": {
-   "avis_semaine": 5,
-   "note_cible": 5,
-   "examens_semaine": 2,
-   "impressions_semaine": 0,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": false,
-   "commentaire": ""
-  },
-  "34": {
-   "avis_semaine": 5,
-   "note_cible": 5,
-   "examens_semaine": 1,
-   "impressions_semaine": 0,
-   "show_avis": true,
-   "show_examens": true,
-   "show_impressions": false,
-   "commentaire": ""
-  },
-  "35": {
    "avis_semaine": 2,
    "note_cible": 5,
    "examens_semaine": 1,
@@ -1671,8 +1461,218 @@
    "show_impressions": false,
    "commentaire": ""
   },
-  "36": {
+  "13": {
+   "avis_semaine": 2,
+   "note_cible": 5,
+   "examens_semaine": 1,
+   "impressions_semaine": 0,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": false,
+   "commentaire": ""
+  },
+  "14": {
    "avis_semaine": 3,
+   "note_cible": 5,
+   "examens_semaine": 1,
+   "impressions_semaine": 1,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": true,
+   "commentaire": ""
+  },
+  "15": {
+   "avis_semaine": 2,
+   "note_cible": 5,
+   "examens_semaine": 2,
+   "impressions_semaine": 0,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": false,
+   "commentaire": ""
+  },
+  "16": {
+   "avis_semaine": 8,
+   "note_cible": 5,
+   "examens_semaine": 2,
+   "impressions_semaine": 2,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": true,
+   "commentaire": ""
+  },
+  "18": {
+   "avis_semaine": 6,
+   "note_cible": 5,
+   "examens_semaine": 2,
+   "impressions_semaine": 0,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": false,
+   "commentaire": ""
+  },
+  "19": {
+   "avis_semaine": 6,
+   "note_cible": 5,
+   "examens_semaine": 1,
+   "impressions_semaine": 1,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": true,
+   "commentaire": ""
+  },
+  "20": {
+   "avis_semaine": 3,
+   "note_cible": 5,
+   "examens_semaine": 1,
+   "impressions_semaine": 1,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": true,
+   "commentaire": ""
+  },
+  "21": {
+   "avis_semaine": 6,
+   "note_cible": 5,
+   "examens_semaine": 1,
+   "impressions_semaine": 1,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": true,
+   "commentaire": ""
+  },
+  "22": {
+   "avis_semaine": 6,
+   "note_cible": 5,
+   "examens_semaine": 2,
+   "impressions_semaine": 0,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": false,
+   "commentaire": ""
+  },
+  "24": {
+   "avis_semaine": 3,
+   "note_cible": 5,
+   "examens_semaine": 1,
+   "impressions_semaine": 0,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": false,
+   "commentaire": ""
+  },
+  "25": {
+   "avis_semaine": 8,
+   "note_cible": 5,
+   "examens_semaine": 0,
+   "impressions_semaine": 2,
+   "show_avis": true,
+   "show_examens": false,
+   "show_impressions": true,
+   "commentaire": ""
+  },
+  "26": {
+   "avis_semaine": 2,
+   "note_cible": 5,
+   "examens_semaine": 2,
+   "impressions_semaine": 0,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": false,
+   "commentaire": ""
+  },
+  "27": {
+   "avis_semaine": 4,
+   "note_cible": 5,
+   "examens_semaine": 1,
+   "impressions_semaine": 1,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": true,
+   "commentaire": ""
+  },
+  "28": {
+   "avis_semaine": 2,
+   "note_cible": 5,
+   "examens_semaine": 1,
+   "impressions_semaine": 0,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": false,
+   "commentaire": ""
+  },
+  "29": {
+   "avis_semaine": 2,
+   "note_cible": 5,
+   "examens_semaine": 1,
+   "impressions_semaine": 0,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": false,
+   "commentaire": ""
+  },
+  "30": {
+   "avis_semaine": 4,
+   "note_cible": 5,
+   "examens_semaine": 1,
+   "impressions_semaine": 1,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": true,
+   "commentaire": ""
+  },
+  "31": {
+   "avis_semaine": 2,
+   "note_cible": 5,
+   "examens_semaine": 1,
+   "impressions_semaine": 0,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": false,
+   "commentaire": ""
+  },
+  "32": {
+   "avis_semaine": 4,
+   "note_cible": 5,
+   "examens_semaine": 2,
+   "impressions_semaine": 0,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": false,
+   "commentaire": ""
+  },
+  "33": {
+   "avis_semaine": 2,
+   "note_cible": 5,
+   "examens_semaine": 2,
+   "impressions_semaine": 0,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": false,
+   "commentaire": ""
+  },
+  "34": {
+   "avis_semaine": 2,
+   "note_cible": 5,
+   "examens_semaine": 1,
+   "impressions_semaine": 0,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": false,
+   "commentaire": ""
+  },
+  "35": {
+   "avis_semaine": 1,
+   "note_cible": 5,
+   "examens_semaine": 1,
+   "impressions_semaine": 0,
+   "show_avis": true,
+   "show_examens": true,
+   "show_impressions": false,
+   "commentaire": ""
+  },
+  "36": {
+   "avis_semaine": 1,
    "note_cible": 5,
    "examens_semaine": 2,
    "impressions_semaine": 0,
@@ -1682,7 +1682,7 @@
    "commentaire": ""
   },
   "37": {
-   "avis_semaine": 15,
+   "avis_semaine": 6,
    "note_cible": 5,
    "examens_semaine": 2,
    "impressions_semaine": 2,
@@ -1692,7 +1692,7 @@
    "commentaire": ""
   },
   "38": {
-   "avis_semaine": 7,
+   "avis_semaine": 4,
    "note_cible": 5,
    "examens_semaine": 2,
    "impressions_semaine": 0,
@@ -1702,7 +1702,7 @@
    "commentaire": ""
   },
   "570": {
-   "avis_semaine": 10,
+   "avis_semaine": 4,
    "note_cible": 5,
    "examens_semaine": 0,
    "impressions_semaine": 0,
@@ -1712,7 +1712,7 @@
    "commentaire": ""
   },
   "703": {
-   "avis_semaine": 15,
+   "avis_semaine": 6,
    "note_cible": 5,
    "examens_semaine": 2,
    "impressions_semaine": 2,
@@ -1722,7 +1722,7 @@
    "commentaire": ""
   },
   "780": {
-   "avis_semaine": 10,
+   "avis_semaine": 4,
    "note_cible": 5,
    "examens_semaine": 1,
    "impressions_semaine": 0,
