@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-05T11:44:15",
+ "generated_at": "2026-10-06T09:00:02",
  "trophy_start_date": null,
  "stores": [
   {
@@ -524,33 +524,7 @@
    "name": "MARSAC",
    "enseigne": "OPTIC 2000",
    "ville": "MARSAC-SUR-L'ISLE",
-   "derniers_avis": [
-    {
-     "auteur": "marie-géraldine DASI",
-     "note": 5,
-     "texte": "Nous avons été très bien accueillis. Madame Chazotte a pris tout le temps nécessaire pour réaliser un examen de vue complet et approfondi. Elle a su nous conseiller avec beaucoup de professionnalisme dans le choix des montures, en tenant …"
-    },
-    {
-     "auteur": "Romain Delpit",
-     "note": 5,
-     "texte": "Un immense merci à Lola d’Optic 2000 pour son accueil, son professionnalisme et sa gentillesse. J’ai été parfaitement conseillé du début à la fin, avec beaucoup d’écoute et de patience. Le choix de montures est varié et de qualité, elle …"
-    },
-    {
-     "auteur": "Nicolas PEUCH",
-     "note": 5,
-     "texte": "Accueil chaleureux et écoute attentive de nos demandes et souhaits.  Choisir une paire de lunettes n’est pas toujours évident, mais Marie-Charlotte nous a prodigué d’excellents conseils."
-    },
-    {
-     "auteur": "Cecile Jouanneau",
-     "note": 5,
-     "texte": "Juste prise en charge parfaite ! Et tellement contente du résultat!  Merci à Marie Charlotte pour son écoute et tout les bons conseils.\nMerci d'avoir pu trouver des lunettes de piscine à ma vue à prix très abordable."
-    },
-    {
-     "auteur": "Laurent INNOCENT",
-     "note": 5,
-     "texte": "Bonjour a tous je vous conseil fortement de vous avancez vers cette magnifique équipe. Ils sont éléments exceptionnels. Ils sont non pas que pour l’as lunettes et ils sont aussi a l’écoute. Je reste fidèle a eux. Depuis mon besoin j’ai …"
-    }
-   ]
+   "derniers_avis": []
   },
   {
    "code": "24",
@@ -1188,6 +1162,12 @@
    "ville": "SAINT-ASTIER",
    "derniers_avis": [
     {
+     "auteur": "Jean Claude Rivière",
+     "note": 5,
+     "texte": "(Translated by Google) As explained previously, reception, services and quality of listening.\n\n(Original)\nComme expliqué précédemment, accueil, services et qualité d'écoute.",
+     "date": "2026-10-05"
+    },
+    {
      "auteur": "Vincent Garcia",
      "note": 5,
      "texte": "Accueil chaleureux et irréprochable. Pas de temps d'attente.\n\nLa boutique est propre et bien tenue.\n\nArmelle s'est montrée patiente, avec une excellente approche très humaine, elle a pris le temps et s'est montrée extrêmement professionnelle. Il est agréable de se faire servir par qqun qui connaît son métier, est précise dans ses explications, et honnête commercialement.\n\nJe recommande sans reserve la boutique Atol à St-Astier, on aimerait toujours avoir ce type d'expérience avec un commerçant. Bravo.\n\n(Translated by Google)\nA warm and impeccable welcome. No waiting time.\n\nThe shop is clean and well-maintained.\n\nArmelle was patient, with an excellent, very personal approach. She took her time and was extremely professional. It's a pleasure to be served by someone who knows their job, is precise in their explanations, and is commercially honest.\n\nI wholeheartedly recommend the Atol shop in St-Astier. We always wish we could have this kind of experience with a shopkeeper. Well done!",
@@ -1210,12 +1190,6 @@
      "note": 5,
      "texte": "Opticien sérieux qui donne d’excellents renseignements toujours à l’écoute. Plusieurs paires achetées ici jamais un souci je recommande !\n\n(Translated by Google)\nA reliable optician who provides excellent information and is always attentive. I've bought several pairs of glasses here and have never had a problem; I highly recommend them!",
      "date": "2026-09-21"
-    },
-    {
-     "auteur": "josiane averous",
-     "note": 5,
-     "texte": "Accueil très chaleureux. Personnel compétent et à l'écoute !!\n\n(Translated by Google)\nA very warm welcome. Competent and attentive staff!",
-     "date": "2026-09-19"
     }
    ]
   },
@@ -2007,14 +1981,14 @@
     "avis_nouveaux": 0,
     "note": 4.7,
     "avis_cumules": 61,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
-    "sources": "avis + lyleoo"
+    "soumis": 1,
+    "valides": 1,
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "11": [
@@ -3103,14 +3077,14 @@
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 43,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "15": [
@@ -3648,17 +3622,17 @@
     "semaine": "2026-S41",
     "debut": "2026-10-05",
     "fin": "2026-10-11",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 214,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "avis_cumules": 215,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "18": [
@@ -4199,14 +4173,14 @@
     "avis_nouveaux": 0,
     "note": 4.9,
     "avis_cumules": 50,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "2": [
@@ -4473,14 +4447,14 @@
     "avis_nouveaux": 0,
     "note": 4.9,
     "avis_cumules": 44,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "20": [
@@ -4747,14 +4721,14 @@
     "avis_nouveaux": 0,
     "note": 4.8,
     "avis_cumules": 24,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 1,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "21": [
@@ -5021,14 +4995,14 @@
     "avis_nouveaux": 0,
     "note": 4.5,
     "avis_cumules": 55,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "22": [
@@ -5299,9 +5273,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 1,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 2,
     "sources": "avis + lyleoo"
    }
   ],
@@ -6117,14 +6091,14 @@
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 130,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "28": [
@@ -6936,17 +6910,17 @@
     "semaine": "2026-S41",
     "debut": "2026-10-05",
     "fin": "2026-10-11",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.6,
-    "avis_cumules": 46,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "avis_cumules": 47,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "30": [
@@ -7213,14 +7187,14 @@
     "avis_nouveaux": 1,
     "note": 4.9,
     "avis_cumules": 41,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 4,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "31": [
@@ -9131,14 +9105,14 @@
     "avis_nouveaux": 0,
     "note": 4.9,
     "avis_cumules": 150,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "38": [
@@ -9953,14 +9927,14 @@
     "avis_nouveaux": 0,
     "note": 4.8,
     "avis_cumules": 41,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "6": [
@@ -10227,14 +10201,14 @@
     "avis_nouveaux": 0,
     "note": 4.7,
     "avis_cumules": 70,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "703": [
@@ -10498,17 +10472,17 @@
     "semaine": "2026-S41",
     "debut": "2026-10-05",
     "fin": "2026-10-11",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 228,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
-    "sources": "avis + lyleoo"
+    "avis_cumules": 229,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "780": [
@@ -11147,14 +11121,14 @@
     "avis_nouveaux": 0,
     "note": 4.9,
     "avis_cumules": 131,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": null,
     "soumis": null,
     "valides": null,
-    "sources": "avis"
+    "sources": "avis + oomade"
    }
   ],
   "570": [
