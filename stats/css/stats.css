@@ -409,6 +409,8 @@ body {
 .st-podium-card { padding: 16px 10px 8px; border-radius: var(--radius-sm); background: rgba(255, 255, 255, 0.03); border: 1px solid var(--surface-3); }
 .st-pod-bar i { display: block; height: 100%; width: 0; border-radius: 5px; background: linear-gradient(90deg, var(--c-p4), var(--c-examens)); transition: width 1s cubic-bezier(0.16, 1, 0.3, 1); }
 
+.st-homelink { display: block; width: 100%; text-align: left; text-decoration: none; color: inherit; }
+
 /* La navigation compte 4 onglets : un peu plus serree */
 .bottom-nav { gap: 2px; }
 .nav-btn[hidden] { display: none; }

@@ -1,7 +1,7 @@
 {
-  "name": "Suivi & Trophees",
-  "short_name": "Trophees",
-  "description": "Suivi ludique des objectifs hebdomadaires du magasin",
+  "name": "Lachal 2.0",
+  "short_name": "Lachal",
+  "description": "Suivi des objectifs (Suivi & Trophees) et statistiques de vente (Stats)",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

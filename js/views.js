@@ -3,7 +3,26 @@ import { icon } from "./icons.js";
 import { buildBadges, bestCurrentStreaks } from "./badges.js";
 import { ADMIN_CODE, buildTotals } from "./data.js";
 
-const ADMIN_PASSWORD = "BDG*24";
+// Le mot de passe admin n'est ecrit nulle part dans le code (le depot est
+// public) : on le verifie contre une empreinte lente et salee, publiee par
+// stats/scripts/build_stats.py. C'est le MEME mot de passe que l'appli Stats,
+// saisi a un seul endroit (ligne ADMIN de acces_stats.csv).
+const b64Bytes = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
+
+async function verifierMotDePasseAdmin(saisie) {
+  try {
+    const r = await fetch("stats/data/admin_check.json", { cache: "no-cache" });
+    if (!r.ok) return null; // verificateur pas encore publie
+    const c = await r.json();
+    const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(saisie.trim()), "PBKDF2", false, ["deriveBits"]);
+    const bits = new Uint8Array(await crypto.subtle.deriveBits(
+      { name: "PBKDF2", hash: "SHA-256", salt: b64Bytes(c.salt), iterations: c.iter }, base, 256));
+    const attendu = b64Bytes(c.hash);
+    return bits.length === attendu.length && bits.every((x, i) => x === attendu[i]);
+  } catch {
+    return null;
+  }
+}
 
 function weekLabel(semaine) {
   if (!semaine) return "";
@@ -128,10 +147,15 @@ export function renderOnboarding(root, data, onPick) {
     }
   });
 
-  const tryPassword = () => {
-    if (pwdInput.value === ADMIN_PASSWORD) {
+  const tryPassword = async () => {
+    const goBtn = wrap.querySelector("#ob-password-go");
+    goBtn.disabled = true;
+    const ok = await verifierMotDePasseAdmin(pwdInput.value);
+    goBtn.disabled = false;
+    if (ok) {
       onPick(ADMIN_CODE);
     } else {
+      pwdError.textContent = ok === null ? "Vérification impossible pour le moment." : "Mot de passe incorrect.";
       pwdError.hidden = false;
       pwdInput.value = "";
       pwdInput.focus();
@@ -675,6 +699,12 @@ export function renderSettings(root, data, settings, cb) {
       <button class="danger-btn" data-logout-admin>Deconnexion</button>
       <p class="about-text-sm" style="margin-top:6px;">Le mot de passe admin restera memorise sur cet appareil tant que vous ne vous deconnectez pas ici.</p>
     </div>` : ""}
+    <div class="setting-block">
+      <a class="card" href="./" style="display:block;width:100%;text-align:left;text-decoration:none;color:inherit;">
+        <strong>← Accueil Lachal 2.0</strong>
+        <div style="color:var(--text-dim);font-size:12.5px;margin-top:2px;">Passer à Stats</div>
+      </a>
+    </div>
     <p class="about-text">Les donnees viennent de la compilation hebdomadaire du groupe (avis Google, Lyleoo, OOMADE) et sont republiees chaque semaine. Reglages sauvegardes sur cet appareil uniquement.</p>
   `;
   root.appendChild(wrap);

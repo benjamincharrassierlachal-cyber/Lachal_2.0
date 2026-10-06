@@ -500,6 +500,7 @@ export function renderSettings(root, info, cb) {
         ${info.locked ? `<button class="card" style="width:100%;text-align:left;margin-top:10px" data-unlock><strong>Déverrouiller cet appareil</strong><div class="about-text-sm" style="margin-top:2px">Actuellement réservé à ${esc(info.locked.nom)} : permet de l'affecter à un autre magasin.</div></button>` : ""}`
       : `<div class="card" style="width:100%;text-align:left"><strong>${esc(info.qui)}</strong><div class="about-text-sm" style="margin-top:2px">Cet appareil est réservé à ce magasin.</div></div>`}
     </div>
+    <div class="setting-block"><a class="card st-homelink" href="../"><strong>← Accueil Lachal 2.0</strong><div class="about-text-sm" style="margin-top:2px">Passer à Suivi &amp; Trophées</div></a></div>
     <p class="about-text">Les données sont chiffrées : seul le bon code d'accès permet de les lire, et rien n'est envoyé ailleurs que sur cet appareil.</p>`;
   root.appendChild(wrap);
   wrap.querySelectorAll("[data-shape]").forEach((b) => b.addEventListener("click", () => cb.setShape(b.dataset.shape)));
