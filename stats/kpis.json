@@ -1,0 +1,832 @@
+{
+ "version": 1,
+ "note": "Source de vérité des indicateurs : libellés, formats, sens (up = plus c'est haut mieux c'est ; down = l'inverse ; none = affiché sans jugement), comparaison N-1 (evol.kind : pct = variation en %, pts = écart de taux en points, abs = écart en valeur) et piliers du score de santé. Les libellés sont une interprétation des noms de colonnes de l'export : à corriger ici si besoin, sans toucher au code.",
+ "groups": [
+  {
+   "key": "activite",
+   "label": "Activité",
+   "icon": "trending",
+   "color": "var(--c-avis)"
+  },
+  {
+   "key": "duo",
+   "label": "Duo & qualité de vente",
+   "icon": "sparkle",
+   "color": "var(--c-examens)"
+  },
+  {
+   "key": "panier",
+   "label": "Panier & prix moyens",
+   "icon": "medal",
+   "color": "var(--c-impr)"
+  },
+  {
+   "key": "verres",
+   "label": "Verres & gammes",
+   "icon": "eye",
+   "color": "var(--c-p4)"
+  },
+  {
+   "key": "offres",
+   "label": "Offres & remboursement",
+   "icon": "shield",
+   "color": "#ffd166"
+  },
+  {
+   "key": "devis",
+   "label": "Devis",
+   "icon": "target",
+   "color": "#fb5eae"
+  },
+  {
+   "key": "lentilles",
+   "label": "Lentilles",
+   "icon": "circle",
+   "color": "#34d399"
+  },
+  {
+   "key": "o2000",
+   "label": "Spécifique Optic 2000",
+   "icon": "star",
+   "color": "#ff7a45"
+  }
+ ],
+ "pillars": [
+  {
+   "key": "croissance",
+   "label": "Croissance",
+   "icon": "rocket",
+   "mode": "growth",
+   "kpis": [
+    "CA"
+   ],
+   "weight": 1,
+   "hint": "Évolution du CA par rapport à N-1, comparée à celle de la référence."
+  },
+  {
+   "key": "transition",
+   "label": "Transitions",
+   "icon": "sun",
+   "mode": "ratio",
+   "kpis": [
+    "Tx_Transition"
+   ],
+   "weight": 1,
+   "hint": "Part de verres photochromiques (Transitions), comparée à la référence."
+  },
+  {
+   "key": "valeur",
+   "label": "Valeur",
+   "icon": "medal",
+   "mode": "ratio",
+   "kpis": [
+    "PM_Prog_Libre",
+    "PM_Unif_Libre",
+    "PM_Monture_Libre"
+   ],
+   "weight": 1,
+   "hint": "Prix moyens des progressifs, unifocaux et montures en tarif libre."
+  },
+  {
+   "key": "verres",
+   "label": "Eyezen",
+   "icon": "eye",
+   "mode": "ratio",
+   "kpis": [
+    "Tx_Eyezen"
+   ],
+   "weight": 1,
+   "hint": "Part de verres Eyezen, comparée à la référence."
+  }
+ ],
+ "zones": [
+  {
+   "max": 85,
+   "key": "fragile",
+   "label": "Fragile",
+   "color": "#ff5c72"
+  },
+  {
+   "max": 97,
+   "key": "surveiller",
+   "label": "À surveiller",
+   "color": "#ff9f1c"
+  },
+  {
+   "max": 108,
+   "key": "cible",
+   "label": "Dans la cible",
+   "color": "#a3e635"
+  },
+  {
+   "max": 120,
+   "key": "forme",
+   "label": "En forme",
+   "color": "#2dd4bf"
+  },
+  {
+   "max": 9999,
+   "key": "excellent",
+   "label": "Excellent",
+   "color": "#ffd166"
+  }
+ ],
+ "health": {
+  "indexMin": 40,
+  "indexMax": 160,
+  "growthSlope": 200,
+  "minPillars": 2,
+  "minSellerSales": 30,
+  "minSellerCA": 15000,
+  "excludeSellers": [
+   "Admin Admin"
+  ]
+ },
+ "kpis": [
+  {
+   "key": "CA",
+   "label": "Chiffre d'affaires",
+   "short": "CA",
+   "group": "activite",
+   "fmt": "eur",
+   "polarity": "none",
+   "evol": {
+    "key": "CA_Evol",
+    "kind": "pct"
+   },
+   "hint": "CA des ventes du logiciel, du 1er janvier à la date de fin de la période."
+  },
+  {
+   "key": "Nb_Total",
+   "label": "Nombre de ventes",
+   "short": "Ventes",
+   "group": "activite",
+   "fmt": "int",
+   "polarity": "none",
+   "evol": {
+    "key": "Nb_Total_EvolPct",
+    "kind": "pct"
+   },
+   "o2000": {
+    "col": "Nb_Ventes",
+    "evol": {
+     "key": "Nb_Ventes_Evol",
+     "kind": "abs"
+    }
+   }
+  },
+  {
+   "key": "Nb_Total_Eqt",
+   "label": "Équipements vendus",
+   "short": "Équipements",
+   "group": "activite",
+   "fmt": "int",
+   "polarity": "none",
+   "evol": {
+    "key": "Nb_Total_Eqt_EvolPct",
+    "kind": "pct"
+   }
+  },
+  {
+   "key": "Nb_Eqt1",
+   "label": "1er équipement",
+   "short": "1er éq.",
+   "group": "activite",
+   "fmt": "int",
+   "polarity": "none",
+   "evol": {
+    "key": "Nb_Eqt1_EvolPct",
+    "kind": "pct"
+   }
+  },
+  {
+   "key": "Nb_Eqt2",
+   "label": "2e équipement (Duo)",
+   "short": "2e éq.",
+   "group": "activite",
+   "fmt": "int",
+   "polarity": "none",
+   "evol": {
+    "key": "Nb_Eqt2_EvolPct",
+    "kind": "pct"
+   }
+  },
+  {
+   "key": "Nb_Eqt3",
+   "label": "3e équipement",
+   "short": "3e éq.",
+   "group": "activite",
+   "fmt": "int",
+   "polarity": "none",
+   "evol": {
+    "key": "Nb_Eqt3_EvolPct",
+    "kind": "pct"
+   }
+  },
+  {
+   "key": "Nb_Eqt4",
+   "label": "4e équipement",
+   "short": "4e éq.",
+   "group": "activite",
+   "fmt": "int",
+   "polarity": "none",
+   "evol": {
+    "key": "Nb_Eqt4_EvolPct",
+    "kind": "pct"
+   }
+  },
+  {
+   "key": "Nb_Vente_Comptoir",
+   "label": "Ventes comptoir",
+   "short": "Comptoir",
+   "group": "activite",
+   "fmt": "int",
+   "polarity": "none",
+   "evol": {
+    "key": "Nb_Vente_Comptoir_EvolPct",
+    "kind": "pct"
+   }
+  },
+  {
+   "key": "Tx_DuoPlus_Global",
+   "label": "Taux de Duo+ (global)",
+   "short": "Duo+",
+   "group": "duo",
+   "fmt": "pct",
+   "polarity": "up",
+   "hint": "Part des ventes avec au moins un 2e équipement. Calculé pour Optic 2000 à partir des taux libre et grille."
+  },
+  {
+   "key": "Tx_DuoPlus_Libre",
+   "label": "Duo+ en tarif libre",
+   "short": "Duo+ libre",
+   "group": "duo",
+   "fmt": "pct",
+   "polarity": "up",
+   "evol": {
+    "key": "Tx_DuoPlus_Libre_Evol",
+    "kind": "pts"
+   }
+  },
+  {
+   "key": "Tx_DuoPlus_Grille",
+   "label": "Duo+ en grille",
+   "short": "Duo+ grille",
+   "group": "duo",
+   "fmt": "pct",
+   "polarity": "up",
+   "evol": {
+    "key": "Tx_DuoPlus_Grille_Evol",
+    "kind": "pts"
+   }
+  },
+  {
+   "key": "Tx_Sans_Duo",
+   "label": "Ventes sans Duo",
+   "short": "Sans Duo",
+   "group": "duo",
+   "fmt": "pct",
+   "polarity": "down",
+   "evol": {
+    "key": "Tx_Sans_Duo_Evol",
+    "kind": "pts"
+   }
+  },
+  {
+   "key": "Tx_Duo1E_Grille",
+   "label": "Duo 1er équipement (grille)",
+   "short": "Duo 1E",
+   "group": "duo",
+   "fmt": "pct",
+   "polarity": "none",
+   "evol": {
+    "key": "Tx_Duo1E_Grille_Evol",
+    "kind": "pts"
+   }
+  },
+  {
+   "key": "Tx_Saisie_Garantie",
+   "label": "Saisie des garanties",
+   "short": "Garanties",
+   "group": "duo",
+   "fmt": "pct",
+   "polarity": "up"
+  },
+  {
+   "key": "PM_Prog_Libre",
+   "label": "Prix moyen progressifs (libre)",
+   "short": "Progressifs libre",
+   "group": "panier",
+   "fmt": "eur",
+   "polarity": "up",
+   "evol": {
+    "key": "PM_Prog_Libre_Evol",
+    "kind": "abs"
+   }
+  },
+  {
+   "key": "PM_Unif_Libre",
+   "label": "Prix moyen unifocaux (libre)",
+   "short": "Unifocaux libre",
+   "group": "panier",
+   "fmt": "eur",
+   "polarity": "up",
+   "evol": {
+    "key": "PM_Unif_Libre_Evol",
+    "kind": "abs"
+   }
+  },
+  {
+   "key": "PM_Monture_Libre",
+   "label": "Prix moyen monture (libre)",
+   "short": "Montures libre",
+   "group": "panier",
+   "fmt": "eur",
+   "polarity": "up",
+   "evol": {
+    "key": "PM_Monture_Libre_Evol",
+    "kind": "abs"
+   }
+  },
+  {
+   "key": "Nb_Ventes_Libre",
+   "label": "Ventes en tarif libre",
+   "short": "Ventes en tarif libre",
+   "group": "panier",
+   "fmt": "int",
+   "polarity": "none"
+  },
+  {
+   "key": "PM_Prog_Grille",
+   "label": "Prix moyen progressifs (grille)",
+   "short": "Progressifs grille",
+   "group": "panier",
+   "fmt": "eur",
+   "polarity": "none",
+   "evol": {
+    "key": "PM_Prog_Grille_Evol",
+    "kind": "abs"
+   }
+  },
+  {
+   "key": "PM_Unif_Grille",
+   "label": "Prix moyen unifocaux (grille)",
+   "short": "Unifocaux grille",
+   "group": "panier",
+   "fmt": "eur",
+   "polarity": "none",
+   "evol": {
+    "key": "PM_Unif_Grille_Evol",
+    "kind": "abs"
+   }
+  },
+  {
+   "key": "PM_Monture_Grille",
+   "label": "Prix moyen monture (grille)",
+   "short": "Montures grille",
+   "group": "panier",
+   "fmt": "eur",
+   "polarity": "none",
+   "evol": {
+    "key": "PM_Monture_Grille_Evol",
+    "kind": "abs"
+   }
+  },
+  {
+   "key": "Nb_Ventes_Grille",
+   "label": "Ventes en grille",
+   "short": "Ventes en grille",
+   "group": "panier",
+   "fmt": "int",
+   "polarity": "none"
+  },
+  {
+   "key": "Tx_Transition",
+   "label": "Verres photochromiques (Transitions)",
+   "short": "Transitions",
+   "group": "verres",
+   "fmt": "pct",
+   "polarity": "up",
+   "evol": {
+    "key": "Tx_Transition_Evol",
+    "kind": "pts"
+   }
+  },
+  {
+   "key": "Tx_Eyezen",
+   "label": "Verres Eyezen",
+   "short": "Eyezen",
+   "group": "verres",
+   "fmt": "pct",
+   "polarity": "up",
+   "evol": {
+    "key": "Tx_Eyezen_Evol",
+    "kind": "pts"
+   }
+  },
+  {
+   "key": "Mix_PREMS",
+   "label": "Mix verres Prems HD",
+   "short": "Prems HD",
+   "group": "verres",
+   "fmt": "pct",
+   "polarity": "none",
+   "mix": true
+  },
+  {
+   "key": "Mix_EDONIS",
+   "label": "Mix verres Edonis HD",
+   "short": "Edonis HD",
+   "group": "verres",
+   "fmt": "pct",
+   "polarity": "none",
+   "mix": true
+  },
+  {
+   "key": "Mix_VXE_VXPE",
+   "label": "Mix verres E / P Extensée",
+   "short": "E / P Extensée",
+   "group": "verres",
+   "fmt": "pct",
+   "polarity": "none",
+   "mix": true
+  },
+  {
+   "key": "Mix_VXXR",
+   "label": "Mix verres XR",
+   "short": "XR",
+   "group": "verres",
+   "fmt": "pct",
+   "polarity": "none",
+   "mix": true
+  },
+  {
+   "key": "Mix_VXXRplus",
+   "label": "Mix verres XR+",
+   "short": "XR+",
+   "group": "verres",
+   "fmt": "pct",
+   "polarity": "none",
+   "mix": true
+  },
+  {
+   "key": "Tx_Reseaux",
+   "label": "Taux réseaux de soins",
+   "short": "Réseaux",
+   "group": "offres",
+   "fmt": "pct",
+   "polarity": "none",
+   "evol": {
+    "key": "Tx_Reseaux_Evol",
+    "kind": "pts"
+   }
+  },
+  {
+   "key": "Tx_Panier_A",
+   "label": "Taux panier A",
+   "short": "Panier A",
+   "group": "offres",
+   "fmt": "pct",
+   "polarity": "none",
+   "evol": {
+    "key": "Tx_Panier_A_Evol",
+    "kind": "pts"
+   }
+  },
+  {
+   "key": "Tx_C2S",
+   "label": "Taux C2S",
+   "short": "C2S",
+   "group": "offres",
+   "fmt": "pct",
+   "polarity": "none",
+   "evol": {
+    "key": "Tx_C2S_Evol",
+    "kind": "pts"
+   }
+  },
+  {
+   "key": "Tx_100",
+   "label": "Taux 100 % Santé",
+   "short": "100 % Santé",
+   "group": "offres",
+   "fmt": "pct",
+   "polarity": "none",
+   "evol": {
+    "key": "Tx_100_Evol",
+    "kind": "pts"
+   }
+  },
+  {
+   "key": "C2S_AAA",
+   "label": "C2S · AAA",
+   "short": "C2S · AAA",
+   "group": "offres",
+   "fmt": "pct",
+   "polarity": "none"
+  },
+  {
+   "key": "C2S_ABB",
+   "label": "C2S · ABB",
+   "short": "C2S · ABB",
+   "group": "offres",
+   "fmt": "pct",
+   "polarity": "none"
+  },
+  {
+   "key": "C2S_BAA",
+   "label": "C2S · BAA",
+   "short": "C2S · BAA",
+   "group": "offres",
+   "fmt": "pct",
+   "polarity": "none"
+  },
+  {
+   "key": "100_AAA",
+   "label": "100 % Santé · AAA",
+   "short": "100 % Santé · AAA",
+   "group": "offres",
+   "fmt": "pct",
+   "polarity": "none"
+  },
+  {
+   "key": "100_ABB",
+   "label": "100 % Santé · ABB",
+   "short": "100 % Santé · ABB",
+   "group": "offres",
+   "fmt": "pct",
+   "polarity": "none"
+  },
+  {
+   "key": "100_BAA",
+   "label": "100 % Santé · BAA",
+   "short": "100 % Santé · BAA",
+   "group": "offres",
+   "fmt": "pct",
+   "polarity": "none"
+  },
+  {
+   "key": "Nb_Forfait",
+   "label": "Forfaits",
+   "short": "Forfaits",
+   "group": "offres",
+   "fmt": "int",
+   "polarity": "none",
+   "evol": {
+    "key": "Nb_Forfait_EvolPct",
+    "kind": "pct"
+   }
+  },
+  {
+   "key": "Nb_100Sante",
+   "label": "Ventes 100 % Santé",
+   "short": "100 % Santé (nb)",
+   "group": "offres",
+   "fmt": "int",
+   "polarity": "none",
+   "evol": {
+    "key": "Nb_100Sante_EvolPct",
+    "kind": "pct"
+   }
+  },
+  {
+   "key": "Nb_Forfait_Junior",
+   "label": "Forfaits Junior",
+   "short": "Junior",
+   "group": "offres",
+   "fmt": "int",
+   "polarity": "none",
+   "evol": {
+    "key": "Nb_Forfait_Junior_EvolPct",
+    "kind": "pct"
+   }
+  },
+  {
+   "key": "Nb_Forfait_RBA",
+   "label": "Forfaits RBA",
+   "short": "Forfaits RBA",
+   "group": "offres",
+   "fmt": "int",
+   "polarity": "none",
+   "evol": {
+    "key": "Nb_Forfait_RBA_EvolPct",
+    "kind": "pct"
+   }
+  },
+  {
+   "key": "Nb_Autre",
+   "label": "Autres ventes",
+   "short": "Autres",
+   "group": "offres",
+   "fmt": "int",
+   "polarity": "none",
+   "evol": {
+    "key": "Nb_Autre_EvolPct",
+    "kind": "pct"
+   }
+  },
+  {
+   "key": "Nb_RBA",
+   "label": "RBA",
+   "short": "RBA",
+   "group": "offres",
+   "fmt": "int",
+   "polarity": "none",
+   "evol": {
+    "key": "Nb_RBA_Evol",
+    "kind": "abs"
+   }
+  },
+  {
+   "key": "Nb_META",
+   "label": "META",
+   "short": "META",
+   "group": "offres",
+   "fmt": "int",
+   "polarity": "none"
+  },
+  {
+   "key": "Nb_Nuance",
+   "label": "Nuance",
+   "short": "Nuance",
+   "group": "offres",
+   "fmt": "int",
+   "polarity": "none"
+  },
+  {
+   "key": "Tx_RA_RI",
+   "label": "Taux RA / RI",
+   "short": "RA/RI",
+   "group": "offres",
+   "fmt": "pct",
+   "polarity": "none",
+   "evol": {
+    "key": "Tx_RA_RI_Evol",
+    "kind": "pts"
+   }
+  },
+  {
+   "key": "Devis_Emis_Nb",
+   "label": "Devis émis",
+   "short": "Devis émis",
+   "group": "devis",
+   "fmt": "int",
+   "polarity": "none"
+  },
+  {
+   "key": "Devis_Emis_CA",
+   "label": "CA des devis émis",
+   "short": "CA des devis émis",
+   "group": "devis",
+   "fmt": "eur",
+   "polarity": "none"
+  },
+  {
+   "key": "Devis_EnCours_Nb",
+   "label": "Devis en cours",
+   "short": "Devis en cours",
+   "group": "devis",
+   "fmt": "int",
+   "polarity": "none"
+  },
+  {
+   "key": "Devis_EnCours_CA",
+   "label": "CA des devis en cours",
+   "short": "CA des devis en cours",
+   "group": "devis",
+   "fmt": "eur",
+   "polarity": "none"
+  },
+  {
+   "key": "Tx_Devis",
+   "label": "Taux de devis",
+   "short": "Taux de devis",
+   "group": "devis",
+   "fmt": "pct",
+   "polarity": "none",
+   "evol": {
+    "key": "Tx_Devis_Evol",
+    "kind": "pts"
+   }
+  },
+  {
+   "key": "Nb_Contacto",
+   "label": "Ventes de lentilles",
+   "short": "Lentilles",
+   "group": "lentilles",
+   "fmt": "int",
+   "polarity": "none",
+   "evol": {
+    "key": "Nb_Contacto_EvolPct",
+    "kind": "pct"
+   }
+  },
+  {
+   "key": "CA_Contacto",
+   "label": "CA lentilles",
+   "short": "CA lentilles",
+   "group": "lentilles",
+   "fmt": "eur",
+   "polarity": "none",
+   "evol": {
+    "key": "CA_Contacto_Evol",
+    "kind": "pct"
+   },
+   "o2000": {
+    "col": "CA_Contacto",
+    "evol": {
+     "key": "CA_Contacto_Evol",
+     "kind": "abs"
+    }
+   }
+  },
+  {
+   "key": "Nb_Lentilles_Essai",
+   "label": "Essais de lentilles",
+   "short": "Essais de lentilles",
+   "group": "lentilles",
+   "fmt": "int",
+   "polarity": "up"
+  },
+  {
+   "key": "Tx_Grille",
+   "label": "Part des ventes en grille",
+   "short": "Part des ventes en grille",
+   "group": "o2000",
+   "fmt": "pct",
+   "polarity": "none",
+   "evol": {
+    "key": "Tx_Grille_Evol",
+    "kind": "pts"
+   }
+  },
+  {
+   "key": "Nb_Devis",
+   "label": "Devis (nb)",
+   "short": "Devis (nb)",
+   "group": "o2000",
+   "fmt": "dec",
+   "polarity": "none"
+  },
+  {
+   "key": "Nb_Factures",
+   "label": "Factures (nb)",
+   "short": "Factures (nb)",
+   "group": "o2000",
+   "fmt": "dec",
+   "polarity": "none"
+  },
+  {
+   "key": "Tx_Remise",
+   "label": "Taux de remise",
+   "short": "Taux de remise",
+   "group": "o2000",
+   "fmt": "pct",
+   "polarity": "none"
+  },
+  {
+   "key": "Remise",
+   "label": "Remises (€)",
+   "short": "Remises (€)",
+   "group": "o2000",
+   "fmt": "eur",
+   "polarity": "none"
+  },
+  {
+   "key": "Mix_PASSIO",
+   "label": "Mix verres Passio",
+   "short": "Passio",
+   "group": "o2000",
+   "fmt": "pct",
+   "polarity": "none",
+   "mix": true
+  },
+  {
+   "key": "Mix_E",
+   "label": "Mix verres E",
+   "short": "E",
+   "group": "o2000",
+   "fmt": "pct",
+   "polarity": "none",
+   "mix": true
+  },
+  {
+   "key": "Mix_XR",
+   "label": "Mix verres XR",
+   "short": "XR",
+   "group": "o2000",
+   "fmt": "pct",
+   "polarity": "none",
+   "mix": true
+  },
+  {
+   "key": "Mix_XRplus",
+   "label": "Mix verres XR+",
+   "short": "XR+",
+   "group": "o2000",
+   "fmt": "pct",
+   "polarity": "none",
+   "mix": true
+  }
+ ]
+}

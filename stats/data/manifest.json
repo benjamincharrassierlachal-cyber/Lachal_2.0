@@ -1,0 +1,265 @@
+{
+ "v": 1,
+ "genere": "2026-10-06T18:08:29",
+ "magasins": [
+  {
+   "code": "1",
+   "nom": "PERIGUEUX",
+   "ville": "PERIGUEUX",
+   "enseigne": "LACHAL OPTICIEN",
+   "kind": "full"
+  },
+  {
+   "code": "2",
+   "nom": "ST YRIEIX",
+   "ville": "SAINT-YRIEIX-LA-PERCHE",
+   "enseigne": "LACHAL OPTICIEN",
+   "kind": "full"
+  },
+  {
+   "code": "3",
+   "nom": "STASTIER",
+   "ville": "SAINT-ASTIER",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "4",
+   "nom": "RIB1",
+   "ville": "RIBERAC",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "5",
+   "nom": "NONTRON",
+   "ville": "NONTRON",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "6",
+   "nom": "MONTPON",
+   "ville": "MONTPON-MENESTEROL",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "8",
+   "nom": "LE BUGUE",
+   "ville": "LE BUGUE",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "9",
+   "nom": "CREATEUR PX",
+   "ville": "PERIGUEUX",
+   "enseigne": "LES LUNETTES DE FRANCOIS",
+   "kind": "full"
+  },
+  {
+   "code": "11",
+   "nom": "GLANDON",
+   "ville": "GLANDON",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "12",
+   "nom": "EXCIDEUIL",
+   "ville": "EXCIDEUIL",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "13",
+   "nom": "VILLEREAL",
+   "ville": "VILLEREAL",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "14",
+   "nom": "BRANTOME",
+   "ville": "BRANTOME",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "15",
+   "nom": "BELVES",
+   "ville": "SIORAC-EN-PERIGORD",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "16",
+   "nom": "BOULAZAC",
+   "ville": "BOULAZAC",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "18",
+   "nom": "RIB3",
+   "ville": "RIBERAC",
+   "enseigne": "LACHAL OPTICIEN",
+   "kind": "full"
+  },
+  {
+   "code": "19",
+   "nom": "ST SEURIN",
+   "ville": "SAINT-SEURIN-SUR-L'ISLE",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "20",
+   "nom": "LA ROCHE",
+   "ville": "LA ROCHEFOUCAULD",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "21",
+   "nom": "RIB2",
+   "ville": "RIBERAC",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "22",
+   "nom": "TRELISSAC",
+   "ville": "TRELISSAC",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "24",
+   "nom": "MONTAUBAN 2",
+   "ville": "MONTAUBAN-DE-BRETAGNE",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "25",
+   "nom": "BERGERAC",
+   "ville": "BERGERAC",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "26",
+   "nom": "ST CYPRIEN",
+   "ville": "SAINT-CYPRIEN",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "27",
+   "nom": "THIVIERS",
+   "ville": "THIVIERS",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "28",
+   "nom": "MONTBRON",
+   "ville": "MONTBRON",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "29",
+   "nom": "ST AIGULIN",
+   "ville": "SAINT-AIGULIN",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "30",
+   "nom": "SOUILLAC",
+   "ville": "SOUILLAC",
+   "enseigne": "REGARDS D'ICI",
+   "kind": "full"
+  },
+  {
+   "code": "31",
+   "nom": "MONTIGNAC",
+   "ville": "MONTIGNAC",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "32",
+   "nom": "SOUILLAC2",
+   "ville": "SOUILLAC",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "33",
+   "nom": "HAUTEFORT",
+   "ville": "HAUTEFORT",
+   "enseigne": "LACHAL OPTICIEN",
+   "kind": "full"
+  },
+  {
+   "code": "34",
+   "nom": "PRIGONRIEUX",
+   "ville": "PRIGONRIEUX",
+   "enseigne": "ATOL",
+   "kind": "full"
+  },
+  {
+   "code": "35",
+   "nom": "CASTILLONNES",
+   "ville": "CASTILLONNES",
+   "enseigne": "LACHAL OPTICIEN",
+   "kind": "full"
+  },
+  {
+   "code": "36",
+   "nom": "VERGT",
+   "ville": "VERGT",
+   "enseigne": "LACHAL OPTICIEN",
+   "kind": "full"
+  },
+  {
+   "code": "37",
+   "nom": "MARSAC",
+   "ville": "MARSAC-SUR-L'ISLE",
+   "enseigne": "OPTIC 2000",
+   "kind": "o2000"
+  },
+  {
+   "code": "38",
+   "nom": "O2000 PERIGUEUX",
+   "ville": "PERIGUEUX",
+   "enseigne": "OPTIC 2000",
+   "kind": "o2000"
+  },
+  {
+   "code": "570",
+   "nom": "GO BRETENOUX",
+   "ville": "BRETENOUX",
+   "enseigne": "GENERALE D'OPTIQUE",
+   "kind": "ca"
+  },
+  {
+   "code": "703",
+   "nom": "GO BERGERAC",
+   "ville": "BERGERAC",
+   "enseigne": "GENERALE D'OPTIQUE",
+   "kind": "ca"
+  },
+  {
+   "code": "780",
+   "nom": "GO TULLE",
+   "ville": "TULLE",
+   "enseigne": "GENERALE D'OPTIQUE",
+   "kind": "ca"
+  }
+ ]
+}
