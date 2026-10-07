@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-06T18:08:44",
+ "generated_at": "2026-10-07T09:00:03",
  "trophy_start_date": null,
  "stores": [
   {
@@ -47,6 +47,12 @@
    "ville": "BERGERAC",
    "derniers_avis": [
     {
+     "auteur": "Ghislaine Aissani",
+     "note": 5,
+     "texte": "(Translated by Google) Excellent lenses. Pleasant staff. The ophthalmologist's office is functional and very well designed. Impeccable result.\n\n(Original)\nTrès bons verres. Équipe agréable.  Cabine ophtalmologue opérationnelle et très bien réalisé. Résultat impeccable.",
+     "date": "2026-10-06"
+    },
+    {
      "auteur": "Christophe Badie",
      "note": 5,
      "texte": "Je passe par hasard, pour un réglage de ma paire de lunettes, super accueillant JP et nettoyage et réglage impec merci\n\n(Translated by Google)\nI stopped by by chance to get my glasses adjusted. JP was incredibly welcoming, and the cleaning and adjustment were impeccable. Thank you!",
@@ -69,12 +75,6 @@
      "note": 5,
      "texte": "Très bon accueil. Et ça fait plaisir!\n\n(Translated by Google)\nA very warm welcome. And that's a pleasure!",
      "date": "2026-09-28"
-    },
-    {
-     "auteur": "K C",
-     "note": 5,
-     "texte": "Personnel très aimable, qui m'a gentiment aidée à redresser mes lunettes alors que j'étais tombée avec. Je les remercie chaleureusement pour leur amabilité.\n\n(Translated by Google)\nThe staff were very friendly and kindly helped me straighten my glasses after I fell with them. I sincerely thank them for their kindness.",
-     "date": "2026-09-26"
     }
    ]
   },
@@ -1238,6 +1238,12 @@
    "ville": "TRELISSAC",
    "derniers_avis": [
     {
+     "auteur": "Valérie PEREZ",
+     "note": 5,
+     "texte": "(Translated by Google) A huge thank you to Mathilde for her warm welcome and professionalism. She's an attentive optician who offers excellent advice. I also want to highlight her quick service; I received my prescription and sunglasses within four days.\n\n(Original)\nUn grand merci à Mathilde pour son accueil et son professionnalisme. Opticienne à l'écoute et de très bon conseil. Je souligne également la rapidité d'exécution, j'ai reçu mes lunettes vue et solaire sous 4 jours.",
+     "date": "2026-10-06"
+    },
+    {
      "auteur": "Bernard Beylot",
      "note": 5,
      "texte": "Très bien accueillie et conseillée par Fabien\nEquipe à l'écoute et très agréable\nJe recommande\n\n(Translated by Google)\nI received a very warm welcome and excellent advice from Fabien. The team was attentive and very pleasant.\nI highly recommend them.",
@@ -1259,12 +1265,6 @@
      "auteur": "Jade",
      "note": 5,
      "texte": "Très bon accueil, un choix très varié de monture. Je recommande 👍🏻\n\n(Translated by Google)\nExcellent service, a wide variety of frames to choose from. I highly recommend them 👍🏻",
-     "date": "2026-08-21"
-    },
-    {
-     "auteur": "Remi Beauvieux",
-     "note": 5,
-     "texte": "(Translated by Google) Good team. Very serious, attentive, and professional. I recommend them.\n\n(Original)\nBonne équipe. très sérieux a l écoute  très professionnel je recommande",
      "date": "2026-08-21"
     }
    ]
@@ -1985,8 +1985,8 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 1,
+    "demandes": 1,
+    "soumis": 2,
     "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
@@ -3077,10 +3077,10 @@
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 43,
-    "faces": 0,
+    "faces": 1,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 1,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -4725,8 +4725,8 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
@@ -5266,15 +5266,15 @@
     "semaine": "2026-S41",
     "debut": "2026-10-05",
     "fin": "2026-10-11",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.8,
-    "avis_cumules": 54,
+    "avis_cumules": 55,
     "faces": null,
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 1,
-    "soumis": 1,
+    "demandes": 2,
+    "soumis": 2,
     "valides": 2,
     "sources": "avis + lyleoo"
    }
@@ -6095,8 +6095,8 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 0,
     "sources": "avis + lyleoo + oomade"
    }
@@ -6913,10 +6913,10 @@
     "avis_nouveaux": 1,
     "note": 4.6,
     "avis_cumules": 47,
-    "faces": 0,
+    "faces": 1,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 1,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -7187,13 +7187,13 @@
     "avis_nouveaux": 1,
     "note": 4.9,
     "avis_cumules": 41,
-    "faces": 0,
+    "faces": 1,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 4,
+    "impressions": 1,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 5,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -7739,9 +7739,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -10472,9 +10472,9 @@
     "semaine": "2026-S41",
     "debut": "2026-10-05",
     "fin": "2026-10-11",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 2,
     "note": 4.9,
-    "avis_cumules": 229,
+    "avis_cumules": 230,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -11118,9 +11118,9 @@
     "semaine": "2026-S41",
     "debut": "2026-10-05",
     "fin": "2026-10-11",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 131,
+    "avis_cumules": 132,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -11216,9 +11216,9 @@
     "semaine": "2026-S41",
     "debut": "2026-10-05",
     "fin": "2026-10-11",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 170,
+    "avis_cumules": 171,
     "faces": null,
     "branches": null,
     "goodies": null,
