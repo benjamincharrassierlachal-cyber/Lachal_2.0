@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-07T09:00:03",
+ "generated_at": "2026-10-08T09:00:03",
  "trophy_start_date": null,
  "stores": [
   {
@@ -47,7 +47,19 @@
    "ville": "BERGERAC",
    "derniers_avis": [
     {
-     "auteur": "Ghislaine Aissani",
+     "auteur": "Sophie Esteves Da Costa",
+     "note": 5,
+     "texte": "(Translated by Google) Very professional and welcoming, and they didn't hesitate to answer all our questions. The reception was excellent, and the follow-up was impeccable. They are very professional and attentive to the customer. I recommend them to anyone looking for a good optician.\n\n(Original)\nTrès professionnel accueillant et n'hésite pas à à répondre à toutes nos questions. Accueil très très bien et suivi rien à dire.  Ils sont très professionnel et à l'écoute du client. Je recommande à toute personne cherchant un bon opticien.",
+     "date": "2026-10-07"
+    },
+    {
+     "auteur": "Pamela Pasquier",
+     "note": 5,
+     "texte": "(Translated by Google) Excellent service, with a great sense of humor. We highly recommend them.\n\n(Original)\nTrès bonne prise en charge,  avec beaucoup d'humour  . Nous recommandons  vivement",
+     "date": "2026-10-07"
+    },
+    {
+     "auteur": "anonymous",
      "note": 5,
      "texte": "(Translated by Google) Excellent lenses. Pleasant staff. The ophthalmologist's office is functional and very well designed. Impeccable result.\n\n(Original)\nTrès bons verres. Équipe agréable.  Cabine ophtalmologue opérationnelle et très bien réalisé. Résultat impeccable.",
      "date": "2026-10-06"
@@ -63,18 +75,6 @@
      "note": 5,
      "texte": "Super accueil, personnel de l’établissement très agréable et sympathique. Je recommande fortement cet enseigne.\n\n(Translated by Google)\nExcellent welcome, the staff at the establishment were very pleasant and friendly. I highly recommend this establishment.",
      "date": "2026-10-03"
-    },
-    {
-     "auteur": "Marine Laborie",
-     "note": 5,
-     "texte": "Des personnes très à l'écoute de ce qu'on leur demande ! Je suis très contente d'être passée par chez vous pour ma petite fille de 15 mois !\nMerci\n\n(Translated by Google)\nThe staff were very attentive to our needs! I'm so glad I chose you for my 15-month-old daughter!\n\nThank you",
-     "date": "2026-09-29"
-    },
-    {
-     "auteur": "Eric JOLIEY",
-     "note": 5,
-     "texte": "Très bon accueil. Et ça fait plaisir!\n\n(Translated by Google)\nA very warm welcome. And that's a pleasure!",
-     "date": "2026-09-28"
     }
    ]
   },
@@ -275,6 +275,12 @@
    "ville": "GLANDON",
    "derniers_avis": [
     {
+     "auteur": "Corinne LAUVIE",
+     "note": 5,
+     "texte": "(Translated by Google) Very welcoming and helpful! Top-notch frame repair. Thank you!\n\n(Original)\nTrès accueillant et serviable!! Réparation de montures au top. Merci",
+     "date": "2026-10-07"
+    },
+    {
      "auteur": "Baptiste Durand",
      "note": 5,
      "texte": "Très professionnel et bien conseiller\n\n(Translated by Google)\nVery professional and good advisor",
@@ -297,12 +303,6 @@
      "note": 5,
      "texte": "Très bon accueil par un monsieur expérimenté, a compris mon urgence (lunettes cassées en 2), j'ai pu obtenir les nouvelles en 3 jours. A pris également le temps pour l'examen des yeux qui n'est pas forcément évident selon nos propres difficultés de vision.\n\n(Translated by Google)\nI received a very warm welcome from an experienced gentleman who understood my urgent situation (my glasses were broken in two), and I was able to get replacements within three days. He also took the time to examine my eyes, which isn't always straightforward depending on my individual vision problems.",
      "date": "2026-09-09"
-    },
-    {
-     "auteur": "Alain Ponthier",
-     "note": 5,
-     "texte": "(Translated by Google) Highly competent staff, store recommended\n\n(Original)\nPersonnel très compétent magasin a conseillé",
-     "date": "2026-08-13"
     }
    ]
   },
@@ -524,7 +524,33 @@
    "name": "MARSAC",
    "enseigne": "OPTIC 2000",
    "ville": "MARSAC-SUR-L'ISLE",
-   "derniers_avis": []
+   "derniers_avis": [
+    {
+     "auteur": "marie-géraldine DASI",
+     "note": 5,
+     "texte": "Nous avons été très bien accueillis. Madame Chazotte a pris tout le temps nécessaire pour réaliser un examen de vue complet et approfondi. Elle a su nous conseiller avec beaucoup de professionnalisme dans le choix des montures, en tenant …"
+    },
+    {
+     "auteur": "Romain Delpit",
+     "note": 5,
+     "texte": "Un immense merci à Lola d’Optic 2000 pour son accueil, son professionnalisme et sa gentillesse. J’ai été parfaitement conseillé du début à la fin, avec beaucoup d’écoute et de patience. Le choix de montures est varié et de qualité, elle …"
+    },
+    {
+     "auteur": "Nicolas PEUCH",
+     "note": 5,
+     "texte": "Accueil chaleureux et écoute attentive de nos demandes et souhaits.  Choisir une paire de lunettes n’est pas toujours évident, mais Marie-Charlotte nous a prodigué d’excellents conseils."
+    },
+    {
+     "auteur": "Cecile Jouanneau",
+     "note": 5,
+     "texte": "Juste prise en charge parfaite ! Et tellement contente du résultat!  Merci à Marie Charlotte pour son écoute et tout les bons conseils.\nMerci d'avoir pu trouver des lunettes de piscine à ma vue à prix très abordable."
+    },
+    {
+     "auteur": "Laurent INNOCENT",
+     "note": 5,
+     "texte": "Bonjour a tous je vous conseil fortement de vous avancez vers cette magnifique équipe. Ils sont éléments exceptionnels. Ils sont non pas que pour l’as lunettes et ils sont aussi a l’écoute. Je reste fidèle a eux. Depuis mon besoin j’ai …"
+    }
+   ]
   },
   {
    "code": "24",
@@ -858,6 +884,12 @@
    "ville": "RIBERAC",
    "derniers_avis": [
     {
+     "auteur": "Valérie Tournier",
+     "note": 5,
+     "texte": "(Translated by Google) Very welcoming and warm.\nAttentive and very professional.\nVery happy.\n\n(Original)\nTrès accueillant et chaleureux\nA l écoute et très professionnel\nTrès contente",
+     "date": "2026-10-07"
+    },
+    {
      "auteur": "chonis nadine",
      "note": 4,
      "texte": "Bon accueil , horaires d’ouverture entre 14het 14h .Professionnel de qualité\n\n(Translated by Google)\nFriendly welcome, opening hours between 2pm and 2pm. High-quality professional",
@@ -880,12 +912,6 @@
      "note": 5,
      "texte": "(Translated by Google) Very satisfied with this optician: sufficient choice, loan of several frames, vision checks, very pleasant and conscientious staff.\n\n(Original)\nTrès satisfaite de cet opticien : choix  suffisant, prêt de plusieurs montures , contrôles de la vision ,  personnel très agréable et consciencieux .",
      "date": "2026-07-02"
-    },
-    {
-     "auteur": "nick lowrey",
-     "note": 5,
-     "texte": "Tres gentil et très accueillant\n\n(Translated by Google)\nVery kind and very welcoming",
-     "date": "2026-06-20"
     }
    ]
   },
@@ -1124,6 +1150,12 @@
    "ville": "SAINT-YRIEIX-LA-PERCHE",
    "derniers_avis": [
     {
+     "auteur": "Christophe Dubois",
+     "note": 3,
+     "texte": "(Translated by Google) I haven't found my choice\n\n(Original)\nJe n'ai pas trouvé mon choix",
+     "date": "2026-10-07"
+    },
+    {
      "auteur": "ARLETTE JUQUEL",
      "note": 5,
      "texte": "Bonjour très bien très aimable ils font tous pour vous aider merci.\n\n(Translated by Google)\nHello, they are very good and very friendly, they do everything to help you, thank you.",
@@ -1146,12 +1178,6 @@
      "note": 5,
      "texte": "Très bel accueil et très belles lunettes oomade !\nDeux paires de couleurs différentes pour mon mari et moi. Enchantés du résultat. Très bonne idée pour se faire plaisir à un prix très convenable.\nNadine et Christian\n\n(Translated by Google)\nA very warm welcome and beautiful Oomade glasses!\nTwo pairs in different colors for my husband and me. We're delighted with the result. A great idea to treat yourself at a very reasonable price.\nNadine and Christian",
      "date": "2026-05-23"
-    },
-    {
-     "auteur": "Leolily B.",
-     "note": 5,
-     "texte": "Merci à toute l'équipe qui a été formidable de A a Z.\nUn petit supplément XXL pour Jeanne qui a été très professionnelle et toujours avec le sourire.\nPassez de bonnes fêtes à toute l'équipe d'Atol STY\n\n(Translated by Google)\nThank you to the entire team who were fantastic from start to finish. A special shout-out to Jeanne who was incredibly professional and always had a smile on her face.\nHappy holidays to the whole Atol STY team!",
-     "date": "2025-12-06"
     }
    ]
   },
@@ -1985,9 +2011,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 1,
-    "soumis": 2,
-    "valides": 1,
+    "demandes": 2,
+    "soumis": 3,
+    "valides": 2,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -2252,9 +2278,9 @@
     "semaine": "2026-S41",
     "debut": "2026-10-05",
     "fin": "2026-10-11",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.7,
-    "avis_cumules": 26,
+    "avis_cumules": 27,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -3077,10 +3103,10 @@
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 43,
-    "faces": 1,
+    "faces": 5,
     "branches": 0,
     "goodies": 0,
-    "impressions": 1,
+    "impressions": 5,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -3629,9 +3655,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -4444,9 +4470,9 @@
     "semaine": "2026-S41",
     "debut": "2026-10-05",
     "fin": "2026-10-11",
-    "avis_nouveaux": 0,
-    "note": 4.9,
-    "avis_cumules": 44,
+    "avis_nouveaux": 1,
+    "note": 4.8,
+    "avis_cumules": 45,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -4727,7 +4753,7 @@
     "impressions": 0,
     "demandes": 1,
     "soumis": 1,
-    "valides": 1,
+    "valides": 2,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -4992,9 +5018,9 @@
     "semaine": "2026-S41",
     "debut": "2026-10-05",
     "fin": "2026-10-11",
-    "avis_nouveaux": 0,
-    "note": 4.5,
-    "avis_cumules": 55,
+    "avis_nouveaux": 1,
+    "note": 4.6,
+    "avis_cumules": 56,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -5275,7 +5301,7 @@
     "impressions": null,
     "demandes": 2,
     "soumis": 2,
-    "valides": 2,
+    "valides": 3,
     "sources": "avis + lyleoo"
    }
   ],
@@ -6091,13 +6117,13 @@
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 130,
-    "faces": 0,
+    "faces": 2,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 2,
     "demandes": 1,
     "soumis": 1,
-    "valides": 0,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -7191,9 +7217,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 1,
-    "demandes": 1,
-    "soumis": 1,
-    "valides": 5,
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 6,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -7739,9 +7765,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 1,
-    "soumis": 1,
-    "valides": 1,
+    "demandes": 2,
+    "soumis": 3,
+    "valides": 3,
     "sources": "avis + lyleoo"
    }
   ],
@@ -9102,9 +9128,9 @@
     "semaine": "2026-S41",
     "debut": "2026-10-05",
     "fin": "2026-10-11",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 150,
+    "avis_cumules": 151,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -9931,8 +9957,8 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 0,
     "sources": "avis + lyleoo + oomade"
    }
@@ -10205,9 +10231,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 2,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -10472,9 +10498,9 @@
     "semaine": "2026-S41",
     "debut": "2026-10-05",
     "fin": "2026-10-11",
-    "avis_nouveaux": 2,
+    "avis_nouveaux": 3,
     "note": 4.9,
-    "avis_cumules": 230,
+    "avis_cumules": 231,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -10746,9 +10772,9 @@
     "semaine": "2026-S41",
     "debut": "2026-10-05",
     "fin": "2026-10-11",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 2,
     "note": 4.8,
-    "avis_cumules": 165,
+    "avis_cumules": 167,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -11118,13 +11144,13 @@
     "semaine": "2026-S41",
     "debut": "2026-10-05",
     "fin": "2026-10-11",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 2,
     "note": 4.9,
-    "avis_cumules": 132,
+    "avis_cumules": 133,
     "faces": 0,
     "branches": 0,
-    "goodies": 0,
-    "impressions": 0,
+    "goodies": 2,
+    "impressions": 2,
     "demandes": null,
     "soumis": null,
     "valides": null,
@@ -11216,9 +11242,9 @@
     "semaine": "2026-S41",
     "debut": "2026-10-05",
     "fin": "2026-10-11",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 3,
     "note": 4.9,
-    "avis_cumules": 171,
+    "avis_cumules": 173,
     "faces": null,
     "branches": null,
     "goodies": null,
