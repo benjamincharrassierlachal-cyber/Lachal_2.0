@@ -65,18 +65,40 @@ function ligne(ctx, d, couleur) {
 // Grande carte chiffre : compteur anime + barres N-1 / N.
 function carteHero(ctx, d, couleur) {
   return `<div class="st-hero-card" style="--tc:${couleur}">
-      <div class="st-hero-label">${esc(d.k.label)}</div>
+      <div class="st-hero-label">${esc(d.k.label)}</div>${d.note ? `<div class="st-hero-note">${esc(d.note)}</div>` : ""}
       <div class="st-hero-val" data-count="${d.v}" data-fmt="${d.k.fmt}">${fmtValue(d.k.fmt, d.v)}</div>
       <div class="st-hero-chips">${chipEvol(d.k, d.e)}${chipRef(ctx, d)}</div>
       ${pairBars({ cur: d.v, prev: d.prev, fmt: d.k.fmt, color: couleur })}
     </div>`;
 }
 
+// CA de la carte principale : le CA comparable de la table "CA Compta"
+// (magasin ou groupe, depuis le 1er janvier). Un collaborateur n'a pas de CA
+// comptable : on garde alors son CA de l'export vendeurs.
+function heroCA(ctx) {
+  const c = ctx.ent.compta;
+  if (c && c.comp !== null && c.comp !== undefined) {
+    const e = c.comp_evol === undefined ? null : c.comp_evol;
+    const fin = ctx.payload.periode && ctx.payload.periode.compta_fin;
+    const k = { ...CAT.byKey.CA, label: "CA comparable" };
+    return { k, v: c.comp, e, r: null, prev: valeurN1(k, c.comp, e), note: fin ? `CA comptable, du 1er janv. au ${fmtDateFr(fin)}` : "CA comptable" };
+  }
+  return kv(ctx, "CA");
+}
+
+// Nombre de ventes de la carte principale : les ventes d'equipements (1er).
+function heroVentes(ctx) {
+  const d = kv(ctx, "Nb_Eqt1");
+  return d && { ...d, k: { ...d.k, label: "Nombre de ventes d'équipements" }, note: "1er équipement par dossier" };
+}
+
 // ------------------------------------------------------------- sections
 function sectionActivite(ctx, g, used) {
   const out = [];
-  const hero = ["CA", "Nb_Total"].map((key) => kv(ctx, key)).filter(Boolean);
-  hero.forEach((d) => used.add(d.k.key));
+  const hero = [heroCA(ctx), heroVentes(ctx)].filter(Boolean);
+  // Nb_Total (toutes ventes confondues) n'est plus mis en avant : il reste
+  // visible dans le donut "Nature des ventes" par ses composantes.
+  ["CA", "Nb_Eqt1", "Nb_Total"].forEach((key) => used.add(key));
   if (hero.length) out.push(`<div class="st-hero-pair">${hero.map((d, i) => carteHero(ctx, d, i ? "var(--c-examens)" : "var(--c-avis)")).join("")}</div>`);
 
   const nature = [["Nb_Total_Eqt", "Équipements", "var(--c-avis)"], ["Nb_Contacto", "Lentilles", "var(--c-impr)"], ["Nb_Vente_Comptoir", "Comptoir", "var(--c-examens)"]]

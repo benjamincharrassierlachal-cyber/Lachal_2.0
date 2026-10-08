@@ -334,6 +334,7 @@ body {
   border: 1px solid color-mix(in srgb, var(--tc) 38%, var(--surface-3)); border-top: 3px solid var(--tc);
 }
 .st-hero-label { font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-dim); }
+.st-hero-note { font-size: 10px; color: var(--text-faint); margin-top: 2px; }
 .st-hero-val { font-family: "Space Mono", monospace; font-size: 21px; font-weight: 800; color: var(--tc); margin: 4px 0 6px; white-space: nowrap; }
 .st-hero-sub { font-family: "Space Mono", monospace; font-size: 13px; color: var(--text-dim); margin-bottom: 4px; }
 .st-hero-chips { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; min-height: 4px; }
