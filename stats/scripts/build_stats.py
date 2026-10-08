@@ -387,16 +387,6 @@ def sel_fichier(sel_secret: str, nom: str) -> bytes:
     return hashlib.sha256(f"{sel_secret}|{nom}".encode("utf-8")).digest()[:16]
 
 
-def verificateur_admin(code: str, sel_secret: str) -> dict:
-    """Empreinte salee et lente (PBKDF2) du mot de passe admin, publiee dans
-    stats/data/admin_check.json : permet a l'appli Suivi & Trophees de verifier
-    le MEME mot de passe sans qu'il soit ecrit nulle part en clair. Il se
-    retrouve donc a un seul endroit (la ligne ADMIN de acces_stats.csv)."""
-    sel = hashlib.sha256(f"{sel_secret}|admin-check".encode("utf-8")).digest()[:16]
-    h = hashlib.pbkdf2_hmac("sha256", normaliser_code(code).encode("utf-8"), sel, PBKDF2_ITER, dklen=32)
-    return {"v": 1, "kdf": "PBKDF2-SHA256", "iter": PBKDF2_ITER, "salt": b64(sel), "hash": b64(h)}
-
-
 def chiffrer(obj, code: str, sel: bytes) -> dict:
     brut = gzip.compress(json.dumps(obj, ensure_ascii=False, separators=(",", ":")).encode("utf-8"), 9)
     iv = os.urandom(12)
@@ -618,11 +608,7 @@ def main(argv=None) -> int:
             json.dumps(chiffrer(payload, acces["magasins"][m["code"]], sel_fichier(acces["sel"], nom))), encoding="utf-8")
         ecrits.add(nom)
 
-    (sortie / "admin_check.json").write_text(
-        json.dumps(verificateur_admin(acces["admin"], acces["sel"])), encoding="utf-8")
-    ecrits.add("admin_check.json")
-
-    manifest = {"v": 1, "genere": commun["genere"],
+    manifest ={"v": 1, "genere": commun["genere"],
                 "magasins": [{"code": m["code"], "nom": m["nom"], "ville": m["ville"], "enseigne": m["enseigne"],
                               "kind": m["kind"]} for m in magasins]}
     (sortie / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")

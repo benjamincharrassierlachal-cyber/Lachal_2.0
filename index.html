@@ -52,12 +52,43 @@
       background: var(--hc); color: #0a0c11;
     }
     .hub-lock { font-size: 11px; color: var(--text-dim); }
+
+    /* connexion */
+    .hub-login { width: 100%; max-width: 340px; display: flex; flex-direction: column; align-items: center; }
+    .hub-login .ob-select { margin-bottom: 14px; }
+    .hub-pwd { position: relative; width: 100%; }
+    .hub-pwd .ob-select { padding-right: 46px; }
+    .hub-eye {
+      position: absolute; right: 8px; top: 8px; width: 40px; height: 40px; background: none; border: none;
+      color: var(--text-dim); display: grid; place-items: center;
+    }
+    .hub-check { display: flex; align-items: center; gap: 8px; color: var(--text-dim); font-size: 13px; margin: -2px 0 16px; }
+    .hub-check input { accent-color: var(--c-avis); width: 16px; height: 16px; }
+    .hub-lockbox {
+      width: 100%; text-align: center; margin-bottom: 14px; padding: 14px 16px; background: var(--surface);
+      border: 1.5px solid var(--surface-3); border-radius: var(--radius-sm);
+    }
+    .hub-lockbox span { display: block; font-size: 17px; font-weight: 700; }
+    .hub-lockbox small { display: block; margin-top: 3px; font-size: 11.5px; color: var(--text-dim); }
+    .hub-user {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 12px;
+      margin: -14px 0 24px; font-size: 13px; color: var(--text-dim); text-align: center;
+    }
+    .hub-user b { color: var(--text); }
+    .hub-user button {
+      background: var(--surface); border: 1px solid var(--surface-3); color: var(--text-dim);
+      border-radius: 999px; padding: 5px 12px; font-size: 11.5px; font-weight: 600;
+    }
+    .hub-msg { color: var(--text-dim); text-align: center; max-width: 320px; line-height: 1.5; }
   </style>
 </head>
 <body>
   <main class="hub">
     <div class="hub-brand">Lachal 2.0</div>
-    <p class="hub-sub">Choisissez une application</p>
+    <p class="hub-sub" id="hub-sub">Chargement…</p>
+    <div id="auth" class="hub-login" hidden></div>
+    <div id="choix" hidden>
+    <div class="hub-user" id="hub-user"></div>
     <div class="hub-grid">
       <a class="hub-card" href="sante.html">
         <div class="hub-logo">
@@ -87,9 +118,10 @@
         <div class="hub-name">Stats</div>
         <div class="hub-desc">Les ventes par magasin et par collaborateur, avec le curseur de santé.</div>
         <span class="hub-go">Entrer</span>
-        <span class="hub-lock">🔒 Accès protégé par code</span>
       </a>
     </div>
+    </div>
   </main>
+  <script type="module" src="js/launcher.js"></script>
 </body>
 </html>

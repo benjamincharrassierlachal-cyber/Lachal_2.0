@@ -1,13 +1,16 @@
 import { loadCatalog, indexOf, fmtDateFr, esc } from "./catalog.js";
-import { deriverCle, dechiffrer } from "./crypto.js";
 import { buildContext } from "./model.js";
 import { icon } from "./icons.js";
-import { renderLogin, renderHome, renderTeam, renderEvolution, renderSettings } from "./views.js";
+import { renderHome, renderTeam, renderEvolution, renderSettings } from "./views.js";
 import { renderIndicators } from "./chiffres.js";
+import {
+  chargerManifest, verifierSession, deconnecter as deconnecterLachal, deverrouiller as deverrouillerLachal, magasinVerrouille as verrouLachal,
+} from "../../js/auth.js";
 
 const app = document.getElementById("app");
 
-// ---------------------------------------------------------------- stockage
+// Preferences d'affichage propres a cette appli (theme, forme des anneaux).
+// La connexion, elle, est commune a toute l'appli : voir js/auth.js.
 const KEY = "statsApp.v1";
 const lire = () => { try { return JSON.parse(localStorage.getItem(KEY) || "{}"); } catch { return {}; } };
 const ecrire = (o) => { try { localStorage.setItem(KEY, JSON.stringify(o)); } catch { /* navigation privee */ } };
@@ -18,28 +21,6 @@ function setPref(k, v) {
   ecrire({ ...lire(), prefs });
 }
 
-// Session : cle derivee memorisee sur l'appareil (localStorage) ou, si
-// "Memoriser" est decoche, seulement pour l'onglet (sessionStorage).
-function lireSession() {
-  try {
-    const tmp = JSON.parse(sessionStorage.getItem("statsApp.tmp") || "null");
-    return tmp || lire().session || null;
-  } catch { return lire().session || null; }
-}
-function sauverSession(s, durable) {
-  if (durable) {
-    ecrire({ ...lire(), session: s });
-  } else {
-    try { sessionStorage.setItem("statsApp.tmp", JSON.stringify(s)); } catch { /* rien */ }
-  }
-}
-function oublierCle() {
-  const tout = lire();
-  if (tout.session) tout.session = { role: tout.session.role, code: tout.session.code };
-  ecrire(tout);
-  try { sessionStorage.removeItem("statsApp.tmp"); } catch { /* rien */ }
-}
-
 // ------------------------------------------------------------------- etat
 const S = { manifest: null, payload: null, role: null, nav: { store: null, seller: null }, sort: "score", zone: null };
 
@@ -47,69 +28,26 @@ function applyTheme() {
   document.documentElement.setAttribute("data-theme", prefs.theme);
 }
 
-async function chargerBlob(role, code) {
-  const url = role === "admin" ? "data/admin.json" : `data/s_${code}.json`;
-  const r = await fetch(`${url}?v=${encodeURIComponent(S.manifest.genere)}`, { cache: "no-cache" });
-  if (!r.ok) throw new Error("Données introuvables (" + r.status + ")");
-  return r.json();
-}
-
-async function ouvrir(role, code, cleB64, blob) {
-  const b = blob || (await chargerBlob(role, code));
-  const payload = await dechiffrer(b, cleB64);
-  indexOf(payload);
-  S.payload = payload;
-  S.role = role;
-  S.nav = { store: role === "magasin" ? payload.magasins[0].code : null, seller: null };
-  S.sort = "score";
-  S.zone = null;
-}
-
-async function tenterConnexion({ role, code, secret, remember }) {
-  let blob;
-  try {
-    blob = await chargerBlob(role, code);
-  } catch (e) {
-    return { ok: false, msg: "Impossible de charger les données. Vérifiez votre connexion." };
-  }
-  try {
-    const cle = await deriverCle(secret, blob);
-    await ouvrir(role, code, cle, blob);
-    sauverSession({ role, code, cle }, remember);
-    // Appareil affecte a ce magasin : plus de changement de magasin possible
-    // (hors admin) ; l'admin le deverrouille depuis les Reglages.
-    if (role === "magasin" && remember) setPref("lockedStore", code);
-    demarrer();
-    return { ok: true };
-  } catch {
-    return { ok: false, msg: "Code incorrect." };
-  }
-}
-
 function magasinVerrouille() {
-  if (!prefs.lockedStore) return null;
-  const m = S.manifest.magasins.find((x) => x.code === prefs.lockedStore);
+  const code = verrouLachal();
+  const m = code && S.manifest.magasins.find((x) => x.code === code);
   return m ? { code: m.code, nom: m.nom } : null;
 }
 
-function afficherLogin(prefill, erreur) {
-  app.innerHTML = "";
-  renderLogin(app, S.manifest, {
-    role: prefill && prefill.role, code: prefill && prefill.code, error: erreur, locked: magasinVerrouille(),
-  }, tenterConnexion);
+// Connexion et verrouillage se gerent sur la page d'accueil.
+function versAccueil() {
+  location.href = "../";
 }
 
 function deconnecter() {
-  oublierCle();
-  S.payload = null;
-  location.hash = "";
-  afficherLogin(lireSession());
+  deconnecterLachal();
+  versAccueil();
 }
 
 // Admin uniquement (la page Reglages n'offre ce bouton qu'a lui).
 function deverrouiller() {
   if (S.role !== "admin") return;
-  setPref("lockedStore", null);
+  deverrouillerLachal();
   deconnecter();
 }
 
@@ -253,27 +191,21 @@ async function boot() {
   }
   try {
     await loadCatalog();
-    const r = await fetch("data/manifest.json", { cache: "no-cache" });
-    if (!r.ok) throw new Error("manifest introuvable (" + r.status + ")");
-    S.manifest = await r.json();
+    S.manifest = await chargerManifest();
   } catch (e) {
     app.innerHTML = `<div style="padding:40px 24px;color:var(--text-dim)"><h2 style="color:var(--text)">Données indisponibles</h2><p style="margin-top:10px">${esc(e.message)}</p></div>`;
     return;
   }
-  const s = lireSession();
-  if (s && s.cle) {
-    try {
-      await ouvrir(s.role, s.code, s.cle);
-      demarrer();
-      return;
-    } catch {
-      // cle obsolete (code change) : on redemande le code
-      oublierCle();
-      afficherLogin(s, "Le code d'accès a changé : saisissez-le à nouveau.");
-      return;
-    }
+  const s = await verifierSession(S.manifest);
+  if (!s) {
+    versAccueil(); // pas (ou plus) connecte : on se connecte sur l'accueil
+    return;
   }
-  afficherLogin(s);
+  indexOf(s.payload);
+  S.payload = s.payload;
+  S.role = s.role;
+  S.nav = { store: s.role === "magasin" ? s.payload.magasins[0].code : null, seller: null };
+  demarrer();
 }
 
 boot();

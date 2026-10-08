@@ -13,8 +13,8 @@ import {
 import { settings, setSetting, recordVisit, claimedBadges, claimBadge } from "./state.js";
 import { icon } from "./icons.js";
 import { buildBadges } from "./badges.js";
+import { chargerManifest, verifierSession, deconnecter as deconnecterLachal } from "./auth.js";
 import {
-  renderOnboarding,
   renderRewards,
   renderDashboard,
   renderAdmin,
@@ -56,17 +56,22 @@ function lockAdmin() {
   }
 }
 
-// Deconnexion explicite (bouton "Deconnexion" des Reglages) : si on etait
-// sur la vue admin elle-meme, plus rien a y montrer sans mot de passe -> on
-// repart sur le choix du magasin. Depuis un magasin (juste le raccourci
-// "Admin" affiche), on reste sur place, le raccourci disparait simplement.
-function logoutAdmin(data) {
+// Role de la connexion unique (page d'accueil) : "admin" ou "magasin".
+let roleSession = null;
+
+// Deconnexion explicite (bouton "Deconnexion" des Reglages, admin seulement) :
+// on ferme la session Lachal et on revient sur l'accueil.
+function logoutAdmin() {
   lockAdmin();
-  if (isAdmin()) {
-    showOnboarding(data, () => checkRewards(data));
-  } else {
-    enterDashboard(data);
-  }
+  deconnecterLachal();
+  location.href = "./";
+}
+
+// L'admin quitte la fiche d'un magasin pour revenir a la vue d'ensemble.
+function retourAdmin(data) {
+  setSetting("storeCode", ADMIN_CODE);
+  if (location.hash) location.hash = "";
+  checkRewards(data);
 }
 
 let adminSort = "score"; // score | name | trophies
@@ -256,31 +261,36 @@ function showWeekPicker(data) {
   });
 }
 
-function showOnboarding(data, onDone) {
-  app.innerHTML = "";
-  renderOnboarding(app, data, (code) => {
-    if (code === ADMIN_CODE) unlockAdmin();
-    setSetting("storeCode", code);
-    // Le hash peut pointer sur "settings"/"trophies" si on arrive ici
-    // depuis les Reglages : on repart toujours sur l'accueil du nouveau
-    // magasin/espace, pas sur la page qu'on regardait avant de changer.
-    if (location.hash) location.hash = "";
-    onDone();
-  });
-}
-
-function boot(data) {
+// Plus d'ecran de choix de magasin ici : la connexion (code magasin ou admin)
+// se fait une seule fois sur la page d'accueil, qui decide du magasin.
+async function boot(data) {
   applyTheme();
   recordVisit();
 
-  const enterApp = () => checkRewards(data);
-  const validStore = settings.storeCode === ADMIN_CODE || data.stores.some((s) => s.code === settings.storeCode);
-
-  if (!settings.storeCode || !validStore) {
-    showOnboarding(data, enterApp);
-  } else {
-    enterApp();
+  let session = null;
+  try {
+    session = await verifierSession(await chargerManifest());
+  } catch {
+    session = null;
   }
+  if (!session) {
+    location.replace("./");
+    return;
+  }
+  roleSession = session.role;
+  if (session.role === "admin") {
+    unlockAdmin();
+    // on repart de la vue d'ensemble a chaque entree depuis l'accueil
+    if (!isAdmin()) setSetting("storeCode", ADMIN_CODE);
+  } else {
+    lockAdmin();
+    if (!data.stores.some((s) => s.code === session.code)) {
+      location.replace("./");
+      return;
+    }
+    setSetting("storeCode", session.code); // le magasin ne se change pas
+  }
+  checkRewards(data);
 }
 
 let hashListenerAttached = false;
@@ -359,12 +369,12 @@ function render(data) {
       : weekTitle(adminModel.weekLabel) + (adminWeek ? " (consultee)" : "");
 
     if (route.name === "settings") {
-      renderSettings(view, { ...data, currentStoreName: "Espace admin", isAdmin: true, adminUnlocked: isAdminUnlocked() }, settings, {
+      renderSettings(view, { ...data, currentStoreName: "Espace admin", isAdmin: true, adminUnlocked: isAdminUnlocked(), role: roleSession }, settings, {
         setShape: (s) => { setSetting("shape", s); render(data); },
         setTheme: (t) => { setSetting("theme", t); applyTheme(); render(data); },
-        changeStore: () => showOnboarding(data, () => checkRewards(data)),
+        changeStore: () => retourAdmin(data),
         save: () => nav("dashboard"),
-        logout: () => logoutAdmin(data),
+        logout: () => logoutAdmin(),
       });
     } else {
       const rows = adminModel.perStore.map((model) => {
@@ -422,12 +432,12 @@ function render(data) {
   } else if (route.name === "trophies") {
     renderTrophies(view, model, settings);
   } else if (route.name === "settings") {
-    renderSettings(view, { ...data, currentStoreName: model.store?.name, adminUnlocked: isAdminUnlocked() }, settings, {
+    renderSettings(view, { ...data, currentStoreName: model.store?.name, adminUnlocked: isAdminUnlocked(), role: roleSession }, settings, {
       setShape: (s) => { setSetting("shape", s); render(data); },
       setTheme: (t) => { setSetting("theme", t); applyTheme(); render(data); },
-      changeStore: () => showOnboarding(data, () => checkRewards(data)),
+      changeStore: () => retourAdmin(data),
       save: () => nav("dashboard"),
-      logout: () => logoutAdmin(data),
+      logout: () => logoutAdmin(),
     });
   }
 }

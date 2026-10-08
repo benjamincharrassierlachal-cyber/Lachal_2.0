@@ -1,28 +1,7 @@
 import { ringClusterSVG, animateRings } from "./shapes.js";
 import { icon } from "./icons.js";
 import { buildBadges, bestCurrentStreaks } from "./badges.js";
-import { ADMIN_CODE, buildTotals } from "./data.js";
-
-// Le mot de passe admin n'est ecrit nulle part dans le code (le depot est
-// public) : on le verifie contre une empreinte lente et salee, publiee par
-// stats/scripts/build_stats.py. C'est le MEME mot de passe que l'appli Stats,
-// saisi a un seul endroit (ligne ADMIN de acces_stats.csv).
-const b64Bytes = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
-
-async function verifierMotDePasseAdmin(saisie) {
-  try {
-    const r = await fetch("stats/data/admin_check.json", { cache: "no-cache" });
-    if (!r.ok) return null; // verificateur pas encore publie
-    const c = await r.json();
-    const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(saisie.trim()), "PBKDF2", false, ["deriveBits"]);
-    const bits = new Uint8Array(await crypto.subtle.deriveBits(
-      { name: "PBKDF2", hash: "SHA-256", salt: b64Bytes(c.salt), iterations: c.iter }, base, 256));
-    const attendu = b64Bytes(c.hash);
-    return bits.length === attendu.length && bits.every((x, i) => x === attendu[i]);
-  } catch {
-    return null;
-  }
-}
+import { buildTotals } from "./data.js";
 
 function weekLabel(semaine) {
   if (!semaine) return "";
@@ -97,79 +76,6 @@ function statusChip(status) {
   if (status === "met") return `<span class="chip met">${icon("check", 12)}</span>`;
   if (status === "miss") return `<span class="chip miss">-</span>`;
   return "";
-}
-
-// ---------------------------------------------------------------------
-export function renderOnboarding(root, data, onPick) {
-  const wrap = document.createElement("div");
-  wrap.className = "onboarding onboarding--centered";
-  const sorted = data.stores.slice().sort((a, b) => a.name.localeCompare(b.name));
-  wrap.innerHTML = `
-    <div class="ob-center" id="ob-step-select">
-      <div class="ob-brand">Lachal 2.0</div>
-      <p class="sub">Choisissez votre magasin : cet appareil s'en souviendra.</p>
-      <select class="ob-select" id="ob-select">
-        <option value="" disabled selected>Choisir un magasin</option>
-        ${sorted.map((s) => `<option value="${s.code}">${s.name} — ${s.ville}</option>`).join("")}
-        <option value="${ADMIN_CODE}">🔒 Espace admin</option>
-      </select>
-      <button class="ob-validate" id="ob-validate" disabled>Valider</button>
-    </div>
-    <div class="ob-center" id="ob-step-password" hidden>
-      <div class="ob-brand">🔒 Espace admin</div>
-      <p class="sub">Mot de passe requis.</p>
-      <input type="password" class="ob-select" id="ob-password" placeholder="Mot de passe" autocomplete="off" />
-      <p class="ob-error" id="ob-error" hidden>Mot de passe incorrect.</p>
-      <button class="ob-validate" id="ob-password-go">Entrer</button>
-      <button class="ob-back-link" id="ob-password-cancel">← Retour</button>
-    </div>
-  `;
-  root.appendChild(wrap);
-
-  const stepSelect = wrap.querySelector("#ob-step-select");
-  const stepPassword = wrap.querySelector("#ob-step-password");
-  const select = wrap.querySelector("#ob-select");
-  const validate = wrap.querySelector("#ob-validate");
-  const pwdInput = wrap.querySelector("#ob-password");
-  const pwdError = wrap.querySelector("#ob-error");
-
-  select.addEventListener("change", () => {
-    validate.disabled = !select.value;
-  });
-  validate.addEventListener("click", () => {
-    if (!select.value) return;
-    if (select.value === ADMIN_CODE) {
-      stepSelect.hidden = true;
-      stepPassword.hidden = false;
-      pwdInput.focus();
-    } else {
-      onPick(select.value);
-    }
-  });
-
-  const tryPassword = async () => {
-    const goBtn = wrap.querySelector("#ob-password-go");
-    goBtn.disabled = true;
-    const ok = await verifierMotDePasseAdmin(pwdInput.value);
-    goBtn.disabled = false;
-    if (ok) {
-      onPick(ADMIN_CODE);
-    } else {
-      pwdError.textContent = ok === null ? "Vérification impossible pour le moment." : "Mot de passe incorrect.";
-      pwdError.hidden = false;
-      pwdInput.value = "";
-      pwdInput.focus();
-    }
-  };
-  wrap.querySelector("#ob-password-go").addEventListener("click", tryPassword);
-  pwdInput.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") tryPassword();
-  });
-  wrap.querySelector("#ob-password-cancel").addEventListener("click", () => {
-    stepPassword.hidden = true;
-    stepSelect.hidden = false;
-    pwdError.hidden = true;
-  });
 }
 
 // ---------------------------------------------------------------------
@@ -678,10 +584,15 @@ export function renderSettings(root, data, settings, cb) {
     </div>
     <div class="setting-block">
       <div class="label">Magasin suivi</div>
+      ${data.role === "admin" ? `
       <button class="card" style="width:100%;text-align:left;border:none;" data-change-store>
         <strong>${data.currentStoreName || ""}</strong>
-        <div style="color:var(--text-dim);font-size:12.5px;margin-top:2px;">Changer de magasin</div>
-      </button>
+        <div style="color:var(--text-dim);font-size:12.5px;margin-top:2px;">${data.isAdmin ? "Espace admin" : "Revenir à la vue d'ensemble (admin)"}</div>
+      </button>` : `
+      <div class="card" style="width:100%;text-align:left;">
+        <strong>${data.currentStoreName || ""}</strong>
+        <div style="color:var(--text-dim);font-size:12.5px;margin-top:2px;">Cet appareil est réservé à ce magasin.</div>
+      </div>`}
     </div>
     ${data.isAdmin ? `
     <div class="setting-block">
@@ -715,7 +626,7 @@ export function renderSettings(root, data, settings, cb) {
   wrap.querySelectorAll("[data-theme]").forEach((b) =>
     b.addEventListener("click", () => cb.setTheme(b.dataset.theme))
   );
-  wrap.querySelector("[data-change-store]").addEventListener("click", cb.changeStore);
+  wrap.querySelector("[data-change-store]")?.addEventListener("click", cb.changeStore);
   wrap.querySelector("[data-save]").addEventListener("click", cb.save);
   wrap.querySelector("[data-logout-admin]")?.addEventListener("click", cb.logout);
 }
