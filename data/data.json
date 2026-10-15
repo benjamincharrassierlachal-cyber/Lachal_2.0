@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-14T09:00:04",
+ "generated_at": "2026-10-15T09:00:03",
  "trophy_start_date": null,
  "stores": [
   {
@@ -47,34 +47,34 @@
    "ville": "BERGERAC",
    "derniers_avis": [
     {
+     "auteur": "Eric Raymond",
+     "note": 5,
+     "texte": "(Translated by Google) Pleasant and welcoming\n\n(Original)\nAgréable et bonne accueil",
+     "date": "2026-10-14"
+    },
+    {
+     "auteur": "Eric VINCENT",
+     "note": 5,
+     "texte": "(Translated by Google) A very pleasant welcome.\nEfficient and quick service, including after-sales support.\nThank you to the whole team!\n\n(Original)\nAccueil très agréable.\nService efficace et rapide, y compris après vente.\nMerci à toute l'équipe !",
+     "date": "2026-10-14"
+    },
+    {
+     "auteur": "jeremie coueron",
+     "note": 5,
+     "texte": "(Translated by Google) A very warm welcome as always, and a team attentive to our wishes and needs.\nThanks again 🙂\n\n(Original)\nUn acceuil toujours très agréable et une equipe à l'écoute de nos envies et de nos besoins.\nencore merci 🙂",
+     "date": "2026-10-14"
+    },
+    {
+     "auteur": "philippe BONALDI",
+     "note": 5,
+     "texte": "(Translated by Google) Always well received and served. Very professional and attentive.\n\n(Original)\nToujours bien reçus et servis. Très pro et a l'écoute.",
+     "date": "2026-10-14"
+    },
+    {
      "auteur": "Laura Dubois",
      "note": 5,
      "texte": "(Translated by Google) My broken frame was taken care of quickly, thank you.\n\n(Original)\nPrise en charge de ma monture cassé rapide, merci",
      "date": "2026-10-13"
-    },
-    {
-     "auteur": "Marino Balaguer",
-     "note": 4,
-     "texte": "(Translated by Google) Welcoming and professional\n\n(Original)\nAccueillant et professionnel",
-     "date": "2026-10-13"
-    },
-    {
-     "auteur": "Constance",
-     "note": 5,
-     "texte": "(Translated by Google) Very pleasant and helpful\n\n(Original)\nTrès agréable et serviable",
-     "date": "2026-10-12"
-    },
-    {
-     "auteur": "Pascal Pairoys",
-     "note": 5,
-     "texte": "(Translated by Google) Excellent service and after-sales support 👍 I highly recommend them\n\n(Original)\nSuper service et suivi après vente 👍 Je recommande vivement",
-     "date": "2026-10-12"
-    },
-    {
-     "auteur": "Fanny Cluzeau",
-     "note": 5,
-     "texte": "Une équipe accueillante avec de très bons conseils et un professionnalisme au top. Livraison des lunettes très rapide.\nJe recommande.\n\n(Translated by Google)\nA welcoming team with excellent advice and top-notch professionalism. Very fast delivery of the glasses.\n\nI highly recommend them.",
-     "date": "2026-10-10"
     }
    ]
   },
@@ -275,6 +275,12 @@
    "ville": "GLANDON",
    "derniers_avis": [
     {
+     "auteur": "Christophe Draval",
+     "note": 5,
+     "texte": "(Translated by Google) Well supported\nWell informed\nI recommend\n\n(Original)\nBien accompagné\nBien renseigné\nJe recommande",
+     "date": "2026-10-14"
+    },
+    {
      "auteur": "Jean Christophe CHANABIER",
      "note": 5,
      "texte": "(Translated by Google) Franck is extraordinary\n\n(Original)\nFranck est extraordinaire",
@@ -296,12 +302,6 @@
      "auteur": "Ismaël loukou",
      "note": 5,
      "texte": "Très bon accueil, on s'occupe très bien de vous. On répond à toutes vos questions vos inquiétudes. Rien à redire.\nJe conseille fortement.\nUn grand Merci !!!\n\n(Translated by Google)\nExcellent service, they take great care of you. They answer all your questions and address all your concerns. Absolutely no complaints.\n\nI highly recommend them.\n\nThank you so much!",
-     "date": "2026-09-12"
-    },
-    {
-     "auteur": "Elea Tine",
-     "note": 5,
-     "texte": "Écoute, conseil, choix et qualité, Merci !\n\n(Translated by Google)\nListening, advice, choice and quality, thank you!",
      "date": "2026-09-12"
     }
    ]
@@ -1188,6 +1188,12 @@
    "ville": "SAINT-ASTIER",
    "derniers_avis": [
     {
+     "auteur": "Laureen Lavignac",
+     "note": 5,
+     "texte": "(Translated by Google) Excellent customer service, very attentive, I recommend them\n\n(Original)\nTrès bon service client , à l'écoute je recommande",
+     "date": "2026-10-14"
+    },
+    {
      "auteur": "Julie Bouly",
      "note": 5,
      "texte": "Un grand merci à Atol pour leur gentillesse et leur professionnalisme ! Ils ont redressé mes lunettes gratuitement alors que je ne suis pas cliente chez eux. Un geste très appréciable, je recommande ! 😊\n\n(Translated by Google)\nA huge thank you to Atol for their kindness and professionalism! They straightened my glasses for free even though I'm not a customer of theirs. A very kind gesture, I highly recommend them! 😊",
@@ -1210,12 +1216,6 @@
      "note": 5,
      "texte": "Accueil parfait. J’étais venue pour faire resserrer mes lunettes et la personne qui m’a reçue était des plus accueillantes et a su me conseiller pour mes futurs verres Correcteurs.\n\n(Translated by Google)\nPerfect service. I came to have my glasses tightened and the person who received me was very welcoming and was able to advise me on my future corrective lenses.",
      "date": "2026-09-23"
-    },
-    {
-     "auteur": "Didier Sabatier",
-     "note": 5,
-     "texte": "Boutique bien agencée, choix des produits, accueil, explications. Tout est fait pour satisfaire le \"client\". Je recommande vivement cette boutique.\n\n(Translated by Google)\nThe shop is well laid out, with a good selection of products, a friendly welcome, and helpful explanations. Everything is done to satisfy the customer. I highly recommend this shop.",
-     "date": "2026-09-21"
     }
    ]
   },
@@ -2029,7 +2029,7 @@
     "impressions": 0,
     "demandes": 1,
     "soumis": 1,
-    "valides": 0,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -2310,9 +2310,9 @@
     "semaine": "2026-S42",
     "debut": "2026-10-12",
     "fin": "2026-10-18",
-    "avis_nouveaux": 2,
+    "avis_nouveaux": 3,
     "note": 4.7,
-    "avis_cumules": 29,
+    "avis_cumules": 30,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -2607,8 +2607,8 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 0,
     "sources": "avis + lyleoo"
    }
@@ -3183,12 +3183,12 @@
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 43,
-    "faces": 0,
+    "faces": 2,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
+    "impressions": 2,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
@@ -3477,8 +3477,8 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 0,
     "sources": "avis + lyleoo"
    }
@@ -4059,7 +4059,7 @@
     "impressions": null,
     "demandes": 1,
     "soumis": 1,
-    "valides": 0,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -6087,9 +6087,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 2,
     "sources": "avis + lyleoo"
    }
   ],
@@ -7240,9 +7240,9 @@
     "semaine": "2026-S42",
     "debut": "2026-10-12",
     "fin": "2026-10-18",
-    "avis_nouveaux": 0,
-    "note": 4.6,
-    "avis_cumules": 48,
+    "avis_nouveaux": 1,
+    "note": 4.7,
+    "avis_cumules": 49,
     "faces": 0,
     "branches": 0,
     "goodies": 1,
@@ -7827,9 +7827,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -8407,7 +8407,7 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 1,
+    "demandes": 2,
     "soumis": 1,
     "valides": 1,
     "sources": "avis + lyleoo"
@@ -8989,7 +8989,7 @@
     "impressions": null,
     "demandes": 1,
     "soumis": 1,
-    "valides": 0,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -9277,9 +9277,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 2,
     "sources": "avis + lyleoo"
    }
   ],
@@ -9850,9 +9850,9 @@
     "semaine": "2026-S42",
     "debut": "2026-10-12",
     "fin": "2026-10-18",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 2,
     "note": 5,
-    "avis_cumules": 127,
+    "avis_cumules": 128,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -10147,9 +10147,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 1,
-    "soumis": 1,
-    "valides": 0,
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -11010,9 +11010,9 @@
     "semaine": "2026-S42",
     "debut": "2026-10-12",
     "fin": "2026-10-18",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 236,
+    "avis_cumules": 237,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -11704,9 +11704,9 @@
     "semaine": "2026-S42",
     "debut": "2026-10-12",
     "fin": "2026-10-18",
-    "avis_nouveaux": 4,
+    "avis_nouveaux": 8,
     "note": 4.9,
-    "avis_cumules": 144,
+    "avis_cumules": 148,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
