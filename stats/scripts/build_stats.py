@@ -103,13 +103,42 @@ def date_iso(v):
     if m and m.group(2).lower() in MOIS:
         return f"{int(m.group(3)):04d}-{MOIS[m.group(2).lower()]:02d}-{int(m.group(1)):02d}"
     m = re.search(r"(\d{4})-(\d{2})-(\d{2})", str(v or ""))
-    return m.group(0) if m else None
+    if m:
+        return m.group(0)
+    # Copie directe depuis Power BI (resultat DAX) : "10/15/2026 12:00:00 AM",
+    # mois en premier.
+    m = re.match(r"\s*(\d{1,2})/(\d{1,2})/(\d{4})", str(v or ""))
+    if m and 1 <= int(m.group(1)) <= 12 and 1 <= int(m.group(2)) <= 31:
+        return f"{int(m.group(3)):04d}-{int(m.group(1)):02d}-{int(m.group(2)):02d}"
+    return None
+
+
+def entetes_reference(nom: str):
+    p = Path(__file__).resolve().parent.parent / "entetes_export.json"
+    try:
+        return json.loads(p.read_text(encoding="utf-8")).get(nom)
+    except (OSError, ValueError):
+        return None
 
 
 def lignes(ws):
     it = ws.iter_rows(values_only=True)
-    entete = [str(h).strip().strip("[]") if h is not None else "" for h in next(it)]
-    return [dict(zip(entete, r)) for r in it if any(c is not None for c in r)]
+    premiere = next(it)
+    entete = [str(h).strip().strip("[]") if h is not None else "" for h in premiere]
+    if entete and entete[0] == "Niveau":
+        return [dict(zip(entete, r)) for r in it if any(c is not None for c in r)]
+    # Ligne d'en-tetes absente (copie depuis Power BI sans les titres) : la
+    # premiere ligne est deja une donnee, on reprend les titres de reference.
+    ref = entetes_reference(ws.title)
+    nb = len(premiere) if premiere else 0
+    if not ref or len(ref) != nb:
+        raise SystemExit(
+            f"Feuille '{ws.title}' : ligne d'en-tetes absente ou colonnes differentes "
+            f"({nb} colonnes lues, {len(ref) if ref else '?'} attendues). "
+            f"Recopiez le resultat Power BI AVEC ses titres de colonnes (premiere ligne : Niveau, Magasin...).")
+    log(f"  feuille '{ws.title}' : pas de titres de colonnes, titres de reference utilises.")
+    lignes_brutes = [premiere, *it]
+    return [dict(zip(ref, r)) for r in lignes_brutes if any(c is not None for c in r)]
 
 
 def charger_json(chemin: Path, defaut):
@@ -136,6 +165,10 @@ def code_depuis_libelle(libelle, alias) -> str | None:
     s = str(libelle or "").strip()
     if not s:
         return None
+    # "02000 MARSAC" : le modele ecrit parfois le zero a la place de la lettre O
+    # d'"O2000" ; ce n'est pas un numero de magasin.
+    if re.match(r"0?2000\s", s):
+        return alias.get("o2000 " + s.split(None, 1)[1].lower())
     m = re.match(r"(\d+)", s)
     if m:
         return str(int(m.group(1)))
@@ -199,6 +232,10 @@ def lire_export(chemin: Path, cat: Cat, alias: dict) -> dict:
                 code = code_depuis_libelle(r.get("Magasin"), alias)
                 if not code:
                     log(f"  magasin sans code ignore : {r.get('Magasin')!r}")
+                    continue
+                if all(v is None for v, _ in vals.values()):
+                    # ex. "02000 MARSAC" (zero au lieu de la lettre O) : ligne vide du modele
+                    log(f"  magasin sans aucune donnee ignore : {r.get('Magasin')!r}")
                     continue
                 m = snap["magasins"].setdefault(code, {"label": r.get("Magasin"), "o2000": o2000,
                                                        "vals": None, "vendeurs": []})
