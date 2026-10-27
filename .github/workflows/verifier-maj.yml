@@ -1,0 +1,17 @@
+name: Verifier la mise a jour quotidienne
+
+on:
+  schedule:
+    - cron: "30 9 * * *"   # 9h30 UTC = 10h30 (hiver) / 11h30 (ete), apres la publication de 8h00
+  workflow_dispatch:        # lancement manuel possible depuis l'onglet Actions
+
+permissions:
+  contents: read
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Les donnees ont-elles ete republiees ce matin ?
+        run: python3 .github/scripts/verifier_maj.py

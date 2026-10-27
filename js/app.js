@@ -118,8 +118,25 @@ function weekTitle(semaine) {
   return `Semaine ${parseInt(num, 10)}`;
 }
 
+// Les donnees sont republiees chaque jour (tache de 8h00). Au-dela de 24 h
+// + 2 h de marge sans nouvelle publication, l'admin voit une pastille
+// discrete "MaJ retard +Nh" (puis +Nj). generated_at est l'heure locale de
+// l'export, sans fuseau.
+const MAJ_PERIODE_H = 24;
+const MAJ_MARGE_H = 2;
+
+function retardMaj(data) {
+  const t = new Date(data.generated_at || "");
+  if (Number.isNaN(t.getTime())) return null;
+  const retardH = (Date.now() - t.getTime()) / 3600000 - MAJ_PERIODE_H;
+  if (retardH < MAJ_MARGE_H) return null;
+  const txt = retardH < 48 ? `+${Math.floor(retardH)}h` : `+${Math.floor(retardH / 24)}j`;
+  return { txt, derniere: t.toLocaleString("fr-FR", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }) };
+}
+
 function buildShell(data) {
   const backToAdmin = !isAdmin() && isAdminUnlocked();
+  const retard = roleSession === "admin" ? retardMaj(data) : null;
   app.innerHTML = `
     <header class="app-header">
       <div>
@@ -127,6 +144,7 @@ function buildShell(data) {
         <div class="week-label" id="hdr-week"></div>
       </div>
       <div class="header-actions">
+        ${retard ? `<span class="stale-pill" title="Dernière mise à jour des données : ${retard.derniere}">MàJ retard ${retard.txt}</span>` : ""}
         <button class="icon-btn" id="hdr-calendar" title="Choisir la semaine">${icon("calendar", 20)}</button>
         ${backToAdmin ? `<button class="admin-back-btn" id="hdr-admin-back">${icon("chevronLeft", 16)}Admin</button>` : ""}
         <button class="icon-btn" id="hdr-settings">${icon("gear", 20)}</button>
