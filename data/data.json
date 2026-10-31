@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T08:00:03",
+ "generated_at": "2026-10-31T08:00:03",
  "trophy_start_date": null,
  "stores": [
   {
@@ -47,6 +47,12 @@
    "ville": "BERGERAC",
    "derniers_avis": [
     {
+     "auteur": "Ghislaine Dluzak",
+     "note": 5,
+     "texte": "(Translated by Google) Alright\n\n(Original)\nTrès bien",
+     "date": "2026-10-30"
+    },
+    {
      "auteur": "Sam Ad",
      "note": 5,
      "texte": "(Translated by Google) Warm and professional welcome.\nEfficient and quick reception.\n\n(Original)\nAccueil chaleureux, professionnel.\nRéception efficace et rapide.",
@@ -69,12 +75,6 @@
      "note": 5,
      "texte": "(Translated by Google) A warm welcome and fantastic responsiveness in meeting all my expectations. Thank you.\n\n(Original)\nUn accueil sympathique et une réactivité formidable pour répondre a l ensemble de mes attentes. Merci",
      "date": "2026-10-20"
-    },
-    {
-     "auteur": "stephanie b.",
-     "note": 5,
-     "texte": "(Translated by Google) Quick and efficient service in an \"emergency\" situation following a minor incident.\nOpen on Mondays.\nThank you.\n\n(Original)\nAccueil rapide en \"urgence \" suite a un petit incident .\nOivert le lundi\nMerci",
-     "date": "2026-10-19"
     }
    ]
   },
@@ -84,6 +84,12 @@
    "enseigne": "ATOL",
    "ville": "BOULAZAC",
    "derniers_avis": [
+    {
+     "auteur": "Isabelle Queyrieix",
+     "note": 5,
+     "texte": "(Translated by Google) Top-notch opticians. Very kind, professional, good advice, patient.\n\n(Original)\nOpticiens au top. Très gentils, professionnels, de bons conseils, patients.",
+     "date": "2026-10-30"
+    },
     {
      "auteur": "Cassandra Mazaniello",
      "note": 5,
@@ -107,12 +113,6 @@
      "note": 5,
      "texte": "(Translated by Google) Hello\nI highly recommend these professionals.\nThey are always attentive to requests and always offer advice to ensure everything goes smoothly.\n\nThank you\n\n(Original)\nBonjour\nJe recommande vivement ces professionnels.\nIls sont toujours à l'écoute des demandes, toujours à donner des conseils pour que tout ce passe au mieux.\nMerci",
      "date": "2026-10-20"
-    },
-    {
-     "auteur": "Carine Puypelat",
-     "note": 5,
-     "texte": "(Translated by Google) Super nice guy, they fixed my broken matches for free, even though I wasn't a customer!\n\n(Original)\nSuper sympa,lumettes cassées reparer sans rien payer n étant pas cliente en plus",
-     "date": "2026-10-16"
     }
    ]
   },
@@ -623,6 +623,12 @@
    "ville": "MONTIGNAC",
    "derniers_avis": [
     {
+     "auteur": "Manuel Ortega (Manort24)",
+     "note": 5,
+     "texte": "(Translated by Google) A lovely shop with a wide selection.\nThank you to Béatrice for her responsiveness and kindness.\n\n(Original)\nTrès belle boutique avec beaucoup de choix.\nMerci à Béatrice pour sa réactivité et sa bienveillance.",
+     "date": "2026-10-30"
+    },
+    {
      "auteur": "Cris Rocha",
      "note": 5,
      "texte": "Grand choix de montures et facilité de paiement\n\n(Translated by Google)\nWide selection of frames and easy payment options",
@@ -645,12 +651,6 @@
      "note": 5,
      "texte": "Passé ce jour pour redresser mes lunettes et resserrer une vis de branche.\nTrès bonne accueil, souriant.\nMerci à eux.\n\n(Translated by Google)\nI went in today to have my glasses straightened and a screw on the arm tightened. Very welcoming and friendly service.\nThank you.",
      "date": "2026-08-06"
-    },
-    {
-     "auteur": "Regine Michaux",
-     "note": 5,
-     "texte": "Service professionnel, qualité d écoute et de bons conseils. Disponibilité SAV\n\n(Translated by Google)\nProfessional service, attentive listening, and sound advice. After-sales service availability.",
-     "date": "2026-06-25"
     }
    ]
   },
@@ -2055,12 +2055,12 @@
     "avis_nouveaux": 0,
     "note": 4.7,
     "avis_cumules": 61,
-    "faces": 0,
+    "faces": 2,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
-    "demandes": 2,
-    "soumis": 2,
+    "impressions": 2,
+    "demandes": 3,
+    "soumis": 3,
     "valides": 2,
     "sources": "avis + lyleoo + oomade"
    }
@@ -2381,8 +2381,8 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 0,
     "sources": "avis + lyleoo"
    }
@@ -3347,9 +3347,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 9,
-    "demandes": 2,
-    "soumis": 2,
-    "valides": 2,
+    "demandes": 3,
+    "soumis": 3,
+    "valides": 3,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -3984,13 +3984,13 @@
     "semaine": "2026-S44",
     "debut": "2026-10-26",
     "fin": "2026-11-01",
-    "avis_nouveaux": 2,
+    "avis_nouveaux": 3,
     "note": 4.9,
-    "avis_cumules": 226,
-    "faces": 4,
+    "avis_cumules": 227,
+    "faces": 6,
     "branches": 0,
     "goodies": 0,
-    "impressions": 4,
+    "impressions": 6,
     "demandes": 1,
     "soumis": 1,
     "valides": 1,
@@ -4628,9 +4628,9 @@
     "semaine": "2026-S44",
     "debut": "2026-10-26",
     "fin": "2026-11-01",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 52,
+    "avis_cumules": 53,
     "faces": 1,
     "branches": 0,
     "goodies": 0,
@@ -5601,9 +5601,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 4,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -6245,8 +6245,8 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 1,
-    "soumis": 0,
+    "demandes": 2,
+    "soumis": 1,
     "valides": 0,
     "sources": "avis + lyleoo"
    }
@@ -6887,8 +6887,8 @@
     "avis_cumules": 131,
     "faces": 0,
     "branches": 0,
-    "goodies": 0,
-    "impressions": 0,
+    "goodies": 1,
+    "impressions": 1,
     "demandes": 1,
     "soumis": 1,
     "valides": 0,
@@ -8492,9 +8492,9 @@
     "semaine": "2026-S44",
     "debut": "2026-10-26",
     "fin": "2026-11-01",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.5,
-    "avis_cumules": 38,
+    "avis_cumules": 39,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -10109,9 +10109,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 3,
-    "soumis": 3,
-    "valides": 3,
+    "demandes": 4,
+    "soumis": 4,
+    "valides": 4,
     "sources": "avis + lyleoo"
    }
   ],
@@ -10424,16 +10424,16 @@
     "semaine": "2026-S44",
     "debut": "2026-10-26",
     "fin": "2026-11-01",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 2,
     "note": 4.9,
-    "avis_cumules": 158,
+    "avis_cumules": 159,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
     "demandes": 2,
     "soumis": 2,
-    "valides": 1,
+    "valides": 2,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -10746,9 +10746,9 @@
     "semaine": "2026-S44",
     "debut": "2026-10-26",
     "fin": "2026-11-01",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 5,
-    "avis_cumules": 130,
+    "avis_cumules": 131,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -11397,7 +11397,7 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
+    "demandes": 1,
     "soumis": 0,
     "valides": 0,
     "sources": "avis + lyleoo + oomade"
@@ -12034,9 +12034,9 @@
     "semaine": "2026-S44",
     "debut": "2026-10-26",
     "fin": "2026-11-01",
-    "avis_nouveaux": 2,
+    "avis_nouveaux": 4,
     "note": 4.9,
-    "avis_cumules": 246,
+    "avis_cumules": 248,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -12356,16 +12356,16 @@
     "semaine": "2026-S44",
     "debut": "2026-10-26",
     "fin": "2026-11-01",
-    "avis_nouveaux": 2,
+    "avis_nouveaux": 5,
     "note": 4.8,
-    "avis_cumules": 186,
+    "avis_cumules": 189,
     "faces": null,
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -12824,9 +12824,9 @@
     "semaine": "2026-S44",
     "debut": "2026-10-26",
     "fin": "2026-11-01",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 2,
     "note": 4.9,
-    "avis_cumules": 159,
+    "avis_cumules": 160,
     "faces": 1,
     "branches": 0,
     "goodies": 0,
@@ -12970,9 +12970,9 @@
     "semaine": "2026-S44",
     "debut": "2026-10-26",
     "fin": "2026-11-01",
-    "avis_nouveaux": 4,
+    "avis_nouveaux": 7,
     "note": 4.9,
-    "avis_cumules": 183,
+    "avis_cumules": 186,
     "faces": null,
     "branches": null,
     "goodies": null,
