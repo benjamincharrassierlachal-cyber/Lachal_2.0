@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T08:00:03",
+ "generated_at": "2026-11-03T08:00:03",
  "trophy_start_date": null,
  "stores": [
   {
@@ -275,6 +275,12 @@
    "ville": "GLANDON",
    "derniers_avis": [
     {
+     "auteur": "laura Puechavy",
+     "note": 5,
+     "texte": "(Translated by Google) Excellent service, very professional, I highly recommend!\n\n(Original)\nSuper accueil, très professionnel, je recommande vivement !",
+     "date": "2026-11-02"
+    },
+    {
      "auteur": "Anaïs Crozes",
      "note": 5,
      "texte": "(Translated by Google) Always a friendly welcome, professional, good advice and a wide selection of optics.\n\n(Original)\nAcceuil toujours sympathique, professionnels, de bons conseils et un large choix d'optiques.",
@@ -297,12 +303,6 @@
      "note": 5,
      "texte": "(Translated by Google) Excellent service, a friendly and attentive team\n\n(Original)\nUn très bon service, une équipe humaine et à l’écoute",
      "date": "2026-10-12"
-    },
-    {
-     "auteur": "Margot Matteuccie roch",
-     "note": 5,
-     "texte": "(Translated by Google) Everything went very well, I received the glasses quickly.\n\n(Original)\nTout s'est très bien passé j'ai reçu les lunettes rapidement.",
-     "date": "2026-10-20"
     }
    ]
   },
@@ -2071,14 +2071,14 @@
     "avis_nouveaux": 0,
     "note": 4.7,
     "avis_cumules": 61,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 1,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "11": [
@@ -2406,9 +2406,9 @@
     "semaine": "2026-S45",
     "debut": "2026-11-02",
     "fin": "2026-11-08",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 2,
     "note": 4.8,
-    "avis_cumules": 35,
+    "avis_cumules": 37,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -3423,14 +3423,14 @@
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 45,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 1,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "15": [
@@ -4099,14 +4099,14 @@
     "avis_nouveaux": 0,
     "note": 4.9,
     "avis_cumules": 227,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
-    "sources": "avis + lyleoo"
+    "faces": 1,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 1,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "18": [
@@ -4775,14 +4775,14 @@
     "avis_nouveaux": 0,
     "note": 4.9,
     "avis_cumules": 53,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "2": [
@@ -5113,14 +5113,14 @@
     "avis_nouveaux": 0,
     "note": 4.8,
     "avis_cumules": 46,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "20": [
@@ -5451,14 +5451,14 @@
     "avis_nouveaux": 0,
     "note": 4.8,
     "avis_cumules": 25,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "21": [
@@ -5789,14 +5789,14 @@
     "avis_nouveaux": 0,
     "note": 4.5,
     "avis_cumules": 59,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "22": [
@@ -7141,14 +7141,14 @@
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 131,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "28": [
@@ -8155,14 +8155,14 @@
     "avis_nouveaux": 0,
     "note": 4.7,
     "avis_cumules": 53,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "30": [
@@ -8493,14 +8493,14 @@
     "avis_nouveaux": 0,
     "note": 4.9,
     "avis_cumules": 42,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "31": [
@@ -10859,14 +10859,14 @@
     "avis_nouveaux": 0,
     "note": 4.9,
     "avis_cumules": 159,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 2,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 2,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "38": [
@@ -11873,14 +11873,14 @@
     "avis_nouveaux": 0,
     "note": 4.8,
     "avis_cumules": 42,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 1,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "6": [
@@ -12211,14 +12211,14 @@
     "avis_nouveaux": 0,
     "note": 4.7,
     "avis_cumules": 76,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "703": [
@@ -12546,17 +12546,17 @@
     "semaine": "2026-S45",
     "debut": "2026-11-02",
     "fin": "2026-11-08",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 248,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "avis_cumules": 249,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
-    "sources": "avis + lyleoo"
+    "sources": "avis + lyleoo + oomade"
    }
   ],
   "780": [
@@ -13387,14 +13387,14 @@
     "avis_nouveaux": 0,
     "note": 4.9,
     "avis_cumules": 161,
-    "faces": null,
-    "branches": null,
-    "goodies": null,
-    "impressions": null,
+    "faces": 0,
+    "branches": 0,
+    "goodies": 0,
+    "impressions": 0,
     "demandes": null,
     "soumis": null,
     "valides": null,
-    "sources": "avis"
+    "sources": "avis + oomade"
    }
   ],
   "570": [
