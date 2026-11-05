@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T08:00:02",
+ "generated_at": "2026-11-05T14:43:04",
  "trophy_start_date": null,
  "stores": [
   {
@@ -1264,6 +1264,12 @@
    "ville": "TRELISSAC",
    "derniers_avis": [
     {
+     "auteur": "Jean-Jacques LAGARDE",
+     "note": 5,
+     "texte": "(Translated by Google) A very nice and welcoming store. The person who helped me was welcoming and competent; I have nothing but praise for the entire staff.\n\n(Original)\nTrès beau magasin accueillant ,la personne qui c’est occuper de moi et accueillante et compétente rien à dire que des compliments ainsi que l’ensemble du personnel",
+     "date": "2026-11-05"
+    },
+    {
      "auteur": "Ldesplat77 Desplat",
      "note": 5,
      "texte": "(Translated by Google) I had a very professional optician. She listened attentively and guided me, my daughter, and my husband in choosing my glasses. She doesn't just make a sale; she's genuine. Furthermore, the time it took to pick up the glasses was respected.\n\nI recommend this shop. The staff is pleasant and welcoming.\nThank you, madam.\n\n(Original)\nJ'ai eu une opticienne très professionnelle.  A l'écoute, elle a su me guider dans le choix de mes lunettes en plus de ma fille et mon mari. Elle ne vend pas pour vendre mais elle fait preuve d'authenticité. De plus, le temps pour récupérer les lunettes est respecté.\nJe conseille cette boutique. Personnel agréable et accueillant.\nMerci à vous madame.",
@@ -1286,12 +1292,6 @@
      "note": 5,
      "texte": "(Translated by Google) Very satisfied with my purchase.\nMathilde gave me very good advice.\n\n(Original)\nTrès satisfait de mon achat\nMathilde m’a fourni de très bons conseils.",
      "date": "2026-10-22"
-    },
-    {
-     "auteur": "Jérémy px",
-     "note": 5,
-     "texte": "(Translated by Google) A very warm welcome and excellent support from beginning to end.\n\n(Original)\nUn très bon accueil et accompagnement du début à la fin.",
-     "date": "2026-10-16"
     }
    ]
   },
@@ -2077,7 +2077,7 @@
     "impressions": 1,
     "demandes": 3,
     "soumis": 3,
-    "valides": 2,
+    "valides": 3,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -2415,7 +2415,7 @@
     "impressions": null,
     "demandes": 0,
     "soumis": 0,
-    "valides": 0,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -3427,9 +3427,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 2,
-    "soumis": 2,
-    "valides": 2,
+    "demandes": 3,
+    "soumis": 3,
+    "valides": 3,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -3765,8 +3765,8 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 0,
     "sources": "avis + lyleoo"
    }
@@ -4443,7 +4443,7 @@
     "impressions": null,
     "demandes": 1,
     "soumis": 1,
-    "valides": 0,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -9173,8 +9173,8 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 1,
-    "soumis": 2,
+    "demandes": 4,
+    "soumis": 5,
     "valides": 2,
     "sources": "avis + lyleoo"
    }
@@ -11194,9 +11194,9 @@
     "semaine": "2026-S45",
     "debut": "2026-11-02",
     "fin": "2026-11-08",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 2,
     "note": 5,
-    "avis_cumules": 132,
+    "avis_cumules": 133,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -12553,8 +12553,8 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 2,
+    "soumis": 1,
     "valides": 0,
     "sources": "avis + lyleoo + oomade"
    }
@@ -12884,9 +12884,9 @@
     "semaine": "2026-S45",
     "debut": "2026-11-02",
     "fin": "2026-11-08",
-    "avis_nouveaux": 2,
+    "avis_nouveaux": 4,
     "note": 4.8,
-    "avis_cumules": 193,
+    "avis_cumules": 195,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -13546,9 +13546,9 @@
     "semaine": "2026-S45",
     "debut": "2026-11-02",
     "fin": "2026-11-08",
-    "avis_nouveaux": 4,
+    "avis_nouveaux": 5,
     "note": 4.9,
-    "avis_cumules": 190,
+    "avis_cumules": 191,
     "faces": null,
     "branches": null,
     "goodies": null,
