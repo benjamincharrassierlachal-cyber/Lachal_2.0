@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T08:00:03",
+ "generated_at": "2026-11-05T08:00:02",
  "trophy_start_date": null,
  "stores": [
   {
@@ -161,6 +161,12 @@
    "ville": "CASTILLONNES",
    "derniers_avis": [
     {
+     "auteur": "patrick marquet",
+     "note": 5,
+     "texte": "(Translated by Google) A warm welcome, a highly skilled technician, boundless patience, total satisfaction. What more could you ask for?\n\n(Original)\nUn accueil chaleureux, une technicienne à la compétence éprouvée,  une patience sans limite, une satisfaction totale. Que demander de plus.",
+     "date": "2026-11-04"
+    },
+    {
      "auteur": "Angèle Martinaud",
      "note": 5,
      "texte": "(Translated by Google) Friendly and welcoming service, always good advice, I highly recommend this shop!\n\n(Original)\nAccueil sympathique et souriant, toujours de bons conseils, je recommande vivement cette boutique !",
@@ -183,12 +189,6 @@
      "note": 5,
      "texte": "très bon opticien le prix, le délais ,l'accueil je recommande\n\n(Translated by Google)\nExcellent optician – the price, the wait time, the service – I highly recommend them.",
      "date": "2026-07-18"
-    },
-    {
-     "auteur": "Renée Luchet",
-     "note": 5,
-     "texte": "Juste pour remettre une vis à des lunettes on est reçu avec le sourire, quel plaisir un tel accueil.\n\n(Translated by Google)\nJust to put a screw back on some glasses, we were greeted with a smile, what a pleasure such a welcome.",
-     "date": "2024-07-30"
     }
    ]
   },
@@ -328,14 +328,14 @@
      "texte": "Accueil et conseil parfait. Beaucoup de choix dans les montures à prix raisonnable. D’une grande gentillesse. Je recommande à 100 %"
     },
     {
-     "auteur": "Valérie ANDRÉ",
-     "note": 5,
-     "texte": "Magasin très agréable. Personnel très accueillant, sympathique et de très bon conseil. A l'écoute et très réactif. Merci Je recommande vivement ++++😊👍 …"
-    },
-    {
      "auteur": "marie-christine Cantarelli",
      "note": 5,
      "texte": "Équipe très professionnelle, accueillante et de bon conseil 😊 un grand merci !!! Cliente depuis quelques années …"
+    },
+    {
+     "auteur": "Sylvie Magloire",
+     "note": 5,
+     "texte": "Cliente depuis de nombreuses années, personnel toujours très accueillante .\nToujours un plaisir d'y aller ,pas d'attente.\nJe recommande ce magasin."
     }
    ]
   },
@@ -356,11 +356,6 @@
      "texte": "Un très bon accueil. Très professionnel et très courtois. Une bonne adresse a recommander. Je suis ravie du traitement de mon dossier. Bonne continuation."
     },
     {
-     "auteur": "Marie José Cayre",
-     "note": 5,
-     "texte": "Très chaleureux. Je suis passée chercher mes lunettes un peu avant la fermeture et j'ai été très bien reçu. La personne à  pris le temps de bien s'occuper de moi."
-    },
-    {
      "auteur": "jocelyn bej",
      "note": 4,
      "texte": "Très bien reçu.\nLe vendeur a été un très bon professionnel.\nLivraison des lunettes et ajustements : tout nickel !!"
@@ -369,6 +364,11 @@
      "auteur": "Isabelle Mentières",
      "note": 5,
      "texte": "Excellent accueil chaleureux,  très compétent,  des explications très claire,  je reviendrai avec grand plaisir ."
+    },
+    {
+     "auteur": "Marylaure LAPERRIERE",
+     "note": 5,
+     "texte": "Tout simplement 5 étoiles pour l'accueil, la relation client, l'écoute, le service et le professionnalisme !.Alexandre"
     }
    ]
   },
@@ -488,6 +488,12 @@
    "ville": "LE BUGUE",
    "derniers_avis": [
     {
+     "auteur": "Laurent JOINEL",
+     "note": 5,
+     "texte": "(Translated by Google) Excellent service, kindness, attentiveness, and efficiency were all present. Excellent advice and a wide selection of frames allowed me to find the perfect pair of glasses. And a big thank you for the reminder; it makes me want to come back.\nVery happy and satisfied.\n\nSincerely, Laurent JOINEL.\n\n(Original)\nExcellent accueil, gentillesse, écoute et efficacité sont présentes. Un excellent conseil et un grand choix de monture m'ont permis de trouver la paire de lunettes parfaite. Et un grand merci pour le rappel fait penser à revenir.\nTrès heureux et satisfait.\nBien cordialement, Laurent JOINEL.",
+     "date": "2026-11-05"
+    },
+    {
      "auteur": "helene holzmann",
      "note": 5,
      "texte": "(Translated by Google) Excellent service in this shop!\n\n(Original)\nExcellent accueil dans cette boutique!",
@@ -509,12 +515,6 @@
      "auteur": "remi ponsot",
      "note": 5,
      "texte": "(Translated by Google) Seen on Doctolib, perfect\n\n(Original)\nVu sur Doctolib, parfait",
-     "date": "2026-10-28"
-    },
-    {
-     "auteur": "Rose Joséphine",
-     "note": 5,
-     "texte": "(Translated by Google) Excellent service, great attention to detail.\n\n(Original)\nBonne attention, magnifique service",
      "date": "2026-10-28"
     }
    ]
@@ -2077,7 +2077,7 @@
     "impressions": 1,
     "demandes": 3,
     "soumis": 3,
-    "valides": 1,
+    "valides": 2,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -4096,14 +4096,14 @@
     "semaine": "2026-S45",
     "debut": "2026-11-02",
     "fin": "2026-11-08",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 2,
     "note": 4.9,
-    "avis_cumules": 228,
+    "avis_cumules": 229,
     "faces": 1,
-    "branches": 0,
+    "branches": 1,
     "goodies": 0,
-    "impressions": 1,
-    "demandes": 1,
+    "impressions": 2,
+    "demandes": 0,
     "soumis": 1,
     "valides": 1,
     "sources": "avis + lyleoo + oomade"
@@ -4775,10 +4775,10 @@
     "avis_nouveaux": 0,
     "note": 4.9,
     "avis_cumules": 53,
-    "faces": 0,
-    "branches": 0,
+    "faces": 1,
+    "branches": 1,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 2,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -5119,7 +5119,7 @@
     "impressions": 0,
     "demandes": 1,
     "soumis": 1,
-    "valides": 0,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -5451,10 +5451,10 @@
     "avis_nouveaux": 0,
     "note": 4.8,
     "avis_cumules": 25,
-    "faces": 0,
+    "faces": 1,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 1,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -5795,7 +5795,7 @@
     "impressions": 0,
     "demandes": 2,
     "soumis": 2,
-    "valides": 1,
+    "valides": 2,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -6124,9 +6124,9 @@
     "semaine": "2026-S45",
     "debut": "2026-11-02",
     "fin": "2026-11-08",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 2,
     "note": 4.7,
-    "avis_cumules": 60,
+    "avis_cumules": 61,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -6469,7 +6469,7 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
+    "demandes": 1,
     "soumis": 0,
     "valides": 1,
     "sources": "avis + lyleoo"
@@ -7145,9 +7145,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 1,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -8155,13 +8155,13 @@
     "avis_nouveaux": 0,
     "note": 4.7,
     "avis_cumules": 53,
-    "faces": 0,
-    "branches": 0,
+    "faces": 1,
+    "branches": 1,
     "goodies": 0,
-    "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "impressions": 2,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -9174,8 +9174,8 @@
     "goodies": null,
     "impressions": null,
     "demandes": 1,
-    "soumis": 1,
-    "valides": 1,
+    "soumis": 2,
+    "valides": 2,
     "sources": "avis + lyleoo"
    }
   ],
@@ -9511,9 +9511,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 1,
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 3,
     "sources": "avis + lyleoo"
    }
   ],
@@ -10180,9 +10180,9 @@
     "semaine": "2026-S45",
     "debut": "2026-11-02",
     "fin": "2026-11-08",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 5,
-    "avis_cumules": 5,
+    "avis_cumules": 6,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -11194,9 +11194,9 @@
     "semaine": "2026-S45",
     "debut": "2026-11-02",
     "fin": "2026-11-08",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 5,
-    "avis_cumules": 131,
+    "avis_cumules": 132,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -12211,10 +12211,10 @@
     "avis_nouveaux": 0,
     "note": 4.7,
     "avis_cumules": 76,
-    "faces": 0,
+    "faces": 2,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 2,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -12546,9 +12546,9 @@
     "semaine": "2026-S45",
     "debut": "2026-11-02",
     "fin": "2026-11-08",
-    "avis_nouveaux": 2,
+    "avis_nouveaux": 5,
     "note": 4.9,
-    "avis_cumules": 250,
+    "avis_cumules": 253,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -13387,10 +13387,10 @@
     "avis_nouveaux": 2,
     "note": 4.9,
     "avis_cumules": 163,
-    "faces": 0,
+    "faces": 2,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 2,
     "demandes": null,
     "soumis": null,
     "valides": null,
@@ -13546,9 +13546,9 @@
     "semaine": "2026-S45",
     "debut": "2026-11-02",
     "fin": "2026-11-08",
-    "avis_nouveaux": 2,
+    "avis_nouveaux": 4,
     "note": 4.9,
-    "avis_cumules": 188,
+    "avis_cumules": 190,
     "faces": null,
     "branches": null,
     "goodies": null,
