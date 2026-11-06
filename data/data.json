@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T14:43:04",
+ "generated_at": "2026-11-06T08:00:03",
  "trophy_start_date": null,
  "stores": [
   {
@@ -47,6 +47,12 @@
    "ville": "BERGERAC",
    "derniers_avis": [
     {
+     "auteur": "Angelique Lecoq",
+     "note": 5,
+     "texte": "(Translated by Google) Always a warm welcome, top-notch service, I highly recommend it.\n\n(Original)\nToujours un bon accueil service au top je recommande",
+     "date": "2026-11-05"
+    },
+    {
      "auteur": "Romuald Audy",
      "note": 5,
      "texte": "(Translated by Google) Excellent service and professionalism! Thank you!\n\n(Original)\nAccueil et professionnalisme très très bon! Merci à eux!",
@@ -69,12 +75,6 @@
      "note": 5,
      "texte": "(Translated by Google) Warm and professional welcome.\nEfficient and quick reception.\n\n(Original)\nAccueil chaleureux, professionnel.\nRéception efficace et rapide.",
      "date": "2026-10-29"
-    },
-    {
-     "auteur": "Isa Fafa",
-     "note": 5,
-     "texte": "(Translated by Google) Excellent advice and a very warm welcome. I highly recommend it.\n\n(Original)\nTrès bons conseils et super accueil\nJe conseille vivement",
-     "date": "2026-09-24"
     }
    ]
   },
@@ -84,6 +84,12 @@
    "enseigne": "ATOL",
    "ville": "BOULAZAC",
    "derniers_avis": [
+    {
+     "auteur": "Mireille Lefeuvre",
+     "note": 5,
+     "texte": "(Translated by Google) The optician at ATOL in Boulazac, Dordogne, was extremely professional. A very warm welcome and excellent advice. Many thanks. I highly recommend them.\n\n(Original)\nBeaucoup de professionnalisme de la part de l' opticien ATOL de Boulazac Dordogne. Très bon  accueil et très bon conseil . Un grand merci. Je recommande vivement.",
+     "date": "2026-11-05"
+    },
     {
      "auteur": "Isabelle Queyrieix",
      "note": 5,
@@ -107,12 +113,6 @@
      "note": 5,
      "texte": "(Translated by Google) Warm welcome, great advice and very professional! Thank you!\n\n(Original)\nAccueil chaleureux, de bons conseils et très pros! Merci !",
      "date": "2026-10-24"
-    },
-    {
-     "auteur": "ana gleiz",
-     "note": 5,
-     "texte": "(Translated by Google) Hello\nI highly recommend these professionals.\nThey are always attentive to requests and always offer advice to ensure everything goes smoothly.\n\nThank you\n\n(Original)\nBonjour\nJe recommande vivement ces professionnels.\nIls sont toujours à l'écoute des demandes, toujours à donner des conseils pour que tout ce passe au mieux.\nMerci",
-     "date": "2026-10-20"
     }
    ]
   },
@@ -2071,10 +2071,10 @@
     "avis_nouveaux": 0,
     "note": 4.7,
     "avis_cumules": 61,
-    "faces": 1,
-    "branches": 0,
+    "faces": 2,
+    "branches": 1,
     "goodies": 0,
-    "impressions": 1,
+    "impressions": 3,
     "demandes": 3,
     "soumis": 3,
     "valides": 3,
@@ -3767,7 +3767,7 @@
     "impressions": null,
     "demandes": 1,
     "soumis": 1,
-    "valides": 0,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -4096,13 +4096,13 @@
     "semaine": "2026-S45",
     "debut": "2026-11-02",
     "fin": "2026-11-08",
-    "avis_nouveaux": 2,
+    "avis_nouveaux": 3,
     "note": 4.9,
-    "avis_cumules": 229,
-    "faces": 1,
+    "avis_cumules": 230,
+    "faces": 2,
     "branches": 1,
     "goodies": 0,
-    "impressions": 2,
+    "impressions": 3,
     "demandes": 0,
     "soumis": 1,
     "valides": 1,
@@ -6124,9 +6124,9 @@
     "semaine": "2026-S45",
     "debut": "2026-11-02",
     "fin": "2026-11-08",
-    "avis_nouveaux": 2,
+    "avis_nouveaux": 3,
     "note": 4.7,
-    "avis_cumules": 61,
+    "avis_cumules": 62,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -9173,9 +9173,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 4,
-    "soumis": 5,
-    "valides": 2,
+    "demandes": 5,
+    "soumis": 6,
+    "valides": 6,
     "sources": "avis + lyleoo"
    }
   ],
@@ -9511,9 +9511,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 2,
-    "soumis": 2,
-    "valides": 3,
+    "demandes": 3,
+    "soumis": 3,
+    "valides": 4,
     "sources": "avis + lyleoo"
    }
   ],
@@ -12546,16 +12546,16 @@
     "semaine": "2026-S45",
     "debut": "2026-11-02",
     "fin": "2026-11-08",
-    "avis_nouveaux": 5,
+    "avis_nouveaux": 6,
     "note": 4.9,
-    "avis_cumules": 253,
+    "avis_cumules": 254,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
     "demandes": 2,
     "soumis": 1,
-    "valides": 0,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -13222,9 +13222,9 @@
     "semaine": "2026-S45",
     "debut": "2026-11-02",
     "fin": "2026-11-08",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 5,
-    "avis_cumules": 51,
+    "avis_cumules": 52,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -13384,9 +13384,9 @@
     "semaine": "2026-S45",
     "debut": "2026-11-02",
     "fin": "2026-11-08",
-    "avis_nouveaux": 2,
+    "avis_nouveaux": 3,
     "note": 4.9,
-    "avis_cumules": 163,
+    "avis_cumules": 164,
     "faces": 2,
     "branches": 0,
     "goodies": 0,
@@ -13546,9 +13546,9 @@
     "semaine": "2026-S45",
     "debut": "2026-11-02",
     "fin": "2026-11-08",
-    "avis_nouveaux": 5,
+    "avis_nouveaux": 6,
     "note": 4.9,
-    "avis_cumules": 191,
+    "avis_cumules": 192,
     "faces": null,
     "branches": null,
     "goodies": null,
