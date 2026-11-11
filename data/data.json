@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-10T08:00:02",
+ "generated_at": "2026-11-11T08:00:03",
  "trophy_start_date": null,
  "stores": [
   {
@@ -47,6 +47,12 @@
    "ville": "BERGERAC",
    "derniers_avis": [
     {
+     "auteur": "Marjorie Ferreira",
+     "note": 5,
+     "texte": "(Translated by Google) Excellent welcome, excellent advice. I went in injured after an accident that broke my glasses. The salesperson took care of me with great professionalism and kindness. Far from the typical pushy salesperson who tries to inflate the bill, he precisely understood my needs and advised me exactly where I needed to go. The result is excellent, and I thank him sincerely.\nI will return to this optician without hesitation! And I highly recommend him.\n\n(Original)\nExcellent accueil, excellents conseils. J'y allais blessée suite a un accident qui a cassé mes lunettes. Le vendeur s'est occupé de moi avec beaucoup de professionnalisme et d'humanité. Loin du commercial classique qui vous fait gonfler la facture, il a cerné précisément mes besoins et ma conseillé comme il le fallait. Le résultat est excellent et je l'en remercie vivement.\nJe retournerai chez cet opticien les yeux fermés ! Et je recommande.",
+     "date": "2026-11-11"
+    },
+    {
      "auteur": "Sandrine Prevot",
      "note": 5,
      "texte": "(Translated by Google) Alright\n\n(Original)\nTrès bien",
@@ -69,12 +75,6 @@
      "note": 5,
      "texte": "(Translated by Google) Warm welcome, attentive to needs. Good advice.\n\n(Original)\nAccueil chaleureux, à l'écoute des besoins. De bon conseil.",
      "date": "2026-11-07"
-    },
-    {
-     "auteur": "philippe michel",
-     "note": 5,
-     "texte": "(Translated by Google) Reception, professionalism, and expertise are practiced at this optician's.\n\n(Original)\naccueil,  professionnalisme, et  compétences sont pratiquées chez cet opticien.",
-     "date": "2026-11-06"
     }
    ]
   },
@@ -333,9 +333,9 @@
      "texte": "Très bonne accueil, j'ai eue à faire à 2 jeunes femmes très professionnelles et aimable, merci, je recommande vivement ."
     },
     {
-     "auteur": "marie-christine Cantarelli",
+     "auteur": "Sylvie Magloire",
      "note": 5,
-     "texte": "Équipe très professionnelle, accueillante et de bon conseil 😊 un grand merci !!! Cliente depuis quelques années …"
+     "texte": "Cliente depuis de nombreuses années, personnel toujours très accueillante .\nToujours un plaisir d'y aller ,pas d'attente.\nJe recommande ce magasin."
     }
    ]
   },
@@ -379,14 +379,14 @@
    "ville": "TULLE",
    "derniers_avis": [
     {
+     "auteur": "Sophie Ellul",
+     "note": 5,
+     "texte": "⭐⭐⭐⭐⭐\nTrès bonne expérience chez Générale d’Optique à Tulle ! Une équipe accueillante, souriante et professionnelle, toujours à l’écoute et de très bon conseil. Un …"
+    },
+    {
      "auteur": "Jess Noguera",
      "note": 5,
      "texte": "Merci pour votre aide , vos conseils et votre patience . Le personnel a était très agréable et à l écoute.  L acceuil est chaleureux . Un grand merci à  Mr W . Sébastien qui a prit pas mal de son temps pour me  conseiller et m apprendre à utiliser mon nouveau dispositif ."
-    },
-    {
-     "auteur": "Tiphanie Bossoutrot",
-     "note": 5,
-     "texte": "Je recommande ! A l'écoute. Très bon conseils. Du choix et de la qualité. Disponible en cas de besoin. Merci beaucoup"
     },
     {
      "auteur": "OLIVE KGM",
@@ -1226,6 +1226,12 @@
    "ville": "THIVIERS",
    "derniers_avis": [
     {
+     "auteur": "Swendy Marchand",
+     "note": 4,
+     "texte": "(Translated by Google) Excellent repair service! Thanks to their 3D machine, my glasses were repaired quickly.\n\n(Original)\nSuper service de dépannage ! Grâce à leur machine 3D, mes lunettes ont été réparées rapidement",
+     "date": "2026-11-10"
+    },
+    {
      "auteur": "Fatech Super",
      "note": 5,
      "texte": "(Translated by Google) I highly recommend them.\nMy mother broke her glasses, and they found a solution for her quickly. The service was welcoming and efficient, just the way I like it.\nThank you again so much for your help.\n\n(Original)\nJe recommande fortement.\nMaman a cassé ses lunettes, une solution lui a été apporté rapidement.\nAccueil et efficacité, comme j’aime.\nMerci encore infiniment pour maman.",
@@ -1248,12 +1254,6 @@
      "note": 5,
      "texte": "Je découvre Atoll Thiviers pour la réparation d'une branche de lunettes achetées a atol , région parisienne..j'aime beaucoup ces lunettes.\nMerci atol,et son équipe a Thiviers,pour la réparation gratuite 3 D.\n\n(Translated by Google)\nI discovered Atoll Thiviers while getting a temple of my glasses repaired. I bought them at Atoll in the Paris region... I really love these glasses.\n\nThank you Atoll and the team in Thiviers for the free 3D repair.",
      "date": "2026-09-03"
-    },
-    {
-     "auteur": "Inès P",
-     "note": 5,
-     "texte": "Un service au top, une ambiance agréable et un large choix de montures. Sans compter les bons conseils de Christophe, qui a su m'aiguiller avec patience et bon goût. Je recommande !\n\n(Translated by Google)\nExcellent service, a pleasant atmosphere, and a wide selection of frames. Not to mention Christophe's excellent advice; he guided me with patience and good taste. I highly recommend it!",
-     "date": "2026-09-25"
     }
    ]
   },
@@ -2091,9 +2091,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -2445,9 +2445,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -3503,10 +3503,10 @@
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 45,
-    "faces": 0,
+    "faces": 1,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 1,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -4208,16 +4208,16 @@
     "semaine": "2026-S46",
     "debut": "2026-11-09",
     "fin": "2026-11-15",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 230,
-    "faces": 0,
+    "avis_cumules": 231,
+    "faces": 1,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "impressions": 1,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -5981,10 +5981,10 @@
     "avis_nouveaux": 0,
     "note": 4.5,
     "avis_cumules": 59,
-    "faces": 0,
+    "faces": 1,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 1,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -6339,9 +6339,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 2,
     "sources": "avis + lyleoo"
    }
   ],
@@ -7394,13 +7394,13 @@
     "semaine": "2026-S46",
     "debut": "2026-11-09",
     "fin": "2026-11-15",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 5,
-    "avis_cumules": 131,
-    "faces": 0,
-    "branches": 0,
+    "avis_cumules": 132,
+    "faces": 1,
+    "branches": 1,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 2,
     "demandes": 0,
     "soumis": 0,
     "valides": 1,
@@ -7755,8 +7755,8 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 0,
     "sources": "avis + lyleoo"
    }
@@ -10233,9 +10233,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -12357,7 +12357,7 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
+    "demandes": -1,
     "soumis": 0,
     "valides": 0,
     "sources": "avis + lyleoo + oomade"
@@ -12711,9 +12711,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -13412,9 +13412,9 @@
     "semaine": "2026-S46",
     "debut": "2026-11-09",
     "fin": "2026-11-15",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 2,
     "note": 4.8,
-    "avis_cumules": 201,
+    "avis_cumules": 203,
     "faces": null,
     "branches": null,
     "goodies": null,
