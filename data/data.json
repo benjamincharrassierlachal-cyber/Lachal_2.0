@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T08:00:03",
+ "generated_at": "2026-11-12T08:00:03",
  "trophy_start_date": null,
  "stores": [
   {
@@ -526,11 +526,6 @@
    "ville": "MARSAC-SUR-L'ISLE",
    "derniers_avis": [
     {
-     "auteur": "Nicolas PEUCH",
-     "note": 5,
-     "texte": "Accueil chaleureux et écoute attentive de nos demandes et souhaits.  Choisir une paire de lunettes n’est pas toujours évident, mais Marie-Charlotte nous a prodigué d’excellents conseils."
-    },
-    {
      "auteur": "Cecile Jouanneau",
      "note": 5,
      "texte": "Juste prise en charge parfaite ! Et tellement contente du résultat!  Merci à Marie Charlotte pour son écoute et tout les bons conseils.\nMerci d'avoir pu trouver des lunettes de piscine à ma vue à prix très abordable."
@@ -549,6 +544,11 @@
      "auteur": "David Lempereur",
      "note": 5,
      "texte": "Je suis entré dans l'échoppe de Marsac sans trop d'espoir\nLes dames qui m'ont accueilli m'ont mis à l'aise et ont réalisé une réparation impossible 😇 …"
+    },
+    {
+     "auteur": "Henri H F PHOTOS",
+     "note": 5,
+     "texte": "Accueil excellent. Prise en charge rapide de la demande. Détails précis sur les qualités des verres à utiliser pour répondre de manière précise à ma demande. Rapidité de la réalisation des lunettes. Information de l’arrivée des lunettes par …"
     }
    ]
   },
@@ -757,9 +757,9 @@
      "texte": "Excellente expérience chez Optic 2000 ! Dès mon arrivée, j’ai été accueilli avec beaucoup de gentillesse et de professionnalisme. L’équipe est à l’écoute, disponible et prend réellement le temps de bien accompagner le client, sans jamais …"
     },
     {
-     "auteur": "Amandine Faucher",
+     "auteur": "Anna Michaud",
      "note": 5,
-     "texte": "J'y suis allé pour faire resserrer des lunettes j'ai été très bien reçu, personne très agréable dispos et à l'écoute"
+     "texte": "Accueil chaleureux et employés à l'écoute des demandes. Les conseils donnés m'ont bien renseigné sur les démarches. Ainsi, je suis contente d'avoir pris mes lunettes dans cette boutique."
     }
    ]
   },
@@ -5270,9 +5270,9 @@
     "semaine": "2026-S46",
     "debut": "2026-11-09",
     "fin": "2026-11-15",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.8,
-    "avis_cumules": 46,
+    "avis_cumules": 47,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -6339,9 +6339,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 1,
-    "soumis": 1,
-    "valides": 2,
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 3,
     "sources": "avis + lyleoo"
    }
   ],
@@ -13775,7 +13775,7 @@
     "impressions": null,
     "demandes": 1,
     "soumis": 1,
-    "valides": 0,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -13944,9 +13944,9 @@
     "semaine": "2026-S46",
     "debut": "2026-11-09",
     "fin": "2026-11-15",
-    "avis_nouveaux": 3,
+    "avis_nouveaux": 4,
     "note": 4.9,
-    "avis_cumules": 172,
+    "avis_cumules": 173,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
