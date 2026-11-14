@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T08:00:03",
+ "generated_at": "2026-11-14T08:00:03",
  "trophy_start_date": null,
  "stores": [
   {
@@ -333,9 +333,9 @@
      "texte": "Très bonne accueil, j'ai eue à faire à 2 jeunes femmes très professionnelles et aimable, merci, je recommande vivement ."
     },
     {
-     "auteur": "Sylvie Magloire",
+     "auteur": "ramond sebastien",
      "note": 5,
-     "texte": "Cliente depuis de nombreuses années, personnel toujours très accueillante .\nToujours un plaisir d'y aller ,pas d'attente.\nJe recommande ce magasin."
+     "texte": "Besoin d'un réparateur pour mes lunettes, J'ai été séduit par l'accueil de sa charmante hotesse. Efficacité et rapidité, ce magasin générale d'Optique m'a donné une réponse immédiate grâce à son outil 3D ou je peux porter mes lunettes dans les 20 minutes... Au top, merci."
     }
    ]
   },
@@ -389,6 +389,11 @@
      "texte": "Merci pour votre aide , vos conseils et votre patience . Le personnel a était très agréable et à l écoute.  L acceuil est chaleureux . Un grand merci à  Mr W . Sébastien qui a prit pas mal de son temps pour me  conseiller et m apprendre à utiliser mon nouveau dispositif ."
     },
     {
+     "auteur": "Dédé Le foux",
+     "note": 5,
+     "texte": "Très bonne expérience, le personnel est formidable très compétent et professionnel je recommande fortement."
+    },
+    {
      "auteur": "OLIVE KGM",
      "note": 5,
      "texte": "Excellent accueil du responsable du magasin qui a gentiment trouvé une solution pour réparer gracieusement mes lunettes cassées sur la route des vacances me permettant de continuer mon périple. Un grand merci pour ce professionnalisme qui mérite d'être souligné."
@@ -397,11 +402,6 @@
      "auteur": "Samy karter",
      "note": 5,
      "texte": "Depuis plusieurs années nous allons dans cette enseigne nous en sommes ravis le personnel est très professionnel super accueillant continuez comme ça"
-    },
-    {
-     "auteur": "semiya",
-     "note": 5,
-     "texte": "Très agréable et professionnel ! Je recommande 😊 …"
     }
    ]
   },
@@ -536,11 +536,6 @@
      "texte": "Nous avons été très bien accueillis. Madame Chazotte a pris tout le temps nécessaire pour réaliser un examen de vue complet et approfondi. Elle a su nous conseiller avec beaucoup de professionnalisme dans le choix des montures, en tenant …"
     },
     {
-     "auteur": "Laurent INNOCENT",
-     "note": 5,
-     "texte": "Bonjour a tous je vous conseil fortement de vous avancez vers cette magnifique équipe. Ils sont éléments exceptionnels. Ils sont non pas que pour l’as lunettes et ils sont aussi a l’écoute. Je reste fidèle a eux. Depuis mon besoin j’ai …"
-    },
-    {
      "auteur": "David Lempereur",
      "note": 5,
      "texte": "Je suis entré dans l'échoppe de Marsac sans trop d'espoir\nLes dames qui m'ont accueilli m'ont mis à l'aise et ont réalisé une réparation impossible 😇 …"
@@ -549,6 +544,11 @@
      "auteur": "Henri H F PHOTOS",
      "note": 5,
      "texte": "Accueil excellent. Prise en charge rapide de la demande. Détails précis sur les qualités des verres à utiliser pour répondre de manière précise à ma demande. Rapidité de la réalisation des lunettes. Information de l’arrivée des lunettes par …"
+    },
+    {
+     "auteur": "Pistouille Pistouille",
+     "note": 5,
+     "texte": "Très bon accueil dans cette boutique, les conseillères à qui j'ai eu affaire pour la commande ou la réception de ma paire de lunette ont été de bons conseils.\nService parfait, test des lunettes, bonnes explications. Je recommande 😊 …"
     }
    ]
   },
@@ -623,6 +623,12 @@
    "ville": "MONTIGNAC",
    "derniers_avis": [
     {
+     "auteur": "Patrice Agud",
+     "note": 4,
+     "texte": "(Translated by Google) Excellent selection of glasses, professional and warm welcome, I recommend it.\n\n(Original)\nTrès beau choix de lunettes, accueil professionnel et chaleureux, je recommande.",
+     "date": "2026-11-13"
+    },
+    {
      "auteur": "Manuel Ortega (Manort24)",
      "note": 5,
      "texte": "(Translated by Google) A lovely shop with a wide selection.\nThank you to Béatrice for her responsiveness and kindness.\n\n(Original)\nTrès belle boutique avec beaucoup de choix.\nMerci à Béatrice pour sa réactivité et sa bienveillance.",
@@ -645,12 +651,6 @@
      "note": 5,
      "texte": "(Translated by Google) Very professional and a very good advisor\n\n(Original)\nTrès professionnelle et très bonne conseillère",
      "date": "2026-08-12"
-    },
-    {
-     "auteur": "Charly Charly",
-     "note": 5,
-     "texte": "Passé ce jour pour redresser mes lunettes et resserrer une vis de branche.\nTrès bonne accueil, souriant.\nMerci à eux.\n\n(Translated by Google)\nI went in today to have my glasses straightened and a screw on the arm tightened. Very welcoming and friendly service.\nThank you.",
-     "date": "2026-08-06"
     }
    ]
   },
@@ -752,14 +752,14 @@
      "texte": "Je souhaite partager mon excellente expérience chez Optic 2000.\nLe personnel est particulièrement accueillant, toujours souriant et très à l’écoute. J’ai été très bien conseillé, avec beaucoup de professionnalisme, que ce …"
     },
     {
-     "auteur": "Ervin Xvr",
-     "note": 5,
-     "texte": "Excellente expérience chez Optic 2000 ! Dès mon arrivée, j’ai été accueilli avec beaucoup de gentillesse et de professionnalisme. L’équipe est à l’écoute, disponible et prend réellement le temps de bien accompagner le client, sans jamais …"
-    },
-    {
      "auteur": "Anna Michaud",
      "note": 5,
      "texte": "Accueil chaleureux et employés à l'écoute des demandes. Les conseils donnés m'ont bien renseigné sur les démarches. Ainsi, je suis contente d'avoir pris mes lunettes dans cette boutique."
+    },
+    {
+     "auteur": "Margaux Barus",
+     "note": 5,
+     "texte": "Très satisfaite de mon passage chez Optic 2000. Un grand merci à toute l’équipe et plus particulièrement à Cédric et Tifany pour leur accueil chaleureux, leur bienveillance et leurs précieux conseils ! À bientôt 😎🤓 …"
     }
    ]
   },
@@ -1226,6 +1226,12 @@
    "ville": "THIVIERS",
    "derniers_avis": [
     {
+     "auteur": "Maxime (Wells)",
+     "note": 5,
+     "texte": "(Translated by Google) A truly efficient 3D printing eyeglass repair service! Being able to get your glasses repaired the same day without waiting is a real lifesaver! I highly recommend it!\n\n(Original)\nUn service de réparation des lunettes en impression 3D vraiment efficace ! Pouvoir avoir ses lunettes de réparé le jour même sans attente ça sauve vraiment la vie ! Je recommande fortement !",
+     "date": "2026-11-13"
+    },
+    {
      "auteur": "patricia bordas",
      "note": 4,
      "texte": "(Translated by Google) I went to Atol to get new glasses and unfortunately broke mine due to mishandling. But just like that, I left with a temporary pair thanks to the 3D printer. Efficiency, speed, and quality. Thank you to the whole team.\n\n(Original)\nJe suis venue chez Atol pour changer mes lunettes et par malchance j'ai cassé les miennes par mauvaise manipulation. Et hop , je suis repartie avec une paire provisoire grâce à l'imprimante 3D . Efficacité, rapidité et qualité. Merci à toute l'équipe.",
@@ -1248,12 +1254,6 @@
      "note": 5,
      "texte": "(Translated by Google) I highly recommend them.\nMy mother broke her glasses, and they found a solution for her quickly. The service was welcoming and efficient, just the way I like it.\nThank you again so much for your help.\n\n(Original)\nJe recommande fortement.\nMaman a cassé ses lunettes, une solution lui a été apporté rapidement.\nAccueil et efficacité, comme j’aime.\nMerci encore infiniment pour maman.",
      "date": "2026-10-24"
-    },
-    {
-     "auteur": "Abigail Simon",
-     "note": 5,
-     "texte": "Un grand merci à toute l’équipe d’ATOL pour leur accueil, leur efficacité et leur réactivité ! Mes lunettes ont été réparées rapidement et avec beaucoup de soin. En attendant la réparation SAV, l’équipe a également pris le temps de me proposer une solution de repli, ce qui est vraiment appréciable.\n\nUn service sérieux, efficace et surtout très humain. Je recommande vivement cette équipe !\n\n(Translated by Google)\nA huge thank you to the entire ATOL team for their warm welcome, efficiency, and responsiveness! My glasses were repaired quickly and with great care. While waiting for the repair service, the team also took the time to offer me an alternative solution, which was truly appreciated.\n\nA professional, efficient, and above all, very human service. I highly recommend this team!",
-     "date": "2026-10-01"
     }
    ]
   },
@@ -3503,10 +3503,10 @@
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 45,
-    "faces": 1,
+    "faces": 2,
     "branches": 0,
     "goodies": 0,
-    "impressions": 1,
+    "impressions": 2,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -4208,13 +4208,13 @@
     "semaine": "2026-S46",
     "debut": "2026-11-09",
     "fin": "2026-11-15",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 2,
     "note": 4.9,
-    "avis_cumules": 231,
-    "faces": 1,
-    "branches": 0,
+    "avis_cumules": 232,
+    "faces": 2,
+    "branches": 1,
     "goodies": 0,
-    "impressions": 1,
+    "impressions": 3,
     "demandes": 1,
     "soumis": 1,
     "valides": 1,
@@ -7394,13 +7394,13 @@
     "semaine": "2026-S46",
     "debut": "2026-11-09",
     "fin": "2026-11-15",
-    "avis_nouveaux": 3,
+    "avis_nouveaux": 4,
     "note": 4.9,
-    "avis_cumules": 134,
-    "faces": 4,
-    "branches": 3,
+    "avis_cumules": 135,
+    "faces": 5,
+    "branches": 4,
     "goodies": 0,
-    "impressions": 7,
+    "impressions": 9,
     "demandes": 0,
     "soumis": 0,
     "valides": 1,
@@ -7757,7 +7757,7 @@
     "impressions": null,
     "demandes": 1,
     "soumis": 1,
-    "valides": 0,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -8817,8 +8817,8 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
@@ -9164,9 +9164,9 @@
     "semaine": "2026-S46",
     "debut": "2026-11-09",
     "fin": "2026-11-15",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.5,
-    "avis_cumules": 39,
+    "avis_cumules": 40,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -9525,9 +9525,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 5,
+    "soumis": 5,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -9879,8 +9879,8 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 0,
     "sources": "avis + lyleoo"
    }
@@ -11297,7 +11297,7 @@
     "impressions": 0,
     "demandes": 1,
     "soumis": 1,
-    "valides": 0,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -11642,9 +11642,9 @@
     "semaine": "2026-S46",
     "debut": "2026-11-09",
     "fin": "2026-11-15",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 2,
     "note": 5,
-    "avis_cumules": 134,
+    "avis_cumules": 135,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -13412,9 +13412,9 @@
     "semaine": "2026-S46",
     "debut": "2026-11-09",
     "fin": "2026-11-15",
-    "avis_nouveaux": 5,
+    "avis_nouveaux": 8,
     "note": 4.8,
-    "avis_cumules": 206,
+    "avis_cumules": 209,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -13949,8 +13949,8 @@
     "avis_cumules": 176,
     "faces": 0,
     "branches": 0,
-    "goodies": 0,
-    "impressions": 0,
+    "goodies": 1,
+    "impressions": 1,
     "demandes": null,
     "soumis": null,
     "valides": null,
@@ -14122,9 +14122,9 @@
     "semaine": "2026-S46",
     "debut": "2026-11-09",
     "fin": "2026-11-15",
-    "avis_nouveaux": 2,
+    "avis_nouveaux": 3,
     "note": 4.9,
-    "avis_cumules": 197,
+    "avis_cumules": 198,
     "faces": null,
     "branches": null,
     "goodies": null,
