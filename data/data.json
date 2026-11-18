@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T08:00:03",
+ "generated_at": "2026-11-18T08:00:03",
  "trophy_start_date": null,
  "stores": [
   {
@@ -47,6 +47,18 @@
    "ville": "BERGERAC",
    "derniers_avis": [
     {
+     "auteur": "Angeline Mazet",
+     "note": 5,
+     "texte": "(Translated by Google) Professionalism and kindness. I was received by Mélanie who gave me excellent advice. Thank you to her.\n\n(Original)\nProfessionnalisme et gentillesse. J’ai été reçu par Mélanie qui a été de très bons conseils. Merci à elle.",
+     "date": "2026-11-17"
+    },
+    {
+     "auteur": "gregory tinchon",
+     "note": 4,
+     "texte": "(Translated by Google) They took care of my bike; I wasn't a customer.\n\n(Original)\nIls m'ont pris en charge pour ma monture,  je n'étais pas client",
+     "date": "2026-11-17"
+    },
+    {
      "auteur": "Clément (Hadariel)",
      "note": 5,
      "texte": "(Translated by Google) I highly recommend this optician; the team is welcoming and caring and will answer all your questions 😁\n\n(Original)\nJe ne peux que recommander cet opticien, une équipe accueillante et bienveillante qui sera répondre à vos demandes 😁",
@@ -63,18 +75,6 @@
      "note": 5,
      "texte": "(Translated by Google) Excellent service, responsive and efficient for a repair on my Minimax (3 years after purchase) 👍😊\n\n(Original)\nSuper accueil, réactif et efficace pour une réparation sur Minimax (3 ans après l’achat) 👍😊",
      "date": "2026-11-12"
-    },
-    {
-     "auteur": "francine CAMLANE",
-     "note": 5,
-     "texte": "(Translated by Google) Very welcoming. Excellent advice for choosing glasses. The staff were very helpful and readily available.\n\n(Original)\nTrès bon accueil. Excellents conseils  pour le choix des lunettes.\nGrande disponibilité des intervenants.",
-     "date": "2026-11-12"
-    },
-    {
-     "auteur": "Marjorie Ferreira",
-     "note": 5,
-     "texte": "(Translated by Google) Excellent welcome, excellent advice. I went in injured after an accident that broke my glasses. The salesperson took care of me with great professionalism and kindness. Far from the typical pushy salesperson who tries to inflate the bill, he precisely understood my needs and advised me exactly where I needed to go. The result is excellent, and I thank him sincerely.\nI will return to this optician without hesitation! And I highly recommend him.\n\n(Original)\nExcellent accueil, excellents conseils. J'y allais blessée suite a un accident qui a cassé mes lunettes. Le vendeur s'est occupé de moi avec beaucoup de professionnalisme et d'humanité. Loin du commercial classique qui vous fait gonfler la facture, il a cerné précisément mes besoins et ma conseillé comme il le fallait. Le résultat est excellent et je l'en remercie vivement.\nJe retournerai chez cet opticien les yeux fermés ! Et je recommande.",
-     "date": "2026-11-11"
     }
    ]
   },
@@ -2107,8 +2107,8 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
@@ -3217,9 +3217,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -3587,9 +3587,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 2,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -4324,9 +4324,9 @@
     "note": 4.9,
     "avis_cumules": 232,
     "faces": 0,
-    "branches": 4,
+    "branches": 5,
     "goodies": 0,
-    "impressions": 4,
+    "impressions": 5,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -9130,13 +9130,13 @@
     "semaine": "2026-S47",
     "debut": "2026-11-16",
     "fin": "2026-11-22",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 42,
+    "avis_cumules": 43,
     "faces": 0,
     "branches": 0,
-    "goodies": 0,
-    "impressions": 0,
+    "goodies": 1,
+    "impressions": 1,
     "demandes": 0,
     "soumis": 0,
     "valides": 1,
@@ -9877,9 +9877,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 4,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 5,
     "sources": "avis + lyleoo"
    }
   ],
@@ -10247,9 +10247,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 1,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 2,
     "sources": "avis + lyleoo"
    }
   ],
@@ -11723,10 +11723,10 @@
     "avis_nouveaux": 0,
     "note": 4.9,
     "avis_cumules": 159,
-    "faces": 0,
-    "branches": 0,
+    "faces": 1,
+    "branches": 1,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 2,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -13570,16 +13570,16 @@
     "semaine": "2026-S47",
     "debut": "2026-11-16",
     "fin": "2026-11-22",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 4,
     "note": 4.9,
-    "avis_cumules": 261,
-    "faces": 0,
+    "avis_cumules": 264,
+    "faces": 1,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "impressions": 1,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -13940,16 +13940,16 @@
     "semaine": "2026-S47",
     "debut": "2026-11-16",
     "fin": "2026-11-22",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 3,
     "note": 4.8,
-    "avis_cumules": 209,
+    "avis_cumules": 212,
     "faces": null,
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 2,
     "sources": "avis + lyleoo"
    }
   ],
@@ -14504,13 +14504,13 @@
     "semaine": "2026-S47",
     "debut": "2026-11-16",
     "fin": "2026-11-22",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 3,
     "note": 4.9,
-    "avis_cumules": 177,
-    "faces": 0,
+    "avis_cumules": 179,
+    "faces": 1,
     "branches": 0,
-    "goodies": 0,
-    "impressions": 0,
+    "goodies": 2,
+    "impressions": 3,
     "demandes": null,
     "soumis": null,
     "valides": null,
@@ -14698,9 +14698,9 @@
     "semaine": "2026-S47",
     "debut": "2026-11-16",
     "fin": "2026-11-22",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 2,
     "note": 4.9,
-    "avis_cumules": 199,
+    "avis_cumules": 201,
     "faces": null,
     "branches": null,
     "goodies": null,
