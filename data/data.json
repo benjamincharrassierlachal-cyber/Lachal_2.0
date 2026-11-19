@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T08:00:03",
+ "generated_at": "2026-11-19T08:00:03",
  "trophy_start_date": null,
  "stores": [
   {
@@ -47,6 +47,12 @@
    "ville": "BERGERAC",
    "derniers_avis": [
     {
+     "auteur": "Ludovic Prud'homme",
+     "note": 5,
+     "texte": "(Translated by Google) I've had several contact lens fittings and the ATOL Bergerac team provided excellent support in choosing and testing different lenses. Delivery was quick. The team was very accommodating in shipping the lenses to my home very quickly; thank you so much to them.\n\n(Original)\nJ'ai fait plusieurs tests de lentilles et j'ai été bien accompagné par l'équipe ATOL Bergerac dans le choix et le test de plusieurs lentilles. Les délais de livraison sont rapides. L'équipe a été très arrangeante pour expédier les lentilles à mon domicile dans un délai très rapide, merci beaucoup à eux.",
+     "date": "2026-11-19"
+    },
+    {
      "auteur": "Angeline Mazet",
      "note": 5,
      "texte": "(Translated by Google) Professionalism and kindness. I was received by Mélanie who gave me excellent advice. Thank you to her.\n\n(Original)\nProfessionnalisme et gentillesse. J’ai été reçu par Mélanie qui a été de très bons conseils. Merci à elle.",
@@ -69,12 +75,6 @@
      "note": 5,
      "texte": "(Translated by Google) Thomas gave me a very warm welcome and helpful advice on choosing my glasses 👓 I highly recommend Atole Bergerac without hesitation 🤣\n\n(Original)\nTrès bon accueil par Thomas qui m'a bien conseillé sur le choix de mes lunettes 👓 je recommande atole bergerac les yeux fermés 🤣",
      "date": "2026-11-13"
-    },
-    {
-     "auteur": "Aurore Gatineau",
-     "note": 5,
-     "texte": "(Translated by Google) Excellent service, responsive and efficient for a repair on my Minimax (3 years after purchase) 👍😊\n\n(Original)\nSuper accueil, réactif et efficace pour une réparation sur Minimax (3 ans après l’achat) 👍😊",
-     "date": "2026-11-12"
     }
    ]
   },
@@ -346,14 +346,14 @@
    "ville": "BRETENOUX",
    "derniers_avis": [
     {
-     "auteur": "Pétula Lombard",
-     "note": 5,
-     "texte": "Bel accueil. André est un très bon professionnel, patient, très présent, agréable et très à propos. L'accompagnement a pris beaucoup de temps...sans pour autant altérer sa disponibilité …"
-    },
-    {
      "auteur": "Rose Chouchou",
      "note": 5,
      "texte": "Un très bon accueil. Très professionnel et très courtois. Une bonne adresse a recommander. Je suis ravie du traitement de mon dossier. Bonne continuation."
+    },
+    {
+     "auteur": "Pétula Lombard",
+     "note": 5,
+     "texte": "Bel accueil. André est un très bon professionnel, patient, très présent, agréable et très à propos. L'accompagnement a pris beaucoup de temps...sans pour autant altérer sa disponibilité …"
     },
     {
      "auteur": "Lea Destouches",
@@ -884,6 +884,18 @@
    "ville": "RIBERAC",
    "derniers_avis": [
     {
+     "auteur": "Alessia Giaco",
+     "note": 5,
+     "texte": "(Translated by Google) A huge thank you to the entire Atol team for their kindness, availability, and professionalism! I was having a problem with my health insurance regarding my son's glasses, and they were remarkably patient and understanding. They truly did everything they could to find a solution and resolve the situation as quickly as possible.\n\nBeyond their efficiency, it was their warm welcome, their attentiveness, and their willingness to help that truly touched me. It's so pleasant to encounter such welcoming and dedicated professionals!\n\nI wholeheartedly recommend this optician! I am absolutely delighted and completely satisfied with their service. 😊\n\n(Original)\nUn grand merci à toute l’équipe d’Atol pour leur gentillesse, leur disponibilité et leur professionnalisme ! J’étais confrontée à un problème avec ma mutuelle pour les lunettes de mon fils, et ils ont été d’une patience et d’une bienveillance remarquables. Ils ont vraiment tout fait pour trouver une solution et régler la situation le plus rapidement possible.\n\nAu-delà de leur efficacité, c’est surtout leur accueil chaleureux, leur écoute et leur volonté d’aider qui m’ont énormément touchée. C’est tellement agréable de rencontrer des professionnels aussi accueillants et investis !\n\nJe recommande cet opticien les yeux fermés ! Je suis vraiment ravie et entièrement satisfaite de leur service. 😊",
+     "date": "2026-11-18"
+    },
+    {
+     "auteur": "Catherine Côté",
+     "note": 5,
+     "texte": "(Translated by Google) Always loyal to your store and especially to Aurélie, who is very welcoming and extremely professional.\nThank you!\n\n(Original)\nToujours fidèles à votre magasin et surtout à Aurelie, très accueillante et hyper professionnelle\nMerci à elle",
+     "date": "2026-11-18"
+    },
+    {
      "auteur": "manon Durand",
      "note": 5,
      "texte": "(Translated by Google) A fantastic team! Thank you to Aurélie and Sylvie!\n\n(Original)\nUne équipe au top ! Merci à Aurélie et Sylvie",
@@ -900,18 +912,6 @@
      "note": 4,
      "texte": "(Translated by Google) The staff gives excellent advice.\nI recommend them.\n\n(Original)\nLe personnel donne de très bon conseil\nJe recommande",
      "date": "2026-10-16"
-    },
-    {
-     "auteur": "anonymous",
-     "note": 1,
-     "texte": "Je trouve dommage que nos anciennes lunettes soit donnés au Togo. Alors que en France des gens crèvent de faim. Tout ça pour payer des vacances a Hélène qui s'en vante etc certe il y a les lunettes a 30 euros proposé par l état. Mais les français n'en peuvent plus. Et forcément les prix augmentent pour les vacances d'helene alors que un tas de clients voudraient des montures d'occasion. On marche sur la tête tous les ans des vacances offertes par vos clients! 🌴✈️🌞\n\n(Translated by Google)\nI find it a shame that our old glasses are given away to Togo, while people in France are starving. All this to pay for Hélène's vacation, which she brags about, etc. Sure, there are the €30 glasses offered by the government. But the French have had enough. And of course, prices go up for Hélène's vacation, while loads of customers would prefer second-hand frames. It's madness, with your customers giving away vacations every year! 🌴✈️🌞",
-     "date": "2026-10-10"
-    },
-    {
-     "auteur": "Sophie Gendron",
-     "note": 4,
-     "texte": "Personnel a l'écoute, accueillante et de bons conseils.\nJe recommande\n\n(Translated by Google)\nThe staff were attentive, welcoming, and offered good advice.\n\nI recommend them.",
-     "date": "2026-10-09"
     }
    ]
   },
@@ -2109,7 +2109,7 @@
     "impressions": 0,
     "demandes": 1,
     "soumis": 1,
-    "valides": 1,
+    "valides": 2,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -3583,10 +3583,10 @@
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 45,
-    "faces": 0,
+    "faces": 1,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 1,
     "demandes": 2,
     "soumis": 2,
     "valides": 2,
@@ -4327,9 +4327,9 @@
     "branches": 5,
     "goodies": 0,
     "impressions": 5,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -4697,9 +4697,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -6170,9 +6170,9 @@
     "semaine": "2026-S47",
     "debut": "2026-11-16",
     "fin": "2026-11-22",
-    "avis_nouveaux": 0,
-    "note": 4.5,
-    "avis_cumules": 60,
+    "avis_nouveaux": 2,
+    "note": 4.6,
+    "avis_cumules": 62,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -9137,9 +9137,9 @@
     "branches": 0,
     "goodies": 1,
     "impressions": 1,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 1,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 2,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -10987,9 +10987,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -12090,9 +12090,9 @@
     "semaine": "2026-S47",
     "debut": "2026-11-16",
     "fin": "2026-11-22",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 5,
-    "avis_cumules": 135,
+    "avis_cumules": 136,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -13570,9 +13570,9 @@
     "semaine": "2026-S47",
     "debut": "2026-11-16",
     "fin": "2026-11-22",
-    "avis_nouveaux": 4,
+    "avis_nouveaux": 5,
     "note": 4.9,
-    "avis_cumules": 264,
+    "avis_cumules": 265,
     "faces": 1,
     "branches": 0,
     "goodies": 0,
@@ -13940,9 +13940,9 @@
     "semaine": "2026-S47",
     "debut": "2026-11-16",
     "fin": "2026-11-22",
-    "avis_nouveaux": 3,
-    "note": 4.8,
-    "avis_cumules": 212,
+    "avis_nouveaux": 6,
+    "note": 4.9,
+    "avis_cumules": 215,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -14310,9 +14310,9 @@
     "semaine": "2026-S47",
     "debut": "2026-11-16",
     "fin": "2026-11-22",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 5,
-    "avis_cumules": 54,
+    "avis_cumules": 55,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -14504,9 +14504,9 @@
     "semaine": "2026-S47",
     "debut": "2026-11-16",
     "fin": "2026-11-22",
-    "avis_nouveaux": 3,
+    "avis_nouveaux": 4,
     "note": 4.9,
-    "avis_cumules": 179,
+    "avis_cumules": 180,
     "faces": 1,
     "branches": 0,
     "goodies": 2,
