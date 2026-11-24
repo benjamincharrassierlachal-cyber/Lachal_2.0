@@ -247,7 +247,10 @@ export function buildAdminModel(data, target) {
     });
     if (!tracked) return null;
     const pct = hasData ? pctFor(sumValue, sumObjective) : null;
-    return { ...m, value: hasData ? sumValue : null, objective: sumObjective, pct, status: statusFor(pct) };
+    // total depuis le debut des releves, tous magasins (suivis ou non)
+    const totaux = data.stores.map((s) => s.totaux?.[m.key]).filter((v) => v !== null && v !== undefined);
+    const total = totaux.length ? totaux.reduce((a, b) => a + b, 0) : null;
+    return { ...m, value: hasData ? sumValue : null, objective: sumObjective, pct, status: statusFor(pct), total };
   }).filter(Boolean);
 
   const scored = metricsAgg.filter((x) => x.pct !== null);

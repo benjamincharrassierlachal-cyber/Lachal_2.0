@@ -19,6 +19,11 @@ function fmtNum(v) {
   return v === null || v === undefined ? "-" : v;
 }
 
+// Total depuis le debut : separateur de milliers (2 603).
+function fmtTotal(v) {
+  return Number(v).toLocaleString("fr-FR");
+}
+
 // Valeur realisee d'un indicateur suivi : "0" en jaune quand aucun releve
 // n'est arrive cette semaine (pct null malgre un objectif actif), pour le
 // distinguer d'un vrai zero mesure sans pour autant laisser un simple "-"
@@ -241,8 +246,12 @@ export function renderDashboard(root, model, settings, nav, viewedWeek, onResetP
     .map((m) => {
       const pm = currentWeek.metrics[m.key];
       const pct = pm.pct ?? 0;
+      const total = store.totaux?.[m.key];
       return `<button class="card metric-card" data-nav="metric" data-key="${m.key}">
-        <div class="m-icon" style="background:color-mix(in srgb, var(${m.colorVar}) 30%, transparent); color:var(${m.colorVar})">${icon(m.icon, 30)}</div>
+        <div class="m-left">
+          <div class="m-icon" style="background:color-mix(in srgb, var(${m.colorVar}) 30%, transparent); color:var(${m.colorVar})">${icon(m.icon, 30)}</div>
+          ${total !== null && total !== undefined ? `<div class="m-total" style="color:var(${m.colorVar})" title="Total depuis le début des relevés"><b>${fmtTotal(total)}</b><span>au total</span></div>` : ""}
+        </div>
         <div class="m-body">
           <div class="m-top">
             <span class="m-label">${m.label}</span>
@@ -318,6 +327,7 @@ export function renderAdmin(root, adminModel, settings, rows, trend, cb) {
       ${metricsAgg
         .map(
           (m) => `<div class="stat-pill">
+            ${m.total !== null && m.total !== undefined ? `<span class="tot" title="Total depuis le début des relevés">${fmtTotal(m.total)} au total</span>` : ""}
             <span class="val" style="color:var(${m.colorVar})">${fmtNum(m.value)}/${fmtNum(m.objective)}</span>
             <span class="lbl">${m.short}</span>
           </div>`

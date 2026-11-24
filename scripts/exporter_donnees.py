@@ -276,6 +276,29 @@ def exporter(dossier: Path, sortie: Path) -> int:
     for code in weeks:
         weeks[code].sort(key=lambda s: s["semaine"] or "")
 
+    # --- Totaux depuis le debut (feuille "Totaux" de la base) ---
+    depuis_debut = {}
+    if "Totaux" in wb.sheetnames:
+        entete_tot = None
+        for r in wb["Totaux"].iter_rows(values_only=True):
+            if entete_tot is None:
+                entete_tot = list(r)
+                continue
+            if not r or not r[0]:
+                continue
+            col = dict(zip(entete_tot, r))
+            depuis_debut[str(col.get("Code") or "").strip()] = {
+                "examens": nombre(col.get("Dossiers Lyleoo (cumul)")),
+                "impressions": nombre(col.get("Impressions 3D (cumul)")),
+                "impressions_depuis": en_iso(col.get("Impressions depuis le")),
+            }
+    for s in stores:
+        cumules = [w["avis_cumules"] for w in weeks.get(s["code"], []) if w["avis_cumules"] is not None]
+        t = depuis_debut.get(s["code"], {})
+        s["totaux"] = {"avis": cumules[-1] if cumules else None,
+                       "examens": t.get("examens"), "impressions": t.get("impressions"),
+                       "impressions_depuis": t.get("impressions_depuis")}
+
     data = {
         "generated_at": dt.datetime.now().isoformat(timespec="seconds"),
         "trophy_start_date": date_depart_trophees(),
