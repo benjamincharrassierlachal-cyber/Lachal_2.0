@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T16:34:17",
+ "generated_at": "2026-11-25T08:00:04",
  "trophy_start_date": null,
  "stores": [
   {
@@ -174,7 +174,7 @@
    "totaux": {
     "avis": 46,
     "examens": 29,
-    "impressions": 120,
+    "impressions": 122,
     "impressions_depuis": "2026-01-01"
    }
   },
@@ -317,6 +317,18 @@
    "ville": "GLANDON",
    "derniers_avis": [
     {
+     "auteur": "Vicky Lamargot",
+     "note": 5,
+     "texte": "(Translated by Google) I wanted to thank you for your kindness, your warm welcome, and your responsiveness. Everything went perfectly, with the equipment delivered very quickly. It's always a pleasure to encounter such serious and pleasant professionals. Thank you again, and I look forward to working with you again! 😊\n\n(Original)\nJe tenais à vous remercier pour votre gentillesse, votre accueil et votre réactivité. Tout s’est parfaitement déroulé, avec une livraison du matériel vraiment rapide. C’est toujours un plaisir de tomber sur des professionnels aussi sérieux et agréables. Encore merci à vous et au plaisir ! 😊",
+     "date": "2026-11-24"
+    },
+    {
+     "auteur": "Elise Viel",
+     "note": 5,
+     "texte": "(Translated by Google) Quick and efficient!\n\n(Original)\nRapide et efficace !",
+     "date": "2026-11-24"
+    },
+    {
      "auteur": "Elise Groland",
      "note": 5,
      "texte": "(Translated by Google) Very pleasant staff: even though I wasn't a customer, they repaired my glasses quickly and free of charge.\n\n(Original)\nPersonnel très agréable : alors que je n'étais pas client, ils m'ont reparé mes lunettes gratuitement et rapidement",
@@ -333,22 +345,10 @@
      "note": 5,
      "texte": "(Translated by Google) Excellent service, very professional, I highly recommend!\n\n(Original)\nSuper accueil, très professionnel, je recommande vivement !",
      "date": "2026-11-02"
-    },
-    {
-     "auteur": "Anaïs Crozes",
-     "note": 5,
-     "texte": "(Translated by Google) Always a friendly welcome, professional, good advice and a wide selection of optics.\n\n(Original)\nAcceuil toujours sympathique, professionnels, de bons conseils et un large choix d'optiques.",
-     "date": "2026-10-31"
-    },
-    {
-     "auteur": "anonymous",
-     "note": 1,
-     "texte": "(Translated by Google) I came in a month ago. I chose frames and lenses, and I was told that my health insurance company wasn't yet a partner, but that it would be soon; so I was given to understand that if I wanted, I could wait, which I agreed to. They called me back a month later instead of 15 days to explain that the price was €340 because my health insurance wasn't covered. So I asked why, and they told me that my insurance wouldn't be covered until later. So they made me lose a month. And they even sent me to a competitor. I won't even mention the staff's lack of friendliness, which is, to say the least, extremely unpleasant.\n\n(Original)\nJe suis venu il y a un mois. J’ai choisi des montures et des verres, et l’on m’a indiqué que ma mutuelle n’était pas encore partenaire, mais que ça n’allait pas tarder ; on m’a donc fait comprendre que si je voulais, je pouvais attendre, ce que j’ai accepté. On me rappelle un mois plus tard au lieu de 15 jours pour m’expliquer que le prix est de 340 € car la mutuelle n’est pas prise en charge. Je demande donc pourquoi, et on me répond que cette mutuelle ne sera prise en charge que plus tard. On m’a donc fait perdre un mois. Et on m’a même envoyé chez le concurrent. Je passe sur l’amabilité des personnes qui travaillent, qui est pour ainsi dire fortement désagréable.",
-     "date": "2026-10-27"
     }
    ],
    "totaux": {
-    "avis": 40,
+    "avis": 42,
     "examens": 11,
     "impressions": null,
     "impressions_depuis": null
@@ -387,7 +387,7 @@
     }
    ],
    "totaux": {
-    "avis": 266,
+    "avis": 267,
     "examens": 82,
     "impressions": 36,
     "impressions_depuis": "2026-01-01"
@@ -405,6 +405,11 @@
      "texte": "Je recommande vivement ce magasin de lunettes ! Une équipe vraiment très gentille, accueillante, serviable et surtout très à l’écoute de ses clients. Le personnel est sérieux, professionnel et prend le temps de donner de très bons conseils. On se sent accompagné et bien conseillé du début à la fin. 😊 …"
     },
     {
+     "auteur": "Isabelle HAAS",
+     "note": 5,
+     "texte": "Accueil, polis, écoute et disponibilité. Rien à dire. Cela n'est pas le cas partout. Il faut savoir dire les choses positives et non pas que le négatif. C'est trés agréable. Merci à l'équipe."
+    },
+    {
      "auteur": "Rose Chouchou",
      "note": 5,
      "texte": "Un très bon accueil. Très professionnel et très courtois. Une bonne adresse a recommander. Je suis ravie du traitement de mon dossier. Bonne continuation."
@@ -418,11 +423,6 @@
      "auteur": "Lea Destouches",
      "note": 5,
      "texte": "Accueil très chaleureux. Bien accompagné du début à la fin . Fière de mes lunettes. Merci beaucoup 😉 …"
-    },
-    {
-     "auteur": "Michèle Besson",
-     "note": 5,
-     "texte": "Très bon accueil, personnel agréable et efficace. Je recommande vivement."
     }
    ],
    "totaux": {
@@ -465,7 +465,7 @@
     }
    ],
    "totaux": {
-    "avis": 218,
+    "avis": 225,
     "examens": 8,
     "impressions": null,
     "impressions_depuis": null
@@ -555,7 +555,7 @@
    "totaux": {
     "avis": 25,
     "examens": 21,
-    "impressions": 18,
+    "impressions": 20,
     "impressions_depuis": "2026-01-01"
    }
   },
@@ -801,7 +801,7 @@
    ],
    "totaux": {
     "avis": 79,
-    "examens": 30,
+    "examens": 31,
     "impressions": 55,
     "impressions_depuis": "2026-01-01"
    }
@@ -928,7 +928,7 @@
    ],
    "totaux": {
     "avis": 62,
-    "examens": 43,
+    "examens": 44,
     "impressions": 114,
     "impressions_depuis": "2026-01-01"
    }
@@ -1192,7 +1192,7 @@
    ],
    "totaux": {
     "avis": 35,
-    "examens": 43,
+    "examens": 44,
     "impressions": null,
     "impressions_depuis": null
    }
@@ -1532,7 +1532,7 @@
    ],
    "totaux": {
     "avis": 3,
-    "examens": 30,
+    "examens": 31,
     "impressions": null,
     "impressions_depuis": null
    }
@@ -2345,8 +2345,8 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 2,
     "sources": "avis + lyleoo + oomade"
    }
@@ -2724,9 +2724,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 2,
     "note": 4.8,
-    "avis_cumules": 40,
+    "avis_cumules": 42,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -3885,10 +3885,10 @@
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 46,
-    "faces": 0,
+    "faces": 2,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 2,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -6201,10 +6201,10 @@
     "avis_nouveaux": 0,
     "note": 4.8,
     "avis_cumules": 25,
-    "faces": 0,
-    "branches": 0,
+    "faces": 1,
+    "branches": 1,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 2,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -10451,9 +10451,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -11995,9 +11995,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -13925,9 +13925,9 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -14304,9 +14304,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 266,
+    "avis_cumules": 267,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -14690,9 +14690,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 7,
     "note": 4.9,
-    "avis_cumules": 218,
+    "avis_cumules": 225,
     "faces": null,
     "branches": null,
     "goodies": null,
