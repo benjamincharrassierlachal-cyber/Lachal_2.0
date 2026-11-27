@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T08:00:03",
+ "generated_at": "2026-11-27T08:00:04",
  "trophy_start_date": null,
  "stores": [
   {
@@ -53,6 +53,12 @@
    "ville": "BERGERAC",
    "derniers_avis": [
     {
+     "auteur": "Jamila ALLA",
+     "note": 5,
+     "texte": "(Translated by Google) A warm welcome and attentive listening that put us at ease. Clear explanations; they took the time to explain everything thoroughly, we truly didn't feel like just a number. A huge thank you to the whole team 🙏\n\n(Original)\nUn accueil et une écoute qui rassure. Des explications claires, on a pris le temps de bien nous expliquer, vraiment on a pas l'impression d'être un numéro. Un grand merci à toute l'équipe 🙏",
+     "date": "2026-11-26"
+    },
+    {
      "auteur": "floriane valladon",
      "note": 5,
      "texte": "(Translated by Google) Professional and efficient service.\nQuick and friendly.\n\n(Original)\nAccueil professionnel et efficace.\nRapidité et douceur.",
@@ -75,16 +81,10 @@
      "note": 5,
      "texte": "(Translated by Google) A truly wonderful experience! Thank you, Jean-Paul. I particularly appreciated this optician's professionalism and passion for his work. He doesn't just try to sell a pair of glasses, but genuinely takes the time to listen, understand your needs, and offer very sound advice. His explanations, his availability, and the quality of his recommendations really make a difference.\n\nA big thank you for the warm welcome and support. It's a real pleasure to meet a professional so dedicated and passionate about his work!\n\n(Original)\nUne très belle expérience ! Merci Jean-Paul.J’ai particulièrement apprécié le professionnalisme et la passion de cet opticien pour son métier. Il ne cherche pas simplement à vendre une paire de lunettes, mais prend véritablement le temps d’écouter, de comprendre les besoins et de conseiller avec beaucoup de justesse. Ses explications, sa disponibilité et la qualité de ses conseils font vraiment la différence.\n\nUn grand merci pour cet accueil et cet accompagnement. C’est un vrai plaisir de rencontrer un professionnel aussi investi et passionné par son métier !",
      "date": "2026-11-22"
-    },
-    {
-     "auteur": "Fatima Belboukhari",
-     "note": 5,
-     "texte": "(Translated by Google) Very warm welcome, smiling clientele, wonderful place, I recommend it, best optician in Bergerac in my opinion.\n\n(Original)\nTrés bon accueil, clientele souriant,endroit merveilleux, je vous le conseil meilleur opticien de Bergerac a mon avis.",
-     "date": "2026-11-22"
     }
    ],
    "totaux": {
-    "avis": 193,
+    "avis": 194,
     "examens": null,
     "impressions": 110,
     "impressions_depuis": "2026-01-01"
@@ -173,8 +173,8 @@
    ],
    "totaux": {
     "avis": 46,
-    "examens": 29,
-    "impressions": 123,
+    "examens": 30,
+    "impressions": 128,
     "impressions_depuis": "2026-01-01"
    }
   },
@@ -387,7 +387,7 @@
     }
    ],
    "totaux": {
-    "avis": 269,
+    "avis": 271,
     "examens": 82,
     "impressions": 36,
     "impressions_depuis": "2026-01-01"
@@ -426,7 +426,7 @@
     }
    ],
    "totaux": {
-    "avis": 206,
+    "avis": 207,
     "examens": null,
     "impressions": null,
     "impressions_depuis": null
@@ -478,6 +478,12 @@
    "ville": "HAUTEFORT",
    "derniers_avis": [
     {
+     "auteur": "gimeno loena",
+     "note": 5,
+     "texte": "(Translated by Google) My first appointment with the replacement optician was about two years ago. These were my first glasses ever, and the support was excellent, with impeccable customer service.\nThis year, I received a call offering a free eye exam at the store, after which they ordered new lenses for me and my partner.\nThe service was fantastic; the optician was attentive and guided us in choosing new frames as well.\nI then recommended this establishment to two friends, who have since become customers themselves.\nI highly recommend it.\n\n(Original)\nPremière prise de RDV avec le remplaçant il y a environ deux ans.\nPremières lunettes de ma vie, l'accompagnement était très bien et l'accueil client impeccable.\nCette année j'ai reçus un appel pour me proposer un examen gratuit a la boutique au déboucher du quel ont ma commandé de nouveaux verres ainsi qu'à mon conjoint.\nLe service était super, l'opticien est a l'écoute et nous a guidé pour le choix de nouvelles montures également.\nJ'ai donc recommandé cet établissement a deux amis qui sont donc devenu clients a leur tour.\nJe recommande.",
+     "date": "2026-11-26"
+    },
+    {
      "auteur": "Nouvelle Énergie Dordogne",
      "note": 5,
      "texte": "(Translated by Google) Proximity and responsiveness, very good contact\n\n(Original)\nproximité et réactivité, très bon contact",
@@ -500,16 +506,10 @@
      "note": 5,
      "texte": "Virgil est génial je recommande vivement\n\n(Translated by Google)\nVirgil is great, I highly recommend him",
      "date": "2025-11-09"
-    },
-    {
-     "auteur": "Vilminot Océane",
-     "note": 5,
-     "texte": "Super opticien, Virgil est aux petits soins, je recommande !!\n\n(Translated by Google)\nExcellent optician, Virgil takes great care of his clients, I highly recommend him!!",
-     "date": "2025-11-09"
     }
    ],
    "totaux": {
-    "avis": 12,
+    "avis": 13,
     "examens": 93,
     "impressions": null,
     "impressions_depuis": null
@@ -636,9 +636,9 @@
     }
    ],
    "totaux": {
-    "avis": 160,
+    "avis": 162,
     "examens": 18,
-    "impressions": 69,
+    "impressions": 71,
     "impressions_depuis": "2026-01-01"
    }
   },
@@ -800,7 +800,7 @@
     }
    ],
    "totaux": {
-    "avis": 79,
+    "avis": 80,
     "examens": 31,
     "impressions": 55,
     "impressions_depuis": "2026-01-01"
@@ -928,7 +928,7 @@
    ],
    "totaux": {
     "avis": 63,
-    "examens": 44,
+    "examens": 45,
     "impressions": 114,
     "impressions_depuis": "2026-01-01"
    }
@@ -1060,7 +1060,7 @@
    ],
    "totaux": {
     "avis": 63,
-    "examens": 13,
+    "examens": 14,
     "impressions": 77,
     "impressions_depuis": "2026-01-01"
    }
@@ -1116,6 +1116,12 @@
    "ville": "SOUILLAC",
    "derniers_avis": [
     {
+     "auteur": "corinne montali",
+     "note": 5,
+     "texte": "(Translated by Google) Friendly welcome, good selection of frames, and professionalism from both staff members. I highly recommend them.\n\n(Original)\nBon accueil , choix de montures , professionnalisme des 2 personnes.  Je recommande vivement",
+     "date": "2026-11-26"
+    },
+    {
      "auteur": "lilian boiron",
      "note": 5,
      "texte": "(Translated by Google) Very good experience\n\n(Original)\nTrès bonne expérience",
@@ -1138,16 +1144,10 @@
      "note": 5,
      "texte": "Accueil très chaleureux avec une tres grande patience, a l'écoute de ses clients. Magasin très agréable. Je recommence a 100%.\n\n(Translated by Google)\nA very warm welcome with great patience and attentiveness to customers. A very pleasant shop. I would recommend it 100%.",
      "date": "2026-10-03"
-    },
-    {
-     "auteur": "Julie Delpy",
-     "note": 5,
-     "texte": "Superbe accueil,  les filles se sont occupées de moi de À à Z. J’ai fait un test avec elles pour refaire mon ordonnance. Et j’ai pu avoir une nouvelle paire de lunettes très rapidement! Leur équipement est iTech c’est un petit plus que je n’avais jamais vu encore. Je recommande +++\n\n(Translated by Google)\nFantastic service! The staff took care of me from start to finish. I had a test done with them to renew my prescription, and I got a new pair of glasses very quickly! Their equipment is iTech, which is a nice touch I'd never seen before. I highly recommend them!",
-     "date": "2026-10-03"
     }
    ],
    "totaux": {
-    "avis": 45,
+    "avis": 46,
     "examens": 60,
     "impressions": 77,
     "impressions_depuis": "2026-01-01"
@@ -1192,7 +1192,7 @@
    ],
    "totaux": {
     "avis": 35,
-    "examens": 44,
+    "examens": 45,
     "impressions": null,
     "impressions_depuis": null
    }
@@ -1380,6 +1380,12 @@
    "ville": "SAINT-ASTIER",
    "derniers_avis": [
     {
+     "auteur": "nancy cardenas",
+     "note": 5,
+     "texte": "(Translated by Google) Excellent service. Quick and efficient work. Thank you.\n\n(Original)\nTrès bon accueil. Travail rapide et efficace. Merci.",
+     "date": "2026-11-26"
+    },
+    {
      "auteur": "École Champi",
      "note": 5,
      "texte": "(Translated by Google) A customer of the Opticians of Lachal StAstier team for ten years, especially Armelle,\n\n-initially for the excellent value for money after comparing several options,\n\n-then for the warm welcome, help with choices, advice on progressive lenses...\nIn addition to being a local business, I was once again completely satisfied... I will return and\n\nI highly recommend them.\n\n(Original)\nClient depuis dix ans de l'équipe Opticiens de Lachal StAstier, en particulier Armelle,\n-au début pour Rapport Qualité/Prix après plusieurs Comparaisons,\n-puis pour Qualité Accueil, Aide aux choix, Conseils sur \"progressifs\"...\nEn plus de Commerçant local j'ai encore une fois trouvé pleine Satisfaction... je reviendrai et\nJe recommande",
@@ -1402,16 +1408,10 @@
      "note": 5,
      "texte": "(Translated by Google) A very warm welcome; the girls are really attentive and lovely.\n\n(Original)\nTrès bon accueil, les filles sont vraiment a l écoute et adorable",
      "date": "2026-11-06"
-    },
-    {
-     "auteur": "mary bournet",
-     "note": 5,
-     "texte": "(Translated by Google) Excellent service and availability to satisfy the customer.\nThank you, Armelle!\n\nI highly recommend them.\n\n(Original)\nTrès bon accueil et disponibilité pour satisfaire le client .\nMerci Armelle !\nJe recommande.",
-     "date": "2023-01-03"
     }
    ],
    "totaux": {
-    "avis": 58,
+    "avis": 59,
     "examens": 8,
     "impressions": 55,
     "impressions_depuis": "2026-01-01"
@@ -1423,6 +1423,12 @@
    "enseigne": "ATOL",
    "ville": "THIVIERS",
    "derniers_avis": [
+    {
+     "auteur": "Valerie Rousseau",
+     "note": 5,
+     "texte": "(Translated by Google) Excellent welcome and service. I highly recommend this store. After I broke my glasses, they made me 3D-printed replacements while I waited for a new pair.\n\n(Original)\ntrès bon accueil très bon service je recommande le magasin après avoir cassé mes lunettes ils m'en ont fait en 3D en attendant d'en avoir une autre paire",
+     "date": "2026-11-26"
+    },
     {
      "auteur": "Maxime (Wells)",
      "note": 5,
@@ -1446,18 +1452,12 @@
      "note": 4,
      "texte": "(Translated by Google) Excellent repair service! Thanks to their 3D machine, my glasses were repaired quickly.\n\n(Original)\nSuper service de dépannage ! Grâce à leur machine 3D, mes lunettes ont été réparées rapidement",
      "date": "2026-11-10"
-    },
-    {
-     "auteur": "Fatech Super",
-     "note": 5,
-     "texte": "(Translated by Google) I highly recommend them.\nMy mother broke her glasses, and they found a solution for her quickly. The service was welcoming and efficient, just the way I like it.\nThank you again so much for your help.\n\n(Original)\nJe recommande fortement.\nMaman a cassé ses lunettes, une solution lui a été apporté rapidement.\nAccueil et efficacité, comme j’aime.\nMerci encore infiniment pour maman.",
-     "date": "2026-10-24"
     }
    ],
    "totaux": {
-    "avis": 135,
-    "examens": 12,
-    "impressions": 114,
+    "avis": 136,
+    "examens": 13,
+    "impressions": 116,
     "impressions_depuis": "2026-01-01"
    }
   },
@@ -1500,7 +1500,7 @@
    ],
    "totaux": {
     "avis": 64,
-    "examens": 27,
+    "examens": 28,
     "impressions": null,
     "impressions_depuis": null
    }
@@ -1576,7 +1576,7 @@
    ],
    "totaux": {
     "avis": 30,
-    "examens": 47,
+    "examens": 48,
     "impressions": null,
     "impressions_depuis": null
    }
@@ -2345,8 +2345,8 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 1,
-    "soumis": 1,
+    "demandes": 2,
+    "soumis": 2,
     "valides": 3,
     "sources": "avis + lyleoo + oomade"
    }
@@ -3503,8 +3503,8 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 1,
     "sources": "avis + lyleoo"
    }
@@ -3885,13 +3885,13 @@
     "avis_nouveaux": 0,
     "note": 5,
     "avis_cumules": 46,
-    "faces": 2,
-    "branches": 1,
+    "faces": 5,
+    "branches": 3,
     "goodies": 0,
-    "impressions": 3,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "impressions": 8,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo + oomade"
    }
   ],
@@ -6591,8 +6591,8 @@
     "branches": 0,
     "goodies": 0,
     "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 0,
     "sources": "avis + lyleoo + oomade"
    }
@@ -6977,9 +6977,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -8128,15 +8128,15 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 135,
-    "faces": 0,
-    "branches": 0,
+    "avis_cumules": 136,
+    "faces": 1,
+    "branches": 1,
     "goodies": 0,
-    "impressions": 0,
-    "demandes": 0,
-    "soumis": 0,
+    "impressions": 2,
+    "demandes": 1,
+    "soumis": 1,
     "valides": 0,
     "sources": "avis + lyleoo + oomade"
    }
@@ -9286,9 +9286,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.7,
-    "avis_cumules": 58,
+    "avis_cumules": 59,
     "faces": 1,
     "branches": 0,
     "goodies": 0,
@@ -9672,9 +9672,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 45,
+    "avis_cumules": 46,
     "faces": 1,
     "branches": 0,
     "goodies": 0,
@@ -10451,9 +10451,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 1,
-    "soumis": 1,
-    "valides": 1,
+    "demandes": 2,
+    "soumis": 2,
+    "valides": 2,
     "sources": "avis + lyleoo"
    }
   ],
@@ -10830,9 +10830,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.7,
-    "avis_cumules": 12,
+    "avis_cumules": 13,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -12374,13 +12374,13 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 3,
     "note": 4.9,
-    "avis_cumules": 160,
-    "faces": 0,
+    "avis_cumules": 162,
+    "faces": 2,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 2,
     "demandes": 0,
     "soumis": 0,
     "valides": 0,
@@ -13918,9 +13918,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 0,
-    "note": 4.7,
-    "avis_cumules": 79,
+    "avis_nouveaux": 1,
+    "note": 4.8,
+    "avis_cumules": 80,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -14304,9 +14304,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 3,
+    "avis_nouveaux": 5,
     "note": 4.9,
-    "avis_cumules": 269,
+    "avis_cumules": 271,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -15286,9 +15286,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 8,
+    "avis_nouveaux": 9,
     "note": 4.9,
-    "avis_cumules": 193,
+    "avis_cumules": 194,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -15496,9 +15496,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 4.9,
-    "avis_cumules": 206,
+    "avis_cumules": 207,
     "faces": null,
     "branches": null,
     "goodies": null,
