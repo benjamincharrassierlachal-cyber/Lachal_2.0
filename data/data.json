@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T08:00:04",
+ "generated_at": "2026-11-28T08:00:03",
  "trophy_start_date": null,
  "stores": [
   {
@@ -53,6 +53,18 @@
    "ville": "BERGERAC",
    "derniers_avis": [
     {
+     "auteur": "Tyssem Nabil",
+     "note": 5,
+     "texte": "(Translated by Google) Fantastic welcome at Atol Bergerac! A friendly, professional team with excellent advice. A superb selection of glasses; there really is something for every taste and style: everyone is sure to find what they're looking for! I recommend them 100%! 😊\n\n(Original)\nSuper accueil chez Atol Bergerac ! Une équipe souriante, professionnelle et de très bons conseils. Un superbe choix de lunettes, il y en a vraiment pour tous les goûts et tous les styles : chacun trouvera forcément son bonheur ! Je recommande à 100 % ! 😊",
+     "date": "2026-11-27"
+    },
+    {
+     "auteur": "Tarer Barjot",
+     "note": 5,
+     "texte": "(Translated by Google) Just as professional as the first time I visited them.\n\n(Original)\nToujours autant professionnel que la première fois que je suis venue chez eux",
+     "date": "2026-11-27"
+    },
+    {
      "auteur": "Jamila ALLA",
      "note": 5,
      "texte": "(Translated by Google) A warm welcome and attentive listening that put us at ease. Clear explanations; they took the time to explain everything thoroughly, we truly didn't feel like just a number. A huge thank you to the whole team 🙏\n\n(Original)\nUn accueil et une écoute qui rassure. Des explications claires, on a pris le temps de bien nous expliquer, vraiment on a pas l'impression d'être un numéro. Un grand merci à toute l'équipe 🙏",
@@ -69,22 +81,10 @@
      "note": 5,
      "texte": "(Translated by Google) Very warm welcome\n\n(Original)\nTrès bon accueil",
      "date": "2026-11-25"
-    },
-    {
-     "auteur": "Laurent perie",
-     "note": 5,
-     "texte": "(Translated by Google) Very warm welcome\n\n(Original)\nTrès bon accueil",
-     "date": "2026-11-25"
-    },
-    {
-     "auteur": "Fabienne",
-     "note": 5,
-     "texte": "(Translated by Google) A truly wonderful experience! Thank you, Jean-Paul. I particularly appreciated this optician's professionalism and passion for his work. He doesn't just try to sell a pair of glasses, but genuinely takes the time to listen, understand your needs, and offer very sound advice. His explanations, his availability, and the quality of his recommendations really make a difference.\n\nA big thank you for the warm welcome and support. It's a real pleasure to meet a professional so dedicated and passionate about his work!\n\n(Original)\nUne très belle expérience ! Merci Jean-Paul.J’ai particulièrement apprécié le professionnalisme et la passion de cet opticien pour son métier. Il ne cherche pas simplement à vendre une paire de lunettes, mais prend véritablement le temps d’écouter, de comprendre les besoins et de conseiller avec beaucoup de justesse. Ses explications, sa disponibilité et la qualité de ses conseils font vraiment la différence.\n\nUn grand merci pour cet accueil et cet accompagnement. C’est un vrai plaisir de rencontrer un professionnel aussi investi et passionné par son métier !",
-     "date": "2026-11-22"
     }
    ],
    "totaux": {
-    "avis": 194,
+    "avis": 195,
     "examens": null,
     "impressions": 110,
     "impressions_depuis": "2026-01-01"
@@ -97,6 +97,24 @@
    "ville": "BOULAZAC",
    "derniers_avis": [
     {
+     "auteur": "Jessica Cougot",
+     "note": 5,
+     "texte": "(Translated by Google) I've been an Atol customer for a very long time, at least 8 years, and I'm still just as satisfied with both the staff and the products. Thank you very much.\n\n(Original)\nCliente depuis très longtemps chez Atol, au moins 8 ans, toujours aussi satisfaite, des équipes comme des produits. Merci beaucoup",
+     "date": "2026-11-27"
+    },
+    {
+     "auteur": "lucas lb15",
+     "note": 5,
+     "texte": "(Translated by Google) Perfect !\n\n(Original)\nParfait !",
+     "date": "2026-11-27"
+    },
+    {
+     "auteur": "Nathalie Meynard",
+     "note": 5,
+     "texte": "(Translated by Google) I recommend immediate repair of my broken frame.\n\n(Original)\nJe recommande dépannage immédiat de ma monture cassée.",
+     "date": "2026-11-27"
+    },
+    {
      "auteur": "Ludovic Juhel",
      "note": 5,
      "texte": "(Translated by Google) Alright\n\n(Original)\nTrès bien",
@@ -107,30 +125,12 @@
      "note": 5,
      "texte": "(Translated by Google) I'm always well received; they really look for solutions to help you. I always go there.\n\n(Original)\nJe suis tjrs bien accueilli, il cherche vraiment des solutions pour vous aidez je vais toujours la bas",
      "date": "2026-09-25"
-    },
-    {
-     "auteur": "GERALD STUTZMANN",
-     "note": 5,
-     "texte": "(Translated by Google) Attentive and caring staff.\nExcellent service.\nThe speed of service was much appreciated.\nI highly recommend them.\n\n(Original)\nPersonnel a l’ecoute et bienveillant.\nService de très bonne qualité\nRapidité de la prise en charge très appréciable.\nJe recommanderai fortement",
-     "date": "2026-11-19"
-    },
-    {
-     "auteur": "Mireille Lefeuvre",
-     "note": 5,
-     "texte": "(Translated by Google) The optician at ATOL in Boulazac, Dordogne, was extremely professional. A very warm welcome and excellent advice. Many thanks. I highly recommend them.\n\n(Original)\nBeaucoup de professionnalisme de la part de l' opticien ATOL de Boulazac Dordogne. Très bon  accueil et très bon conseil . Un grand merci. Je recommande vivement.",
-     "date": "2026-11-05"
-    },
-    {
-     "auteur": "Isabelle Queyrieix",
-     "note": 5,
-     "texte": "(Translated by Google) Top-notch opticians. Very kind, professional, good advice, patient.\n\n(Original)\nOpticiens au top. Très gentils, professionnels, de bons conseils, patients.",
-     "date": "2026-10-30"
     }
    ],
    "totaux": {
-    "avis": 234,
+    "avis": 238,
     "examens": 52,
-    "impressions": 287,
+    "impressions": 289,
     "impressions_depuis": "2026-01-01"
    }
   },
@@ -317,6 +317,12 @@
    "ville": "GLANDON",
    "derniers_avis": [
     {
+     "auteur": "Patrick CST",
+     "note": 5,
+     "texte": "(Translated by Google) Really nice, the glasses tightening was done well and with a keen eye!\n\n(Original)\nSuper sympa, resserrage des lunettes bien fait et a l'oeil !",
+     "date": "2026-11-27"
+    },
+    {
      "auteur": "Vicky Lamargot",
      "note": 5,
      "texte": "(Translated by Google) I wanted to thank you for your kindness, your warm welcome, and your responsiveness. Everything went perfectly, with the equipment delivered very quickly. It's always a pleasure to encounter such serious and pleasant professionals. Thank you again, and I look forward to working with you again! 😊\n\n(Original)\nJe tenais à vous remercier pour votre gentillesse, votre accueil et votre réactivité. Tout s’est parfaitement déroulé, avec une livraison du matériel vraiment rapide. C’est toujours un plaisir de tomber sur des professionnels aussi sérieux et agréables. Encore merci à vous et au plaisir ! 😊",
@@ -339,16 +345,10 @@
      "note": 5,
      "texte": "(Translated by Google) Very pleasant and kind, truly helpful.\nThank you.\n\n(Original)\nTrès agréable et gentil vraiment serviable\nMerci",
      "date": "2026-11-12"
-    },
-    {
-     "auteur": "laura Puechavy",
-     "note": 5,
-     "texte": "(Translated by Google) Excellent service, very professional, I highly recommend!\n\n(Original)\nSuper accueil, très professionnel, je recommande vivement !",
-     "date": "2026-11-02"
     }
    ],
    "totaux": {
-    "avis": 42,
+    "avis": 43,
     "examens": 11,
     "impressions": null,
     "impressions_depuis": null
@@ -387,7 +387,7 @@
     }
    ],
    "totaux": {
-    "avis": 271,
+    "avis": 273,
     "examens": 82,
     "impressions": 36,
     "impressions_depuis": "2026-01-01"
@@ -426,7 +426,7 @@
     }
    ],
    "totaux": {
-    "avis": 207,
+    "avis": 209,
     "examens": null,
     "impressions": null,
     "impressions_depuis": null
@@ -478,6 +478,12 @@
    "ville": "HAUTEFORT",
    "derniers_avis": [
     {
+     "auteur": "Mireille Forestier",
+     "note": 5,
+     "texte": "(Translated by Google) This optician is very professional. He takes the time to talk to me. He's helped me out many times already. So I go to him regularly. I highly recommend him. Thank you!\n\n(Original)\nTrés professionel cet opticien.il prend le temps de discuter .il m a déja depanné pleins de fois .Du coup je me sert chez lui.je recommande .merci a lui",
+     "date": "2026-11-27"
+    },
+    {
      "auteur": "gimeno loena",
      "note": 5,
      "texte": "(Translated by Google) My first appointment with the replacement optician was about two years ago. These were my first glasses ever, and the support was excellent, with impeccable customer service.\nThis year, I received a call offering a free eye exam at the store, after which they ordered new lenses for me and my partner.\nThe service was fantastic; the optician was attentive and guided us in choosing new frames as well.\nI then recommended this establishment to two friends, who have since become customers themselves.\nI highly recommend it.\n\n(Original)\nPremière prise de RDV avec le remplaçant il y a environ deux ans.\nPremières lunettes de ma vie, l'accompagnement était très bien et l'accueil client impeccable.\nCette année j'ai reçus un appel pour me proposer un examen gratuit a la boutique au déboucher du quel ont ma commandé de nouveaux verres ainsi qu'à mon conjoint.\nLe service était super, l'opticien est a l'écoute et nous a guidé pour le choix de nouvelles montures également.\nJ'ai donc recommandé cet établissement a deux amis qui sont donc devenu clients a leur tour.\nJe recommande.",
@@ -500,16 +506,10 @@
      "note": 5,
      "texte": "Je recommande fortement cet établissement. Personnel très pro et SAV +++\n\n(Translated by Google)\nI highly recommend this establishment. Very professional staff and excellent customer service.",
      "date": "2026-03-06"
-    },
-    {
-     "auteur": "Lonnie Amazon",
-     "note": 5,
-     "texte": "Virgil est génial je recommande vivement\n\n(Translated by Google)\nVirgil is great, I highly recommend him",
-     "date": "2025-11-09"
     }
    ],
    "totaux": {
-    "avis": 13,
+    "avis": 14,
     "examens": 93,
     "impressions": null,
     "impressions_depuis": null
@@ -597,7 +597,7 @@
     }
    ],
    "totaux": {
-    "avis": 55,
+    "avis": 56,
     "examens": 17,
     "impressions": null,
     "impressions_depuis": null
@@ -757,7 +757,7 @@
    ],
    "totaux": {
     "avis": 40,
-    "examens": 47,
+    "examens": 48,
     "impressions": null,
     "impressions_depuis": null
    }
@@ -802,7 +802,7 @@
    "totaux": {
     "avis": 80,
     "examens": 31,
-    "impressions": 55,
+    "impressions": 56,
     "impressions_depuis": "2026-01-01"
    }
   },
@@ -883,7 +883,7 @@
     }
    ],
    "totaux": {
-    "avis": 136,
+    "avis": 138,
     "examens": 6,
     "impressions": null,
     "impressions_depuis": null
@@ -895,6 +895,12 @@
    "enseigne": "LACHAL OPTICIEN",
    "ville": "PERIGUEUX",
    "derniers_avis": [
+    {
+     "auteur": "Oussama Benchaouch",
+     "note": 5,
+     "texte": "Excellent",
+     "date": "2026-11-27"
+    },
     {
      "auteur": "sebastien BOURGEAULT",
      "note": 5,
@@ -918,16 +924,10 @@
      "note": 5,
      "texte": "Une très belle expérience, avec beaucoup de gentillesse et de bonne humeur ! 😊\nUn énorme merci à Christel, qui a été adorable du début à la fin. Souriante, douce, à l’écoute, de très bons conseils et surtout, elle prend vraiment le temps. On se sent tout de suite bien accompagné et en confiance.\n\nEt alors… petite mention spéciale pour son collègue et sa petite attention finale : un étui à paillettes girly ✨ ! J’ai adoré, clairement, il a visé juste !\n\nMerci à toute l’équipe pour cet accueil chaleureux et ce joli moment. Je recommande les yeux fermés ! (Enfin… avec mes nouvelles lunettes, c’est quand même mieux ) 👓\n\n(Translated by Google)\nA truly wonderful experience, filled with kindness and good humor! 😊 A huge thank you to Christel, who was absolutely lovely from beginning to end. Smiling, gentle, attentive, offering excellent advice, and above all, she really took her time. You immediately feel supported and confident.\n\nAnd then… a special mention for her colleague and his final touch: a girly glittery case ✨! I loved it, he definitely hit the nail on the head!\n\nThank you to the whole team for the warm welcome and this lovely moment. I highly recommend it! (Well… with my new glasses, it's definitely better!) 👓",
      "date": "2026-08-14"
-    },
-    {
-     "auteur": "Adrien DESCHAMPS",
-     "note": 5,
-     "texte": "Super expérience ! Une équipe vraiment sympa, de bons conseils et un large choix de lunettes. On est bien accueilli, bien conseillé, sans pression. François est un top conseiller qui a su rendre mon visage encore plus beau auprès de ma femme 😅 Une adresse que je recommande sans hésiter ! 🤓😎\n\n(Translated by Google)\nFantastic experience! A really friendly team, great advice, and a wide selection of glasses. We were warmly welcomed, well-advised, and there was no pressure. François is a top-notch advisor who even managed to make my face look better in front of my wife 😅 I highly recommend this place! 🤓😎",
-     "date": "2026-07-22"
     }
    ],
    "totaux": {
-    "avis": 63,
+    "avis": 64,
     "examens": 45,
     "impressions": 114,
     "impressions_depuis": "2026-01-01"
@@ -1028,6 +1028,12 @@
    "ville": "RIBERAC",
    "derniers_avis": [
     {
+     "auteur": "DENOIX PASCAL",
+     "note": 5,
+     "texte": "(Translated by Google) Thank you to you and your team for your advice and professionalism.\n\n(Original)\nMerci a vous et à votre équipe pour vos conseils est votre professionnalisme",
+     "date": "2026-11-27"
+    },
+    {
      "auteur": "Pascal Bouyer",
      "note": 5,
      "texte": "(Translated by Google) Very professional and very friendly staff.\n\n(Original)\nPersonnel très professionnel et très sympathique.",
@@ -1050,16 +1056,10 @@
      "note": 5,
      "texte": "(Translated by Google) A fantastic team! Thank you to Aurélie and Sylvie!\n\n(Original)\nUne équipe au top ! Merci à Aurélie et Sylvie",
      "date": "2026-11-12"
-    },
-    {
-     "auteur": "fred. Chapy",
-     "note": 5,
-     "texte": "(Translated by Google) Very friendly people, no waiting, and attentive to their customers, even if just passing through.\nA big thank you for the service provided.\n\n(Original)\npersonnes fort sympathiques, pas d'attente, et aux services de ses clients, même si juste de passage.\nun grand merci pour le services rendues",
-     "date": "2026-10-17"
     }
    ],
    "totaux": {
-    "avis": 63,
+    "avis": 64,
     "examens": 14,
     "impressions": 77,
     "impressions_depuis": "2026-01-01"
@@ -1192,7 +1192,7 @@
    ],
    "totaux": {
     "avis": 35,
-    "examens": 45,
+    "examens": 46,
     "impressions": null,
     "impressions_depuis": null
    }
@@ -1380,6 +1380,12 @@
    "ville": "SAINT-ASTIER",
    "derniers_avis": [
     {
+     "auteur": "Didier Vial",
+     "note": 5,
+     "texte": "(Translated by Google) Impeccable service and very satisfied with the professionalism of the staff.\n\n(Original)\nAccueil impeccable et très satisfait du professionnalisme des employées",
+     "date": "2026-11-27"
+    },
+    {
      "auteur": "nancy cardenas",
      "note": 5,
      "texte": "(Translated by Google) Excellent service. Quick and efficient work. Thank you.\n\n(Original)\nTrès bon accueil. Travail rapide et efficace. Merci.",
@@ -1402,16 +1408,10 @@
      "note": 5,
      "texte": "(Translated by Google) Temporarily located in the square, but this in no way hinders the warm welcome and the time given to customers. Thank you again for that and for listening.\n\n(Original)\nTemporairement installée sur la place,mais cela n'empêche en rien l'accueil et le temps accordée à la clientèle. Encore merci pour cela et votre écoute.",
      "date": "2026-11-12"
-    },
-    {
-     "auteur": "Cyrielle Mazy",
-     "note": 5,
-     "texte": "(Translated by Google) A very warm welcome; the girls are really attentive and lovely.\n\n(Original)\nTrès bon accueil, les filles sont vraiment a l écoute et adorable",
-     "date": "2026-11-06"
     }
    ],
    "totaux": {
-    "avis": 59,
+    "avis": 60,
     "examens": 8,
     "impressions": 55,
     "impressions_depuis": "2026-01-01"
@@ -1512,6 +1512,12 @@
    "ville": "VERGT",
    "derniers_avis": [
     {
+     "auteur": "eve labeur",
+     "note": 5,
+     "texte": "(Translated by Google) The lady is very kind and very professional, don't change a thing, everything is perfect\n\n(Original)\nLa Dame est très gentille et très professionnelle ne changé rien tout est parfait",
+     "date": "2026-11-27"
+    },
+    {
      "auteur": "Robert Pascale",
      "note": 5,
      "texte": "La chance d'avoir un professionnel qui se déplace et gère tout comme si vous étiez en magasin. Plusieurs paires de montures sont proposées et il y a un grand choix. Il y a le conseil, le professionnalisme et l'aspect humain.\n\n(Translated by Google)\nThe advantage of having a professional come to you and handle everything just like you would in a store. They offer a wide selection of frames and advice. They provide expert guidance, professionalism, and a personal touch.",
@@ -1531,7 +1537,7 @@
     }
    ],
    "totaux": {
-    "avis": 3,
+    "avis": 4,
     "examens": 31,
     "impressions": null,
     "impressions_depuis": null
@@ -1576,7 +1582,7 @@
    ],
    "totaux": {
     "avis": 30,
-    "examens": 48,
+    "examens": 50,
     "impressions": null,
     "impressions_depuis": null
    }
@@ -2338,9 +2344,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 1,
-    "note": 4.7,
-    "avis_cumules": 63,
+    "avis_nouveaux": 2,
+    "note": 4.8,
+    "avis_cumules": 64,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -2724,9 +2730,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 2,
+    "avis_nouveaux": 3,
     "note": 4.8,
-    "avis_cumules": 42,
+    "avis_cumules": 43,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -3503,9 +3509,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 1,
-    "soumis": 1,
-    "valides": 1,
+    "demandes": 3,
+    "soumis": 3,
+    "valides": 2,
     "sources": "avis + lyleoo"
    }
   ],
@@ -4654,13 +4660,13 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 5,
     "note": 4.9,
-    "avis_cumules": 234,
-    "faces": 1,
+    "avis_cumules": 238,
+    "faces": 3,
     "branches": 1,
     "goodies": 0,
-    "impressions": 2,
+    "impressions": 4,
     "demandes": 2,
     "soumis": 2,
     "valides": 3,
@@ -6584,9 +6590,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 2,
     "note": 4.6,
-    "avis_cumules": 63,
+    "avis_cumules": 64,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -7364,8 +7370,8 @@
     "goodies": null,
     "impressions": null,
     "demandes": 1,
-    "soumis": 0,
-    "valides": 0,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -9286,9 +9292,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 2,
     "note": 4.7,
-    "avis_cumules": 59,
+    "avis_cumules": 60,
     "faces": 1,
     "branches": 0,
     "goodies": 0,
@@ -10065,9 +10071,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 0,
-    "soumis": 0,
-    "valides": 0,
+    "demandes": 1,
+    "soumis": 1,
+    "valides": 1,
     "sources": "avis + lyleoo"
    }
   ],
@@ -10451,9 +10457,9 @@
     "branches": null,
     "goodies": null,
     "impressions": null,
-    "demandes": 2,
-    "soumis": 2,
-    "valides": 2,
+    "demandes": 3,
+    "soumis": 3,
+    "valides": 3,
     "sources": "avis + lyleoo"
    }
   ],
@@ -10830,9 +10836,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 2,
     "note": 4.7,
-    "avis_cumules": 13,
+    "avis_cumules": 14,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -11988,9 +11994,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 1,
     "note": 5,
-    "avis_cumules": 3,
+    "avis_cumules": 4,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -12760,9 +12766,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 0,
+    "avis_nouveaux": 2,
     "note": 5,
-    "avis_cumules": 136,
+    "avis_cumules": 138,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -13921,10 +13927,10 @@
     "avis_nouveaux": 1,
     "note": 4.8,
     "avis_cumules": 80,
-    "faces": 0,
+    "faces": 1,
     "branches": 0,
     "goodies": 0,
-    "impressions": 0,
+    "impressions": 1,
     "demandes": 1,
     "soumis": 1,
     "valides": 1,
@@ -14304,9 +14310,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 5,
+    "avis_nouveaux": 7,
     "note": 4.9,
-    "avis_cumules": 271,
+    "avis_cumules": 273,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -14691,7 +14697,7 @@
     "debut": "2026-11-23",
     "fin": "2026-11-29",
     "avis_nouveaux": 11,
-    "note": 4.9,
+    "note": 4.8,
     "avis_cumules": 229,
     "faces": null,
     "branches": null,
@@ -15076,9 +15082,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": -1,
+    "avis_nouveaux": 0,
     "note": 5,
-    "avis_cumules": 55,
+    "avis_cumules": 56,
     "faces": null,
     "branches": null,
     "goodies": null,
@@ -15286,9 +15292,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 9,
+    "avis_nouveaux": 10,
     "note": 4.9,
-    "avis_cumules": 194,
+    "avis_cumules": 195,
     "faces": 0,
     "branches": 0,
     "goodies": 0,
@@ -15496,9 +15502,9 @@
     "semaine": "2026-S48",
     "debut": "2026-11-23",
     "fin": "2026-11-29",
-    "avis_nouveaux": 1,
+    "avis_nouveaux": 3,
     "note": 4.9,
-    "avis_cumules": 207,
+    "avis_cumules": 209,
     "faces": null,
     "branches": null,
     "goodies": null,
